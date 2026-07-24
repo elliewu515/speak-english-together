@@ -1106,7 +1106,7 @@
         </div>
     </div>
 
-    <script src="scene-data.js"></script>
+    <script src="scene-data.js?v=20260724"></script>
     <script>
 const DOMAINS = [
   { id: "home", name: "居家日常", icon: "🏠" },
@@ -1429,7 +1429,10 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
     }
 
     // ==================== NAVIGATION ====================
+    let _switchingView = false;
     function switchView(viewName) {
+        if (_switchingView) return;
+        _switchingView = true;
         document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
         const targetView = $(viewName);
         if (targetView) targetView.classList.add('active');
@@ -1450,6 +1453,7 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
         if (viewName === 'viewSettings') refreshSettingsView();
 
         updateHeader();
+        _switchingView = false;
     }
 
     function updateHeader() {
@@ -1590,7 +1594,7 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
         renderChildSwitcher('childSwitcher');
         const child = getActiveChild();
         if (!child) {
-            switchView('viewOnboarding');
+            // Don't redirect — user may have just cleared data, stay on onboarding
             return;
         }
 
@@ -1770,6 +1774,15 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
                 sentences: sentences.map(s => ({ ...s, mastered: false }))
             };
 
+            if (historyEntry.sentences.length === 0) {
+                historyEntry.sentences = [{
+                    english: 'No sentences found for this scene.',
+                    chinese: '这个场景暂时没有该等级的句子，请换个等级或场景试试。',
+                    mastered: false,
+                    isReview: false
+                }];
+            }
+
             appState.history.push(historyEntry);
             saveState(appState);
 
@@ -1777,8 +1790,8 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
             hideLoading();
         } catch (e) {
             hideLoading();
-            showToast('生成失败，请重试 😢');
             console.error('Generation error:', e);
+            showToast('生成失败：' + (e.message || '未知错误') + ' 😢');
             chatState = { stage: 'init', scene: '', followUpQuestion: '', followUpOptions: [], answers: [], matchInfo: null };
             refreshChatView();
         }
@@ -2067,9 +2080,8 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
 
         $('btnResetAll').addEventListener('click', () => {
             if (!confirm('确定要重置所有数据吗？此操作不可恢复！')) return;
-            appState = { ...defaultState, children: [], history: [] };
-            saveState(appState);
-            switchView('viewOnboarding');
+            localStorage.clear();
+            location.href = location.origin + location.pathname;
             showToast('所有数据已重置');
         });
 
@@ -2133,10 +2145,14 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
             switchView('viewOnboarding');
         }
 
-        // Register Service Worker with force update
+        // Register Service Worker — force refresh on every page load
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js').then(reg => {
-                reg.update();
+            navigator.serviceWorker.getRegistrations().then(registrations => {
+                for (const reg of registrations) reg.unregister();
+            }).then(() => {
+                navigator.serviceWorker.register('sw.js?v=20260724').then(reg => {
+                    reg.update();
+                }).catch(() => {});
             }).catch(() => {});
         }
     }
