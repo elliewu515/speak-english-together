@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Speak English Together">
+    <title>Speak English Together - 亲子英语口语</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-light: #818CF8;
+            --primary-bg: #EEF2FF;
+            --success: #10B981;
+            --success-bg: #D1FAE5;
+            --warning: #F59E0B;
+            --warning-bg: #FEF3C7;
+            --danger: #EF4444;
+            --text: #1E293B;
+            --text-secondary: #64748B;
+            --text-light: #94A3B8;
+            --bg: #F8FAFC;
+            --card: #FFFFFF;
+            --border: #E2E8F0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --radius-xs: 8px;
+            --safe-bottom: env(safe-area-inset-bottom, 16px);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            min-height: 100dvh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            overflow-x: hidden;
+        }
+
+        /* ========== App Container ========== */
+        .app {
+            max-width: 480px;
+            margin: 0 auto;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* ========== Header ========== */
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 12px 16px;
+            padding-top: max(12px, env(safe-area-inset-top, 0px));
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(79,70,229,0.2);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-logo {
+            font-size: 22px;
+            line-height: 1;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .header-subtitle {
+            font-size: 11px;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 4px;
+        }
+
+        .btn-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-icon:active {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* ========== Views ========== */
+        .view {
+            display: none;
+            flex: 1;
+            flex-direction: column;
+            padding: 16px;
+            padding-bottom: var(--safe-bottom);
+        }
+
+        .view.active {
+            display: flex;
+        }
+
+        /* ========== Onboarding ========== */
+        .onboarding {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .onboarding-hero {
+            font-size: 64px;
+            margin-bottom: 8px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .onboarding h1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .onboarding p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            max-width: 280px;
+            line-height: 1.5;
+        }
+
+        .form-group {
+            width: 100%;
+            max-width: 320px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 14px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-xs);
+            font-size: 15px;
+            font-family: inherit;
+            background: var(--card);
+            color: var(--text);
+            transition: border-color 0.2s;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            padding-right: 36px;
+        }
+
+        .level-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .level-card {
+            border: 2px solid var(--border);
+            border-radius: var(--radius-xs);
+            padding: 10px 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: var(--card);
+            text-align: left;
+        }
+
+        .level-card:hover { border-color: var(--primary-light); }
+        .level-card.selected {
+            border-color: var(--primary);
+            background: var(--primary-bg);
+        }
+
+        .level-card .level-emoji { font-size: 20px; }
+        .level-card .level-name { font-size: 13px; font-weight: 700; margin-top: 2px; }
+        .level-card .level-desc { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .btn-primary:active {
+            background: #4338CA;
+            transform: scale(0.98);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 13px;
+        }
+
+        .btn-xs {
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 20px;
+        }
+
+        /* ========== Chat View ========== */
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chat-bubble {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 14px;
+            line-height: 1.5;
+            animation: fadeInUp 0.3s ease;
+            word-break: break-word;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .chat-bubble.ai {
+            align-self: flex-start;
+            background: var(--card);
+            border-bottom-left-radius: 4px;
+            box-shadow: var(--shadow);
+            color: var(--text);
+        }
+
+        .chat-bubble.user {
+            align-self: flex-end;
+            background: var(--primary);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .chat-bubble .bubble-label {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            opacity: 0.7;
+        }
+
+        .quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 4px 0;
+        }
+
+        .quick-reply {
+            padding: 8px 16px;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text);
+            white-space: nowrap;
+        }
+
+        .quick-reply:active {
+            background: var(--primary-bg);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .chat-input-area {
+            display: flex;
+            gap: 8px;
+            padding: 12px 0;
+            padding-bottom: var(--safe-bottom);
+            position: sticky;
+            bottom: 0;
+            background: var(--bg);
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            font-size: 14px;
+            font-family: inherit;
+            background: var(--card);
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input:focus { border-color: var(--primary); }
+
+        .btn-send {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            background: var(--primary);
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-send:active { background: #4338CA; transform: scale(0.95); }
+        .btn-send:disabled { opacity: 0.5; }
+
+        /* ========== Result View ========== */
+        .result-header {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .result-scene {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .result-meta {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .mode-switch {
+            display: flex;
+            background: var(--border);
+            border-radius: 50px;
+            padding: 3px;
+            margin-bottom: 16px;
+        }
+
+        .mode-btn {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 50px;
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+
+        .mode-btn.active {
+            background: var(--card);
+            color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        /* A Mode - Script List */
+        .script-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .script-item {
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+            position: relative;
+        }
+
+        .script-item.review {
+            border-left-color: var(--warning);
+        }
+
+        .script-english {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .script-chinese {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .script-tags {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .tag {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .tag-new {
+            background: var(--success-bg);
+            color: #065F46;
+        }
+
+        .tag-review {
+            background: var(--warning-bg);
+            color: #92400E;
+        }
+
+        .btn-mastered {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-left: auto;
+        }
+
+        .btn-mastered.mastered {
+            background: var(--success-bg);
+            color: #065F46;
+            border-color: var(--success);
+        }
+
+        /* C Mode - Cards */
+        .card-stack {
+            position: relative;
+            height: 340px;
+            margin-bottom: 16px;
+        }
+
+        .sentence-card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            cursor: pointer;
+            transition: transform 0.3s, opacity 0.3s;
+            text-align: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .sentence-card.flipped .card-front { display: none; }
+        .sentence-card.flipped .card-back { display: flex; }
+        .sentence-card .card-front { display: flex; }
+        .sentence-card .card-back { display: none; }
+
+        .card-front, .card-back {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .card-english {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.3;
+        }
+
+        .card-chinese {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        .card-hint {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 8px;
+        }
+
+        .card-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .card-nav-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--border);
+            background: var(--card);
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .card-nav-btn:active { border-color: var(--primary); background: var(--primary-bg); }
+        .card-nav-btn:disabled { opacity: 0.3; }
+
+        .card-counter {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        /* ========== History View ========== */
+        .history-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .history-group {
+            margin-bottom: 8px;
+        }
+
+        .history-date {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .history-item {
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            padding: 14px 16px;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .history-item:active { background: var(--primary-bg); }
+
+        .history-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+
+        .history-scene {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .history-count {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .history-item-detail {
+            display: none;
+            margin-top: 12px;
+            border-top: 1px solid var(--border);
+            padding-top: 12px;
+        }
+
+        .history-item.expanded .history-item-detail {
+            display: block;
+        }
+
+        /* ========== Settings View ========== */
+        .settings-section {
+            margin-bottom: 24px;
+        }
+
+        .settings-section h3 {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .settings-card {
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .settings-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .settings-row:last-child { border-bottom: none; }
+        .settings-row:active { background: var(--primary-bg); }
+
+        .settings-row-label {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .settings-row-value {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .settings-row-arrow {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .child-switcher {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding: 4px 0;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .child-switcher::-webkit-scrollbar { display: none; }
+
+        .child-chip {
+            padding: 6px 14px;
+            border-radius: 50px;
+            border: 2px solid var(--border);
+            background: var(--card);
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .child-chip.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* ========== Loading ========== */
+        .loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 200;
+            gap: 16px;
+        }
+
+        .loading-overlay.hidden { display: none; }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* ========== Empty State ========== */
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+        }
+
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .empty-state-text {
+            font-size: 14px;
+        }
+
+        /* ========== Toast ========== */
+        .toast {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--text);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 300;
+            animation: toastIn 0.3s ease;
+            white-space: nowrap;
+        }
+
+        @keyframes toastIn {
+            from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        /* ========== Bottom Nav ========== */
+        .bottom-nav {
+            display: flex;
+            background: var(--card);
+            border-top: 1px solid var(--border);
+            padding: 8px 16px;
+            padding-bottom: max(8px, env(safe-area-inset-bottom, 8px));
+            gap: 4px;
+        }
+
+        .nav-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            padding: 6px;
+            border-radius: var(--radius-xs);
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            color: var(--text-light);
+            font-size: 11px;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+
+        .nav-item.active {
+            color: var(--primary);
+        }
+
+        .nav-item .nav-icon {
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        /* ========== Responsive ========== */
+        @media (min-width: 481px) {
+            .app {
+                border-left: 1px solid var(--border);
+                border-right: 1px solid var(--border);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app" id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <span class="header-logo">🗣️</span>
+                <div>
+                    <div class="header-title">Speak English Together</div>
+                    <div class="header-subtitle" id="currentChildLabel">设置孩子信息</div>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn-icon" id="btnSettings" title="设置">⚙️</button>
+            </div>
+        </header>
+
+        <!-- Onboarding View -->
+        <div class="view active" id="viewOnboarding">
+            <div class="onboarding">
+                <div class="onboarding-hero">🗣️</div>
+                <h1>Speak English Together</h1>
+                <p>在日常生活中和孩子一起说英语，每天 5 句，轻松开口</p>
+
+                <div class="form-group">
+                    <label>孩子的小名</label>
+                    <input type="text" id="inputChildName" placeholder="例如：小宝" maxlength="20">
+                </div>
+
+                <div class="form-group">
+                    <label>孩子年龄</label>
+                    <input type="number" id="inputChildAge" placeholder="例如：6" min="3" max="18" value="6">
+                </div>
+
+                <div class="form-group">
+                    <label>英语水平</label>
+                    <div class="level-cards" id="levelCards">
+                        <div class="level-card" data-level="Pre-A1">
+                            <div class="level-emoji">🌱</div>
+                            <div class="level-name">启蒙 Pre-A1</div>
+                            <div class="level-desc">零基础，4-6岁，单词和短句</div>
+                        </div>
+                        <div class="level-card" data-level="A1">
+                            <div class="level-emoji">🌿</div>
+                            <div class="level-name">入门 A1</div>
+                            <div class="level-desc">能说简单句，6-8岁</div>
+                        </div>
+                        <div class="level-card selected" data-level="A2">
+                            <div class="level-emoji">🌳</div>
+                            <div class="level-name">基础 A2</div>
+                            <div class="level-desc">简单叙述，8-10岁</div>
+                        </div>
+                        <div class="level-card" data-level="B1">
+                            <div class="level-emoji">🌲</div>
+                            <div class="level-name">进阶 B1</div>
+                            <div class="level-desc">表达观点，10-18岁</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>补充说明（选填）</label>
+                    <input type="text" id="inputCustomNote" placeholder="如：正在学自然拼读、喜欢恐龙..." maxlength="100">
+                </div>
+
+                <button class="btn btn-primary" id="btnStart">🚀 开始使用</button>
+            </div>
+        </div>
+
+        <!-- Chat View -->
+        <div class="view" id="viewChat">
+            <div class="child-switcher" id="childSwitcher" style="margin-bottom: 8px;"></div>
+            <div class="chat-container" id="chatContainer"></div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chatInput" placeholder="说说今天要做什么..." autocomplete="off">
+                <button class="btn-send" id="btnSend">➤</button>
+            </div>
+        </div>
+
+        <!-- Result View -->
+        <div class="view" id="viewResult">
+            <div class="result-header">
+                <div class="result-scene" id="resultScene"></div>
+                <div class="result-meta" id="resultMeta"></div>
+            </div>
+            <div class="mode-switch">
+                <button class="mode-btn active" data-mode="A" id="modeBtnA">📋 脚本模式</button>
+                <button class="mode-btn" data-mode="C" id="modeBtnC">🃏 卡片模式</button>
+            </div>
+            <div id="modeAContainer" class="script-list"></div>
+            <div id="modeCContainer" style="display:none;">
+                <div class="card-stack" id="cardStack"></div>
+                <div class="card-nav">
+                    <button class="card-nav-btn" id="cardPrev">◀</button>
+                    <span class="card-counter" id="cardCounter">1/5</span>
+                    <button class="card-nav-btn" id="cardNext">▶</button>
+                </div>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:20px;">
+                <button class="btn btn-primary" id="btnNewScene" style="flex:1;">🔄 再来一个场景</button>
+                <button class="btn btn-outline" id="btnViewHistory" style="flex:1;">📚 查看历史</button>
+            </div>
+        </div>
+
+        <!-- History View -->
+        <div class="view" id="viewHistory">
+            <div class="child-switcher" id="childSwitcherHistory" style="margin-bottom: 12px;"></div>
+            <div class="history-list" id="historyList">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <div class="empty-state-text">还没有学习记录<br>去主页开始第一个场景吧！</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings View -->
+        <div class="view" id="viewSettings">
+            <div class="settings-section">
+                <h3>👶 孩子档案</h3>
+                <div class="settings-card" id="settingsChildrenList"></div>
+                <button class="btn btn-outline btn-sm" id="btnAddChild" style="margin-top:8px;">＋ 添加孩子</button>
+            </div>
+            <div class="settings-section">
+                <h3>💾 数据管理</h3>
+                <div class="settings-card">
+                    <div class="settings-row" id="btnClearHistory">
+                        <span class="settings-row-label">清除历史记录</span>
+                        <span class="settings-row-arrow">›</span>
+                    </div>
+                    <div class="settings-row" id="btnResetAll">
+                        <span class="settings-row-label" style="color:var(--danger);">重置所有数据</span>
+                        <span class="settings-row-arrow">›</span>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-section">
+                <h3>ℹ️ 关于</h3>
+                <div class="settings-card">
+                    <div class="settings-row" style="cursor:default;">
+                        <span class="settings-row-label">版本</span>
+                        <span class="settings-row-value">1.0.0</span>
+                    </div>
+                    <div class="settings-row" style="cursor:default;">
+                        <span class="settings-row-label">分级标准</span>
+                        <span class="settings-row-value">CEFR (剑桥少儿英语)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav" id="bottomNav" style="display:none;">
+            <button class="nav-item active" data-view="viewChat">
+                <span class="nav-icon">💬</span>
+                <span>场景</span>
+            </button>
+            <button class="nav-item" data-view="viewHistory">
+                <span class="nav-icon">📚</span>
+                <span>历史</span>
+            </button>
+            <button class="nav-item" data-view="viewSettings">
+                <span class="nav-icon">⚙️</span>
+                <span>设置</span>
+            </button>
+        </nav>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay hidden" id="loadingOverlay">
+            <div class="spinner"></div>
+            <div class="loading-text" id="loadingText">正在生成句子...</div>
+        </div>
+    </div>
+
+    <script>
+    // ==================== BUILT-IN ENGINE DATA ====================
+const SCENE_TEMPLATES = {
+  "超市": {
+    keywords: ["超市", "购物", "买菜", "商场", "便利店", "购物车", "买东西", "结账", "收银"],
+    "Pre-A1": [{"en": "Let's go shopping!", "zh": "我们去买东西吧！"}, {"en": "Push the cart.", "zh": "推着购物车。"}, {"en": "What's this?", "zh": "这是什么？"}, {"en": "Put it in the cart.", "zh": "放进购物车里。"}, {"en": "Let's pay now.", "zh": "我们去付钱吧。"}, {"en": "Good job, thank you!", "zh": "真棒，谢谢你！"}, {"en": "I like this one.", "zh": "我喜欢这个。"}, {"en": "Can you help me?", "zh": "你能帮我吗？"}, {"en": "Where is the milk?", "zh": "牛奶在哪里？"}, {"en": "Let's go home.", "zh": "我们回家吧。"}],
+    "A1": [{"en": "Can you find the milk for me?", "zh": "你能帮我找一下牛奶吗？"}, {"en": "Let's check the shopping list.", "zh": "我们看看购物清单。"}, {"en": "Which one do you want, the red one or the green one?", "zh": "你要哪个，红色的还是绿色的？"}, {"en": "We need to buy some bread and eggs.", "zh": "我们需要买一些面包和鸡蛋。"}, {"en": "Can you put this in the cart, please?", "zh": "请把这个放进购物车好吗？"}, {"en": "Look, the bananas are over there!", "zh": "看，香蕉在那边！"}, {"en": "How many apples should we get?", "zh": "我们买几个苹果？"}, {"en": "Let's go to the checkout now.", "zh": "我们现在去收银台吧。"}, {"en": "Don't forget to say thank you!", "zh": "别忘了说谢谢！"}, {"en": "What else do we need?", "zh": "我们还需要什么？"}],
+    "A2": [{"en": "Let's compare the prices before we decide.", "zh": "我们先比较一下价格再决定。"}, {"en": "Could you grab a basket while I check the shopping list?", "zh": "我看一下购物清单，你去拿个篮子好吗？"}, {"en": "I think we should get the bigger one because it's a better deal.", "zh": "我觉得应该买大份的，因为更划算。"}, {"en": "Remember we came here last week? What did we buy?", "zh": "记得我们上周来过吗？买了什么？"}, {"en": "Let's go to the fruit section first, then get some vegetables.", "zh": "我们先去水果区，然后再买蔬菜。"}, {"en": "Can you weigh these apples for me?", "zh": "你能帮我称一下这些苹果吗？"}, {"en": "We've got everything on the list. Time to check out!", "zh": "清单上的都买齐了，去结账吧！"}, {"en": "Would you like to try a new snack today?", "zh": "今天想试试新的零食吗？"}, {"en": "The queue is a bit long, but we can wait patiently.", "zh": "队伍有点长，但我们可以耐心等。"}, {"en": "Let's use the self-checkout this time.", "zh": "这次我们用自助结账吧。"}],
+    "B1": [{"en": "Let's plan our meals for the week before we start shopping.", "zh": "开始购物前，我们先规划一下这周的饭菜吧。"}, {"en": "I wonder if the organic ones are worth the extra cost. What do you think?", "zh": "我在想有机的是否值得多花钱，你觉得呢？"}, {"en": "Could you help me figure out which brand offers the best value?", "zh": "你能帮我看看哪个牌子性价比最高吗？"}, {"en": "Let's stick to our budget today and avoid impulse purchases.", "zh": "今天按预算来，别冲动消费哦。"}, {"en": "I remember you wanted to try making pizza — should we get the ingredients?", "zh": "我记得你想尝试做披萨——我们要买材料吗？"}, {"en": "Compare these two — which one has less sugar?", "zh": "比较一下这两个——哪个含糖更少？"}, {"en": "You're in charge of the shopping cart today. Make sure we don't miss anything!", "zh": "今天你负责购物车，确保我们别漏掉任何东西！"}, {"en": "This supermarket rearranged everything — it feels like a treasure hunt!", "zh": "这个超市重新布局了——感觉像寻宝一样！"}, {"en": "Let's bring our own bags to be more eco-friendly.", "zh": "我们自带袋子吧，更环保。"}, {"en": "Would you prefer to pay with cash or use the mobile payment?", "zh": "你想用现金还是手机支付？"}],
+  },
+  "公园": {
+    keywords: ["公园", "户外", "散步", "遛弯", "操场", "草地", "花园", "秋千", "滑梯", "跑步", "骑车", "放风筝", "野餐"],
+    "Pre-A1": [{"en": "Let's go to the park!", "zh": "我们去公园吧！"}, {"en": "Look at the flowers!", "zh": "看那些花！"}, {"en": "Run, run, run!", "zh": "跑跑跑！"}, {"en": "Slide down! Whee!", "zh": "滑下来！呜——"}, {"en": "Swing high!", "zh": "荡高高！"}, {"en": "Let's sit on the grass.", "zh": "我们坐在草地上吧。"}, {"en": "Time to go home.", "zh": "该回家了。"}, {"en": "What color is the flower?", "zh": "这花是什么颜色的？"}, {"en": "Let's play ball!", "zh": "我们玩球吧！"}, {"en": "Good running!", "zh": "跑得好！"}],
+    "A1": [{"en": "What a beautiful day! Let's go outside.", "zh": "天气真好！我们出去吧。"}, {"en": "Can you see the birds in the tree?", "zh": "你能看到树上的小鸟吗？"}, {"en": "Let's run to that big tree!", "zh": "我们跑到那棵大树那边去吧！"}, {"en": "Do you want to play on the swing or the slide?", "zh": "你想玩秋千还是滑梯？"}, {"en": "Be careful on the slide!", "zh": "滑滑梯小心点！"}, {"en": "Let's collect some pretty leaves.", "zh": "我们捡一些漂亮的树叶吧。"}, {"en": "Can you hear the birds singing?", "zh": "你听到小鸟在唱歌吗？"}, {"en": "It's getting dark. Time to go home.", "zh": "天快黑了，该回家了。"}, {"en": "Don't run too far, stay where I can see you.", "zh": "别跑太远，待在我能看到你的地方。"}, {"en": "Let's have a race to the bench!", "zh": "我们比赛跑到长椅那边！"}],
+    "A2": [{"en": "Let's ride our bikes around the park today.", "zh": "今天我们绕着公园骑自行车吧。"}, {"en": "I packed some sandwiches and juice for our picnic.", "zh": "我准备了三明治和果汁来野餐。"}, {"en": "Look how the leaves have changed color since last month!", "zh": "你看树叶跟上个月比变色了！"}, {"en": "Do you remember the name of this flower? We learned it before.", "zh": "你还记得这种花的名字吗？我们之前学过的。"}, {"en": "Let's take a break and drink some water.", "zh": "我们休息一下，喝点水。"}, {"en": "The sunset looks amazing today, doesn't it?", "zh": "今天的日落真美，对吧？"}, {"en": "I used to play in a park like this when I was your age.", "zh": "我像你这么大的时候，也在这样的公园玩。"}, {"en": "Let's try flying the kite — the wind is perfect!", "zh": "我们来放风筝吧——风刚刚好！"}, {"en": "Can you spot the squirrel hiding in that tree?", "zh": "你能发现藏在树里的松鼠吗？"}, {"en": "Let's walk along this path and see where it leads.", "zh": "我们沿着这条小路走走，看它通向哪里。"}],
+    "B1": [{"en": "The weather forecast said it might rain later, so let's not stay too long.", "zh": "天气预报说晚点可能会下雨，所以我们别待太久。"}, {"en": "I love how peaceful this park is in the morning — it's worth getting up early for.", "zh": "我喜欢这个公园早上的宁静——早起也值了。"}, {"en": "Look at how the sunlight filters through the leaves — it's like a painting.", "zh": "你看阳光透过树叶洒下来——像一幅画一样。"}, {"en": "Why don't you lead the way today? Pick whichever path you want.", "zh": "今天你来带路吧？你想走哪条路就走哪条。"}, {"en": "Let's find a spot in the shade — it's getting a bit too warm in the sun.", "zh": "我们找个阴凉的地方吧——太阳下有点太热了。"}, {"en": "I noticed you're getting much better at climbing — your practice is paying off!", "zh": "我发现你爬得越来越好了——练习果然有回报！"}, {"en": "Let's make this a regular thing — a walk in the park every Sunday morning.", "zh": "我们把这个变成固定活动吧——每周日上午来公园散步。"}, {"en": "Being outdoors always clears my mind. How about you?", "zh": "在户外总能让我头脑清醒，你呢？"}, {"en": "This park has changed so much since I first brought you here as a baby.", "zh": "这个公园跟我第一次抱你来的时候变了好多。"}, {"en": "Let's bring a sketchbook next time and draw what we see.", "zh": "下次我们带个画本来，把看到的画下来。"}],
+  },
+  "吃饭": {
+    keywords: ["吃饭", "早餐", "午餐", "晚餐", "餐桌", "做饭", "厨房", "洗碗", "餐厅", "饭店", "点菜", "筷子", "碗"],
+    "Pre-A1": [{"en": "Time to eat!", "zh": "吃饭啦！"}, {"en": "Wash your hands.", "zh": "洗洗手。"}, {"en": "Yummy! So good!", "zh": "好吃！真好吃！"}, {"en": "Open your mouth.", "zh": "张开嘴。"}, {"en": "More rice?", "zh": "再来点米饭？"}, {"en": "All done!", "zh": "吃完啦！"}, {"en": "Don't play with food.", "zh": "别玩食物。"}, {"en": "Good eating!", "zh": "吃得真好！"}, {"en": "Sit down, please.", "zh": "请坐下。"}, {"en": "Drink your water.", "zh": "喝点水。"}],
+    "A1": [{"en": "What do you want for breakfast?", "zh": "早餐你想吃什么？"}, {"en": "Can you set the table, please?", "zh": "请帮忙摆一下桌子好吗？"}, {"en": "Eat your vegetables, they're good for you.", "zh": "把蔬菜吃了，对身体好。"}, {"en": "Is it yummy? Do you like it?", "zh": "好吃吗？你喜欢吗？"}, {"en": "Let me help you with that.", "zh": "我来帮你。"}, {"en": "Don't talk with your mouth full.", "zh": "嘴里有东西的时候别说话。"}, {"en": "Would you like some more soup?", "zh": "要不要再来点汤？"}, {"en": "Let's clean up together after dinner.", "zh": "吃完晚饭我们一起收拾。"}, {"en": "You can have dessert after you finish your meal.", "zh": "吃完饭可以吃甜点。"}, {"en": "Try a little bit of everything.", "zh": "每样都尝一点点。"}],
+    "A2": [{"en": "Can you help me wash the vegetables?", "zh": "你能帮我洗一下菜吗？"}, {"en": "This dish is a family recipe — my mom taught me how to make it.", "zh": "这道菜是家传的——我妈教我的。"}, {"en": "We're having guests tonight, so let's prepare something special.", "zh": "今晚有客人来，我们准备点特别的吧。"}, {"en": "Which do you prefer, noodles or rice for lunch?", "zh": "午饭你想吃面还是米饭？"}, {"en": "I think we added a bit too much salt. What do you think?", "zh": "我觉得盐放多了一点，你觉得呢？"}, {"en": "Let's try making dumplings together this weekend.", "zh": "这周末我们一起包饺子吧。"}, {"en": "Remember to chew slowly — it's better for your stomach.", "zh": "记得慢慢嚼——对胃好。"}, {"en": "Can you pass me the soy sauce, please?", "zh": "请把酱油递给我好吗？"}, {"en": "You've been eating so well lately. I'm really proud of you!", "zh": "你最近吃饭表现真好，我特别骄傲！"}, {"en": "Let's try a new recipe together — you can be the chef today!", "zh": "我们一起试个新菜谱吧——今天你当主厨！"}],
+    "B1": [{"en": "I'm thinking of trying a new recipe tonight — want to be my sous-chef?", "zh": "我想今晚试个新菜——想当我的副厨吗？"}, {"en": "It's important to have a balanced diet, but a treat once in a while is fine too.", "zh": "均衡饮食很重要，但偶尔放纵一下也没关系。"}, {"en": "This restaurant has great reviews — apparently their signature dish is worth trying.", "zh": "这家餐厅评价很好——据说他们的招牌菜值得一试。"}, {"en": "Cooking together is one of my favorite ways to spend time with you.", "zh": "一起做饭是我最喜欢的和你相处的方式之一。"}, {"en": "Let's plan the menu for this week together so we can shop more efficiently.", "zh": "我们一起规划这周的菜单吧，这样购物更高效。"}, {"en": "I've noticed you're becoming quite adventurous with food — that's a great quality!", "zh": "我发现你对食物越来越敢尝试了——这是个很好的品质！"}, {"en": "Would you rather eat out tonight or cook something together at home?", "zh": "今晚你想出去吃还是在家一起做？"}, {"en": "The secret to this dish is patience — good food takes time.", "zh": "这道菜的秘诀是耐心——好食物需要时间。"}, {"en": "Let's be mindful of food waste — only take what you can finish.", "zh": "我们要注意别浪费食物——能吃多少拿多少。"}, {"en": "I remember when you were little, you used to make such a mess eating spaghetti!", "zh": "记得你小时候吃意面弄得乱七八糟的！"}],
+  },
+  "洗澡": {
+    keywords: ["洗澡", "刷牙", "洗脸", "洗手", "浴室", "毛巾", "沐浴", "洗漱", "牙刷", "牙膏", "泡泡", "洗头"],
+    "Pre-A1": [{"en": "Time for a bath!", "zh": "洗澡时间到！"}, {"en": "Wash your face.", "zh": "洗洗脸。"}, {"en": "Brush your teeth.", "zh": "刷刷牙。"}, {"en": "So many bubbles!", "zh": "好多泡泡！"}, {"en": "Clean and fresh!", "zh": "干干净净！"}, {"en": "Rinse your hands.", "zh": "冲一下手。"}, {"en": "Dry off now.", "zh": "擦干吧。"}, {"en": "All clean! Good job!", "zh": "洗干净啦！真棒！"}, {"en": "Don't splash water!", "zh": "别泼水！"}, {"en": "Put on your pajamas.", "zh": "穿上睡衣。"}],
+    "A1": [{"en": "Let's get ready for a bath. Can you get your towel?", "zh": "准备洗澡啦，你能拿一下毛巾吗？"}, {"en": "Don't forget to brush your teeth — top and bottom!", "zh": "别忘了刷牙——上面下面都要刷！"}, {"en": "The water is just right. Not too hot, not too cold.", "zh": "水温刚刚好，不热不冷。"}, {"en": "Wash behind your ears, please.", "zh": "请洗一下耳朵后面。"}, {"en": "Let's count to ten while we brush!", "zh": "我们边刷牙边数到十吧！"}, {"en": "Can you wash yourself? You're getting so big!", "zh": "你能自己洗吗？你长大了呢！"}, {"en": "Time to get out — your fingers are getting wrinkly!", "zh": "该出来了——你的手指都皱了！"}, {"en": "Let's put on your favorite pajamas.", "zh": "穿上你最喜欢的睡衣吧。"}, {"en": "Don't forget to floss after brushing.", "zh": "刷完牙别忘了用牙线。"}, {"en": "Good job keeping clean and healthy!", "zh": "保持干净健康，真棒！"}],
+    "A2": [{"en": "Let's run the bath and add some bubble bath — which scent do you want?", "zh": "我们放洗澡水加点泡泡浴吧——你想要什么香味的？"}, {"en": "Remember to brush for two full minutes — I'll set the timer.", "zh": "记得刷满两分钟——我来设个定时器。"}, {"en": "You've been doing such a good job washing your hair by yourself lately.", "zh": "你最近自己洗头洗得越来越好了。"}, {"en": "Make sure to rinse all the soap off, or your skin might get itchy.", "zh": "一定要把肥皂冲干净，不然皮肤会痒。"}, {"en": "I used to help you with everything, and now you can do most of it alone!", "zh": "以前什么都得我帮你，现在大部分你都能自己做了！"}, {"en": "After your bath, we can read a story before bed.", "zh": "洗完澡，睡前我们可以读一个故事。"}, {"en": "The dentist said you've been brushing really well. Keep it up!", "zh": "牙医说你刷牙刷得很好，继续保持！"}, {"en": "Don't use too much toothpaste — a pea-sized amount is enough.", "zh": "牙膏别挤太多——豌豆大小就够了。"}, {"en": "Let's make sure the bathroom floor isn't too wet when you're done.", "zh": "洗完记得别把浴室地板弄得太湿。"}, {"en": "A warm bath before bed helps you sleep better.", "zh": "睡前洗个热水澡能帮你睡得更好。"}],
+    "B1": [{"en": "Taking care of your personal hygiene is a habit that will serve you well for life.", "zh": "注意个人卫生是一辈子受益的好习惯。"}, {"en": "I've noticed you've been taking initiative with your bedtime routine — that shows real maturity.", "zh": "我发现你最近睡前洗漱都很主动——这说明你真的长大了。"}, {"en": "Let's make sure the water temperature is comfortable before you get in.", "zh": "进去之前先确认水温合适。"}, {"en": "A consistent bedtime routine, including a warm bath, can really improve your sleep quality.", "zh": "固定的睡前流程，包括热水澡，能显著提升睡眠质量。"}, {"en": "You're old enough now to manage your own bath time — but I'm always here if you need help.", "zh": "你现在够大了，可以自己管理洗澡时间了——但需要帮忙随时叫我。"}, {"en": "Remember that good dental habits now will save you a lot of trouble later.", "zh": "记住，现在养成好的牙齿习惯，以后能省很多麻烦。"}, {"en": "Let's try to keep our bathroom tidy — everything has its place.", "zh": "我们尽量保持浴室整洁——每样东西都有它的位置。"}, {"en": "I'm proud of how responsible you've become with your daily routines.", "zh": "你每天的生活习惯越来越有条理了，我很骄傲。"}],
+  },
+  "睡觉": {
+    keywords: ["睡觉", "睡前", "晚安", "床", "被子", "枕头", "故事", "哄睡", "关灯", "做梦", "早起", "午睡"],
+    "Pre-A1": [{"en": "Time for bed!", "zh": "睡觉时间到！"}, {"en": "Good night, sweet dreams.", "zh": "晚安，做个好梦。"}, {"en": "Close your eyes.", "zh": "闭上眼睛。"}, {"en": "I love you. Sleep tight.", "zh": "我爱你，睡个好觉。"}, {"en": "Night night!", "zh": "晚安晚安！"}, {"en": "Let's read a story.", "zh": "我们读个故事吧。"}, {"en": "Turn off the light.", "zh": "关灯。"}, {"en": "Snuggle in.", "zh": "钻进被窝。"}, {"en": "Wake up, sleepyhead!", "zh": "起床啦，小懒虫！"}, {"en": "Good morning, sunshine!", "zh": "早上好，小太阳！"}],
+    "A1": [{"en": "It's bedtime. Let's put on your pajamas.", "zh": "睡觉时间到了，穿上睡衣吧。"}, {"en": "Which story do you want to read tonight?", "zh": "今晚你想读哪个故事？"}, {"en": "Don't forget to say good night to everyone.", "zh": "别忘了跟大家说晚安。"}, {"en": "Let me tuck you in nice and warm.", "zh": "让我给你盖好被子，暖暖的。"}, {"en": "Did you have a good dream last night?", "zh": "昨晚做了好梦吗？"}, {"en": "If you can't sleep, just close your eyes and relax.", "zh": "如果睡不着，就闭上眼睛放松。"}, {"en": "The sooner you sleep, the sooner morning comes!", "zh": "早点睡，早上就来得快！"}, {"en": "Can you turn off the light by yourself?", "zh": "你能自己关灯吗？"}, {"en": "Good night! I'll see you in the morning.", "zh": "晚安！明天早上见。"}, {"en": "Let's talk about the best thing that happened today.", "zh": "我们聊聊今天最开心的事吧。"}],
+    "A2": [{"en": "Let's do our bedtime routine: brush teeth, wash face, then story time.", "zh": "我们来做睡前流程：刷牙、洗脸，然后讲故事。"}, {"en": "What was your favorite part of today? Let's share before we sleep.", "zh": "今天你最喜欢的是什么？睡前分享一下。"}, {"en": "I used to read to you every night when you were little — now you can read to me!", "zh": "你小时候我每晚都给你读书——现在你能读给我听了！"}, {"en": "If you have a nightmare, you can always come to my room.", "zh": "如果做噩梦了，随时可以来我房间。"}, {"en": "Let's pick out your clothes for tomorrow before bed.", "zh": "睡前我们把明天的衣服挑好吧。"}, {"en": "A good night's sleep helps your brain grow and remember what you learned.", "zh": "好好睡一觉能帮助大脑发育，记住学过的知识。"}, {"en": "Let's open the window just a little for fresh air.", "zh": "我们把窗户开一点点，透透气。"}, {"en": "No more screens now — the blue light makes it harder to fall asleep.", "zh": "别看屏幕了——蓝光会让你更难入睡。"}, {"en": "I'm so lucky to be your parent. Sleep well, my dear.", "zh": "能当你的家长真幸运。好好睡，亲爱的。"}, {"en": "Tomorrow is a new day full of possibilities. Let's rest up for it!", "zh": "明天又是充满可能的新一天，我们养足精神迎接它！"}],
+    "B1": [{"en": "Establishing a consistent sleep schedule is one of the best things you can do for your health.", "zh": "保持规律的睡眠时间是你能为健康做的最好的事之一。"}, {"en": "Let's put our phones away at least 30 minutes before bed — it really makes a difference.", "zh": "睡前至少30分钟把手机放一边——真的有区别。"}, {"en": "I've noticed you've been staying up late lately. Is something on your mind?", "zh": "我发现你最近睡得比较晚，有什么心事吗？"}, {"en": "Reading a physical book before bed is so much better than scrolling on a screen.", "zh": "睡前读纸质书比刷手机好太多了。"}, {"en": "Let's make a deal: you get enough sleep during the week, and we'll do something fun on the weekend.", "zh": "我们说好：你平时睡够，周末我们去做点好玩的。"}, {"en": "Quality sleep affects your mood, focus, and even your immune system.", "zh": "优质睡眠影响你的情绪、专注力，甚至免疫力。"}, {"en": "You're growing so fast — your body needs plenty of rest to support all that growth.", "zh": "你长得太快了——身体需要充分休息来支撑这些成长。"}, {"en": "How about we try a short meditation together before bed? It helps calm the mind.", "zh": "睡前一起做个小冥想怎么样？有助于平静心情。"}],
+  },
+  "上学": {
+    keywords: ["上学", "放学", "学校", "幼儿园", "老师", "同学", "书包", "作业", "考试", "校车", "接送"],
+    "Pre-A1": [{"en": "Time for school!", "zh": "上学时间到！"}, {"en": "Put on your shoes.", "zh": "穿上鞋。"}, {"en": "Bye bye! Have fun!", "zh": "拜拜！玩开心！"}, {"en": "See you later!", "zh": "待会见！"}, {"en": "How was school?", "zh": "学校怎么样？"}, {"en": "Show me your bag.", "zh": "给我看看你的书包。"}, {"en": "Good job at school!", "zh": "在学校表现真好！"}, {"en": "Let's go home now.", "zh": "我们回家吧。"}, {"en": "Did you play today?", "zh": "今天玩了吗？"}, {"en": "Give me a hug!", "zh": "抱一个！"}],
+    "A1": [{"en": "Are you ready for school? Let's check your bag.", "zh": "准备好上学了吗？我们检查一下书包。"}, {"en": "Don't forget your lunch box and water bottle.", "zh": "别忘了午餐盒和水壶。"}, {"en": "What did you learn at school today?", "zh": "今天在学校学了什么？"}, {"en": "Did you have fun with your friends?", "zh": "跟朋友们玩得开心吗？"}, {"en": "Let me see what you made at school today!", "zh": "让我看看你今天在学校做了什么！"}, {"en": "It's okay if you made a mistake — that's how we learn.", "zh": "犯了错没关系——我们就是这样学习的。"}, {"en": "Do you have any homework today?", "zh": "今天有作业吗？"}, {"en": "I'm so proud of you for trying your best.", "zh": "你尽力了，我特别骄傲。"}, {"en": "Let's get your school uniform ready for tomorrow.", "zh": "我们把明天的校服准备好。"}, {"en": "Who did you sit with at lunch today?", "zh": "今天午饭跟谁一起坐的？"}],
+    "A2": [{"en": "Let's pack your school bag together — what do you need for tomorrow?", "zh": "我们一起收拾书包吧——明天需要带什么？"}, {"en": "Tell me about the most interesting thing you learned today.", "zh": "跟我说说今天学的最有趣的事。"}, {"en": "If you're having trouble with a subject, we can work on it together after dinner.", "zh": "如果哪科有困难，晚饭后我们一起攻克。"}, {"en": "How are you getting along with your classmates these days?", "zh": "最近跟同学们相处得怎么样？"}, {"en": "Let's make a study plan so you don't feel overwhelmed.", "zh": "我们做个学习计划，这样你就不会觉得压力太大了。"}, {"en": "I remember my school days — some things were hard, but I got through them.", "zh": "我记得我上学的时候——有些事很难，但都挺过来了。"}, {"en": "You don't have to be perfect. Just do your best and keep improving.", "zh": "你不用完美，尽力而为、不断进步就好。"}, {"en": "Let's read the school newsletter together — see what's happening this week.", "zh": "我们一起看看学校的周报——这周有什么活动。"}, {"en": "I noticed you've been working really hard on your math. That's fantastic!", "zh": "我发现你最近数学特别用功，太棒了！"}, {"en": "Would you like to invite a friend over this weekend?", "zh": "这周末想邀请朋友来家里玩吗？"}],
+    "B1": [{"en": "How do you feel about your workload this semester? Is it manageable?", "zh": "这学期的课业量你觉得怎么样？能应付吗？"}, {"en": "Education isn't just about grades — it's about discovering what you're passionate about.", "zh": "教育不只是分数——更重要的是发现你真正热爱什么。"}, {"en": "If you ever feel overwhelmed, please talk to me. We'll figure it out together.", "zh": "如果觉得压力太大，一定要跟我说。我们一起想办法。"}, {"en": "I'm not asking you to be the best — I'm asking you to be your best.", "zh": "我不是要你当第一名——我是要你当最好的自己。"}, {"en": "The habits you build now, like time management, will benefit you for the rest of your life.", "zh": "你现在养成的时间管理等习惯，会让你受益终身。"}, {"en": "Let's set some goals for this term — both academic and personal.", "zh": "我们给这学期定些目标吧——学业上的和个人成长上的。"}, {"en": "Your teachers mentioned you've been participating more in class — that takes courage!", "zh": "老师们说你上课发言更积极了——这需要勇气！"}, {"en": "Remember, everyone learns at their own pace. Don't compare yourself to others too much.", "zh": "记住，每个人的学习节奏不一样。别太跟别人比。"}],
+  },
+  "动物园": {
+    keywords: ["动物园", "动物", "老虎", "大象", "猴子", "熊猫", "水族馆", "海洋馆", "游乐场", "博物馆", "科技馆"],
+    "Pre-A1": [{"en": "Look! A big elephant!", "zh": "看！大象！"}, {"en": "What's that sound?", "zh": "那是什么声音？"}, {"en": "The monkey is jumping!", "zh": "猴子在跳！"}, {"en": "So many animals!", "zh": "好多动物！"}, {"en": "Let's see the pandas!", "zh": "我们去看熊猫吧！"}, {"en": "The tiger is sleeping.", "zh": "老虎在睡觉。"}, {"en": "Wow, a tall giraffe!", "zh": "哇，好高的长颈鹿！"}, {"en": "Feed the ducks!", "zh": "喂鸭子！"}, {"en": "Bye bye, animals!", "zh": "拜拜，动物们！"}, {"en": "What a fun day!", "zh": "今天真好玩！"}],
+    "A1": [{"en": "What animals do you want to see first?", "zh": "你想先看什么动物？"}, {"en": "Can you roar like a lion?", "zh": "你能像狮子一样吼吗？"}, {"en": "Look how tall the giraffe is! It's taller than daddy!", "zh": "你看长颈鹿多高！比爸爸还高！"}, {"en": "Let's read the sign — what does it say about this animal?", "zh": "我们读一下牌子——上面说了这个动物的什么？"}, {"en": "Don't tap on the glass, it scares the animals.", "zh": "别敲玻璃，会吓到动物的。"}, {"en": "Which animal is your favorite so far?", "zh": "到目前为止你最喜欢哪个动物？"}, {"en": "Let's take a picture with the elephants!", "zh": "我们跟大象合个影吧！"}, {"en": "It's lunch time for the animals too. Look, they're eating!", "zh": "动物们也在吃午饭呢。看，它们在吃！"}, {"en": "Let's find the map and see where the penguins are.", "zh": "我们找一下地图，看看企鹅在哪儿。"}, {"en": "We can come back again next time. There's still so much to see!", "zh": "下次还可以再来，还有好多没看呢！"}],
+    "A2": [{"en": "Let's plan our route so we don't miss the animals you're most excited about.", "zh": "我们规划一下路线，别错过你最想看的动物。"}, {"en": "Did you know that a group of flamingos is called a 'flamboyance'?", "zh": "你知道吗，一群火烈鸟英文叫 'flamboyance'！"}, {"en": "This zoo has a great conservation program. They help protect endangered species.", "zh": "这个动物园有很好的保护计划，帮他们保护濒危物种。"}, {"en": "Let's take notes about the animals we see — you can share them at school.", "zh": "我们记一下看到的动物——你可以去学校分享。"}, {"en": "The zookeeper is going to give a talk about the penguins. Want to listen?", "zh": "饲养员要讲企鹅的知识，想听吗？"}, {"en": "Remember when you were little and got scared of the big bear? Look how brave you are now!", "zh": "记得你小时候被大熊吓到了吗？看你现在多勇敢！"}, {"en": "Let's buy a small souvenir to remember this trip.", "zh": "我们买个小纪念品记住这次旅行吧。"}, {"en": "I'm so glad we got to spend this day together. It's been wonderful.", "zh": "真高兴今天能和你一起过，太美好了。"}, {"en": "Which animal would you want to learn more about when we get home?", "zh": "回家后你想多了解哪种动物？"}, {"en": "Let's check out the petting zoo — you can actually touch some of the animals!", "zh": "我们去看看宠物园区——你可以摸一些动物！"}],
+    "B1": [{"en": "This zoo is known for its ethical treatment of animals — they prioritize the animals' wellbeing over entertainment.", "zh": "这个动物园以善待动物著称——他们把动物福祉放在娱乐之上。"}, {"en": "Observing animals in their habitats reminds us how diverse and fascinating nature is.", "zh": "观察动物在栖息地的样子，让我们感叹大自然多么多样和迷人。"}, {"en": "Let's discuss what we've learned today over dinner — I'm curious about your observations.", "zh": "晚饭时我们聊聊今天的收获——我很好奇你观察到了什么。"}, {"en": "Some of these species might not exist in the wild anymore — zoos play a crucial role in preservation.", "zh": "有些物种在野外可能已经不存在了——动物园在保护方面扮演着关键角色。"}, {"en": "I appreciate how patient and observant you've been today. You really take time to watch each animal.", "zh": "我很欣赏你今天这么耐心和细心，你真的会花时间好好看每个动物。"}, {"en": "Traveling and exploring new places broadens our perspective in ways that books alone cannot.", "zh": "旅行和探索新地方能开阔视野，这是光靠书本做不到的。"}, {"en": "Let's make a scrapbook of all our family outings — it'll be amazing to look back on someday.", "zh": "我们把所有家庭出游做成剪贴簿吧——以后回头看一定很棒。"}, {"en": "The best part of these trips isn't the destination — it's the time we spend together.", "zh": "这些出游最棒的不是目的地——而是我们一起度过的时光。"}],
+  },
+  "家务": {
+    keywords: ["家务", "打扫", "整理", "收拾", "拖地", "扫地", "擦桌子", "洗衣", "晾衣", "叠衣", "倒垃圾", "整理房间"],
+    "Pre-A1": [{"en": "Let's clean up!", "zh": "我们收拾吧！"}, {"en": "Put your toys away.", "zh": "把玩具收起来。"}, {"en": "Good helper!", "zh": "好帮手！"}, {"en": "Wipe the table.", "zh": "擦擦桌子。"}, {"en": "Pick it up, please.", "zh": "请捡起来。"}, {"en": "All clean now!", "zh": "干净啦！"}, {"en": "Where does this go?", "zh": "这个放哪里？"}, {"en": "Thank you for helping!", "zh": "谢谢你帮忙！"}, {"en": "Let's do it together.", "zh": "我们一起做。"}, {"en": "Good job cleaning!", "zh": "收拾得真好！"}],
+    "A1": [{"en": "Can you help me tidy up the living room?", "zh": "你能帮我收拾一下客厅吗？"}, {"en": "Let's see who can clean up faster — ready, set, go!", "zh": "我们看谁收拾得快——预备，开始！"}, {"en": "Please put your books back on the shelf.", "zh": "请把书放回书架上。"}, {"en": "Thank you for being such a good helper!", "zh": "谢谢你这么帮忙！"}, {"en": "Let's make your bed together.", "zh": "我们一起铺床吧。"}, {"en": "Can you throw this in the trash can?", "zh": "能把这个扔进垃圾桶吗？"}, {"en": "A clean room feels so nice, doesn't it?", "zh": "房间干净了感觉真好，对吧？"}, {"en": "Let's sort the laundry — darks in this pile, lights in that one.", "zh": "我们分一下衣服——深色放这堆，浅色放那堆。"}, {"en": "You're getting so good at folding clothes!", "zh": "你叠衣服越来越好了！"}, {"en": "Every little bit of help makes a big difference.", "zh": "每一点帮助都很有用。"}],
+    "A2": [{"en": "Let's divide the chores — you take the living room, I'll handle the kitchen.", "zh": "我们分工吧——你负责客厅，我负责厨房。"}, {"en": "Keeping our home tidy is everyone's responsibility, not just mom's or dad's.", "zh": "保持家里整洁是每个人的责任，不只是爸爸妈妈的。"}, {"en": "Let's put on some music and make cleaning fun!", "zh": "我们放点音乐，让打扫变好玩！"}, {"en": "I've noticed you've been keeping your desk much tidier lately. Great habit!", "zh": "我发现你最近书桌干净多了，好习惯！"}, {"en": "When we finish cleaning, we can watch a movie together as a reward.", "zh": "打扫完了我们一起看个电影作为奖励。"}, {"en": "Can you separate the recyclables from the regular trash?", "zh": "你能把可回收垃圾和普通垃圾分开吗？"}, {"en": "Learning to take care of your space is an important life skill.", "zh": "学会打理自己的空间是重要的生活技能。"}, {"en": "Let's do a quick 10-minute tidy-up before dinner.", "zh": "晚饭前我们来个10分钟快速整理。"}, {"en": "You're old enough now to be in charge of keeping your own room clean.", "zh": "你现在够大了，可以负责保持自己房间的整洁。"}, {"en": "A tidy environment helps us think more clearly and feel more relaxed.", "zh": "整洁的环境能帮我们思路更清晰、心情更放松。"}],
+    "B1": [{"en": "Contributing to household chores teaches responsibility and teamwork — skills that matter in life.", "zh": "分担家务培养责任感和团队合作——这些都是生活中重要的能力。"}, {"en": "Let's create a weekly chore schedule so everyone knows what they're responsible for.", "zh": "我们做个每周家务安排表吧，这样每个人都知道自己负责什么。"}, {"en": "I really appreciate that you've been taking initiative with chores without being asked.", "zh": "我真的很感激你最近主动做家务，不用别人催。"}, {"en": "Maintaining a clean home isn't about perfection — it's about creating a comfortable space for everyone.", "zh": "保持家里干净不是为了完美——而是给每个人创造舒适的空间。"}, {"en": "The effort you put into our home doesn't go unnoticed. Thank you for being so responsible.", "zh": "你为家里付出的努力我都看在眼里。谢谢你这么有责任心。"}, {"en": "Let's declutter your room this weekend — we can donate the things you no longer need.", "zh": "这周末我们整理一下你的房间——不需要的东西可以捐掉。"}, {"en": "Good habits formed early become second nature. You're building a great foundation.", "zh": "早期养成的好习惯会变成本能。你在打下很好的基础。"}, {"en": "A well-organized space reflects a well-organized mind.", "zh": "有条理的空间反映出有条理的思维。"}],
+  },
+  "看病": {
+    keywords: ["看病", "医院", "医生", "诊所", "体检", "打针", "吃药", "发烧", "感冒", "咳嗽", "牙医"],
+    "Pre-A1": [{"en": "Let's see the doctor.", "zh": "我们去看医生。"}, {"en": "Open your mouth: ahh!", "zh": "张开嘴：啊——"}, {"en": "You are so brave!", "zh": "你真勇敢！"}, {"en": "It's okay, don't cry.", "zh": "没事，别哭。"}, {"en": "Take your medicine.", "zh": "吃药。"}, {"en": "All done! Good job!", "zh": "好了！真棒！"}, {"en": "Let's go home and rest.", "zh": "我们回家休息。"}, {"en": "The doctor is nice.", "zh": "医生人很好。"}, {"en": "It's just a quick check.", "zh": "就是快速检查一下。"}, {"en": "Brave boy/girl!", "zh": "勇敢的孩子！"}],
+    "A1": [{"en": "We're going to see the doctor for a check-up. Nothing to worry about.", "zh": "我们去看医生做个检查，没什么好担心的。"}, {"en": "The doctor just wants to make sure you're healthy and strong.", "zh": "医生只是想确认你健康强壮。"}, {"en": "Can you tell the doctor where it hurts?", "zh": "你能告诉医生哪里疼吗？"}, {"en": "It might feel a little cold when the doctor checks you.", "zh": "医生检查的时候可能会有点凉。"}, {"en": "You were so brave during the check-up! I'm so proud!", "zh": "检查的时候你太勇敢了！我太骄傲了！"}, {"en": "Let's get your medicine. It will help you feel better.", "zh": "我们去拿药吧，吃了就会好的。"}, {"en": "Remember to drink lots of water when you're sick.", "zh": "生病了记得多喝水。"}, {"en": "The dentist said your teeth look great! Keep brushing!", "zh": "牙医说你的牙齿很好！继续好好刷牙！"}, {"en": "It's okay to feel nervous. I'm right here with you.", "zh": "紧张是正常的，我就在你身边。"}, {"en": "Let's pick a small treat after the appointment for being so brave.", "zh": "看完病我们选个小奖励，奖励你这么勇敢。"}],
+    "A2": [{"en": "This is just a routine check-up. The doctor will measure your height and weight.", "zh": "这只是常规体检，医生会量一下你的身高体重。"}, {"en": "If you're feeling nervous, you can hold my hand the whole time.", "zh": "如果你紧张，可以一直握着我的手。"}, {"en": "The medicine might taste a bit bitter, but it will help you recover faster.", "zh": "药可能有点苦，但能帮你快点好起来。"}, {"en": "I know getting a shot isn't fun, but it protects you from getting really sick.", "zh": "我知道打针不好玩，但它能保护你不得重病。"}, {"en": "Let's follow the doctor's advice so you can get back to playing soon.", "zh": "我们听医生的话，这样你就能快点恢复去玩了。"}, {"en": "You handled that injection so well! Even I get nervous about shots sometimes.", "zh": "你打针表现太好了！有时候我打针也会紧张呢。"}, {"en": "Rest is the best medicine. Let's make sure you get plenty of sleep tonight.", "zh": "休息是最好的药，今晚一定要好好睡。"}, {"en": "Your body is fighting the germs right now. Let's give it the help it needs.", "zh": "你的身体正在跟病菌战斗，我们给它需要的帮助吧。"}, {"en": "The dentist appointment is next Tuesday. Let's mark it on the calendar.", "zh": "牙医预约在下周二，我们记在日历上。"}, {"en": "Prevention is better than cure — that's why we do regular check-ups.", "zh": "预防胜于治疗——这就是为什么我们要定期体检。"}],
+    "B1": [{"en": "Regular check-ups are like maintenance for your body — they catch problems before they become serious.", "zh": "定期体检就像身体的保养——在问题变严重之前发现它。"}, {"en": "I know medical appointments can be anxiety-inducing, but avoiding them only makes things worse.", "zh": "我知道看病可能让人焦虑，但逃避只会让事情更糟。"}, {"en": "Your health is the most important thing. Everything else can wait.", "zh": "你的健康是最重要的，其他一切都可以等。"}, {"en": "Let's be proactive about your health — eat well, exercise, and don't skip check-ups.", "zh": "我们主动管理健康——吃好、运动、别跳过体检。"}, {"en": "I'm grateful we have access to good medical care. Not everyone is so fortunate.", "zh": "我很感恩我们能享受好的医疗服务，不是每个人都这么幸运。"}, {"en": "If you're ever in pain or feeling unwell, please tell me right away. Don't tough it out.", "zh": "如果哪里疼或者不舒服，马上告诉我。别硬扛。"}, {"en": "The doctor is your ally, not someone to be afraid of. They're here to help you.", "zh": "医生是你的盟友，不是该怕的人。他们是来帮你的。"}, {"en": "Building a good relationship with your healthcare providers now will serve you well as an adult.", "zh": "现在和医护人员建立好关系，长大了会很受益。"}],
+  },
+  "坐车": {
+    keywords: ["坐车", "开车", "公交", "地铁", "出租车", "出行", "安全带", "红绿灯", "导航", "堵车", "加油站", "下车", "上车", "旅途"],
+    "Pre-A1": [{"en": "Let's go! Buckle up!", "zh": "出发！系好安全带！"}, {"en": "Look, a red light. Stop!", "zh": "看，红灯。停！"}, {"en": "Green light, go!", "zh": "绿灯，走！"}, {"en": "We are here!", "zh": "我们到啦！"}, {"en": "Sit nicely, please.", "zh": "请坐好。"}, {"en": "Look out the window!", "zh": "看窗外！"}, {"en": "Bye bye, car!", "zh": "拜拜，车车！"}, {"en": "Beep beep! Honk honk!", "zh": "滴滴！叭叭！"}, {"en": "Wait for me.", "zh": "等等我。"}, {"en": "Hold my hand.", "zh": "牵着我的手。"}],
+    "A1": [{"en": "Get in the car and buckle your seatbelt.", "zh": "上车系好安全带。"}, {"en": "Can you see the traffic light? What color is it?", "zh": "你看到红绿灯了吗？什么颜色？"}, {"en": "We need to turn left at the next corner.", "zh": "下个路口要左转。"}, {"en": "Are we there yet? Almost!", "zh": "快到了吗？快了！"}, {"en": "Let's sing a song while we drive!", "zh": "我们开车的时候唱歌吧！"}, {"en": "Don't open the window too much.", "zh": "窗户别开太大。"}, {"en": "Look, there's a big truck next to us!", "zh": "看，旁边有辆大卡车！"}, {"en": "We're going to take the bus today. How exciting!", "zh": "今天坐公交车，好兴奋！"}, {"en": "Let's count how many red cars we see.", "zh": "我们数数看到几辆红色汽车。"}, {"en": "The subway is coming. Stand behind the yellow line.", "zh": "地铁来了，站在黄线后面。"}],
+    "A2": [{"en": "Let me adjust your seatbelt to make sure it fits properly.", "zh": "我帮你调一下安全带，确保合适。"}, {"en": "We're taking a different route today because of the traffic.", "zh": "今天走另一条路，因为堵车。"}, {"en": "Can you help me watch for the street sign? We're looking for Zhongshan Road.", "zh": "能帮我看路牌吗？我们要找中山路。"}, {"en": "The GPS says we'll arrive in about 15 minutes.", "zh": "导航说大概 15 分钟到。"}, {"en": "Remember to look both ways before crossing the street.", "zh": "过马路前记得左右看。"}, {"en": "Let's play 'I spy' while we're on the road!", "zh": "路上我们玩「我看到」的游戏吧！"}, {"en": "We're running low on gas. Let's stop at the next station.", "zh": "快没油了，下个加油站停一下。"}, {"en": "The subway is a bit crowded today. Stay close to me.", "zh": "今天地铁有点挤，跟紧我。"}, {"en": "I remember when you were little, car rides would put you right to sleep!", "zh": "记得你小时候一坐车就睡着了！"}, {"en": "Let's plan some road trip games for our longer journey next week.", "zh": "我们为下周的长途旅行计划一些车上游戏吧。"}],
+    "B1": [{"en": "Let's check the traffic conditions before we head out — it might affect our route.", "zh": "出发前看看路况——可能影响我们的路线。"}, {"en": "Public transportation is not only economical but also better for the environment.", "zh": "公共交通不仅省钱，还对环境更好。"}, {"en": "I appreciate you being so patient during long car rides — not all kids are like that.", "zh": "我很感谢你在长途车上这么有耐心——不是所有孩子都这样。"}, {"en": "Learning to navigate the city independently is an important life skill.", "zh": "学会在城市里独立出行是重要的生活技能。"}, {"en": "Let's use this commute time productively — want to listen to a podcast or audiobook?", "zh": "我们利用通勤时间做点有用的事——想听播客还是有声书？"}, {"en": "The new subway line has made our commute so much more convenient.", "zh": "新地铁线让我们的出行方便多了。"}, {"en": "Always be aware of your surroundings when you're in public spaces.", "zh": "在公共空间要时刻注意周围环境。"}, {"en": "One day you'll be driving yourself around — but let's not rush that!", "zh": "总有一天你会自己开车——但别急着那一天！"}],
+  },
+  "生日": {
+    keywords: ["生日", "派对", "蛋糕", "蜡烛", "礼物", "许愿", "庆祝", "气球", "生日歌", "朋友", "聚会"],
+    "Pre-A1": [{"en": "Happy birthday to you!", "zh": "祝你生日快乐！"}, {"en": "Make a wish!", "zh": "许个愿！"}, {"en": "Blow out the candles!", "zh": "吹蜡烛！"}, {"en": "Open your present!", "zh": "拆礼物！"}, {"en": "What a big cake!", "zh": "好大的蛋糕！"}, {"en": "So many balloons!", "zh": "好多气球！"}, {"en": "Say thank you!", "zh": "说谢谢！"}, {"en": "Yummy cake!", "zh": "蛋糕真好吃！"}, {"en": "Let's sing!", "zh": "我们唱歌吧！"}, {"en": "You're a big kid now!", "zh": "你是大孩子啦！"}],
+    "A1": [{"en": "Happy birthday, my sweetheart! You're growing up so fast!", "zh": "生日快乐，宝贝！你长得太快了！"}, {"en": "How old are you today? Can you show me with your fingers?", "zh": "今天你几岁了？用手指比给我看看？"}, {"en": "Let's put the candles on the cake. How many do we need?", "zh": "我们把蜡烛插上吧，需要几根？"}, {"en": "Close your eyes and make a wish. Don't tell anyone!", "zh": "闭上眼睛许愿，别说出来哦！"}, {"en": "Who came to your party? Can you name all your friends?", "zh": "谁来参加你的派对了？能说出所有朋友的名字吗？"}, {"en": "This present is from grandma. What do you say?", "zh": "这个礼物是奶奶送的，你该说什么？"}, {"en": "Let's take a picture with your cake!", "zh": "我们跟蛋糕合个影吧！"}, {"en": "You can have a big piece since it's your special day.", "zh": "今天是你的特别日子，可以吃一大块。"}, {"en": "Thank you everyone for coming to the party!", "zh": "谢谢大家来参加派对！"}, {"en": "What was your favorite part of the party?", "zh": "派对你最喜欢哪个部分？"}],
+    "A2": [{"en": "Let's decorate the room before the guests arrive.", "zh": "客人来之前我们把房间布置一下。"}, {"en": "I can't believe you're turning seven! It feels like yesterday you were a baby.", "zh": "真不敢相信你七岁了！感觉你昨天还是个小宝宝。"}, {"en": "Let's write thank-you cards to everyone who gave you gifts.", "zh": "我们给每个送礼物的人写感谢卡吧。"}, {"en": "You get to choose what we have for dinner — it's your special day!", "zh": "今天晚饭你来选——今天是你的特别日子！"}, {"en": "Remember to share your toys and snacks with all your friends.", "zh": "记得跟所有朋友分享玩具和零食。"}, {"en": "Let's play some party games! What about musical chairs?", "zh": "我们玩派对游戏吧！抢椅子怎么样？"}, {"en": "I'm so proud of the kind and wonderful person you're becoming.", "zh": "看到你成长为一个善良美好的人，我特别骄傲。"}, {"en": "Let's save a piece of cake for tomorrow.", "zh": "我们留一块蛋糕明天吃。"}, {"en": "Helping clean up after the party is part of being a good host.", "zh": "派对结束后帮忙收拾是好主人的表现。"}, {"en": "This was the best birthday party ever, wasn't it?", "zh": "这是最棒的生日派对，对吧？"}],
+    "B1": [{"en": "Another year older means another year of growth, learning, and wonderful memories.", "zh": "又长一岁，意味着又一年成长、学习和美好回忆。"}, {"en": "Let's reflect on the past year — what are you most proud of accomplishing?", "zh": "我们回顾一下过去一年——你最骄傲的成就是什么？"}, {"en": "I want you to know that the greatest gift isn't what's in the boxes — it's having you in our lives.", "zh": "我想让你知道，最好的礼物不是盒子里的东西——而是有你出现在我们的生命里。"}, {"en": "As you get older, birthdays become less about presents and more about appreciating the people around you.", "zh": "随着年龄增长，生日变得不那么关乎礼物，而更关乎珍惜身边的人。"}, {"en": "Let's set some goals for the year ahead — not because you need to be better, but because growth is exciting.", "zh": "我们给未来一年定些目标吧——不是因为你不够好，而是因为成长令人兴奋。"}, {"en": "I love seeing how your friendships have deepened over the years. You choose great people to surround yourself with.", "zh": "看到你的友谊越来越深厚真好。你身边都是很好的人。"}, {"en": "You planned your own party this year — that shows real independence and creativity.", "zh": "今年你自己策划了派对——这说明你真的独立又有创意。"}, {"en": "No matter how old you get, you'll always be my baby. Happy birthday.", "zh": "不管你多大，你永远是我的宝贝。生日快乐。"}],
+  },
+  "看电视": {
+    keywords: ["看电视", "电视", "动画", "卡通", "iPad", "平板", "手机", "屏幕", "视频", "电影", "节目", "游戏"],
+    "Pre-A1": [{"en": "TV time!", "zh": "看电视时间！"}, {"en": "Sit back, please.", "zh": "请往后坐。"}, {"en": "Not too close!", "zh": "别太近！"}, {"en": "One more, then off.", "zh": "再看一个就关。"}, {"en": "Time's up! All done.", "zh": "时间到！结束。"}, {"en": "What are you watching?", "zh": "你在看什么？"}, {"en": "Is it funny?", "zh": "好笑吗？"}, {"en": "Turn it off now.", "zh": "现在关掉。"}, {"en": "Let's do something else.", "zh": "我们做点别的吧。"}, {"en": "No more screen.", "zh": "不能再看了。"}],
+    "A1": [{"en": "You can watch one episode, then we turn it off.", "zh": "你可以看一集，然后关掉。"}, {"en": "What show are you watching? Tell me about it.", "zh": "你在看什么节目？跟我说说。"}, {"en": "Sit further back, please. It's bad for your eyes.", "zh": "请坐远一点，对眼睛不好。"}, {"en": "Let's set a timer for 20 minutes.", "zh": "我们设个 20 分钟的定时器。"}, {"en": "No TV during dinner. Let's talk to each other instead.", "zh": "吃饭时不能看电视，我们互相聊聊天吧。"}, {"en": "Is this show in English? That's good practice!", "zh": "这个节目是英文的吗？那是很好的练习！"}, {"en": "Time to say goodbye to the screen. What shall we do now?", "zh": "该跟屏幕说再见了，我们现在做什么？"}, {"en": "Too much screen time isn't good for your brain.", "zh": "看太多屏幕对大脑不好。"}, {"en": "Let's watch something together as a family.", "zh": "我们全家一起看点什么吧。"}, {"en": "You can watch more tomorrow, but not now.", "zh": "明天可以再看，现在不行。"}],
+    "A2": [{"en": "Let's agree on a screen time limit before we start. How about 30 minutes?", "zh": "开始前我们说好看多久，30 分钟怎么样？"}, {"en": "I know that show is exciting, but we had a deal. Time to turn it off.", "zh": "我知道那个节目很精彩，但我们说好了的，该关了。"}, {"en": "Instead of watching alone, let's find a documentary we can watch and discuss together.", "zh": "与其一个人看，不如找个纪录片一起看一起讨论。"}, {"en": "Did you know that the blue light from screens can make it harder to fall asleep?", "zh": "你知道吗，屏幕的蓝光会让你更难入睡？"}, {"en": "Let's balance our day — some screen time, some outdoor time, some reading time.", "zh": "我们平衡一下一天——看会儿屏幕、户外活动、读书时间。"}, {"en": "What did you learn from the show you were watching?", "zh": "你从刚才看的节目里学到了什么？"}, {"en": "I'm not saying no screens — I'm saying let's use them wisely.", "zh": "我不是说不让看屏幕——我是说要有智慧地使用。"}, {"en": "Let's have a screen-free afternoon and see what fun things we can come up with.", "zh": "我们来个无屏幕下午，看看能想出什么好玩的事。"}, {"en": "You've been on the tablet for an hour. Your eyes need a break.", "zh": "你已经在平板上一个小时了，眼睛需要休息。"}, {"en": "Let's watch this English cartoon together — we can both learn new words!", "zh": "我们一起看这个英文动画片吧——我们都能学新单词！"}],
+    "B1": [{"en": "Screen time isn't inherently bad — it's about what you consume and how much.", "zh": "屏幕时间本身不是坏事——关键是你消费的内容和时间量。"}, {"en": "Let's establish some healthy digital habits together. They'll serve you well for life.", "zh": "我们一起建立健康的数字习惯吧，这会让你终身受益。"}, {"en": "I trust you to manage your own screen time, but I'm here to help if you find it challenging.", "zh": "我相信你能自己管理屏幕时间，但如果觉得困难我随时帮忙。"}, {"en": "The best content makes you think, not just consume passively. Let's look for that kind.", "zh": "最好的内容让你思考，而不只是被动消费。我们找那种来看。"}, {"en": "Social media can be a highlight reel of everyone else's life — don't compare your behind-the-scenes to it.", "zh": "社交媒体是别人生活的精选集——别拿自己的幕后去比。"}, {"en": "Let's have a conversation about digital wellness — it's an important topic for your generation.", "zh": "我们聊聊数字健康吧——对你们这一代来说这是重要话题。"}, {"en": "I'm proud that you're starting to self-regulate your screen time. That takes maturity.", "zh": "看到你开始自我管理屏幕时间了，很骄傲。这需要成熟。"}, {"en": "Remember, the real world is always more interesting than the virtual one.", "zh": "记住，真实世界永远比虚拟世界更有趣。"}],
+  },
+  "爷爷奶奶": {
+    keywords: ["爷爷奶奶", "姥姥", "姥爷", "外公", "外婆", "亲戚", "长辈", "串门", "拜年", "探望"],
+    "Pre-A1": [{"en": "Let's visit grandma!", "zh": "我们去看奶奶！"}, {"en": "Give grandpa a hug!", "zh": "抱抱爷爷！"}, {"en": "Say hello!", "zh": "说你好！"}, {"en": "I love grandma!", "zh": "我爱奶奶！"}, {"en": "Grandma has cookies!", "zh": "奶奶有饼干！"}, {"en": "Be gentle with grandpa.", "zh": "对爷爷温柔点。"}, {"en": "Wave bye bye!", "zh": "挥手拜拜！"}, {"en": "Show grandma your drawing.", "zh": "给奶奶看你的画。"}, {"en": "Sit on grandma's lap.", "zh": "坐在奶奶腿上。"}, {"en": "We'll come again soon!", "zh": "我们很快再来！"}],
+    "A1": [{"en": "We're going to visit grandma and grandpa today. Are you excited?", "zh": "今天去看爷爷奶奶，兴奋吗？"}, {"en": "What do you want to tell grandma about school?", "zh": "你想跟奶奶说学校里的什么事？"}, {"en": "Grandma made your favorite food. What do you say?", "zh": "奶奶做了你最爱吃的，你该说什么？"}, {"en": "Can you help grandpa in the garden?", "zh": "你能帮爷爷在花园里干活吗？"}, {"en": "Let's bring some fruit for grandma and grandpa.", "zh": "我们给爷爷奶奶带点水果吧。"}, {"en": "Grandpa wants to see how tall you've gotten!", "zh": "爷爷想看看你长多高了！"}, {"en": "Be polite and use your manners with the elders.", "zh": "对长辈要有礼貌。"}, {"en": "What's your favorite thing about visiting grandma's house?", "zh": "去奶奶家你最喜欢什么？"}, {"en": "Let's call grandma to say good night.", "zh": "我们给奶奶打个电话说晚安吧。"}, {"en": "Grandparents love spending time with you. It makes them so happy.", "zh": "爷爷奶奶最喜欢和你在一起了，他们可开心了。"}],
+    "A2": [{"en": "Let's prepare a little gift for grandma — maybe the drawing you made?", "zh": "我们给奶奶准备个小礼物吧——你画的那幅画怎么样？"}, {"en": "Grandparents won't be around forever, so let's cherish every visit.", "zh": "爷爷奶奶不会永远在，所以每次探望都要珍惜。"}, {"en": "Why don't you ask grandpa to tell you a story about when he was young?", "zh": "你让爷爷讲一个他年轻时候的故事吧？"}, {"en": "Let's help grandma with the housework while we're here.", "zh": "我们在这儿帮奶奶做点家务吧。"}, {"en": "I love seeing the bond between you and your grandparents. It's really special.", "zh": "看到你和爷爷奶奶之间的感情真好，特别珍贵。"}, {"en": "Remember to speak clearly — grandma's hearing isn't as good as it used to be.", "zh": "记得说清楚——奶奶听力不如以前了。"}, {"en": "Let's take a family photo with grandma and grandpa today.", "zh": "今天跟爷爷奶奶拍张全家福吧。"}, {"en": "You can learn so much from the older generation if you take time to listen.", "zh": "如果你花时间倾听，能从老一辈那里学到很多。"}, {"en": "Let's plan to visit more often. It means the world to them.", "zh": "我们计划多来看看吧，这对他们意义重大。"}, {"en": "Teaching grandma how to use the smartphone — you're such a patient teacher!", "zh": "教奶奶用智能手机——你真是个耐心的老师！"}],
+    "B1": [{"en": "The relationship between grandparents and grandchildren is truly one of life's greatest treasures.", "zh": "祖孙之间的感情真的是人生最宝贵的财富之一。"}, {"en": "Let's make an effort to visit more regularly — they're not getting any younger, and neither are we.", "zh": "我们努力多来几次吧——他们在变老，我们也是。"}, {"en": "Ask grandma about her childhood. You might be surprised how different the world was back then.", "zh": "问问奶奶她的童年，你可能会惊讶于那时候的世界多么不同。"}, {"en": "Intergenerational relationships give us perspective — they've lived through things we can only read about.", "zh": "跨代的关系给我们视角——他们经历过我们只能在书里读到的事。"}, {"en": "I'm so grateful that you have such a close relationship with your grandparents. Not everyone gets that.", "zh": "我很感激你跟爷爷奶奶关系这么亲密，不是每个人都有这样的福气。"}, {"en": "One day, you'll tell your own grandchildren about the times you spent with great-grandma.", "zh": "有一天，你会跟自己的孙辈讲起你和曾祖母在一起的时光。"}, {"en": "Let's record some of grandpa's stories — they're part of our family history.", "zh": "我们录一些爷爷的故事吧——这是我们家族历史的一部分。"}, {"en": "Family isn't just about blood — it's about showing up, time and time again.", "zh": "家庭不只是血缘——而是一次又一次的陪伴。"}],
+  },
+  "画画": {
+    keywords: ["画画", "绘画", "手工", "剪纸", "彩笔", "蜡笔", "颜料", "涂色", "折纸", "橡皮泥", "创意", "作品"],
+    "Pre-A1": [{"en": "Let's draw!", "zh": "我们画画吧！"}, {"en": "What color is this?", "zh": "这是什么颜色？"}, {"en": "Draw a circle!", "zh": "画个圆！"}, {"en": "So beautiful!", "zh": "好漂亮！"}, {"en": "Color it red.", "zh": "涂成红色。"}, {"en": "Show me your drawing!", "zh": "给我看你的画！"}, {"en": "Good job! So creative!", "zh": "真棒！好有创意！"}, {"en": "Let's cut the paper.", "zh": "我们来剪纸。"}, {"en": "Stick it here.", "zh": "贴在这里。"}, {"en": "Let's hang it up!", "zh": "我们挂起来吧！"}],
+    "A1": [{"en": "What do you want to draw today?", "zh": "今天你想画什么？"}, {"en": "Can you draw a rainbow? What colors do you need?", "zh": "你能画一道彩虹吗？需要什么颜色？"}, {"en": "Let's make a card for daddy's birthday!", "zh": "我们给爸爸做张生日贺卡��！"}, {"en": "Don't draw on the wall — use the paper.", "zh": "别在墙上画——画在纸上。"}, {"en": "What a beautiful picture! Tell me about it.", "zh": "好漂亮的画！跟我说说。"}, {"en": "Can I have the blue crayon, please?", "zh": "请把蓝色蜡笔递给我好吗？"}, {"en": "Let's make something with play-doh. What shall we create?", "zh": "我们用橡皮泥做点东西吧，做什么呢？"}, {"en": "You're getting so good at coloring inside the lines!", "zh": "你现在涂色越来越能涂在线里面了！"}, {"en": "Let's display your artwork on the fridge.", "zh": "我们把你的作品展示在冰箱上。"}, {"en": "Art is about having fun, not about being perfect.", "zh": "画画是为了开心，不是为了完美。"}],
+    "A2": [{"en": "Let's try a new art technique today — how about watercolor painting?", "zh": "今天我们试试新的绘画技法——水彩画怎么样？"}, {"en": "I love how you mixed these colors. How did you make this shade?", "zh": "我喜欢你调的颜色，这个色调怎么调出来的？"}, {"en": "Let's make a scrapbook of all your best artwork from this year.", "zh": "我们做一本剪贴簿，收录今年你最好的作品。"}, {"en": "Art is a wonderful way to express feelings that are hard to put into words.", "zh": "画画是表达那些难以用语言描述的情感的绝妙方式。"}, {"en": "Would you like to take an art class? I think you have real talent.", "zh": "想报个美术班吗？我觉得你真有天赋。"}, {"en": "Let's go to the art museum this weekend for inspiration.", "zh": "这周末去美术馆找找灵感吧。"}, {"en": "There's no right or wrong in art — just what comes from your heart.", "zh": "艺术里没有对错——只有发自内心的东西。"}, {"en": "Can you teach me how to draw that? You're better at it than I am!", "zh": "你能教我怎么画吗？你比我画得好！"}, {"en": "Let's make handmade gifts for the family this year instead of buying them.", "zh": "今年我们做手工礼物送家人吧，不买了。"}, {"en": "Your creativity always amazes me. Never stop creating!", "zh": "你的创意总是让我惊喜，永远别停止创作！"}],
+    "B1": [{"en": "Creative expression is one of the most fulfilling things a person can do — it feeds the soul.", "zh": "创意表达是一个人能做的最充实的事之一——它滋养灵魂。"}, {"en": "I've noticed your art style evolving over the years. It's fascinating to watch your journey.", "zh": "我发现这些年你的画风在演变，看着你的旅程真令人着迷。"}, {"en": "Art isn't just about the final product — the process of creating is where the real magic happens.", "zh": "艺术不只是最终作品——创作过程才是真正的魔法所在。"}, {"en": "Let's set up a proper art corner for you at home, with good lighting and all your supplies.", "zh": "我们在家给你布置一个像样的美术角吧，有好灯光和所有工具。"}, {"en": "The discipline of practicing art regularly is just as valuable as the creativity itself.", "zh": "定期练习艺术的纪律性和创意本身一样宝贵。"}, {"en": "Don't let anyone tell you that art isn't a 'real' skill. Creativity drives innovation in every field.", "zh": "别让任何人告诉你艺术不是「真正」的技能。创意驱动着每个领域的创新。"}, {"en": "I'm so glad you have art as an outlet. Everyone needs something that lets them disconnect and create.", "zh": "真高兴你有艺术这个出口。每个人都需要能让自己抽离并创造的东西。"}, {"en": "Your handmade card meant more to grandma than any store-bought gift ever could.", "zh": "你亲手做的卡片对奶奶来说，比任何商店买的礼物都珍贵。"}],
+  },
+  "运动": {
+    keywords: ["游泳", "运动", "跑步", "打球", "踢球", "篮球", "足球", "跳绳", "瑜伽", "健身", "锻炼", "比赛"],
+    "Pre-A1": [{"en": "Let's exercise!", "zh": "我们运动吧！"}, {"en": "Kick the ball!", "zh": "踢球！"}, {"en": "Jump, jump, jump!", "zh": "跳跳跳！"}, {"en": "Catch it!", "zh": "接住！"}, {"en": "Run fast!", "zh": "快跑！"}, {"en": "Splash in the water!", "zh": "在水里拍水花！"}, {"en": "Good kick!", "zh": "踢得好！"}, {"en": "One, two, three, jump!", "zh": "一、二、三、跳！"}, {"en": "You're so strong!", "zh": "你真强壮！"}, {"en": "Time to rest.", "zh": "该休息了。"}],
+    "A1": [{"en": "Let's go to the pool today! Do you have your swimsuit?", "zh": "今天去游泳池吧！你带泳衣了吗？"}, {"en": "Kick your legs in the water. Good job!", "zh": "在水里踢腿，真棒！"}, {"en": "Let's play catch with the ball. Ready? Here it comes!", "zh": "我们玩接球吧，准备好了吗？来了！"}, {"en": "Can you jump rope ten times without stopping?", "zh": "你能不停跳十下绳吗？"}, {"en": "Don't forget to stretch before we run.", "zh": "跑步前别忘了拉伸。"}, {"en": "You're getting faster every day! Keep practicing!", "zh": "你每天都跑得更快！继续练习！"}, {"en": "Let's race to that tree. On your mark, get set, go!", "zh": "我们比赛跑到那棵树，各就位，预备，跑！"}, {"en": "Drink some water. It's important to stay hydrated.", "zh": "喝点水，保持水分很重要。"}, {"en": "I'm so proud of you for trying so hard!", "zh": "你这么努力，我太骄傲了！"}, {"en": "Winning isn't everything. Having fun is what matters.", "zh": "赢不是一切，开心最重要。"}],
+    "A2": [{"en": "Let's make exercise a regular part of our routine. How about three times a week?", "zh": "我们把运动变成日常吧，一周三次怎么样？"}, {"en": "You've improved so much at swimming! Remember when you were afraid of the water?", "zh": "你游泳进步太大了！还记得你以前怕水的时候吗？"}, {"en": "Sports teach us about teamwork, discipline, and handling both wins and losses.", "zh": "运动教会我们团队合作、自律，以及如何面对输赢。"}, {"en": "Let's warm up properly before we start — we don't want any injuries.", "zh": "开始前好好热身——我们可不想受伤。"}, {"en": "Try your best, and whatever the result, I'll be proud of you.", "zh": "尽力就好，不管结果怎样，我都为你骄傲。"}, {"en": "Would you like to join a sports team? It's a great way to make friends.", "zh": "想加入一个运动队吗？这是交朋友的好方式。"}, {"en": "Let's go for a bike ride along the river this weekend.", "zh": "这周末我们沿着河边骑自行车吧。"}, {"en": "Being active isn't just good for your body — it's great for your mind too.", "zh": "保持活跃不仅对身体好——对心理也特别好。"}, {"en": "I love watching you play. You have such great sportsmanship!", "zh": "我喜欢看你运动，你的体育精神真好！"}, {"en": "Let's try a new sport together this season. How about badminton?", "zh": "这个季节我们一起尝试一项新运动吧，羽毛球怎么样？"}],
+    "B1": [{"en": "Regular physical activity is one of the best investments you can make in your long-term health.", "zh": "规律的体育锻炼是你能为长期健康做的最好的投资之一。"}, {"en": "The discipline you learn through sports — showing up, practicing, persevering — applies to everything in life.", "zh": "运动中学会的纪律——坚持到场、练习、不放弃——适用于生活中的一切。"}, {"en": "I've noticed you've become much more resilient since you started playing sports regularly.", "zh": "我发现自从你规律运动后，变得更加坚韧了。"}, {"en": "Competition is healthy, but comparison is not. Focus on beating your own personal best.", "zh": "竞争是健康的，但攀比不是。专注于超越自己的最佳成绩。"}, {"en": "Let's find a physical activity you genuinely enjoy — exercise shouldn't feel like punishment.", "zh": "我们找到你真正喜欢的运动方式——锻炼不应该感觉像惩罚。"}, {"en": "Your body is capable of amazing things. Treat it with respect and it will serve you well.", "zh": "你的身体能做了不起的事。善待它，它也会好好服务你。"}, {"en": "Some of the most important life lessons I learned were on the sports field.", "zh": "我人生中一些最重要的课，是在运动场上学到的。"}, {"en": "Let's sign up for that charity run together — it's a great way to stay fit and give back.", "zh": "我们一起报名那个慈善跑吧——既能健身又能回馈社会。"}],
+  },
+  "音乐": {
+    keywords: ["唱歌", "音乐", "跳舞", "乐器", "钢琴", "吉他", "歌", "音乐会", "节奏", "旋律"],
+    "Pre-A1": [{"en": "Let's sing a song!", "zh": "我们唱首歌吧！"}, {"en": "Clap your hands!", "zh": "拍拍手！"}, {"en": "Dance with me!", "zh": "跟我跳舞！"}, {"en": "La la la!", "zh": "��啦啦！"}, {"en": "What a beautiful voice!", "zh": "多好听的声音！"}, {"en": "Sing it again!", "zh": "再唱一遍！"}, {"en": "Twirl around!", "zh": "转圈圈！"}, {"en": "Tap your feet!", "zh": "跺跺脚！"}, {"en": "Music time!", "zh": "音乐时间！"}, {"en": "I love this song!", "zh": "我喜欢这首歌！"}],
+    "A1": [{"en": "What song do you want to sing today?", "zh": "今天你想唱什么歌？"}, {"en": "Let's sing the ABC song together!", "zh": "我们一起唱字母歌吧！"}, {"en": "Can you clap to the beat? One, two, three, four!", "zh": "你能跟着节奏拍手吗？一二三四！"}, {"en": "You have such a lovely singing voice!", "zh": "你的歌声真好听！"}, {"en": "Let's make up a silly song about our day.", "zh": "我们编一首关于今天的搞笑歌吧。"}, {"en": "Do you want to learn to play the piano?", "zh": "你想学弹钢琴吗？"}, {"en": "Music makes everything more fun, doesn't it?", "zh": "音乐让一切都更有趣，对吧？"}, {"en": "Let's have a dance party in the living room!", "zh": "我们在客厅开个舞会吧！"}, {"en": "Can you sing it a little louder? I want to hear you!", "zh": "能唱大声一点吗？我想听你唱！"}, {"en": "Listening to music together is one of my favorite things.", "zh": "一起听音乐是我最喜欢的事之一。"}],
+    "A2": [{"en": "Let's create a playlist of our favorite songs for our road trip.", "zh": "我们为自驾游创建一个最爱歌曲播放列表吧。"}, {"en": "Learning an instrument takes patience, but it's so rewarding.", "zh": "学乐器需要耐心，但回报很大。"}, {"en": "I can already hear how much you've improved since you started practicing.", "zh": "我已经能听出你从开始练习以来的进步了。"}, {"en": "Music is a universal language — it connects people across cultures.", "zh": "音乐是通用的语言——它连接着不同文化的人。"}, {"en": "Let's go to a live concert sometime. There's nothing like experiencing music in person.", "zh": "改天我们去看现场音乐会吧，亲身感受音乐无与伦比。"}, {"en": "What kind of music do you like best these days?", "zh": "你最近最喜欢哪种音乐？"}, {"en": "Practicing every day, even for just 15 minutes, makes a huge difference.", "zh": "每天练习，哪怕只有 15 分钟，也会有巨大的不同。"}, {"en": "Don't worry about hitting the wrong note — that's how we learn.", "zh": "别担心弹错音——我们就是这样学习的。"}, {"en": "Let's learn an English song together. It's a great way to practice!", "zh": "我们一起学首英文歌吧，这是很好的练习方式！"}, {"en": "I love how music can change our mood instantly.", "zh": "我喜欢音乐能瞬间改变我们心情的能力。"}],
+    "B1": [{"en": "Music education has been shown to enhance cognitive development in so many ways.", "zh": "音乐教育被证明能在很多方面促进认知发展。"}, {"en": "Whether or not you pursue music professionally, the skills you gain are invaluable.", "zh": "不管你是否走专业音乐道路，你获得的技能都是无价的。"}, {"en": "I've noticed you have a natural sense of rhythm. Have you considered joining a band or choir?", "zh": "我发现你节奏感很自然，考虑过加入乐队或合唱团吗？"}, {"en": "The discipline of daily practice builds character in ways that go far beyond music.", "zh": "每日练习的纪律性，培养的品格远超音乐本身。"}, {"en": "Let's explore different genres together — classical, jazz, folk, rock. There's a whole world of sound out there.", "zh": "我们一起探索不同类型吧——古典、爵士、民谣、摇滚。声音的世界广阔无垠。"}, {"en": "Creating music, even simple melodies, is one of the most human things we can do.", "zh": "创作音乐，哪怕是简单的旋律，是我们能做的最有人性的事之一。"}, {"en": "I'm not pushing you to be a musician — I'm encouraging you to discover the joy of making music.", "zh": "我不是逼你当音乐家——我是在鼓励你发现做音乐的乐趣。"}, {"en": "Some of my best memories are of singing together in the car. Let's make more of those.", "zh": "我最美好的一些回忆是在车里一起唱歌，我们多创造一些吧。"}],
+  },
+  "读书": {
+    keywords: ["读书", "看书", "绘本", "故事书", "阅读", "图书馆", "书店", "翻页", "故事", "朗读"],
+    "Pre-A1": [{"en": "Let's read a book!", "zh": "我们读书吧！"}, {"en": "Turn the page.", "zh": "翻一页。"}, {"en": "What's this?", "zh": "这是什么？"}, {"en": "Point to the cat.", "zh": "指一指小猫。"}, {"en": "Read it again!", "zh": "再读一遍！"}, {"en": "The end! All done!", "zh": "结束啦！读完啦！"}, {"en": "I love this story.", "zh": "我喜欢这个故事。"}, {"en": "Where is the dog?", "zh": "小狗在哪里？"}, {"en": "One more book?", "zh": "再读一本？"}, {"en": "Good listening!", "zh": "听得好认真！"}],
+    "A1": [{"en": "Which book do you want to read tonight?", "zh": "今晚你想读哪本书？"}, {"en": "Can you find the letter 'B' on this page?", "zh": "你能在这页找到字母 B 吗？"}, {"en": "Let's read this story together. You can read the words you know.", "zh": "我们一起读这个故事吧，你认识的字你来读。"}, {"en": "What do you think will happen next?", "zh": "你觉得接下来会发生什么？"}, {"en": "Look at the pictures. What do you see?", "zh": "看看图片，你看到了什么？"}, {"en": "Reading every day helps you learn so many new words!", "zh": "每天读书能帮你学到好多新单词！"}, {"en": "Let's go to the library and pick out some new books.", "zh": "我们去图书馆挑一些新书吧。"}, {"en": "You're reading so well! I'm very proud of you.", "zh": "你读得太好了！我很骄傲。"}, {"en": "Books can take us on adventures without leaving home.", "zh": "书能带我们去冒险，不用离开家。"}, {"en": "Let's read one more chapter before bed.", "zh": "睡前我们再读一章。"}],
+    "A2": [{"en": "Let's take turns reading — you read one page, I'll read the next.", "zh": "我们轮流读吧——你读一页，我读下一页。"}, {"en": "This book was one of my favorites when I was your age.", "zh": "这本书是我像你这么大时的最爱之一。"}, {"en": "Reading fiction helps us understand other people's feelings and perspectives.", "zh": "读小说能帮我们理解别人的感受和视角。"}, {"en": "Let's start a family book club! We can read the same book and discuss it.", "zh": "我们开个家庭读书会吧！读同一本书然后讨论。"}, {"en": "I've noticed you can read much longer books now. Your reading stamina has really grown!", "zh": "我发现你现在能读更长的书了，阅读耐力增长了好多！"}, {"en": "Don't worry about words you don't know — try to guess from the context.", "zh": "别担心不认识的字——试着从上下文猜。"}, {"en": "Let's keep a reading journal to write down our favorite parts.", "zh": "我们写个阅读日记，记下最喜欢的片段。"}, {"en": "The library is like a treasure chest — so many stories waiting to be discovered!", "zh": "图书馆就像宝箱——有好多故事等着被发现！"}, {"en": "Would you rather read a mystery, an adventure, or a funny story?", "zh": "你想读悬疑的、冒险的，还是搞笑的故事？"}, {"en": "Reading before bed is the perfect way to wind down after a busy day.", "zh": "睡前读书是忙碌一天后最好的放松方式。"}],
+    "B1": [{"en": "A love of reading is one of the greatest gifts I can give you — it opens doors to infinite worlds.", "zh": "培养阅读的爱好是我能给你最好的礼物之一——它打开了通往无限世界的大门。"}, {"en": "Reading widely across different genres helps you develop critical thinking and empathy.", "zh": "广泛阅读不同类型有助于培养批判性思维和同理心。"}, {"en": "Let's set a reading goal for this month. How many books do you think you can finish?", "zh": "我们定个这个月的阅读目标吧，你觉得能读完几本书？"}, {"en": "The difference between a good reader and a great one is simply the habit of reading regularly.", "zh": "好读者和优秀读者之间的区别，仅仅是定期阅读的习惯。"}, {"en": "Don't feel pressured to finish every book you start. Life's too short for books you don't enjoy.", "zh": "别觉得每本打开的书都必须读完，人生太短，不值得在不喜欢的书上花时间。"}, {"en": "Books have been my teachers, my escape, and my comfort throughout my life. I hope they become yours too.", "zh": "书在我一生中一直是我的老师、我的避风港、我的慰藉，希望它们也能成为你的。"}, {"en": "Let's discuss what you're reading — I'm genuinely curious about your thoughts and interpretations.", "zh": "我们聊聊你在读的书吧——我真的很好奇你的想法和解读。"}, {"en": "In a world of short videos and quick content, the ability to focus on a book is a superpower.", "zh": "在短视频和快内容的时代，能专注读一本书是一种超能力。"}],
+  },
+};
+
+const FOLLOW_UPS = {
+  "超市": {
+    "question": "去超市主要想做什么呢？",
+    "options": [
+      "买菜和日用品",
+      "带孩子逛零食区",
+      "去熟食区买吃的",
+      "随便逛逛"
+    ]
+  },
+  "公园": {
+    "question": "去公园主要玩什么？",
+    "options": [
+      "散步和看风景",
+      "玩游乐设施（滑梯/秋千）",
+      "骑车或运动",
+      "野餐"
+    ]
+  },
+  "吃饭": {
+    "question": "在什么场景下吃饭呢？",
+    "options": [
+      "在家做饭吃",
+      "去餐厅吃饭",
+      "吃早餐/午餐",
+      "准备做饭的过程中"
+    ]
+  },
+  "洗澡": {
+    "question": "具体是什么洗漱场景？",
+    "options": [
+      "洗澡时间",
+      "刷牙洗脸",
+      "早上洗漱出门",
+      "睡前洗漱流程"
+    ]
+  },
+  "睡觉": {
+    "question": "是睡前还是起床的时候？",
+    "options": [
+      "睡前准备和哄睡",
+      "早上起床",
+      "午睡时间",
+      "睡前讲故事"
+    ]
+  },
+  "上学": {
+    "question": "具体是哪个时间点？",
+    "options": [
+      "早上出门上学",
+      "放学接回家路上",
+      "聊学校发生的事情",
+      "做作业的时候"
+    ]
+  },
+  "动物园": {
+    "question": "具体去什么地方玩？",
+    "options": [
+      "动物园看动物",
+      "海洋馆/水族馆",
+      "游乐场",
+      "博物馆/科技馆"
+    ]
+  },
+  "家务": {
+    "question": "主要做什么家务？",
+    "options": [
+      "整理玩具和房间",
+      "擦桌子扫地",
+      "洗衣晾衣",
+      "一起做饭"
+    ]
+  },
+  "看病": {
+    "question": "是哪种情况？",
+    "options": [
+      "常规体检",
+      "看牙医",
+      "感冒发烧看病",
+      "打疫苗"
+    ]
+  },
+  "坐车": {
+    "question": "坐什么交通工具呢？",
+    "options": [
+      "自己开车出门",
+      "坐公交或地铁",
+      "打车/网约车",
+      "长途旅行"
+    ]
+  },
+  "生日": {
+    "question": "生日派对是怎么安排的？",
+    "options": [
+      "在家办小型派对",
+      "邀请朋友来庆祝",
+      "切蛋糕唱生日歌",
+      "准备生日礼物"
+    ]
+  },
+  "看电视": {
+    "question": "是关于屏幕时间的哪个方面？",
+    "options": [
+      "看动画片/节目",
+      "限制屏幕时间",
+      "一起看电影",
+      "用平板/手机"
+    ]
+  },
+  "爷爷奶奶": {
+    "question": "去爷爷奶奶家主要做什么？",
+    "options": [
+      "探望聊天",
+      "一起吃饭",
+      "帮忙做家务",
+      "让老人看看孩子"
+    ]
+  },
+  "画画": {
+    "question": "主要做什么创意活动？",
+    "options": [
+      "画画涂色",
+      "做手工/剪纸",
+      "玩橡皮泥",
+      "做贺卡或礼物"
+    ]
+  },
+  "运动": {
+    "question": "做什么运动呢？",
+    "options": [
+      "游泳",
+      "跑步/散步",
+      "打球（篮球/足球等）",
+      "跳绳/健身"
+    ]
+  },
+  "音乐": {
+    "question": "和音乐相关的什么活动？",
+    "options": [
+      "一起唱歌",
+      "跳舞",
+      "练乐器",
+      "听音乐"
+    ]
+  },
+  "读书": {
+    "question": "读什么类型的书？",
+    "options": [
+      "读绘本/故事书",
+      "去图书馆/书店",
+      "睡前阅读",
+      "一起朗读"
+    ]
+  },
+  "日常": {
+    "question": "能再具体说说是什么场景吗？",
+    "options": [
+      "在家里的活动",
+      "出门在外",
+      "跟学习相关的",
+      "生活起居"
+    ]
+  }
+};
+
+
+
+
+const SENTENCE_TAGS = {
+  "Brush your teeth.": "刷牙",
+  "Don't forget to brush your teeth — top and bottom!": "刷牙",
+  "Let's count to ten while we brush!": "刷牙",
+  "Don't forget to floss after brushing.": "刷牙",
+  "Remember to brush for two full minutes — I'll set the timer.": "刷牙",
+  "The dentist said you've been brushing really well. Keep it up!": "刷牙",
+  "Don't use too much toothpaste — a pea-sized amount is enough.": "刷牙",
+  "Remember that good dental habits now will save you a lot of trouble later.": "刷牙",
+  "Time for a bath!": "洗澡",
+  "Let's get ready for a bath. Can you get your towel?": "洗澡",
+  "The water is just right. Not too hot, not too cold.": "洗澡",
+  "Wash behind your ears, please.": "洗澡",
+  "Can you wash yourself? You're getting so big!": "洗澡",
+  "Time to get out — your fingers are getting wrinkly!": "洗澡",
+  "So many bubbles!": "洗澡",
+  "Don't splash water!": "洗澡",
+  "Let's run the bath and add some bubble bath — which scent do you want?": "洗澡",
+  "You've been doing such a good job washing your hair by yourself lately.": "洗澡",
+  "Make sure to rinse all the soap off, or your skin might get itchy.": "洗澡",
+  "After your bath, we can read a story before bed.": "洗澡",
+  "A warm bath before bed helps you sleep better.": "洗澡",
+  "Let's make sure the water temperature is comfortable before you get in.": "洗澡",
+  "A consistent bedtime routine, including a warm bath, can really improve your sleep quality.": "洗澡",
+  "You're old enough now to manage your own bath time — but I'm always here if you need help.": "洗澡",
+  "Wash your face.": "洗脸",
+  "Clean and fresh!": "通用",
+  "Rinse your hands.": "通用",
+  "Dry off now.": "通用",
+  "All clean! Good job!": "通用",
+  "Put on your pajamas.": "通用",
+  "Let's put on your favorite pajamas.": "通用",
+  "Good job keeping clean and healthy!": "通用",
+  "I used to help you with everything, and now you can do most of it alone!": "通用",
+  "Let's make sure the bathroom floor isn't too wet when you're done.": "通用",
+  "Taking care of your personal hygiene is a habit that will serve you well for life.": "通用",
+  "I've noticed you've been taking initiative with your bedtime routine — that shows real maturity.": "通用",
+  "Let's try to keep our bathroom tidy — everything has its place.": "通用",
+  "I'm proud of how responsible you've become with your daily routines.": "通用",
+  "Time for school!": "出门",
+  "Put on your shoes.": "出门",
+  "Bye bye! Have fun!": "出门",
+  "See you later!": "放学",
+  "How was school?": "放学",
+  "Show me your bag.": "放学",
+  "Good job at school!": "学校",
+  "Let's go home now.": "放学",
+  "Did you play today?": "学校",
+  "Give me a hug!": "放学",
+  "Are you ready for school? Let's check your bag.": "出门",
+  "Don't forget your lunch box and water bottle.": "出门",
+  "What did you learn at school today?": "放学",
+  "Did you have fun with your friends?": "学校",
+  "Let me see what you made at school today!": "放学",
+  "It's okay if you made a mistake — that's how we learn.": "学校",
+  "Do you have any homework today?": "放学",
+  "I'm so proud of you for trying your best.": "学校",
+  "Let's get your school uniform ready for tomorrow.": "睡前",
+  "Who did you sit with at lunch today?": "学校",
+  "Let's pack your school bag together — what do you need for tomorrow?": "睡前",
+  "Tell me about the most interesting thing you learned today.": "放学",
+  "If you're having trouble with a subject, we can work on it together after dinner.": "放学",
+  "How are you getting along with your classmates these days?": "学校",
+  "Let's make a study plan so you don't feel overwhelmed.": "作业",
+  "I remember my school days — some things were hard, but I got through them.": "学校",
+  "You don't have to be perfect. Just do your best and keep improving.": "学校",
+  "Let's read the school newsletter together — see what's happening this week.": "学校",
+  "I noticed you've been working really hard on your math. That's fantastic!": "作业",
+  "Would you like to invite a friend over this weekend?": "学校",
+  "How do you feel about your workload this semester? Is it manageable?": "作业",
+  "Education isn't just about grades — it's about discovering what you're passionate about.": "学校",
+  "If you ever feel overwhelmed, please talk to me. We'll figure it out together.": "学校",
+  "I'm not asking you to be the best — I'm asking you to be your best.": "学校",
+  "The habits you build now, like time management, will benefit you for the rest of your life.": "作业",
+  "Let's set some goals for this term — both academic and personal.": "学校",
+  "Your teachers mentioned you've been participating more in class — that takes courage!": "学校",
+  "Remember, everyone learns at their own pace. Don't compare yourself to others too much.": "学校",
+  "Time for bed!": "睡前",
+  "Good night, sweet dreams.": "睡前",
+  "Close your eyes.": "睡前",
+  "I love you. Sleep tight.": "睡前",
+  "Night night!": "睡前",
+  "Let's read a story.": "睡前",
+  "Turn off the light.": "睡前",
+  "Snuggle in.": "睡前",
+  "Wake up, sleepyhead!": "起床",
+  "Good morning, sunshine!": "起床",
+  "It's bedtime. Let's put on your pajamas.": "睡前",
+  "Which story do you want to read tonight?": "睡前",
+  "Don't forget to say good night to everyone.": "睡前",
+  "Let me tuck you in nice and warm.": "睡前",
+  "Did you have a good dream last night?": "起床",
+  "If you can't sleep, just close your eyes and relax.": "睡前",
+  "The sooner you sleep, the sooner morning comes!": "睡前",
+  "Can you turn off the light by yourself?": "睡前",
+  "Good night! I'll see you in the morning.": "睡前",
+  "Let's talk about the best thing that happened today.": "睡前",
+  "Let's do our bedtime routine: brush teeth, wash face, then story time.": "睡前",
+  "What was your favorite part of today? Let's share before we sleep.": "睡前",
+  "I used to read to you every night when you were little — now you can read to me!": "睡前",
+  "If you have a nightmare, you can always come to my room.": "睡前",
+  "Let's pick out your clothes for tomorrow before bed.": "睡前",
+  "A good night's sleep helps your brain grow and remember what you learned.": "睡前",
+  "Let's open the window just a little for fresh air.": "睡前",
+  "No more screens now — the blue light makes it harder to fall asleep.": "睡前",
+  "I'm so lucky to be your parent. Sleep well, my dear.": "睡前",
+  "Tomorrow is a new day full of possibilities. Let's rest up for it!": "睡前",
+  "Establishing a consistent sleep schedule is one of the best things you can do for your health.": "睡前",
+  "Let's put our phones away at least 30 minutes before bed — it really makes a difference.": "睡前",
+  "I've noticed you've been staying up late lately. Is something on your mind?": "睡前",
+  "Reading a physical book before bed is so much better than scrolling on a screen.": "睡前",
+  "Let's make a deal: you get enough sleep during the week, and we'll do something fun on the weekend.": "睡前",
+  "Quality sleep affects your mood, focus, and even your immune system.": "睡前",
+  "You're growing so fast — your body needs plenty of rest to support all that growth.": "睡前",
+  "How about we try a short meditation together before bed? It helps calm the mind.": "睡前",
+  "Time to eat!": "在家吃",
+  "Wash your hands.": "在家吃",
+  "Yummy! So good!": "在家吃",
+  "Open your mouth.": "在家吃",
+  "More rice?": "在家吃",
+  "All done!": "在家吃",
+  "Don't play with food.": "在家吃",
+  "Good eating!": "在家吃",
+  "Sit down, please.": "在家吃",
+  "Drink your water.": "在家吃",
+  "What do you want for breakfast?": "在家吃",
+  "Can you set the table, please?": "在家吃",
+  "Eat your vegetables, they're good for you.": "在家吃",
+  "Is it yummy? Do you like it?": "在家吃",
+  "Let me help you with that.": "在家吃",
+  "Don't talk with your mouth full.": "在家吃",
+  "Would you like some more soup?": "在家吃",
+  "Let's clean up together after dinner.": "在家吃",
+  "You can have dessert after you finish your meal.": "在家吃",
+  "Try a little bit of everything.": "在家吃",
+  "Can you help me wash the vegetables?": "做饭",
+  "This dish is a family recipe — my mom taught me how to make it.": "做饭",
+  "We're having guests tonight, so let's prepare something special.": "做饭",
+  "Which do you prefer, noodles or rice for lunch?": "在家吃",
+  "I think we added a bit too much salt. What do you think?": "做饭",
+  "Let's try making dumplings together this weekend.": "做饭",
+  "Remember to chew slowly — it's better for your stomach.": "在家吃",
+  "Can you pass me the soy sauce, please?": "在家吃",
+  "You've been eating so well lately. I'm really proud of you!": "在家吃",
+  "Let's try a new recipe together — you can be the chef today!": "做饭",
+  "I'm thinking of trying a new recipe tonight — want to be my sous-chef?": "做饭",
+  "It's important to have a balanced diet, but a treat once in a while is fine too.": "在家吃",
+  "This restaurant has great reviews — apparently their signature dish is worth trying.": "餐厅",
+  "Cooking together is one of my favorite ways to spend time with you.": "做饭",
+  "Let's plan the menu for this week together so we can shop more efficiently.": "做饭",
+  "I've noticed you're becoming quite adventurous with food — that's a great quality!": "在家吃",
+  "Would you rather eat out tonight or cook something together at home?": "餐厅",
+  "The secret to this dish is patience — good food takes time.": "做饭",
+  "Let's be mindful of food waste — only take what you can finish.": "在家吃",
+  "I remember when you were little, you used to make such a mess eating spaghetti!": "在家吃"
+};
+
+// ==================== BUILT-IN ENGINE LOGIC ====================
+
+function matchScene(userInput) {
+    const lower = userInput.toLowerCase();
+    let bestMatch = null;
+    let bestScore = 0;
+    
+    for (const [sceneName, sceneData] of Object.entries(SCENE_TEMPLATES)) {
+        let score = 0;
+        for (const kw of sceneData.keywords) {
+            if (lower.includes(kw)) score++;
+        }
+        if (score > bestScore) {
+            bestScore = score;
+            bestMatch = sceneName;
+        }
+    }
+    return bestMatch && bestScore > 0 ? bestMatch : '日常';
+}
+
+function generateFollowUpLocal(sceneInput) {
+    const sceneName = matchScene(sceneInput);
+    return FOLLOW_UPS[sceneName] || FOLLOW_UPS['日常'];
+}
+
+function extractSubTag(answer) {
+    // Map follow-up answers to sentence sub-tags
+    const map = {
+        '刷牙洗脸': '刷牙', '早上洗漱出门': '刷牙', '睡前洗漱流程': '刷牙',
+        '洗澡时间': '洗澡',
+        '早上起床': '起床', '睡前准备和哄睡': '睡前', '午睡时间': '睡前', '睡前讲故事': '睡前',
+        '在家做饭吃': '在家吃', '准备做饭的过程中': '做饭', '去餐厅吃饭': '餐厅', '吃早餐/午餐': '在家吃',
+        '早上出门上学': '出门', '放学接回家路上': '放学', '聊学校发生的事情': '学校', '做作业的时候': '作业',
+        '自己开车出门': '坐车', '坐公交或地铁': '坐车', '打车/网约车': '坐车', '长途旅行': '坐车',
+    };
+    // Try exact match first
+    if (map[answer]) return map[answer];
+    // Try partial match
+    for (const [key, val] of Object.entries(map)) {
+        if (answer.includes(key) || key.includes(answer)) return val;
+    }
+    return null;
+}
+
+function generateSentencesLocal(sceneInput, level, historySentences, subTag) {
+    const sceneName = matchScene(sceneInput);
+    const sceneData = SCENE_TEMPLATES[sceneName];
+    if (!sceneData) return [];
+    
+    let pool = sceneData[level] || sceneData['A2'] || [];
+    
+    // Filter by sub-tag if provided (e.g. "刷牙" -> only brushing sentences)
+    if (subTag) {
+        const filtered = pool.filter(s => {
+            const tag = SENTENCE_TAGS[s.en];
+            return !tag || tag === subTag || tag === '通用';
+        });
+        if (filtered.length >= 3) {
+            pool = filtered; // Only filter if we have enough sentences
+        }
+    }
+    
+    const available = [...pool];
+    
+    // Shuffle
+    for (let i = available.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [available[i], available[j]] = [available[j], available[i]];
+    }
+    
+    const result = [];
+    const usedEnglish = new Set();
+    
+    if (historySentences && historySentences.length > 0) {
+        const historySet = new Set(historySentences);
+        const reviewCandidates = pool.filter(s => historySet.has(s.en));
+        for (let i = reviewCandidates.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [reviewCandidates[i], reviewCandidates[j]] = [reviewCandidates[j], reviewCandidates[i]];
+        }
+        for (const s of reviewCandidates.slice(0, 2)) {
+            if (!usedEnglish.has(s.en)) {
+                result.push({ english: s.en, chinese: s.zh, isReview: true });
+                usedEnglish.add(s.en);
+            }
+        }
+        const newCandidates = available.filter(s => !usedEnglish.has(s.en) && !historySet.has(s.en));
+        for (const s of newCandidates.slice(0, 3)) {
+            if (!usedEnglish.has(s.en)) {
+                result.push({ english: s.en, chinese: s.zh, isReview: false });
+                usedEnglish.add(s.en);
+            }
+        }
+    }
+    
+    for (const s of available) {
+        if (result.length >= 5) break;
+        if (!usedEnglish.has(s.en)) {
+            result.push({ english: s.en, chinese: s.zh, isReview: false });
+            usedEnglish.add(s.en);
+        }
+    }
+    
+    const final = result.slice(0, 5);
+    for (let i = final.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [final[i], final[j]] = [final[j], final[i]];
+    }
+    
+    return final;
+}
+
+// ==================== APP STATE ====================
+
+    const STATE_KEY = 'speak_english_together_state';
+
+    const defaultState = {
+        children: [],
+        activeChildId: null,
+        history: [],
+        settings: { showMode: 'A' }
+    };
+
+    function loadState() {
+        try {
+            const raw = localStorage.getItem(STATE_KEY);
+            return raw ? JSON.parse(raw) : { ...defaultState, children: [], history: [] };
+        } catch (e) {
+            return { ...defaultState, children: [], history: [] };
+        }
+    }
+
+    function saveState(state) {
+        localStorage.setItem(STATE_KEY, JSON.stringify(state));
+    }
+
+    let appState = loadState();
+
+    // ==================== HELPERS ====================
+    function $(id) { return document.getElementById(id); }
+    function generateId() { return Date.now().toString(36) + Math.random().toString(36).substr(2, 6); }
+
+    function showToast(msg) {
+        const existing = document.querySelector('.toast');
+        if (existing) existing.remove();
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.textContent = msg;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2000);
+    }
+
+    function showLoading(text = '正在生成...') {
+        $('loadingText').textContent = text;
+        $('loadingOverlay').classList.remove('hidden');
+    }
+
+    function hideLoading() {
+        $('loadingOverlay').classList.add('hidden');
+    }
+
+    function getActiveChild() {
+        if (!appState.activeChildId || !appState.children.length) return null;
+        return appState.children.find(c => c.id === appState.activeChildId) || null;
+    }
+
+    function getChildHistory(childId) {
+        return appState.history.filter(h => h.childId === childId);
+    }
+
+    // ==================== NAVIGATION ====================
+    function switchView(viewName) {
+        document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+        const targetView = $(viewName);
+        if (targetView) targetView.classList.add('active');
+
+        // Update bottom nav
+        document.querySelectorAll('.nav-item').forEach(n => {
+            n.classList.toggle('active', n.dataset.view === viewName);
+        });
+
+        // Show/hide bottom nav
+        const showNav = ['viewChat', 'viewHistory', 'viewSettings'].includes(viewName);
+        $('bottomNav').style.display = showNav ? 'flex' : 'none';
+
+        // Refresh views
+        if (viewName === 'viewChat') refreshChatView();
+        if (viewName === 'viewHistory') refreshHistoryView();
+        if (viewName === 'viewSettings') refreshSettingsView();
+
+        updateHeader();
+    }
+
+    function updateHeader() {
+        const child = getActiveChild();
+        if (child) {
+            $('currentChildLabel').textContent = `${child.name} · ${getLevelLabel(child.level)}`;
+        } else {
+            $('currentChildLabel').textContent = '设置孩子信息';
+        }
+    }
+
+    function getLevelLabel(level) {
+        const labels = { 'Pre-A1': '🌱 启蒙', 'A1': '🌿 入门', 'A2': '🌳 基础', 'B1': '🌲 进阶' };
+        return labels[level] || level;
+    }
+
+    // ==================== ONBOARDING ====================
+    function initOnboarding() {
+        // Level card selection
+        $('levelCards').addEventListener('click', (e) => {
+            const card = e.target.closest('.level-card');
+            if (!card) return;
+            document.querySelectorAll('.level-card').forEach(c => c.classList.remove('selected'));
+            card.classList.add('selected');
+        });
+
+        $('btnStart').addEventListener('click', () => {
+            const name = $('inputChildName').value.trim();
+            const age = parseInt($('inputChildAge').value) || 6;
+            const selectedLevel = document.querySelector('.level-card.selected');
+            const level = selectedLevel ? selectedLevel.dataset.level : 'A2';
+            const customNote = $('inputCustomNote').value.trim();
+
+            if (!name) {
+                showToast('请先输入孩子的小名 😊');
+                return;
+            }
+
+            const child = {
+                id: generateId(),
+                name,
+                age,
+                level,
+                customNote,
+                createdAt: new Date().toISOString()
+            };
+
+            appState.children.push(child);
+            appState.activeChildId = child.id;
+            saveState(appState);
+            updateHeader();
+            switchView('viewChat');
+            showToast(`欢迎，${name}！开始说英语吧 🎉`);
+        });
+    }
+
+    // ==================== CHILD SWITCHER ====================
+    function renderChildSwitcher(containerId) {
+        const container = $(containerId);
+        if (!container) return;
+        container.innerHTML = appState.children.map(c => {
+            const active = c.id === appState.activeChildId;
+            const emoji = getLevelEmoji(c.level);
+            return `<span class="child-chip${active ? ' active' : ''}" data-child-id="${c.id}">${emoji} ${c.name}</span>`;
+        }).join('');
+
+        container.querySelectorAll('.child-chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                appState.activeChildId = chip.dataset.childId;
+                saveState(appState);
+                updateHeader();
+                switchView('viewChat');
+            });
+        });
+    }
+
+    function getLevelEmoji(level) {
+        const map = { 'Pre-A1': '🌱', 'A1': '🌿', 'A2': '🌳', 'B1': '🌲' };
+        return map[level] || '📖';
+    }
+
+    // ==================== CHAT VIEW ====================
+    let chatState = {
+        stage: 'init', // init | asking | confirming | done
+        scene: '',
+        followUpQuestion: '',
+        followUpOptions: [],
+        answers: []
+    };
+
+    function refreshChatView() {
+        renderChildSwitcher('childSwitcher');
+        const child = getActiveChild();
+        if (!child) {
+            switchView('viewOnboarding');
+            return;
+        }
+
+        const container = $('chatContainer');
+        if (chatState.stage === 'init') {
+            container.innerHTML = `
+                <div class="chat-bubble ai">
+                    <div class="bubble-label">Speak English Together</div>
+                    嗨！今天想和 ${child.name} 在什么场景下说英语呢？<br><br>
+                    比如：去超市 🛒、逛公园 🌳、吃饭 🍽️、洗澡 🛁、上学路上 🚌...
+                </div>
+            `;
+        }
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function addChatBubble(type, text) {
+        const container = $('chatContainer');
+        const div = document.createElement('div');
+        div.className = `chat-bubble ${type}`;
+        if (type === 'ai') {
+            div.innerHTML = `<div class="bubble-label">Speak English Together</div>${text}`;
+        } else {
+            div.textContent = text;
+        }
+        container.appendChild(div);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function addQuickReplies(options) {
+        const container = $('chatContainer');
+        const div = document.createElement('div');
+        div.className = 'quick-replies';
+        options.forEach(opt => {
+            const btn = document.createElement('span');
+            btn.className = 'quick-reply';
+            btn.textContent = opt;
+            btn.addEventListener('click', () => handleQuickReply(opt));
+            div.appendChild(btn);
+        });
+        container.appendChild(div);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function handleQuickReply(answer) {
+        addChatBubble('user', answer);
+        chatState.answers.push(answer);
+        processChatFlow();
+    }
+
+    function processChatFlow() {
+        const child = getActiveChild();
+        if (!child) return;
+
+        if (chatState.stage === 'init') {
+            // User just input initial scene
+            chatState.stage = 'asking';
+            const scene = chatState.answers[0];
+            chatState.scene = scene;
+            // Generate follow-up questions
+            generateFollowUp(scene, child);
+        } else if (chatState.stage === 'asking') {
+            // User answered follow-up, now generate sentences
+            chatState.stage = 'done';
+            generateSentences();
+        }
+    }
+
+    function generateFollowUp(scene, child) {
+        try {
+            const data = generateFollowUpLocal(scene);
+            chatState.followUpQuestion = data.question;
+            chatState.followUpOptions = data.options;
+
+            addChatBubble('ai', data.question);
+            addQuickReplies(data.options);
+        } catch (e) {
+            // Fallback: skip follow-up, go straight to generation
+            chatState.stage = 'done';
+            generateSentences();
+        }
+    }
+
+    function generateSentences() {
+        const child = getActiveChild();
+        if (!child) return;
+
+        const sceneDescription = chatState.answers.join(' → ');
+        showLoading('正在为你生成口语...');
+
+        try {
+            // Get history for review
+            const childHistory = getChildHistory(child.id);
+            const masteredSentences = new Set();
+            const allLearnedSentences = [];
+
+            childHistory.forEach(h => {
+                h.sentences.forEach(s => {
+                    allLearnedSentences.push(s.english);
+                    if (s.mastered) masteredSentences.add(s.english);
+                });
+            });
+
+            // Filter out mastered sentences for review candidates
+            const notMastered = allLearnedSentences.filter(s => !masteredSentences.has(s));
+
+            // Extract sub-tag from the follow-up answer
+            const lastAnswer = chatState.answers[chatState.answers.length - 1] || '';
+            const subTag = extractSubTag(lastAnswer);
+
+            const sentences = generateSentencesLocal(
+                sceneDescription,
+                child.level || 'A2',
+                notMastered || [],
+                subTag
+            );
+
+            // Save to history
+            const historyEntry = {
+                id: generateId(),
+                childId: child.id,
+                scene: sceneDescription,
+                date: new Date().toISOString(),
+                sentences: sentences.map(s => ({ ...s, mastered: false }))
+            };
+
+            appState.history.push(historyEntry);
+            saveState(appState);
+
+            // Show result
+            showResultView(sceneDescription, historyEntry);
+            hideLoading();
+        } catch (e) {
+            hideLoading();
+            showToast('生成失败，请重试 😢');
+            console.error('Generation error:', e);
+            chatState = { stage: 'init', scene: '', followUpQuestion: '', followUpOptions: [], answers: [] };
+            refreshChatView();
+        }
+    }
+
+    // ==================== RESULT VIEW ====================
+    let currentResultEntry = null;
+    let currentCardIndex = 0;
+    let currentShowMode = 'A';
+
+    function showResultView(scene, historyEntry) {
+        currentResultEntry = historyEntry;
+        currentCardIndex = 0;
+        currentShowMode = appState.settings.showMode || 'A';
+
+        $('resultScene').textContent = `📍 ${scene}`;
+        $('resultMeta').textContent = `${historyEntry.sentences.length} 句 · ${getLevelLabel(getActiveChild()?.level || 'A2')}`;
+
+        updateModeButtons();
+        renderScriptList(historyEntry);
+        renderCards(historyEntry);
+        updateModeDisplay();
+
+        switchView('viewResult');
+        chatState = { stage: 'init', scene: '', followUpQuestion: '', followUpOptions: [], answers: [] };
+        $('chatInput').value = '';
+        $('chatContainer').innerHTML = '';
+    }
+
+    function updateModeButtons() {
+        $('modeBtnA').classList.toggle('active', currentShowMode === 'A');
+        $('modeBtnC').classList.toggle('active', currentShowMode === 'C');
+    }
+
+    function updateModeDisplay() {
+        $('modeAContainer').style.display = currentShowMode === 'A' ? 'flex' : 'none';
+        $('modeCContainer').style.display = currentShowMode === 'C' ? 'block' : 'none';
+    }
+
+    function renderScriptList(entry) {
+        const container = $('modeAContainer');
+        container.innerHTML = entry.sentences.map((s, i) => `
+            <div class="script-item ${s.isReview ? 'review' : ''}">
+                <div class="script-english">${s.english}</div>
+                <div class="script-chinese">${s.chinese}</div>
+                <div class="script-tags">
+                    ${s.isReview ? '<span class="tag tag-review">🔄 复习</span>' : '<span class="tag tag-new">🟢 新句</span>'}
+                    <button class="btn-mastered ${s.mastered ? 'mastered' : ''}" data-sentence-index="${i}" onclick="toggleMastered('${entry.id}', ${i})">
+                        ${s.mastered ? '✅ 已掌握' : '✓ 标记掌握'}
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function renderCards(entry) {
+        const stack = $('cardStack');
+        stack.innerHTML = entry.sentences.map((s, i) => `
+            <div class="sentence-card" style="z-index:${entry.sentences.length - i}; ${i !== 0 ? 'display:none;' : ''}" data-index="${i}">
+                <div class="card-front">
+                    <div class="card-english">${s.english}</div>
+                    <div class="card-hint">👆 点击翻看中文</div>
+                </div>
+                <div class="card-back">
+                    <div class="card-chinese">${s.chinese}</div>
+                    <div style="margin-top:8px;">${s.isReview ? '🔄 复习' : '🟢 新句'}</div>
+                    <div class="card-hint">👆 点击翻回英文</div>
+                </div>
+            </div>
+        `).join('');
+
+        // Card click to flip
+        stack.querySelectorAll('.sentence-card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flipped');
+            });
+        });
+
+        updateCardDisplay();
+    }
+
+    function updateCardDisplay() {
+        const cards = $('cardStack').querySelectorAll('.sentence-card');
+        cards.forEach((card, i) => {
+            card.style.display = i === currentCardIndex ? 'flex' : 'none';
+            card.classList.remove('flipped');
+        });
+        $('cardCounter').textContent = `${currentCardIndex + 1}/${cards.length}`;
+        $('cardPrev').disabled = currentCardIndex === 0;
+        $('cardNext').disabled = currentCardIndex === cards.length - 1;
+    }
+
+    function toggleMastered(entryId, sentenceIndex) {
+        const entry = appState.history.find(h => h.id === entryId);
+        if (!entry) return;
+        entry.sentences[sentenceIndex].mastered = !entry.sentences[sentenceIndex].mastered;
+        saveState(appState);
+
+        if (currentResultEntry && currentResultEntry.id === entryId) {
+            currentResultEntry = entry;
+            renderScriptList(entry);
+        }
+
+        showToast(entry.sentences[sentenceIndex].mastered ? '已标记为掌握 ✅' : '已取消掌握标记');
+    }
+
+    // ==================== HISTORY VIEW ====================
+    function refreshHistoryView() {
+        renderChildSwitcher('childSwitcherHistory');
+        const child = getActiveChild();
+        if (!child) {
+            $('historyList').innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">请先设置孩子信息</div></div>';
+            return;
+        }
+
+        const childHistory = getChildHistory(child.id);
+        if (childHistory.length === 0) {
+            $('historyList').innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">还没有学习记录<br>去主页开始第一个场景吧！</div></div>';
+            return;
+        }
+
+        // Group by date
+        const groups = {};
+        childHistory.sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(h => {
+            const dateKey = new Date(h.date).toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short' });
+            if (!groups[dateKey]) groups[dateKey] = [];
+            groups[dateKey].push(h);
+        });
+
+        $('historyList').innerHTML = Object.entries(groups).map(([date, items]) => `
+            <div class="history-group">
+                <div class="history-date">${date}</div>
+                ${items.map(h => `
+                    <div class="history-item" data-id="${h.id}">
+                        <div class="history-item-header">
+                            <span class="history-scene">📍 ${h.scene}</span>
+                            <span class="history-count">${h.sentences.length} 句</span>
+                        </div>
+                        <div class="history-item-detail">
+                            ${h.sentences.map((s, i) => `
+                                <div class="script-item ${s.isReview ? 'review' : ''}" style="margin-bottom:8px;">
+                                    <div class="script-english" style="font-size:15px;">${s.english}</div>
+                                    <div class="script-chinese">${s.chinese}</div>
+                                    <div class="script-tags">
+                                        ${s.isReview ? '<span class="tag tag-review">🔄 复习</span>' : '<span class="tag tag-new">🟢 新句</span>'}
+                                        <button class="btn-mastered ${s.mastered ? 'mastered' : ''}" onclick="event.stopPropagation(); toggleMastered('${h.id}', ${i})">
+                                            ${s.mastered ? '✅ 已掌握' : '✓ 标记掌握'}
+                                        </button>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `).join('');
+
+        // Toggle expand
+        $('historyList').querySelectorAll('.history-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('expanded');
+            });
+        });
+    }
+
+    // ==================== SETTINGS VIEW ====================
+    function refreshSettingsView() {
+        const container = $('settingsChildrenList');
+        container.innerHTML = appState.children.map(c => `
+            <div class="settings-row" data-child-id="${c.id}" style="display:flex;align-items:center;gap:10px;">
+                <span style="font-size:24px;">${getLevelEmoji(c.level)}</span>
+                <div style="flex:1;">
+                    <div style="font-weight:600;">${c.name}</div>
+                    <div style="font-size:12px;color:var(--text-secondary);">${c.age}岁 · ${getLevelLabel(c.level)}</div>
+                </div>
+                <button class="btn-icon" style="background:var(--danger);color:white;width:28px;height:28px;font-size:14px;" data-action="delete" data-child-id="${c.id}">✕</button>
+            </div>
+        `).join('');
+
+        // Child selection
+        container.querySelectorAll('.settings-row').forEach(row => {
+            row.addEventListener('click', (e) => {
+                if (e.target.closest('[data-action="delete"]')) {
+                    e.stopPropagation();
+                    const childId = e.target.closest('[data-child-id]').dataset.childId;
+                    deleteChild(childId);
+                    return;
+                }
+                const childId = row.dataset.childId;
+                if (childId) {
+                    appState.activeChildId = childId;
+                    saveState(appState);
+                    updateHeader();
+                    refreshSettingsView();
+                    showToast(`已切换到 ${appState.children.find(c => c.id === childId)?.name}`);
+                }
+            });
+        });
+    }
+
+    function deleteChild(childId) {
+        if (!confirm('确定要删除这个孩子的所有数据吗？此操作不可恢复。')) return;
+        appState.children = appState.children.filter(c => c.id !== childId);
+        appState.history = appState.history.filter(h => h.childId !== childId);
+        if (appState.activeChildId === childId) {
+            appState.activeChildId = appState.children[0]?.id || null;
+        }
+        saveState(appState);
+        updateHeader();
+        refreshSettingsView();
+        if (!appState.children.length) switchView('viewOnboarding');
+    }
+
+    // ==================== EVENT LISTENERS ====================
+    function initEventListeners() {
+        // Bottom nav
+        $('bottomNav').addEventListener('click', (e) => {
+            const navItem = e.target.closest('.nav-item');
+            if (!navItem) return;
+            switchView(navItem.dataset.view);
+        });
+
+        // Header settings
+        $('btnSettings').addEventListener('click', () => switchView('viewSettings'));
+
+        // Chat send
+        $('btnSend').addEventListener('click', sendChatMessage);
+        $('chatInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendChatMessage();
+            }
+        });
+
+        // Mode switch
+        $('modeBtnA').addEventListener('click', () => {
+            currentShowMode = 'A';
+            appState.settings.showMode = 'A';
+            saveState(appState);
+            updateModeButtons();
+            updateModeDisplay();
+        });
+
+        $('modeBtnC').addEventListener('click', () => {
+            currentShowMode = 'C';
+            appState.settings.showMode = 'C';
+            saveState(appState);
+            updateModeButtons();
+            updateModeDisplay();
+        });
+
+        // Card navigation
+        $('cardPrev').addEventListener('click', () => {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                updateCardDisplay();
+            }
+        });
+
+        $('cardNext').addEventListener('click', () => {
+            const cards = $('cardStack').querySelectorAll('.sentence-card');
+            if (currentCardIndex < cards.length - 1) {
+                currentCardIndex++;
+                updateCardDisplay();
+            }
+        });
+
+        // Result actions
+        $('btnNewScene').addEventListener('click', () => {
+            chatState = { stage: 'init', scene: '', followUpQuestion: '', followUpOptions: [], answers: [] };
+            switchView('viewChat');
+        });
+
+        $('btnViewHistory').addEventListener('click', () => switchView('viewHistory'));
+
+        // Settings
+        $('btnAddChild').addEventListener('click', () => {
+            switchView('viewOnboarding');
+        });
+
+        $('btnClearHistory').addEventListener('click', () => {
+            const child = getActiveChild();
+            if (!child) return;
+            if (!confirm(`确定要清除 ${child.name} 的所有历史记录吗？`)) return;
+            appState.history = appState.history.filter(h => h.childId !== child.id);
+            saveState(appState);
+            refreshSettingsView();
+            showToast('历史记录已清除');
+        });
+
+        $('btnResetAll').addEventListener('click', () => {
+            if (!confirm('确定要重置所有数据吗？此操作不可恢复！')) return;
+            appState = { ...defaultState, children: [], history: [] };
+            saveState(appState);
+            switchView('viewOnboarding');
+            showToast('所有数据已重置');
+        });
+
+        // Swipe for cards
+        let touchStartX = 0;
+        $('cardStack').addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        $('cardStack').addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    // Swipe left = next
+                    const cards = $('cardStack').querySelectorAll('.sentence-card');
+                    if (currentCardIndex < cards.length - 1) {
+                        currentCardIndex++;
+                        updateCardDisplay();
+                    }
+                } else {
+                    // Swipe right = prev
+                    if (currentCardIndex > 0) {
+                        currentCardIndex--;
+                        updateCardDisplay();
+                    }
+                }
+            }
+        });
+    }
+
+    function sendChatMessage() {
+        const input = $('chatInput');
+        const text = input.value.trim();
+        if (!text) return;
+
+        addChatBubble('user', text);
+        chatState.answers.push(text);
+        input.value = '';
+
+        if (chatState.stage === 'init') {
+            chatState.scene = text;
+            chatState.stage = 'asking';
+            const child = getActiveChild();
+            generateFollowUp(text, child);
+        } else if (chatState.stage === 'asking') {
+            chatState.stage = 'done';
+            generateSentences();
+        }
+    }
+
+    // ==================== INIT ====================
+    function init() {
+        initEventListeners();
+        initOnboarding();
+
+        // Check if we have children
+        if (appState.children.length > 0 && appState.activeChildId) {
+            updateHeader();
+            switchView('viewChat');
+        } else {
+            switchView('viewOnboarding');
+        }
+
+        // Register Service Worker with force update
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(reg => {
+                reg.update();
+            }).catch(() => {});
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

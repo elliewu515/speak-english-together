@@ -1,0 +1,22 @@
+{
+    "name": "Speak English Together",
+    "short_name": "Speak ENG Together",
+    "description": "亲子英语口语助手 - 在日常生活中和孩子一起说英语",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#F8FAFC",
+    "theme_color": "#4F46E5",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
