@@ -1391,7 +1391,42 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
     }
 
     function saveState(state) {
-        localStorage.setItem(STATE_KEY, JSON.stringify(state));
+        try {
+            // Limit history size to prevent localStorage quota issues
+            const MAX_HISTORY = 100;
+            if (state.history && state.history.length > MAX_HISTORY) {
+                state.history = state.history.slice(-MAX_HISTORY);
+            }
+            localStorage.setItem(STATE_KEY, JSON.stringify(state));
+        } catch (e) {
+            if (e.name === 'QuotaExceededError' || (e.message && e.message.includes('exceeded the quota'))) {
+                // Progressive cleanup: halve history until it fits
+                while (state.history && state.history.length > 1) {
+                    state.history = state.history.slice(Math.ceil(state.history.length / 2));
+                    try {
+                        localStorage.setItem(STATE_KEY, JSON.stringify(state));
+                        return;
+                    } catch (innerErr) {
+                        // still too big, continue trimming
+                    }
+                }
+                // Last resort: keep children, drop all history
+                state.history = [];
+                try {
+                    localStorage.setItem(STATE_KEY, JSON.stringify(state));
+                } catch (finalErr) {
+                    // Cannot even save with empty history — clear and start over
+                    localStorage.clear();
+                    try {
+                        localStorage.setItem(STATE_KEY, JSON.stringify({ children: state.children || [], activeChildId: state.activeChildId, history: [], settings: state.settings || { showMode: 'A' } }));
+                    } catch (_) {
+                        // truly hopeless, silently fail
+                    }
+                }
+                return; // Never throw — let the caller continue
+            }
+            // Unknown error, silently fail to avoid breaking the flow
+        }
     }
 
     let appState = loadState();
@@ -1543,7 +1578,7 @@ const extractSubTag = (answer) => null; // No longer needed with new structure
 
             appState.children.push(child);
             appState.activeChildId = child.id;
-            saveState(appState);
+            try { saveState(appState); } catch (_) { /* save failed but don't block navigation */ }
             resetAvatarUI();
             $('inputChildName').value = '';
             $('inputChildAge').value = '6';
