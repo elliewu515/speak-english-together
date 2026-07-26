@@ -1,4 +1,4 @@
-const CACHE_NAME = 'speak-english-together-v2';
+const CACHE_NAME = 'speak-english-together-v4';
 
 self.addEventListener('install', (event) => {
     // Skip waiting to activate immediately
