@@ -608,20 +608,38 @@ function renderBandsInfo(){
       <div class="d">${(b.des||b.d).replace('\n','<br>')}</div></div>`).join('');
 }
 document.getElementById('childAge').addEventListener('input',renderBandsInfo);
+/* 把上传的头像缩到 ≤240px 的 JPEG，避免 base64 过大撑爆 localStorage（手机照片尤为致命） */
+function fileToAvatar(file, cb){
+  const reader=new FileReader();
+  reader.onload=ev=>{
+    const img=new Image();
+    img.onload=()=>{
+      const max=240; let w=img.width, h=img.height;
+      if(w>h && w>max){ h=Math.round(h*max/w); w=max; }
+      else if(h>max){ w=Math.round(w*max/h); h=max; }
+      const c=document.createElement('canvas'); c.width=w; c.height=h;
+      c.getContext('2d').drawImage(img,0,0,w,h);
+      try{ cb(c.toDataURL('image/jpeg',0.82)); }catch(e){ cb(ev.target.result); }
+    };
+    img.onerror=()=>cb(ev.target.result);
+    img.src=ev.target.result;
+  };
+  reader.readAsDataURL(file);
+}
 document.getElementById('avatarInput').addEventListener('change',e=>{
   const f=e.target.files[0]; if(!f) return;
-  const r=new FileReader(); r.onload=ev=>{
-    state.child.avatar=ev.target.result;
-    document.getElementById('avatarBox').innerHTML=`<img src="${ev.target.result}">`;
+  fileToAvatar(f, dataUrl=>{
+    state.child.avatar=dataUrl;
+    document.getElementById('avatarBox').innerHTML=`<img src="${dataUrl}">`;
     try{ localStorage.setItem(CHILD_KEY, JSON.stringify(state.child)); }catch(e){}
-  }; r.readAsDataURL(f);
+  });
 });
 function startApp(){
   const name=document.getElementById('childName').value.trim();
   const age=parseInt(document.getElementById('childAge').value)||6;
   if(!name){ alert('请先输入孩子的小名 😊'); return; }
   state.child={name,age,avatar:state.child.avatar};
-  localStorage.setItem(CHILD_KEY, JSON.stringify(state.child));
+  try{ localStorage.setItem(CHILD_KEY, JSON.stringify(state.child)); }catch(e){}
   state.band=bandForAge(age);
   document.getElementById('chatTitle').textContent=`想和${name}聊点什么？`;
   startChat(); showView('viewChat');
