@@ -47,31 +47,36 @@ const SCENE_LIBRARY = {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "blanket",
             "zh": "被子",
             "pos": "noun",
-            "icon": "🛌"
+            "icon": "🛌",
+            "img": "assets/vocab/blanket.svg"
           },
           {
             "en": "pillow",
             "zh": "枕头",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/pillow.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "shoes",
             "zh": "鞋",
             "pos": "noun",
-            "icon": "👟"
+            "icon": "👟",
+            "img": "assets/vocab/shoes.svg"
           }
         ]
       },
@@ -169,61 +174,71 @@ const SCENE_LIBRARY = {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "blanket",
             "zh": "被子",
             "pos": "noun",
-            "icon": "🛌"
+            "icon": "🛌",
+            "img": "assets/vocab/blanket.svg"
           },
           {
             "en": "pillow",
             "zh": "枕头",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/pillow.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "shoes",
             "zh": "鞋",
             "pos": "noun",
-            "icon": "👟"
+            "icon": "👟",
+            "img": "assets/vocab/shoes.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "wake",
             "zh": "醒",
             "pos": "verb",
-            "icon": "⏰"
+            "icon": "⏰",
+            "img": "assets/vocab/wake.svg"
           },
           {
             "en": "get up",
             "zh": "起床",
             "pos": "verb",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/get_up.svg"
           },
           {
             "en": "open",
             "zh": "打开",
             "pos": "verb",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/open.svg"
           }
         ]
       },
@@ -277,31 +292,36 @@ const SCENE_LIBRARY = {
             "en": "curtain",
             "zh": "窗帘",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/curtain.svg"
           },
           {
             "en": "sunshine",
             "zh": "阳光",
             "pos": "noun",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/sunshine.svg"
           },
           {
             "en": "tidy",
             "zh": "整洁的",
             "pos": "adj",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/tidy.svg"
           },
           {
             "en": "dream",
             "zh": "梦",
             "pos": "noun",
-            "icon": "💭"
+            "icon": "💭",
+            "img": "assets/vocab/dream.svg"
           },
           {
             "en": "stretch",
             "zh": "伸展",
             "pos": "verb",
-            "icon": "🧘"
+            "icon": "🧘",
+            "img": "assets/vocab/stretch.svg"
           }
         ]
       }
@@ -347,31 +367,36 @@ const SCENE_LIBRARY = {
             "en": "toothbrush",
             "zh": "牙刷",
             "pos": "noun",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/toothbrush.svg"
           },
           {
             "en": "teeth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/teeth.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "foam",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/foam.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           }
         ]
       },
@@ -472,61 +497,71 @@ const SCENE_LIBRARY = {
             "en": "toothbrush",
             "zh": "牙刷",
             "pos": "noun",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/toothbrush.svg"
           },
           {
             "en": "teeth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/teeth.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "foam",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/foam.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "white",
             "zh": "白的",
             "pos": "adj",
-            "icon": "🤍"
+            "icon": "🤍",
+            "img": "assets/vocab/white.svg"
           },
           {
             "en": "brush",
             "zh": "刷",
             "pos": "verb",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/brush.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "rinse",
             "zh": "漱",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/rinse.svg"
           }
         ]
       },
@@ -578,31 +613,36 @@ const SCENE_LIBRARY = {
             "en": "tongue",
             "zh": "舌头",
             "pos": "noun",
-            "icon": "👅"
+            "icon": "👅",
+            "img": "assets/vocab/tongue.svg"
           },
           {
             "en": "cavity",
             "zh": "蛀牙",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/cavity.svg"
           },
           {
             "en": "floss",
             "zh": "牙线",
             "pos": "noun",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/floss.svg"
           },
           {
             "en": "healthy",
             "zh": "健康的",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       }
@@ -656,31 +696,36 @@ const SCENE_LIBRARY = {
             "en": "bath",
             "zh": "澡盆/洗澡",
             "pos": "noun",
-            "icon": "🛁"
+            "icon": "🛁",
+            "img": "assets/vocab/bath.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "bubbles",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubbles.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "soap",
             "zh": "肥皂",
             "pos": "noun",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/soap.svg"
           }
         ]
       },
@@ -788,61 +833,71 @@ const SCENE_LIBRARY = {
             "en": "bath",
             "zh": "洗澡",
             "pos": "noun",
-            "icon": "🛁"
+            "icon": "🛁",
+            "img": "assets/vocab/bath.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "bubbles",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubbles.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "soap",
             "zh": "肥皂",
             "pos": "noun",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/soap.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "warm",
             "zh": "温的",
             "pos": "adj",
-            "icon": "🌡️"
+            "icon": "🌡️",
+            "img": "assets/vocab/warm.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "splash",
             "zh": "泼水",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/splash.svg"
           },
           {
             "en": "rinse",
             "zh": "冲",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/rinse.svg"
           }
         ]
       },
@@ -908,31 +963,36 @@ const SCENE_LIBRARY = {
             "en": "bubble bath",
             "zh": "泡泡浴",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubble_bath.svg"
           },
           {
             "en": "sponge",
             "zh": "海绵",
             "pos": "noun",
-            "icon": "🧽"
+            "icon": "🧽",
+            "img": "assets/vocab/sponge.svg"
           },
           {
             "en": "temperature",
             "zh": "温度",
             "pos": "noun",
-            "icon": "🌡️"
+            "icon": "🌡️",
+            "img": "assets/vocab/temperature.svg"
           },
           {
             "en": "relax",
             "zh": "放松的",
             "pos": "adj",
-            "icon": "😌"
+            "icon": "😌",
+            "img": "assets/vocab/relax.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       }
@@ -975,19 +1035,22 @@ const SCENE_LIBRARY = {
             "en": "bus",
             "zh": "公交车",
             "pos": "noun",
-            "icon": "🚌"
+            "icon": "🚌",
+            "img": "assets/vocab/bus.svg"
           },
           {
             "en": "train",
             "zh": "地铁",
             "pos": "noun",
-            "icon": "🚇"
+            "icon": "🚇",
+            "img": "assets/vocab/train.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           }
         ]
       },
@@ -1053,31 +1116,36 @@ const SCENE_LIBRARY = {
             "en": "bus",
             "zh": "公交车",
             "pos": "noun",
-            "icon": "🚌"
+            "icon": "🚌",
+            "img": "assets/vocab/bus.svg"
           },
           {
             "en": "train",
             "zh": "地铁",
             "pos": "noun",
-            "icon": "🚇"
+            "icon": "🚇",
+            "img": "assets/vocab/train.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "stop",
             "zh": "站",
             "pos": "noun",
-            "icon": "🛑"
+            "icon": "🛑",
+            "img": "assets/vocab/stop.svg"
           },
           {
             "en": "line",
             "zh": "线",
             "pos": "noun",
-            "icon": "〰️"
+            "icon": "〰️",
+            "img": "assets/vocab/line.svg"
           }
         ]
       },
@@ -1128,31 +1196,36 @@ const SCENE_LIBRARY = {
             "en": "platform",
             "zh": "站台",
             "pos": "noun",
-            "icon": "🚉"
+            "icon": "🚉",
+            "img": "assets/vocab/platform.svg"
           },
           {
             "en": "gate",
             "zh": "闸机",
             "pos": "noun",
-            "icon": "🚧"
+            "icon": "🚧",
+            "img": "assets/vocab/gate.svg"
           },
           {
             "en": "crowded",
             "zh": "挤的",
             "pos": "adj",
-            "icon": "👥"
+            "icon": "👥",
+            "img": "assets/vocab/crowded.svg"
           },
           {
             "en": "tap",
             "zh": "刷(卡)",
             "pos": "verb",
-            "icon": "💳"
+            "icon": "💳",
+            "img": "assets/vocab/tap.svg"
           },
           {
             "en": "museum",
             "zh": "博物馆",
             "pos": "noun",
-            "icon": "🏛️"
+            "icon": "🏛️",
+            "img": "assets/vocab/museum.svg"
           }
         ]
       }
@@ -1198,25 +1271,29 @@ const SCENE_LIBRARY = {
             "en": "face",
             "zh": "脸",
             "pos": "noun",
-            "icon": "😐"
+            "icon": "😐",
+            "img": "assets/vocab/face.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "soap",
             "zh": "肥皂",
             "pos": "noun",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/soap.svg"
           }
         ]
       },
@@ -1310,49 +1387,57 @@ const SCENE_LIBRARY = {
             "en": "face",
             "zh": "脸",
             "pos": "noun",
-            "icon": "😐"
+            "icon": "😐",
+            "img": "assets/vocab/face.svg"
           },
           {
             "en": "cheek",
             "zh": "脸颊",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/cheek.svg"
           },
           {
             "en": "ear",
             "zh": "耳朵",
             "pos": "noun",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/ear.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "wet",
             "zh": "湿的",
             "pos": "adj",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/wet.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       },
@@ -1420,31 +1505,36 @@ const SCENE_LIBRARY = {
             "en": "refreshing",
             "zh": "清爽的",
             "pos": "adj",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/refreshing.svg"
           },
           {
             "en": "gently",
             "zh": "轻轻地",
             "pos": "adj",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/gently.svg"
           },
           {
             "en": "neck",
             "zh": "脖子",
             "pos": "noun",
-            "icon": "🧣"
+            "icon": "🧣",
+            "img": "assets/vocab/neck.svg"
           },
           {
             "en": "bacteria",
             "zh": "细菌",
             "pos": "noun",
-            "icon": "🦠"
+            "icon": "🦠",
+            "img": "assets/vocab/bacteria.svg"
           },
           {
             "en": "properly",
             "zh": "正确地",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/properly.svg"
           }
         ]
       }
@@ -1497,31 +1587,36 @@ const SCENE_LIBRARY = {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "pants",
             "zh": "裤子",
             "pos": "noun",
-            "icon": "👖"
+            "icon": "👖",
+            "img": "assets/vocab/pants.svg"
           },
           {
             "en": "socks",
             "zh": "袜子",
             "pos": "noun",
-            "icon": "🧦"
+            "icon": "🧦",
+            "img": "assets/vocab/socks.svg"
           },
           {
             "en": "shoes",
             "zh": "鞋子",
             "pos": "noun",
-            "icon": "👟"
+            "icon": "👟",
+            "img": "assets/vocab/shoes.svg"
           },
           {
             "en": "jacket",
             "zh": "外套",
             "pos": "noun",
-            "icon": "🧥"
+            "icon": "🧥",
+            "img": "assets/vocab/jacket.svg"
           }
         ]
       },
@@ -1615,55 +1710,64 @@ const SCENE_LIBRARY = {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "pants",
             "zh": "裤子",
             "pos": "noun",
-            "icon": "👖"
+            "icon": "👖",
+            "img": "assets/vocab/pants.svg"
           },
           {
             "en": "socks",
             "zh": "袜子",
             "pos": "noun",
-            "icon": "🧦"
+            "icon": "🧦",
+            "img": "assets/vocab/socks.svg"
           },
           {
             "en": "shoes",
             "zh": "鞋子",
             "pos": "noun",
-            "icon": "👟"
+            "icon": "👟",
+            "img": "assets/vocab/shoes.svg"
           },
           {
             "en": "jacket",
             "zh": "外套",
             "pos": "noun",
-            "icon": "🧥"
+            "icon": "🧥",
+            "img": "assets/vocab/jacket.svg"
           },
           {
             "en": "zipper",
             "zh": "拉链",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/zipper.svg"
           },
           {
             "en": "button",
             "zh": "扣子",
             "pos": "noun",
-            "icon": "🔘"
+            "icon": "🔘",
+            "img": "assets/vocab/button.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           }
         ]
       },
@@ -1713,31 +1817,36 @@ const SCENE_LIBRARY = {
             "en": "neatly",
             "zh": "整齐地",
             "pos": "adj",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/neatly.svg"
           },
           {
             "en": "chilly",
             "zh": "凉飕飕的",
             "pos": "adj",
-            "icon": "🥶"
+            "icon": "🥶",
+            "img": "assets/vocab/chilly.svg"
           },
           {
             "en": "weather",
             "zh": "天气",
             "pos": "noun",
-            "icon": "🌤️"
+            "icon": "🌤️",
+            "img": "assets/vocab/weather.svg"
           },
           {
             "en": "decide",
             "zh": "决定",
             "pos": "verb",
-            "icon": "🤔"
+            "icon": "🤔",
+            "img": "assets/vocab/decide.svg"
           },
           {
             "en": "tuck",
             "zh": "塞",
             "pos": "verb",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/tuck.svg"
           }
         ]
       }
@@ -1783,31 +1892,36 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "soap",
             "zh": "肥皂",
             "pos": "noun",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/soap.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       },
@@ -1901,49 +2015,57 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "soap",
             "zh": "肥皂",
             "pos": "noun",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/soap.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "bubbles",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubbles.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "rub",
             "zh": "搓",
             "pos": "verb",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/rub.svg"
           },
           {
             "en": "rinse",
             "zh": "冲",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/rinse.svg"
           }
         ]
       },
@@ -2003,31 +2125,36 @@ const SCENE_LIBRARY = {
             "en": "germ",
             "zh": "细菌",
             "pos": "noun",
-            "icon": "🦠"
+            "icon": "🦠",
+            "img": "assets/vocab/germ.svg"
           },
           {
             "en": "finger",
             "zh": "手指",
             "pos": "noun",
-            "icon": "👆"
+            "icon": "👆",
+            "img": "assets/vocab/finger.svg"
           },
           {
             "en": "habit",
             "zh": "习惯",
             "pos": "noun",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/habit.svg"
           },
           {
             "en": "regularly",
             "zh": "经常地",
             "pos": "adj",
-            "icon": "🔁"
+            "icon": "🔁",
+            "img": "assets/vocab/regularly.svg"
           },
           {
             "en": "healthy",
             "zh": "健康的",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           }
         ]
       }
@@ -2078,25 +2205,29 @@ const SCENE_LIBRARY = {
             "en": "potty",
             "zh": "马桶/便盆",
             "pos": "noun",
-            "icon": "🚽"
+            "icon": "🚽",
+            "img": "assets/vocab/potty.svg"
           },
           {
             "en": "pee",
             "zh": "尿尿",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/pee.svg"
           },
           {
             "en": "flush",
             "zh": "冲水",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/flush.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/hand.svg"
           }
         ]
       },
@@ -2190,37 +2321,43 @@ const SCENE_LIBRARY = {
             "en": "toilet",
             "zh": "马桶",
             "pos": "noun",
-            "icon": "🚽"
+            "icon": "🚽",
+            "img": "assets/vocab/toilet.svg"
           },
           {
             "en": "pee",
             "zh": "尿尿",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/pee.svg"
           },
           {
             "en": "poo",
             "zh": "拉臭臭",
             "pos": "noun",
-            "icon": "💩"
+            "icon": "💩",
+            "img": "assets/vocab/poo.svg"
           },
           {
             "en": "flush",
             "zh": "冲水",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/flush.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "pants",
             "zh": "裤子",
             "pos": "noun",
-            "icon": "👖"
+            "icon": "👖",
+            "img": "assets/vocab/pants.svg"
           }
         ]
       },
@@ -2275,19 +2412,22 @@ const SCENE_LIBRARY = {
             "en": "independent",
             "zh": "独立的",
             "pos": "adj",
-            "icon": "🦸"
+            "icon": "🦸",
+            "img": "assets/vocab/independent.svg"
           },
           {
             "en": "routine",
             "zh": "流程",
             "pos": "noun",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/routine.svg"
           },
           {
             "en": "milestone",
             "zh": "里程碑",
             "pos": "noun",
-            "icon": "🎯"
+            "icon": "🎯",
+            "img": "assets/vocab/milestone.svg"
           }
         ]
       }
@@ -2343,31 +2483,36 @@ const SCENE_LIBRARY = {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "egg",
             "zh": "鸡蛋",
             "pos": "noun",
-            "icon": "🥚"
+            "icon": "🥚",
+            "img": "assets/vocab/egg.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃的",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           }
         ]
       },
@@ -2458,55 +2603,64 @@ const SCENE_LIBRARY = {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "egg",
             "zh": "鸡蛋",
             "pos": "noun",
-            "icon": "🥚"
+            "icon": "🥚",
+            "img": "assets/vocab/egg.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃的",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           },
           {
             "en": "hot",
             "zh": "烫的",
             "pos": "adj",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/hot.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍽️"
+            "icon": "🍽️",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -2578,55 +2732,64 @@ const SCENE_LIBRARY = {
             "en": "breakfast",
             "zh": "早餐",
             "pos": "noun",
-            "icon": "🍳"
+            "icon": "🍳",
+            "img": "assets/vocab/breakfast.svg"
           },
           {
             "en": "cereal",
             "zh": "麦片",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/cereal.svg"
           },
           {
             "en": "toast",
             "zh": "吐司",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/toast.svg"
           },
           {
             "en": "energy",
             "zh": "能量",
             "pos": "noun",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/energy.svg"
           },
           {
             "en": "fruit",
             "zh": "水果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/fruit.svg"
           },
           {
             "en": "healthy",
             "zh": "健康的",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "strong",
             "zh": "强壮的",
             "pos": "adj",
-            "icon": "🦾"
+            "icon": "🦾",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "chew",
             "zh": "嚼",
             "pos": "verb",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/chew.svg"
           },
           {
             "en": "enjoy",
             "zh": "享受",
             "pos": "verb",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/enjoy.svg"
           }
         ]
       }
@@ -2684,31 +2847,36 @@ const SCENE_LIBRARY = {
             "en": "rice",
             "zh": "米饭",
             "pos": "noun",
-            "icon": "🍚"
+            "icon": "🍚",
+            "img": "assets/vocab/rice.svg"
           },
           {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍽️"
+            "icon": "🍽️",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -2799,55 +2967,64 @@ const SCENE_LIBRARY = {
             "en": "rice",
             "zh": "米饭",
             "pos": "noun",
-            "icon": "🍚"
+            "icon": "🍚",
+            "img": "assets/vocab/rice.svg"
           },
           {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "vegetable",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥬"
+            "icon": "🥬",
+            "img": "assets/vocab/vegetable.svg"
           },
           {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "chopsticks",
             "zh": "筷子",
             "pos": "noun",
-            "icon": "🥢"
+            "icon": "🥢",
+            "img": "assets/vocab/chopsticks.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃的",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           },
           {
             "en": "hot",
             "zh": "烫的",
             "pos": "adj",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/hot.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍽️"
+            "icon": "🍽️",
+            "img": "assets/vocab/eat.svg"
           },
           {
             "en": "try",
             "zh": "尝",
             "pos": "verb",
-            "icon": "👅"
+            "icon": "👅",
+            "img": "assets/vocab/try.svg"
           }
         ]
       },
@@ -2913,43 +3090,50 @@ const SCENE_LIBRARY = {
             "en": "rice",
             "zh": "米饭",
             "pos": "noun",
-            "icon": "🍚"
+            "icon": "🍚",
+            "img": "assets/vocab/rice.svg"
           },
           {
             "en": "protein",
             "zh": "蛋白质",
             "pos": "noun",
-            "icon": "🥩"
+            "icon": "🥩",
+            "img": "assets/vocab/protein.svg"
           },
           {
             "en": "grain",
             "zh": "谷物",
             "pos": "noun",
-            "icon": "🌾"
+            "icon": "🌾",
+            "img": "assets/vocab/grain.svg"
           },
           {
             "en": "plate",
             "zh": "盘子",
             "pos": "noun",
-            "icon": "🍽️"
+            "icon": "🍽️",
+            "img": "assets/vocab/plate.svg"
           },
           {
             "en": "balanced",
             "zh": "均衡的",
             "pos": "adj",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/balanced.svg"
           },
           {
             "en": "properly",
             "zh": "正确地",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/properly.svg"
           },
           {
             "en": "appreciate",
             "zh": "珍惜",
             "pos": "verb",
-            "icon": "💝"
+            "icon": "💝",
+            "img": "assets/vocab/appreciate.svg"
           }
         ]
       }
@@ -3006,31 +3190,36 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "banana",
             "zh": "香蕉",
             "pos": "noun",
-            "icon": "🍌"
+            "icon": "🍌",
+            "img": "assets/vocab/banana.svg"
           },
           {
             "en": "cookie",
             "zh": "饼干",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/cookie.svg"
           },
           {
             "en": "fruit",
             "zh": "水果",
             "pos": "noun",
-            "icon": "🍇"
+            "icon": "🍇",
+            "img": "assets/vocab/fruit.svg"
           },
           {
             "en": "sweet",
             "zh": "甜的",
             "pos": "adj",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/sweet.svg"
           }
         ]
       },
@@ -3110,55 +3299,64 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "banana",
             "zh": "香蕉",
             "pos": "noun",
-            "icon": "🍌"
+            "icon": "🍌",
+            "img": "assets/vocab/banana.svg"
           },
           {
             "en": "cookie",
             "zh": "饼干",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/cookie.svg"
           },
           {
             "en": "fruit",
             "zh": "水果",
             "pos": "noun",
-            "icon": "🍇"
+            "icon": "🍇",
+            "img": "assets/vocab/fruit.svg"
           },
           {
             "en": "candy",
             "zh": "糖果",
             "pos": "noun",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/candy.svg"
           },
           {
             "en": "sweet",
             "zh": "甜的",
             "pos": "adj",
-            "icon": "🍯"
+            "icon": "🍯",
+            "img": "assets/vocab/sweet.svg"
           },
           {
             "en": "red",
             "zh": "红色的",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍽️"
+            "icon": "🍽️",
+            "img": "assets/vocab/eat.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           }
         ]
       },
@@ -3218,43 +3416,50 @@ const SCENE_LIBRARY = {
             "en": "snack",
             "zh": "零食",
             "pos": "noun",
-            "icon": "🍿"
+            "icon": "🍿",
+            "img": "assets/vocab/snack.svg"
           },
           {
             "en": "appetite",
             "zh": "胃口",
             "pos": "noun",
-            "icon": "🍽️"
+            "icon": "🍽️",
+            "img": "assets/vocab/appetite.svg"
           },
           {
             "en": "sugar",
             "zh": "糖",
             "pos": "noun",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/sugar.svg"
           },
           {
             "en": "choice",
             "zh": "选择",
             "pos": "noun",
-            "icon": "☑️"
+            "icon": "☑️",
+            "img": "assets/vocab/choice.svg"
           },
           {
             "en": "healthy",
             "zh": "健康的",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "crunchy",
             "zh": "脆的",
             "pos": "adj",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/crunchy.svg"
           },
           {
             "en": "spoil",
             "zh": "破坏",
             "pos": "verb",
-            "icon": "👎"
+            "icon": "👎",
+            "img": "assets/vocab/spoil.svg"
           }
         ]
       }
@@ -3308,31 +3513,36 @@ const SCENE_LIBRARY = {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "table",
             "zh": "桌子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "chopsticks",
             "zh": "筷子",
             "pos": "noun",
-            "icon": "🥢"
+            "icon": "🥢",
+            "img": "assets/vocab/chopsticks.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       },
@@ -3417,55 +3627,64 @@ const SCENE_LIBRARY = {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "chopsticks",
             "zh": "筷子",
             "pos": "noun",
-            "icon": "🥢"
+            "icon": "🥢",
+            "img": "assets/vocab/chopsticks.svg"
           },
           {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "table",
             "zh": "桌子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "helper",
             "zh": "帮手",
             "pos": "noun",
-            "icon": "🦸"
+            "icon": "🦸",
+            "img": "assets/vocab/helper.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "tidy",
             "zh": "整齐的",
             "pos": "adj",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/tidy.svg"
           },
           {
             "en": "set",
             "zh": "摆放",
             "pos": "verb",
-            "icon": "🫳"
+            "icon": "🫳",
+            "img": "assets/vocab/set.svg"
           },
           {
             "en": "wipe",
             "zh": "擦",
             "pos": "verb",
-            "icon": "🧹"
+            "icon": "🧹",
+            "img": "assets/vocab/wipe.svg"
           }
         ]
       },
@@ -3531,37 +3750,43 @@ const SCENE_LIBRARY = {
             "en": "teamwork",
             "zh": "团队合作",
             "pos": "noun",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/teamwork.svg"
           },
           {
             "en": "responsibility",
             "zh": "责任",
             "pos": "noun",
-            "icon": "📋"
+            "icon": "📋",
+            "img": "assets/vocab/responsibility.svg"
           },
           {
             "en": "chore",
             "zh": "家务",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/chore.svg"
           },
           {
             "en": "appreciate",
             "zh": "感激",
             "pos": "verb",
-            "icon": "💝"
+            "icon": "💝",
+            "img": "assets/vocab/appreciate.svg"
           },
           {
             "en": "smoothly",
             "zh": "顺畅地",
             "pos": "adj",
-            "icon": "🛤️"
+            "icon": "🛤️",
+            "img": "assets/vocab/smoothly.svg"
           },
           {
             "en": "helpful",
             "zh": "有帮助的",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/helpful.svg"
           }
         ]
       }
@@ -3615,31 +3840,36 @@ const SCENE_LIBRARY = {
             "en": "cook",
             "zh": "做饭",
             "pos": "verb",
-            "icon": "👩‍🍳"
+            "icon": "👩‍🍳",
+            "img": "assets/vocab/cook.svg"
           },
           {
             "en": "pot",
             "zh": "锅",
             "pos": "noun",
-            "icon": "🍲"
+            "icon": "🍲",
+            "img": "assets/vocab/pot.svg"
           },
           {
             "en": "veggie",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥬"
+            "icon": "🥬",
+            "img": "assets/vocab/veggie.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃的",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           }
         ]
       },
@@ -3718,55 +3948,64 @@ const SCENE_LIBRARY = {
             "en": "veggie",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥬"
+            "icon": "🥬",
+            "img": "assets/vocab/veggie.svg"
           },
           {
             "en": "stove",
             "zh": "炉子",
             "pos": "noun",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/stove.svg"
           },
           {
             "en": "pot",
             "zh": "锅",
             "pos": "noun",
-            "icon": "🍲"
+            "icon": "🍲",
+            "img": "assets/vocab/pot.svg"
           },
           {
             "en": "carrot",
             "zh": "胡萝卜",
             "pos": "noun",
-            "icon": "🥕"
+            "icon": "🥕",
+            "img": "assets/vocab/carrot.svg"
           },
           {
             "en": "hot",
             "zh": "烫的",
             "pos": "adj",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/hot.svg"
           },
           {
             "en": "orange",
             "zh": "橙色的",
             "pos": "adj",
-            "icon": "🟠"
+            "icon": "🟠",
+            "img": "assets/vocab/orange.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "stir",
             "zh": "搅拌",
             "pos": "verb",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/stir.svg"
           },
           {
             "en": "cook",
             "zh": "烹饪",
             "pos": "verb",
-            "icon": "👩‍🍳"
+            "icon": "👩‍🍳",
+            "img": "assets/vocab/cook.svg"
           }
         ]
       },
@@ -3832,49 +4071,57 @@ const SCENE_LIBRARY = {
             "en": "cooking",
             "zh": "烹饪",
             "pos": "noun",
-            "icon": "👩‍🍳"
+            "icon": "👩‍🍳",
+            "img": "assets/vocab/cooking.svg"
           },
           {
             "en": "stove",
             "zh": "炉子",
             "pos": "noun",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/stove.svg"
           },
           {
             "en": "recipe",
             "zh": "菜谱",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/recipe.svg"
           },
           {
             "en": "ingredient",
             "zh": "食材",
             "pos": "noun",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/ingredient.svg"
           },
           {
             "en": "careful",
             "zh": "小心的",
             "pos": "adj",
-            "icon": "⚠️"
+            "icon": "⚠️",
+            "img": "assets/vocab/careful.svg"
           },
           {
             "en": "basic",
             "zh": "基本的",
             "pos": "adj",
-            "icon": "🔤"
+            "icon": "🔤",
+            "img": "assets/vocab/basic.svg"
           },
           {
             "en": "crack",
             "zh": "打碎（鸡蛋）",
             "pos": "verb",
-            "icon": "🥚"
+            "icon": "🥚",
+            "img": "assets/vocab/crack.svg"
           },
           {
             "en": "practice",
             "zh": "练习",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/practice.svg"
           }
         ]
       }
@@ -3922,31 +4169,36 @@ const SCENE_LIBRARY = {
             "en": "pajamas",
             "zh": "睡衣",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/pajamas.svg"
           },
           {
             "en": "clothes",
             "zh": "衣服",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/clothes.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "cozy",
             "zh": "舒服的",
             "pos": "adj",
-            "icon": "🛌"
+            "icon": "🛌",
+            "img": "assets/vocab/cozy.svg"
           },
           {
             "en": "zip",
             "zh": "拉链",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/zip.svg"
           }
         ]
       },
@@ -4032,49 +4284,57 @@ const SCENE_LIBRARY = {
             "en": "pajamas",
             "zh": "睡衣",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/pajamas.svg"
           },
           {
             "en": "clothes",
             "zh": "衣服",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/clothes.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "cozy",
             "zh": "舒服的",
             "pos": "adj",
-            "icon": "🛌"
+            "icon": "🛌",
+            "img": "assets/vocab/cozy.svg"
           },
           {
             "en": "soft",
             "zh": "软的",
             "pos": "adj",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/soft.svg"
           },
           {
             "en": "take off",
             "zh": "脱",
             "pos": "verb",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/take_off.svg"
           },
           {
             "en": "wear",
             "zh": "穿",
             "pos": "verb",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/wear.svg"
           }
         ]
       },
@@ -4122,25 +4382,29 @@ const SCENE_LIBRARY = {
             "en": "independent",
             "zh": "独立的",
             "pos": "adj",
-            "icon": "🧑"
+            "icon": "🧑",
+            "img": "assets/vocab/independent.svg"
           },
           {
             "en": "routine",
             "zh": "流程",
             "pos": "noun",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/routine.svg"
           },
           {
             "en": "cozy",
             "zh": "舒服的",
             "pos": "adj",
-            "icon": "🛌"
+            "icon": "🛌",
+            "img": "assets/vocab/cozy.svg"
           },
           {
             "en": "change",
             "zh": "换",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/change.svg"
           }
         ]
       }
@@ -4190,19 +4454,22 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "picture",
             "zh": "图画",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           }
         ]
       },
@@ -4290,49 +4557,57 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "page",
             "zh": "页",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/page.svg"
           },
           {
             "en": "picture",
             "zh": "图画",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/read.svg"
           },
           {
             "en": "pick",
             "zh": "挑",
             "pos": "verb",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       },
@@ -4386,37 +4661,43 @@ const SCENE_LIBRARY = {
             "en": "chapter",
             "zh": "章",
             "pos": "noun",
-            "icon": "📑"
+            "icon": "📑",
+            "img": "assets/vocab/chapter.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "dragon",
             "zh": "龙",
             "pos": "noun",
-            "icon": "🐉"
+            "icon": "🐉",
+            "img": "assets/vocab/dragon.svg"
           },
           {
             "en": "treasure",
             "zh": "宝藏",
             "pos": "noun",
-            "icon": "💰"
+            "icon": "💰",
+            "img": "assets/vocab/treasure.svg"
           },
           {
             "en": "magic",
             "zh": "魔力",
             "pos": "noun",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/magic.svg"
           },
           {
             "en": "imagine",
             "zh": "想象",
             "pos": "verb",
-            "icon": "💭"
+            "icon": "💭",
+            "img": "assets/vocab/imagine.svg"
           }
         ]
       }
@@ -4471,25 +4752,29 @@ const SCENE_LIBRARY = {
             "en": "night",
             "zh": "夜晚",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/night.svg"
           },
           {
             "en": "dream",
             "zh": "梦",
             "pos": "noun",
-            "icon": "💭"
+            "icon": "💭",
+            "img": "assets/vocab/dream.svg"
           },
           {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁"
+            "icon": "👁",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "kiss",
             "zh": "亲亲",
             "pos": "noun",
-            "icon": "💋"
+            "icon": "💋",
+            "img": "assets/vocab/kiss.svg"
           }
         ]
       },
@@ -4578,49 +4863,57 @@ const SCENE_LIBRARY = {
             "en": "night",
             "zh": "夜晚",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/night.svg"
           },
           {
             "en": "dream",
             "zh": "梦",
             "pos": "noun",
-            "icon": "💭"
+            "icon": "💭",
+            "img": "assets/vocab/dream.svg"
           },
           {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "blanket",
             "zh": "被子",
             "pos": "noun",
-            "icon": "🛌"
+            "icon": "🛌",
+            "img": "assets/vocab/blanket.svg"
           },
           {
             "en": "hug",
             "zh": "抱抱",
             "pos": "noun",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "kiss",
             "zh": "亲亲",
             "pos": "noun",
-            "icon": "💋"
+            "icon": "💋",
+            "img": "assets/vocab/kiss.svg"
           },
           {
             "en": "dark",
             "zh": "黑的",
             "pos": "adj",
-            "icon": "🌑"
+            "icon": "🌑",
+            "img": "assets/vocab/dark.svg"
           },
           {
             "en": "love",
             "zh": "爱",
             "pos": "verb",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/love.svg"
           }
         ]
       },
@@ -4674,25 +4967,29 @@ const SCENE_LIBRARY = {
             "en": "comfortable",
             "zh": "舒服的",
             "pos": "adj",
-            "icon": "😌"
+            "icon": "😌",
+            "img": "assets/vocab/comfortable.svg"
           },
           {
             "en": "sleep",
             "zh": "睡眠",
             "pos": "noun",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           },
           {
             "en": "morning",
             "zh": "早上",
             "pos": "noun",
-            "icon": "🌅"
+            "icon": "🌅",
+            "img": "assets/vocab/morning.svg"
           },
           {
             "en": "peaceful",
             "zh": "平静的",
             "pos": "adj",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/peaceful.svg"
           }
         ]
       }
@@ -4740,25 +5037,29 @@ const SCENE_LIBRARY = {
             "en": "toothbrush",
             "zh": "牙刷",
             "pos": "noun",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/toothbrush.svg"
           },
           {
             "en": "teeth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/teeth.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       },
@@ -4845,37 +5146,43 @@ const SCENE_LIBRARY = {
             "en": "toothbrush",
             "zh": "牙刷",
             "pos": "noun",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/toothbrush.svg"
           },
           {
             "en": "teeth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/teeth.svg"
           },
           {
             "en": "toothpaste",
             "zh": "牙膏",
             "pos": "noun",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/toothpaste.svg"
           },
           {
             "en": "clean",
             "zh": "干净的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "spit",
             "zh": "吐",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/spit.svg"
           },
           {
             "en": "brush",
             "zh": "刷",
             "pos": "verb",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/brush.svg"
           }
         ]
       },
@@ -4929,31 +5236,36 @@ const SCENE_LIBRARY = {
             "en": "bacteria",
             "zh": "细菌",
             "pos": "noun",
-            "icon": "🦠"
+            "icon": "🦠",
+            "img": "assets/vocab/bacteria.svg"
           },
           {
             "en": "particle",
             "zh": "残渣",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/particle.svg"
           },
           {
             "en": "sugar bug",
             "zh": "糖虫",
             "pos": "noun",
-            "icon": "🐛"
+            "icon": "🐛",
+            "img": "assets/vocab/sugar_bug.svg"
           },
           {
             "en": "entire",
             "zh": "整个的",
             "pos": "adj",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/entire.svg"
           },
           {
             "en": "important",
             "zh": "重要的",
             "pos": "adj",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/important.svg"
           }
         ]
       }
@@ -4996,19 +5308,22 @@ const SCENE_LIBRARY = {
             "en": "today",
             "zh": "今天",
             "pos": "noun",
-            "icon": "📅"
+            "icon": "📅",
+            "img": "assets/vocab/today.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "noun",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "happy",
             "zh": "快乐的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -5090,37 +5405,43 @@ const SCENE_LIBRARY = {
             "en": "today",
             "zh": "今天",
             "pos": "noun",
-            "icon": "📅"
+            "icon": "📅",
+            "img": "assets/vocab/today.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "laugh",
             "zh": "笑",
             "pos": "verb",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/laugh.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "talk",
             "zh": "聊天",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           }
         ]
       },
@@ -5174,37 +5495,43 @@ const SCENE_LIBRARY = {
             "en": "favorite",
             "zh": "最喜欢的",
             "pos": "adj",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/favorite.svg"
           },
           {
             "en": "moment",
             "zh": "时刻",
             "pos": "noun",
-            "icon": "⏰"
+            "icon": "⏰",
+            "img": "assets/vocab/moment.svg"
           },
           {
             "en": "difficult",
             "zh": "困难的",
             "pos": "adj",
-            "icon": "😣"
+            "icon": "😣",
+            "img": "assets/vocab/difficult.svg"
           },
           {
             "en": "learn",
             "zh": "学到",
             "pos": "verb",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/learn.svg"
           },
           {
             "en": "grateful",
             "zh": "感恩的",
             "pos": "adj",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/grateful.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           }
         ]
       }
@@ -5264,31 +5591,36 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "box",
             "zh": "盒子",
             "pos": "noun",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "room",
             "zh": "房间",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/room.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📕"
+            "icon": "📕",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "block",
             "zh": "积木",
             "pos": "noun",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/block.svg"
           }
         ]
       },
@@ -5370,55 +5702,64 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "box",
             "zh": "盒子",
             "pos": "noun",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "room",
             "zh": "房间",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/room.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📕"
+            "icon": "📕",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "block",
             "zh": "积木",
             "pos": "noun",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/block.svg"
           },
           {
             "en": "car",
             "zh": "小车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "doll",
             "zh": "娃娃",
             "pos": "noun",
-            "icon": "🎎"
+            "icon": "🎎",
+            "img": "assets/vocab/doll.svg"
           },
           {
             "en": "shelf",
             "zh": "架子",
             "pos": "noun",
-            "icon": "🗄️"
+            "icon": "🗄️",
+            "img": "assets/vocab/shelf.svg"
           }
         ]
       },
@@ -5491,55 +5832,64 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "box",
             "zh": "盒子",
             "pos": "noun",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "room",
             "zh": "房间",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/room.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📕"
+            "icon": "📕",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "block",
             "zh": "积木",
             "pos": "noun",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/block.svg"
           },
           {
             "en": "car",
             "zh": "小车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "doll",
             "zh": "娃娃",
             "pos": "noun",
-            "icon": "🎎"
+            "icon": "🎎",
+            "img": "assets/vocab/doll.svg"
           },
           {
             "en": "tidy",
             "zh": "整齐",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/tidy.svg"
           }
         ]
       }
@@ -5600,31 +5950,36 @@ const SCENE_LIBRARY = {
             "en": "broom",
             "zh": "扫帚",
             "pos": "noun",
-            "icon": "🧹"
+            "icon": "🧹",
+            "img": "assets/vocab/broom.svg"
           },
           {
             "en": "table",
             "zh": "桌子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "cloth",
             "zh": "抹布",
             "pos": "noun",
-            "icon": "🧽"
+            "icon": "🧽",
+            "img": "assets/vocab/cloth.svg"
           },
           {
             "en": "dust",
             "zh": "灰尘",
             "pos": "noun",
-            "icon": "🌫️"
+            "icon": "🌫️",
+            "img": "assets/vocab/dust.svg"
           },
           {
             "en": "floor",
             "zh": "地板",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/floor.svg"
           }
         ]
       },
@@ -5706,55 +6061,64 @@ const SCENE_LIBRARY = {
             "en": "broom",
             "zh": "扫帚",
             "pos": "noun",
-            "icon": "🧹"
+            "icon": "🧹",
+            "img": "assets/vocab/broom.svg"
           },
           {
             "en": "table",
             "zh": "桌子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "cloth",
             "zh": "抹布",
             "pos": "noun",
-            "icon": "🧽"
+            "icon": "🧽",
+            "img": "assets/vocab/cloth.svg"
           },
           {
             "en": "dust",
             "zh": "灰尘",
             "pos": "noun",
-            "icon": "🌫️"
+            "icon": "🌫️",
+            "img": "assets/vocab/dust.svg"
           },
           {
             "en": "floor",
             "zh": "地板",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/floor.svg"
           },
           {
             "en": "mop",
             "zh": "拖把",
             "pos": "noun",
-            "icon": "🧹"
+            "icon": "🧹",
+            "img": "assets/vocab/mop.svg"
           },
           {
             "en": "vacuum",
             "zh": "吸尘器",
             "pos": "noun",
-            "icon": "🌀"
+            "icon": "🌀",
+            "img": "assets/vocab/vacuum.svg"
           },
           {
             "en": "corner",
             "zh": "角落",
             "pos": "noun",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/corner.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       },
@@ -5826,55 +6190,64 @@ const SCENE_LIBRARY = {
             "en": "broom",
             "zh": "扫帚",
             "pos": "noun",
-            "icon": "🧹"
+            "icon": "🧹",
+            "img": "assets/vocab/broom.svg"
           },
           {
             "en": "table",
             "zh": "桌子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "cloth",
             "zh": "抹布",
             "pos": "noun",
-            "icon": "🧽"
+            "icon": "🧽",
+            "img": "assets/vocab/cloth.svg"
           },
           {
             "en": "dust",
             "zh": "灰尘",
             "pos": "noun",
-            "icon": "🌫️"
+            "icon": "🌫️",
+            "img": "assets/vocab/dust.svg"
           },
           {
             "en": "floor",
             "zh": "地板",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/floor.svg"
           },
           {
             "en": "mop",
             "zh": "拖把",
             "pos": "noun",
-            "icon": "🧹"
+            "icon": "🧹",
+            "img": "assets/vocab/mop.svg"
           },
           {
             "en": "vacuum",
             "zh": "吸尘器",
             "pos": "noun",
-            "icon": "🌀"
+            "icon": "🌀",
+            "img": "assets/vocab/vacuum.svg"
           },
           {
             "en": "corner",
             "zh": "角落",
             "pos": "noun",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/corner.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       }
@@ -5936,31 +6309,36 @@ const SCENE_LIBRARY = {
             "en": "clothes",
             "zh": "衣服",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/clothes.svg"
           },
           {
             "en": "basket",
             "zh": "篮子",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "hanger",
             "zh": "衣架",
             "pos": "noun",
-            "icon": "🪝"
+            "icon": "🪝",
+            "img": "assets/vocab/hanger.svg"
           },
           {
             "en": "washer",
             "zh": "洗衣机",
             "pos": "noun",
-            "icon": "🌀"
+            "icon": "🌀",
+            "img": "assets/vocab/washer.svg"
           },
           {
             "en": "dry",
             "zh": "干的",
             "pos": "adj",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/dry.svg"
           }
         ]
       },
@@ -6042,55 +6420,64 @@ const SCENE_LIBRARY = {
             "en": "clothes",
             "zh": "衣服",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/clothes.svg"
           },
           {
             "en": "basket",
             "zh": "篮子",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "hanger",
             "zh": "衣架",
             "pos": "noun",
-            "icon": "🪝"
+            "icon": "🪝",
+            "img": "assets/vocab/hanger.svg"
           },
           {
             "en": "washer",
             "zh": "洗衣机",
             "pos": "noun",
-            "icon": "🌀"
+            "icon": "🌀",
+            "img": "assets/vocab/washer.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "sock",
             "zh": "袜子",
             "pos": "noun",
-            "icon": "🧦"
+            "icon": "🧦",
+            "img": "assets/vocab/sock.svg"
           },
           {
             "en": "pants",
             "zh": "裤子",
             "pos": "noun",
-            "icon": "👖"
+            "icon": "👖",
+            "img": "assets/vocab/pants.svg"
           },
           {
             "en": "dry",
             "zh": "干的",
             "pos": "adj",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/dry.svg"
           },
           {
             "en": "fold",
             "zh": "叠",
             "pos": "verb",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/fold.svg"
           }
         ]
       },
@@ -6162,55 +6549,64 @@ const SCENE_LIBRARY = {
             "en": "clothes",
             "zh": "衣服",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/clothes.svg"
           },
           {
             "en": "basket",
             "zh": "篮子",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "hanger",
             "zh": "衣架",
             "pos": "noun",
-            "icon": "🪝"
+            "icon": "🪝",
+            "img": "assets/vocab/hanger.svg"
           },
           {
             "en": "washer",
             "zh": "洗衣机",
             "pos": "noun",
-            "icon": "🌀"
+            "icon": "🌀",
+            "img": "assets/vocab/washer.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "sock",
             "zh": "袜子",
             "pos": "noun",
-            "icon": "🧦"
+            "icon": "🧦",
+            "img": "assets/vocab/sock.svg"
           },
           {
             "en": "pants",
             "zh": "裤子",
             "pos": "noun",
-            "icon": "👖"
+            "icon": "👖",
+            "img": "assets/vocab/pants.svg"
           },
           {
             "en": "dry",
             "zh": "干的",
             "pos": "adj",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/dry.svg"
           },
           {
             "en": "fold",
             "zh": "叠",
             "pos": "verb",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/fold.svg"
           }
         ]
       }
@@ -6264,31 +6660,36 @@ const SCENE_LIBRARY = {
             "en": "trash",
             "zh": "垃圾",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/trash.svg"
           },
           {
             "en": "bin",
             "zh": "垃圾桶",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/bin.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "bottle",
             "zh": "瓶子",
             "pos": "noun",
-            "icon": "🍶"
+            "icon": "🍶",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "recycling",
             "zh": "回收",
             "pos": "noun",
-            "icon": "♻️"
+            "icon": "♻️",
+            "img": "assets/vocab/recycling.svg"
           }
         ]
       },
@@ -6370,55 +6771,64 @@ const SCENE_LIBRARY = {
             "en": "trash",
             "zh": "垃圾",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/trash.svg"
           },
           {
             "en": "bin",
             "zh": "垃圾桶",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/bin.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "bottle",
             "zh": "瓶子",
             "pos": "noun",
-            "icon": "🍶"
+            "icon": "🍶",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "recycling",
             "zh": "回收",
             "pos": "noun",
-            "icon": "♻️"
+            "icon": "♻️",
+            "img": "assets/vocab/recycling.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "can",
             "zh": "罐子",
             "pos": "noun",
-            "icon": "🥫"
+            "icon": "🥫",
+            "img": "assets/vocab/can.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "sort",
             "zh": "分类",
             "pos": "verb",
-            "icon": "🔀"
+            "icon": "🔀",
+            "img": "assets/vocab/sort.svg"
           }
         ]
       },
@@ -6490,55 +6900,64 @@ const SCENE_LIBRARY = {
             "en": "trash",
             "zh": "垃圾",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/trash.svg"
           },
           {
             "en": "bin",
             "zh": "垃圾桶",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/bin.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "bottle",
             "zh": "瓶子",
             "pos": "noun",
-            "icon": "🍶"
+            "icon": "🍶",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "recycling",
             "zh": "回收",
             "pos": "noun",
-            "icon": "♻️"
+            "icon": "♻️",
+            "img": "assets/vocab/recycling.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "can",
             "zh": "罐子",
             "pos": "noun",
-            "icon": "🥫"
+            "icon": "🥫",
+            "img": "assets/vocab/can.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "sort",
             "zh": "分类",
             "pos": "verb",
-            "icon": "🔀"
+            "icon": "🔀",
+            "img": "assets/vocab/sort.svg"
           }
         ]
       }
@@ -6593,31 +7012,36 @@ const SCENE_LIBRARY = {
             "en": "plant",
             "zh": "植物",
             "pos": "noun",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/plant.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "pot",
             "zh": "花盆",
             "pos": "noun",
-            "icon": "🪴"
+            "icon": "🪴",
+            "img": "assets/vocab/pot.svg"
           }
         ]
       },
@@ -6699,55 +7123,64 @@ const SCENE_LIBRARY = {
             "en": "plant",
             "zh": "植物",
             "pos": "noun",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/plant.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "pot",
             "zh": "花盆",
             "pos": "noun",
-            "icon": "🪴"
+            "icon": "🪴",
+            "img": "assets/vocab/pot.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "💚"
+            "icon": "💚",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "sun",
             "zh": "太阳",
             "pos": "noun",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/sun.svg"
           },
           {
             "en": "grow",
             "zh": "长大",
             "pos": "verb",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grow.svg"
           },
           {
             "en": "root",
             "zh": "根",
             "pos": "noun",
-            "icon": "🌰"
+            "icon": "🌰",
+            "img": "assets/vocab/root.svg"
           }
         ]
       },
@@ -6819,55 +7252,64 @@ const SCENE_LIBRARY = {
             "en": "plant",
             "zh": "植物",
             "pos": "noun",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/plant.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "pot",
             "zh": "花盆",
             "pos": "noun",
-            "icon": "🪴"
+            "icon": "🪴",
+            "img": "assets/vocab/pot.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "💚"
+            "icon": "💚",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "sun",
             "zh": "太阳",
             "pos": "noun",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/sun.svg"
           },
           {
             "en": "grow",
             "zh": "长大",
             "pos": "verb",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grow.svg"
           },
           {
             "en": "root",
             "zh": "根",
             "pos": "noun",
-            "icon": "🌰"
+            "icon": "🌰",
+            "img": "assets/vocab/root.svg"
           }
         ]
       }
@@ -6924,31 +7366,36 @@ const SCENE_LIBRARY = {
             "en": "TV",
             "zh": "电视",
             "pos": "noun",
-            "icon": "📺"
+            "icon": "📺",
+            "img": "assets/vocab/tv.svg"
           },
           {
             "en": "show",
             "zh": "节目",
             "pos": "noun",
-            "icon": "🎬"
+            "icon": "🎬",
+            "img": "assets/vocab/show.svg"
           },
           {
             "en": "screen",
             "zh": "屏幕",
             "pos": "noun",
-            "icon": "🖥️"
+            "icon": "🖥️",
+            "img": "assets/vocab/screen.svg"
           },
           {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "off",
             "zh": "关掉",
             "pos": "adj",
-            "icon": "🔌"
+            "icon": "🔌",
+            "img": "assets/vocab/off.svg"
           }
         ]
       },
@@ -7030,55 +7477,64 @@ const SCENE_LIBRARY = {
             "en": "TV",
             "zh": "电视",
             "pos": "noun",
-            "icon": "📺"
+            "icon": "📺",
+            "img": "assets/vocab/tv.svg"
           },
           {
             "en": "show",
             "zh": "节目",
             "pos": "noun",
-            "icon": "🎬"
+            "icon": "🎬",
+            "img": "assets/vocab/show.svg"
           },
           {
             "en": "screen",
             "zh": "屏幕",
             "pos": "noun",
-            "icon": "🖥️"
+            "icon": "🖥️",
+            "img": "assets/vocab/screen.svg"
           },
           {
             "en": "cartoon",
             "zh": "动画",
             "pos": "noun",
-            "icon": "🎞️"
+            "icon": "🎞️",
+            "img": "assets/vocab/cartoon.svg"
           },
           {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "off",
             "zh": "关掉",
             "pos": "adj",
-            "icon": "🔌"
+            "icon": "🔌",
+            "img": "assets/vocab/off.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           }
         ]
       },
@@ -7150,55 +7606,64 @@ const SCENE_LIBRARY = {
             "en": "TV",
             "zh": "电视",
             "pos": "noun",
-            "icon": "📺"
+            "icon": "📺",
+            "img": "assets/vocab/tv.svg"
           },
           {
             "en": "show",
             "zh": "节目",
             "pos": "noun",
-            "icon": "🎬"
+            "icon": "🎬",
+            "img": "assets/vocab/show.svg"
           },
           {
             "en": "screen",
             "zh": "屏幕",
             "pos": "noun",
-            "icon": "🖥️"
+            "icon": "🖥️",
+            "img": "assets/vocab/screen.svg"
           },
           {
             "en": "cartoon",
             "zh": "动画",
             "pos": "noun",
-            "icon": "🎞️"
+            "icon": "🎞️",
+            "img": "assets/vocab/cartoon.svg"
           },
           {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "off",
             "zh": "关掉",
             "pos": "adj",
-            "icon": "🔌"
+            "icon": "🔌",
+            "img": "assets/vocab/off.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           }
         ]
       }
@@ -7254,31 +7719,36 @@ const SCENE_LIBRARY = {
             "en": "talk",
             "zh": "聊天",
             "pos": "noun",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           },
           {
             "en": "day",
             "zh": "一天",
             "pos": "noun",
-            "icon": "📅"
+            "icon": "📅",
+            "img": "assets/vocab/day.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "family",
             "zh": "家人",
             "pos": "noun",
-            "icon": "👪"
+            "icon": "👪",
+            "img": "assets/vocab/family.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           }
         ]
       },
@@ -7360,55 +7830,64 @@ const SCENE_LIBRARY = {
             "en": "talk",
             "zh": "聊天",
             "pos": "noun",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           },
           {
             "en": "day",
             "zh": "一天",
             "pos": "noun",
-            "icon": "📅"
+            "icon": "📅",
+            "img": "assets/vocab/day.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "family",
             "zh": "家人",
             "pos": "noun",
-            "icon": "👪"
+            "icon": "👪",
+            "img": "assets/vocab/family.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           },
           {
             "en": "funny",
             "zh": "好笑",
             "pos": "adj",
-            "icon": "😂"
+            "icon": "😂",
+            "img": "assets/vocab/funny.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "🧑"
+            "icon": "🧑",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           }
         ]
       },
@@ -7480,55 +7959,64 @@ const SCENE_LIBRARY = {
             "en": "talk",
             "zh": "聊天",
             "pos": "noun",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           },
           {
             "en": "day",
             "zh": "一天",
             "pos": "noun",
-            "icon": "📅"
+            "icon": "📅",
+            "img": "assets/vocab/day.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "family",
             "zh": "家人",
             "pos": "noun",
-            "icon": "👪"
+            "icon": "👪",
+            "img": "assets/vocab/family.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           },
           {
             "en": "funny",
             "zh": "好笑",
             "pos": "adj",
-            "icon": "😂"
+            "icon": "😂",
+            "img": "assets/vocab/funny.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "🧑"
+            "icon": "🧑",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           }
         ]
       }
@@ -7584,31 +8072,36 @@ const SCENE_LIBRARY = {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           },
           {
             "en": "dance",
             "zh": "跳舞",
             "pos": "verb",
-            "icon": "💃"
+            "icon": "💃",
+            "img": "assets/vocab/dance.svg"
           },
           {
             "en": "music",
             "zh": "音乐",
             "pos": "noun",
-            "icon": "🎶"
+            "icon": "🎶",
+            "img": "assets/vocab/music.svg"
           },
           {
             "en": "loud",
             "zh": "大声",
             "pos": "adj",
-            "icon": "📢"
+            "icon": "📢",
+            "img": "assets/vocab/loud.svg"
           }
         ]
       },
@@ -7690,55 +8183,64 @@ const SCENE_LIBRARY = {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           },
           {
             "en": "dance",
             "zh": "跳舞",
             "pos": "verb",
-            "icon": "💃"
+            "icon": "💃",
+            "img": "assets/vocab/dance.svg"
           },
           {
             "en": "music",
             "zh": "音乐",
             "pos": "noun",
-            "icon": "🎶"
+            "icon": "🎶",
+            "img": "assets/vocab/music.svg"
           },
           {
             "en": "loud",
             "zh": "大声",
             "pos": "adj",
-            "icon": "📢"
+            "icon": "📢",
+            "img": "assets/vocab/loud.svg"
           },
           {
             "en": "voice",
             "zh": "声音",
             "pos": "noun",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/voice.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "play",
             "zh": "演奏",
             "pos": "verb",
-            "icon": "🎹"
+            "icon": "🎹",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "rhythm",
             "zh": "节奏",
             "pos": "noun",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/rhythm.svg"
           }
         ]
       },
@@ -7810,55 +8312,64 @@ const SCENE_LIBRARY = {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           },
           {
             "en": "dance",
             "zh": "跳舞",
             "pos": "verb",
-            "icon": "💃"
+            "icon": "💃",
+            "img": "assets/vocab/dance.svg"
           },
           {
             "en": "music",
             "zh": "音乐",
             "pos": "noun",
-            "icon": "🎶"
+            "icon": "🎶",
+            "img": "assets/vocab/music.svg"
           },
           {
             "en": "loud",
             "zh": "大声",
             "pos": "adj",
-            "icon": "📢"
+            "icon": "📢",
+            "img": "assets/vocab/loud.svg"
           },
           {
             "en": "voice",
             "zh": "声音",
             "pos": "noun",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/voice.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "play",
             "zh": "演奏",
             "pos": "verb",
-            "icon": "🎹"
+            "icon": "🎹",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "rhythm",
             "zh": "节奏",
             "pos": "noun",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/rhythm.svg"
           }
         ]
       }
@@ -7914,31 +8425,36 @@ const SCENE_LIBRARY = {
             "en": "dog",
             "zh": "狗",
             "pos": "noun",
-            "icon": "🐶"
+            "icon": "🐶",
+            "img": "assets/vocab/dog.svg"
           },
           {
             "en": "cat",
             "zh": "猫",
             "pos": "noun",
-            "icon": "🐱"
+            "icon": "🐱",
+            "img": "assets/vocab/cat.svg"
           },
           {
             "en": "pet",
             "zh": "宠物",
             "pos": "noun",
-            "icon": "🐾"
+            "icon": "🐾",
+            "img": "assets/vocab/pet.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍖"
+            "icon": "🍖",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "gentle",
             "zh": "轻轻",
             "pos": "adj",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/gentle.svg"
           }
         ]
       },
@@ -8020,55 +8536,64 @@ const SCENE_LIBRARY = {
             "en": "dog",
             "zh": "狗",
             "pos": "noun",
-            "icon": "🐶"
+            "icon": "🐶",
+            "img": "assets/vocab/dog.svg"
           },
           {
             "en": "cat",
             "zh": "猫",
             "pos": "noun",
-            "icon": "🐱"
+            "icon": "🐱",
+            "img": "assets/vocab/cat.svg"
           },
           {
             "en": "pet",
             "zh": "宠物",
             "pos": "noun",
-            "icon": "🐾"
+            "icon": "🐾",
+            "img": "assets/vocab/pet.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍖"
+            "icon": "🍖",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "gentle",
             "zh": "轻轻",
             "pos": "adj",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/gentle.svg"
           },
           {
             "en": "paw",
             "zh": "爪子",
             "pos": "noun",
-            "icon": "🐾"
+            "icon": "🐾",
+            "img": "assets/vocab/paw.svg"
           },
           {
             "en": "tail",
             "zh": "尾巴",
             "pos": "noun",
-            "icon": "🐈"
+            "icon": "🐈",
+            "img": "assets/vocab/tail.svg"
           },
           {
             "en": "soft",
             "zh": "软软",
             "pos": "adj",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/soft.svg"
           },
           {
             "en": "feed",
             "zh": "喂",
             "pos": "verb",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/feed.svg"
           }
         ]
       },
@@ -8140,55 +8665,64 @@ const SCENE_LIBRARY = {
             "en": "dog",
             "zh": "狗",
             "pos": "noun",
-            "icon": "🐶"
+            "icon": "🐶",
+            "img": "assets/vocab/dog.svg"
           },
           {
             "en": "cat",
             "zh": "猫",
             "pos": "noun",
-            "icon": "🐱"
+            "icon": "🐱",
+            "img": "assets/vocab/cat.svg"
           },
           {
             "en": "pet",
             "zh": "宠物",
             "pos": "noun",
-            "icon": "🐾"
+            "icon": "🐾",
+            "img": "assets/vocab/pet.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍖"
+            "icon": "🍖",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "gentle",
             "zh": "轻轻",
             "pos": "adj",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/gentle.svg"
           },
           {
             "en": "paw",
             "zh": "爪子",
             "pos": "noun",
-            "icon": "🐾"
+            "icon": "🐾",
+            "img": "assets/vocab/paw.svg"
           },
           {
             "en": "tail",
             "zh": "尾巴",
             "pos": "noun",
-            "icon": "🐈"
+            "icon": "🐈",
+            "img": "assets/vocab/tail.svg"
           },
           {
             "en": "soft",
             "zh": "软软",
             "pos": "adj",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/soft.svg"
           },
           {
             "en": "feed",
             "zh": "喂",
             "pos": "verb",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/feed.svg"
           }
         ]
       }
@@ -8244,31 +8778,36 @@ const SCENE_LIBRARY = {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📷"
+            "icon": "📷",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "camera",
             "zh": "相机",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/camera.svg"
           },
           {
             "en": "smile",
             "zh": "笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "baby",
             "zh": "宝宝",
             "pos": "noun",
-            "icon": "👶"
+            "icon": "👶",
+            "img": "assets/vocab/baby.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           }
         ]
       },
@@ -8350,55 +8889,64 @@ const SCENE_LIBRARY = {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📷"
+            "icon": "📷",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "camera",
             "zh": "相机",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/camera.svg"
           },
           {
             "en": "smile",
             "zh": "笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "baby",
             "zh": "宝宝",
             "pos": "noun",
-            "icon": "👶"
+            "icon": "👶",
+            "img": "assets/vocab/baby.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           },
           {
             "en": "album",
             "zh": "相册",
             "pos": "noun",
-            "icon": "📔"
+            "icon": "📔",
+            "img": "assets/vocab/album.svg"
           },
           {
             "en": "memory",
             "zh": "回忆",
             "pos": "noun",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/memory.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -8472,55 +9020,64 @@ const SCENE_LIBRARY = {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📷"
+            "icon": "📷",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "camera",
             "zh": "相机",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/camera.svg"
           },
           {
             "en": "smile",
             "zh": "笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "baby",
             "zh": "宝宝",
             "pos": "noun",
-            "icon": "👶"
+            "icon": "👶",
+            "img": "assets/vocab/baby.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           },
           {
             "en": "album",
             "zh": "相册",
             "pos": "noun",
-            "icon": "📔"
+            "icon": "📔",
+            "img": "assets/vocab/album.svg"
           },
           {
             "en": "memory",
             "zh": "回忆",
             "pos": "noun",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/memory.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/story.svg"
           }
         ]
       }
@@ -8569,31 +9126,36 @@ const SCENE_LIBRARY = {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "comb",
             "zh": "梳子",
             "pos": "noun",
-            "icon": "🪮"
+            "icon": "🪮",
+            "img": "assets/vocab/comb.svg"
           },
           {
             "en": "ponytail",
             "zh": "马尾",
             "pos": "noun",
-            "icon": "🐴"
+            "icon": "🐴",
+            "img": "assets/vocab/ponytail.svg"
           },
           {
             "en": "braid",
             "zh": "辫子",
             "pos": "noun",
-            "icon": "🧵"
+            "icon": "🧵",
+            "img": "assets/vocab/braid.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           }
         ]
       },
@@ -8669,55 +9231,64 @@ const SCENE_LIBRARY = {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "comb",
             "zh": "梳子",
             "pos": "noun",
-            "icon": "🪮"
+            "icon": "🪮",
+            "img": "assets/vocab/comb.svg"
           },
           {
             "en": "ponytail",
             "zh": "马尾",
             "pos": "noun",
-            "icon": "🐴"
+            "icon": "🐴",
+            "img": "assets/vocab/ponytail.svg"
           },
           {
             "en": "braid",
             "zh": "辫子",
             "pos": "noun",
-            "icon": "🧵"
+            "icon": "🧵",
+            "img": "assets/vocab/braid.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "long",
             "zh": "长",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/long.svg"
           },
           {
             "en": "style",
             "zh": "发型",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/style.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           },
           {
             "en": "help",
             "zh": "帮忙",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -8790,55 +9361,64 @@ const SCENE_LIBRARY = {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "comb",
             "zh": "梳子",
             "pos": "noun",
-            "icon": "🪮"
+            "icon": "🪮",
+            "img": "assets/vocab/comb.svg"
           },
           {
             "en": "ponytail",
             "zh": "马尾",
             "pos": "noun",
-            "icon": "🐴"
+            "icon": "🐴",
+            "img": "assets/vocab/ponytail.svg"
           },
           {
             "en": "braid",
             "zh": "辫子",
             "pos": "noun",
-            "icon": "🧵"
+            "icon": "🧵",
+            "img": "assets/vocab/braid.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "long",
             "zh": "长",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/long.svg"
           },
           {
             "en": "style",
             "zh": "发型",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/style.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           },
           {
             "en": "help",
             "zh": "帮忙",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       }
@@ -8887,31 +9467,36 @@ const SCENE_LIBRARY = {
             "en": "mirror",
             "zh": "镜子",
             "pos": "noun",
-            "icon": "🪞"
+            "icon": "🪞",
+            "img": "assets/vocab/mirror.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "handsome",
             "zh": "帅",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/handsome.svg"
           }
         ]
       },
@@ -8987,55 +9572,64 @@ const SCENE_LIBRARY = {
             "en": "mirror",
             "zh": "镜子",
             "pos": "noun",
-            "icon": "🪞"
+            "icon": "🪞",
+            "img": "assets/vocab/mirror.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "handsome",
             "zh": "帅",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/handsome.svg"
           },
           {
             "en": "check",
             "zh": "检查",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/check.svg"
           },
           {
             "en": "smile",
             "zh": "笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "face",
             "zh": "脸",
             "pos": "noun",
-            "icon": "🙂"
+            "icon": "🙂",
+            "img": "assets/vocab/face.svg"
           }
         ]
       },
@@ -9108,55 +9702,64 @@ const SCENE_LIBRARY = {
             "en": "mirror",
             "zh": "镜子",
             "pos": "noun",
-            "icon": "🪞"
+            "icon": "🪞",
+            "img": "assets/vocab/mirror.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "handsome",
             "zh": "帅",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/handsome.svg"
           },
           {
             "en": "check",
             "zh": "检查",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/check.svg"
           },
           {
             "en": "smile",
             "zh": "笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "face",
             "zh": "脸",
             "pos": "noun",
-            "icon": "🙂"
+            "icon": "🙂",
+            "img": "assets/vocab/face.svg"
           }
         ]
       }
@@ -9205,31 +9808,36 @@ const SCENE_LIBRARY = {
             "en": "nail",
             "zh": "指甲",
             "pos": "noun",
-            "icon": "💅"
+            "icon": "💅",
+            "img": "assets/vocab/nail.svg"
           },
           {
             "en": "clipper",
             "zh": "指甲刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/clipper.svg"
           },
           {
             "en": "short",
             "zh": "短",
             "pos": "adj",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/short.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "still",
             "zh": "不动",
             "pos": "adj",
-            "icon": "🧘"
+            "icon": "🧘",
+            "img": "assets/vocab/still.svg"
           }
         ]
       },
@@ -9305,55 +9913,64 @@ const SCENE_LIBRARY = {
             "en": "nail",
             "zh": "指甲",
             "pos": "noun",
-            "icon": "💅"
+            "icon": "💅",
+            "img": "assets/vocab/nail.svg"
           },
           {
             "en": "clipper",
             "zh": "指甲刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/clipper.svg"
           },
           {
             "en": "short",
             "zh": "短",
             "pos": "adj",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/short.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "still",
             "zh": "不动",
             "pos": "adj",
-            "icon": "🧘"
+            "icon": "🧘",
+            "img": "assets/vocab/still.svg"
           },
           {
             "en": "finger",
             "zh": "手指",
             "pos": "noun",
-            "icon": "🖐️"
+            "icon": "🖐️",
+            "img": "assets/vocab/finger.svg"
           },
           {
             "en": "toe",
             "zh": "脚趾",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/toe.svg"
           },
           {
             "en": "long",
             "zh": "长",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/long.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       },
@@ -9426,55 +10043,64 @@ const SCENE_LIBRARY = {
             "en": "nail",
             "zh": "指甲",
             "pos": "noun",
-            "icon": "💅"
+            "icon": "💅",
+            "img": "assets/vocab/nail.svg"
           },
           {
             "en": "clipper",
             "zh": "指甲刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/clipper.svg"
           },
           {
             "en": "short",
             "zh": "短",
             "pos": "adj",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/short.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "still",
             "zh": "不动",
             "pos": "adj",
-            "icon": "🧘"
+            "icon": "🧘",
+            "img": "assets/vocab/still.svg"
           },
           {
             "en": "finger",
             "zh": "手指",
             "pos": "noun",
-            "icon": "🖐️"
+            "icon": "🖐️",
+            "img": "assets/vocab/finger.svg"
           },
           {
             "en": "toe",
             "zh": "脚趾",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/toe.svg"
           },
           {
             "en": "long",
             "zh": "长",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/long.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       }
@@ -9523,31 +10149,36 @@ const SCENE_LIBRARY = {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "tissue",
             "zh": "纸巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/tissue.svg"
           },
           {
             "en": "sneeze",
             "zh": "喷嚏",
             "pos": "noun",
-            "icon": "🤧"
+            "icon": "🤧",
+            "img": "assets/vocab/sneeze.svg"
           },
           {
             "en": "bin",
             "zh": "垃圾桶",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/bin.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       },
@@ -9623,55 +10254,64 @@ const SCENE_LIBRARY = {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "tissue",
             "zh": "纸巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/tissue.svg"
           },
           {
             "en": "sneeze",
             "zh": "喷嚏",
             "pos": "noun",
-            "icon": "🤧"
+            "icon": "🤧",
+            "img": "assets/vocab/sneeze.svg"
           },
           {
             "en": "bin",
             "zh": "垃圾桶",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/bin.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "cold",
             "zh": "感冒",
             "pos": "noun",
-            "icon": "🤒"
+            "icon": "🤒",
+            "img": "assets/vocab/cold.svg"
           },
           {
             "en": "gentle",
             "zh": "轻轻",
             "pos": "adj",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/gentle.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "throw",
             "zh": "扔",
             "pos": "verb",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/throw.svg"
           }
         ]
       },
@@ -9744,55 +10384,64 @@ const SCENE_LIBRARY = {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "tissue",
             "zh": "纸巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/tissue.svg"
           },
           {
             "en": "sneeze",
             "zh": "喷嚏",
             "pos": "noun",
-            "icon": "🤧"
+            "icon": "🤧",
+            "img": "assets/vocab/sneeze.svg"
           },
           {
             "en": "bin",
             "zh": "垃圾桶",
             "pos": "noun",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/bin.svg"
           },
           {
             "en": "clean",
             "zh": "干净",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/clean.svg"
           },
           {
             "en": "cold",
             "zh": "感冒",
             "pos": "noun",
-            "icon": "🤒"
+            "icon": "🤒",
+            "img": "assets/vocab/cold.svg"
           },
           {
             "en": "gentle",
             "zh": "轻轻",
             "pos": "adj",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/gentle.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "throw",
             "zh": "扔",
             "pos": "verb",
-            "icon": "🗑️"
+            "icon": "🗑️",
+            "img": "assets/vocab/throw.svg"
           }
         ]
       }
@@ -9846,31 +10495,36 @@ const SCENE_LIBRARY = {
             "en": "block",
             "zh": "积木",
             "pos": "noun",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/block.svg"
           },
           {
             "en": "tower",
             "zh": "塔",
             "pos": "noun",
-            "icon": "🗼"
+            "icon": "🗼",
+            "img": "assets/vocab/tower.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "tall",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/tall.svg"
           }
         ]
       },
@@ -9952,55 +10606,64 @@ const SCENE_LIBRARY = {
             "en": "block",
             "zh": "积木",
             "pos": "noun",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/block.svg"
           },
           {
             "en": "tower",
             "zh": "塔",
             "pos": "noun",
-            "icon": "🗼"
+            "icon": "🗼",
+            "img": "assets/vocab/tower.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "tall",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/tall.svg"
           },
           {
             "en": "build",
             "zh": "搭",
             "pos": "verb",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/build.svg"
           },
           {
             "en": "stack",
             "zh": "堆",
             "pos": "verb",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/stack.svg"
           },
           {
             "en": "fall",
             "zh": "倒",
             "pos": "verb",
-            "icon": "💥"
+            "icon": "💥",
+            "img": "assets/vocab/fall.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           }
         ]
       },
@@ -10073,55 +10736,64 @@ const SCENE_LIBRARY = {
             "en": "block",
             "zh": "积木",
             "pos": "noun",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/block.svg"
           },
           {
             "en": "tower",
             "zh": "塔",
             "pos": "noun",
-            "icon": "🗼"
+            "icon": "🗼",
+            "img": "assets/vocab/tower.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "tall",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/tall.svg"
           },
           {
             "en": "build",
             "zh": "搭",
             "pos": "verb",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/build.svg"
           },
           {
             "en": "stack",
             "zh": "堆",
             "pos": "verb",
-            "icon": "🧱"
+            "icon": "🧱",
+            "img": "assets/vocab/stack.svg"
           },
           {
             "en": "fall",
             "zh": "倒",
             "pos": "verb",
-            "icon": "💥"
+            "icon": "💥",
+            "img": "assets/vocab/fall.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           }
         ]
       }
@@ -10169,31 +10841,36 @@ const SCENE_LIBRARY = {
             "en": "baby",
             "zh": "宝宝",
             "pos": "noun",
-            "icon": "👶"
+            "icon": "👶",
+            "img": "assets/vocab/baby.svg"
           },
           {
             "en": "doll",
             "zh": "娃娃",
             "pos": "noun",
-            "icon": "🎎"
+            "icon": "🎎",
+            "img": "assets/vocab/doll.svg"
           },
           {
             "en": "house",
             "zh": "房子",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/house.svg"
           },
           {
             "en": "tea",
             "zh": "茶",
             "pos": "noun",
-            "icon": "🍵"
+            "icon": "🍵",
+            "img": "assets/vocab/tea.svg"
           },
           {
             "en": "sleep",
             "zh": "睡觉",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           }
         ]
       },
@@ -10275,55 +10952,64 @@ const SCENE_LIBRARY = {
             "en": "baby",
             "zh": "宝宝",
             "pos": "noun",
-            "icon": "👶"
+            "icon": "👶",
+            "img": "assets/vocab/baby.svg"
           },
           {
             "en": "doll",
             "zh": "娃娃",
             "pos": "noun",
-            "icon": "🎎"
+            "icon": "🎎",
+            "img": "assets/vocab/doll.svg"
           },
           {
             "en": "house",
             "zh": "房子",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/house.svg"
           },
           {
             "en": "tea",
             "zh": "茶",
             "pos": "noun",
-            "icon": "🍵"
+            "icon": "🍵",
+            "img": "assets/vocab/tea.svg"
           },
           {
             "en": "sleep",
             "zh": "睡觉",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           },
           {
             "en": "mommy",
             "zh": "妈妈",
             "pos": "noun",
-            "icon": "👩"
+            "icon": "👩",
+            "img": "assets/vocab/mommy.svg"
           },
           {
             "en": "daddy",
             "zh": "爸爸",
             "pos": "noun",
-            "icon": "👨"
+            "icon": "👨",
+            "img": "assets/vocab/daddy.svg"
           },
           {
             "en": "dress",
             "zh": "裙子",
             "pos": "noun",
-            "icon": "👗"
+            "icon": "👗",
+            "img": "assets/vocab/dress.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           }
         ]
       },
@@ -10395,55 +11081,64 @@ const SCENE_LIBRARY = {
             "en": "baby",
             "zh": "宝宝",
             "pos": "noun",
-            "icon": "👶"
+            "icon": "👶",
+            "img": "assets/vocab/baby.svg"
           },
           {
             "en": "doll",
             "zh": "娃娃",
             "pos": "noun",
-            "icon": "🎎"
+            "icon": "🎎",
+            "img": "assets/vocab/doll.svg"
           },
           {
             "en": "house",
             "zh": "房子",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/house.svg"
           },
           {
             "en": "tea",
             "zh": "茶",
             "pos": "noun",
-            "icon": "🍵"
+            "icon": "🍵",
+            "img": "assets/vocab/tea.svg"
           },
           {
             "en": "sleep",
             "zh": "睡觉",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           },
           {
             "en": "mommy",
             "zh": "妈妈",
             "pos": "noun",
-            "icon": "👩"
+            "icon": "👩",
+            "img": "assets/vocab/mommy.svg"
           },
           {
             "en": "daddy",
             "zh": "爸爸",
             "pos": "noun",
-            "icon": "👨"
+            "icon": "👨",
+            "img": "assets/vocab/daddy.svg"
           },
           {
             "en": "dress",
             "zh": "裙子",
             "pos": "noun",
-            "icon": "👗"
+            "icon": "👗",
+            "img": "assets/vocab/dress.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           }
         ]
       }
@@ -10491,31 +11186,36 @@ const SCENE_LIBRARY = {
             "en": "puzzle",
             "zh": "拼图",
             "pos": "noun",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/puzzle.svg"
           },
           {
             "en": "piece",
             "zh": "拼块",
             "pos": "noun",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/piece.svg"
           },
           {
             "en": "box",
             "zh": "盒子",
             "pos": "noun",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "corner",
             "zh": "角",
             "pos": "noun",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/corner.svg"
           },
           {
             "en": "picture",
             "zh": "图",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           }
         ]
       },
@@ -10597,55 +11297,64 @@ const SCENE_LIBRARY = {
             "en": "puzzle",
             "zh": "拼图",
             "pos": "noun",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/puzzle.svg"
           },
           {
             "en": "piece",
             "zh": "拼块",
             "pos": "noun",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/piece.svg"
           },
           {
             "en": "box",
             "zh": "盒子",
             "pos": "noun",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "corner",
             "zh": "角",
             "pos": "noun",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/corner.svg"
           },
           {
             "en": "picture",
             "zh": "图",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "🔁"
+            "icon": "🔁",
+            "img": "assets/vocab/try.svg"
           },
           {
             "en": "done",
             "zh": "完成",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/done.svg"
           },
           {
             "en": "match",
             "zh": "配对",
             "pos": "verb",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/match.svg"
           }
         ]
       },
@@ -10718,55 +11427,64 @@ const SCENE_LIBRARY = {
             "en": "puzzle",
             "zh": "拼图",
             "pos": "noun",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/puzzle.svg"
           },
           {
             "en": "piece",
             "zh": "拼块",
             "pos": "noun",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/piece.svg"
           },
           {
             "en": "box",
             "zh": "盒子",
             "pos": "noun",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "corner",
             "zh": "角",
             "pos": "noun",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/corner.svg"
           },
           {
             "en": "picture",
             "zh": "图",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "🔁"
+            "icon": "🔁",
+            "img": "assets/vocab/try.svg"
           },
           {
             "en": "done",
             "zh": "完成",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/done.svg"
           },
           {
             "en": "match",
             "zh": "配对",
             "pos": "verb",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/match.svg"
           }
         ]
       }
@@ -10819,31 +11537,36 @@ const SCENE_LIBRARY = {
             "en": "hide",
             "zh": "藏",
             "pos": "verb",
-            "icon": "🫣"
+            "icon": "🫣",
+            "img": "assets/vocab/hide.svg"
           },
           {
             "en": "seek",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/seek.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "found",
             "zh": "找到",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/found.svg"
           }
         ]
       },
@@ -10925,55 +11648,64 @@ const SCENE_LIBRARY = {
             "en": "hide",
             "zh": "藏",
             "pos": "verb",
-            "icon": "🫣"
+            "icon": "🫣",
+            "img": "assets/vocab/hide.svg"
           },
           {
             "en": "seek",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/seek.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "found",
             "zh": "找到",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/found.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "come",
             "zh": "来",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/come.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           }
         ]
       },
@@ -11045,55 +11777,64 @@ const SCENE_LIBRARY = {
             "en": "hide",
             "zh": "藏",
             "pos": "verb",
-            "icon": "🫣"
+            "icon": "🫣",
+            "img": "assets/vocab/hide.svg"
           },
           {
             "en": "seek",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/seek.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "found",
             "zh": "找到",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/found.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "come",
             "zh": "来",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/come.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           }
         ]
       }
@@ -11144,31 +11885,36 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "小车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "track",
             "zh": "轨道",
             "pos": "noun",
-            "icon": "🛤️"
+            "icon": "🛤️",
+            "img": "assets/vocab/track.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "💨"
+            "icon": "💨",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "crash",
             "zh": "撞",
             "pos": "verb",
-            "icon": "💥"
+            "icon": "💥",
+            "img": "assets/vocab/crash.svg"
           },
           {
             "en": "go",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏁"
+            "icon": "🏁",
+            "img": "assets/vocab/go.svg"
           }
         ]
       },
@@ -11250,55 +11996,64 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "小车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "track",
             "zh": "轨道",
             "pos": "noun",
-            "icon": "🛤️"
+            "icon": "🛤️",
+            "img": "assets/vocab/track.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "💨"
+            "icon": "💨",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "crash",
             "zh": "撞",
             "pos": "verb",
-            "icon": "💥"
+            "icon": "💥",
+            "img": "assets/vocab/crash.svg"
           },
           {
             "en": "go",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏁"
+            "icon": "🏁",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "big",
             "zh": "大",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/big.svg"
           },
           {
             "en": "race",
             "zh": "比赛",
             "pos": "verb",
-            "icon": "🏎️"
+            "icon": "🏎️",
+            "img": "assets/vocab/race.svg"
           },
           {
             "en": "train",
             "zh": "火车",
             "pos": "noun",
-            "icon": "🚂"
+            "icon": "🚂",
+            "img": "assets/vocab/train.svg"
           }
         ]
       },
@@ -11369,55 +12124,64 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "小车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "track",
             "zh": "轨道",
             "pos": "noun",
-            "icon": "🛤️"
+            "icon": "🛤️",
+            "img": "assets/vocab/track.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "💨"
+            "icon": "💨",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "crash",
             "zh": "撞",
             "pos": "verb",
-            "icon": "💥"
+            "icon": "💥",
+            "img": "assets/vocab/crash.svg"
           },
           {
             "en": "go",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏁"
+            "icon": "🏁",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "big",
             "zh": "大",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/big.svg"
           },
           {
             "en": "race",
             "zh": "比赛",
             "pos": "verb",
-            "icon": "🏎️"
+            "icon": "🏎️",
+            "img": "assets/vocab/race.svg"
           },
           {
             "en": "train",
             "zh": "火车",
             "pos": "noun",
-            "icon": "🚂"
+            "icon": "🚂",
+            "img": "assets/vocab/train.svg"
           }
         ]
       }
@@ -11473,31 +12237,36 @@ const SCENE_LIBRARY = {
             "en": "crayon",
             "zh": "彩笔",
             "pos": "noun",
-            "icon": "🖍️"
+            "icon": "🖍️",
+            "img": "assets/vocab/crayon.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/draw.svg"
           }
         ]
       },
@@ -11579,55 +12348,64 @@ const SCENE_LIBRARY = {
             "en": "crayon",
             "zh": "彩笔",
             "pos": "noun",
-            "icon": "🖍️"
+            "icon": "🖍️",
+            "img": "assets/vocab/crayon.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/draw.svg"
           },
           {
             "en": "circle",
             "zh": "圆",
             "pos": "noun",
-            "icon": "⭕"
+            "icon": "⭕",
+            "img": "assets/vocab/circle.svg"
           },
           {
             "en": "picture",
             "zh": "画",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "creative",
             "zh": "有创意",
             "pos": "adj",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/creative.svg"
           }
         ]
       },
@@ -11701,55 +12479,64 @@ const SCENE_LIBRARY = {
             "en": "crayon",
             "zh": "彩笔",
             "pos": "noun",
-            "icon": "🖍️"
+            "icon": "🖍️",
+            "img": "assets/vocab/crayon.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/draw.svg"
           },
           {
             "en": "circle",
             "zh": "圆",
             "pos": "noun",
-            "icon": "⭕"
+            "icon": "⭕",
+            "img": "assets/vocab/circle.svg"
           },
           {
             "en": "picture",
             "zh": "画",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "creative",
             "zh": "有创意",
             "pos": "adj",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/creative.svg"
           }
         ]
       }
@@ -11796,31 +12583,36 @@ const SCENE_LIBRARY = {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "fold",
             "zh": "折",
             "pos": "verb",
-            "icon": "📜"
+            "icon": "📜",
+            "img": "assets/vocab/fold.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           },
           {
             "en": "snowflake",
             "zh": "雪花",
             "pos": "noun",
-            "icon": "❄️"
+            "icon": "❄️",
+            "img": "assets/vocab/snowflake.svg"
           }
         ]
       },
@@ -11896,55 +12688,64 @@ const SCENE_LIBRARY = {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "fold",
             "zh": "折",
             "pos": "verb",
-            "icon": "📜"
+            "icon": "📜",
+            "img": "assets/vocab/fold.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           },
           {
             "en": "snowflake",
             "zh": "雪花",
             "pos": "noun",
-            "icon": "❄️"
+            "icon": "❄️",
+            "img": "assets/vocab/snowflake.svg"
           },
           {
             "en": "airplane",
             "zh": "飞机",
             "pos": "noun",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/airplane.svg"
           },
           {
             "en": "half",
             "zh": "一半",
             "pos": "noun",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/half.svg"
           },
           {
             "en": "shape",
             "zh": "形状",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/shape.svg"
           },
           {
             "en": "careful",
             "zh": "小心",
             "pos": "adj",
-            "icon": "⚠️"
+            "icon": "⚠️",
+            "img": "assets/vocab/careful.svg"
           }
         ]
       },
@@ -12016,55 +12817,64 @@ const SCENE_LIBRARY = {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "fold",
             "zh": "折",
             "pos": "verb",
-            "icon": "📜"
+            "icon": "📜",
+            "img": "assets/vocab/fold.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           },
           {
             "en": "snowflake",
             "zh": "雪花",
             "pos": "noun",
-            "icon": "❄️"
+            "icon": "❄️",
+            "img": "assets/vocab/snowflake.svg"
           },
           {
             "en": "airplane",
             "zh": "飞机",
             "pos": "noun",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/airplane.svg"
           },
           {
             "en": "half",
             "zh": "一半",
             "pos": "noun",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/half.svg"
           },
           {
             "en": "shape",
             "zh": "形状",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/shape.svg"
           },
           {
             "en": "careful",
             "zh": "小心",
             "pos": "adj",
-            "icon": "⚠️"
+            "icon": "⚠️",
+            "img": "assets/vocab/careful.svg"
           }
         ]
       }
@@ -12117,31 +12927,36 @@ const SCENE_LIBRARY = {
             "en": "clay",
             "zh": "橡皮泥",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/clay.svg"
           },
           {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "snake",
             "zh": "蛇",
             "pos": "noun",
-            "icon": "🐍"
+            "icon": "🐍",
+            "img": "assets/vocab/snake.svg"
           },
           {
             "en": "roll",
             "zh": "搓",
             "pos": "verb",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/roll.svg"
           },
           {
             "en": "flat",
             "zh": "扁",
             "pos": "adj",
-            "icon": "⬛"
+            "icon": "⬛",
+            "img": "assets/vocab/flat.svg"
           }
         ]
       },
@@ -12223,55 +13038,64 @@ const SCENE_LIBRARY = {
             "en": "clay",
             "zh": "橡皮泥",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/clay.svg"
           },
           {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "snake",
             "zh": "蛇",
             "pos": "noun",
-            "icon": "🐍"
+            "icon": "🐍",
+            "img": "assets/vocab/snake.svg"
           },
           {
             "en": "roll",
             "zh": "搓",
             "pos": "verb",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/roll.svg"
           },
           {
             "en": "flat",
             "zh": "扁",
             "pos": "adj",
-            "icon": "⬛"
+            "icon": "⬛",
+            "img": "assets/vocab/flat.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "dinosaur",
             "zh": "恐龙",
             "pos": "noun",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/dinosaur.svg"
           },
           {
             "en": "mix",
             "zh": "混",
             "pos": "verb",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/mix.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           }
         ]
       },
@@ -12344,55 +13168,64 @@ const SCENE_LIBRARY = {
             "en": "clay",
             "zh": "橡皮泥",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/clay.svg"
           },
           {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "snake",
             "zh": "蛇",
             "pos": "noun",
-            "icon": "🐍"
+            "icon": "🐍",
+            "img": "assets/vocab/snake.svg"
           },
           {
             "en": "roll",
             "zh": "搓",
             "pos": "verb",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/roll.svg"
           },
           {
             "en": "flat",
             "zh": "扁",
             "pos": "adj",
-            "icon": "⬛"
+            "icon": "⬛",
+            "img": "assets/vocab/flat.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "dinosaur",
             "zh": "恐龙",
             "pos": "noun",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/dinosaur.svg"
           },
           {
             "en": "mix",
             "zh": "混",
             "pos": "verb",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/mix.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           }
         ]
       }
@@ -12449,31 +13282,36 @@ const SCENE_LIBRARY = {
             "en": "sticker",
             "zh": "贴纸",
             "pos": "noun",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/sticker.svg"
           },
           {
             "en": "stamp",
             "zh": "印章",
             "pos": "noun",
-            "icon": "📛"
+            "icon": "📛",
+            "img": "assets/vocab/stamp.svg"
           },
           {
             "en": "pattern",
             "zh": "图案",
             "pos": "noun",
-            "icon": "🔷"
+            "icon": "🔷",
+            "img": "assets/vocab/pattern.svg"
           },
           {
             "en": "notebook",
             "zh": "本子",
             "pos": "noun",
-            "icon": "📓"
+            "icon": "📓",
+            "img": "assets/vocab/notebook.svg"
           },
           {
             "en": "bottle",
             "zh": "瓶",
             "pos": "noun",
-            "icon": "🍶"
+            "icon": "🍶",
+            "img": "assets/vocab/bottle.svg"
           }
         ]
       },
@@ -12555,55 +13393,64 @@ const SCENE_LIBRARY = {
             "en": "sticker",
             "zh": "贴纸",
             "pos": "noun",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/sticker.svg"
           },
           {
             "en": "stamp",
             "zh": "印章",
             "pos": "noun",
-            "icon": "📛"
+            "icon": "📛",
+            "img": "assets/vocab/stamp.svg"
           },
           {
             "en": "pattern",
             "zh": "图案",
             "pos": "noun",
-            "icon": "🔷"
+            "icon": "🔷",
+            "img": "assets/vocab/pattern.svg"
           },
           {
             "en": "notebook",
             "zh": "本子",
             "pos": "noun",
-            "icon": "📓"
+            "icon": "📓",
+            "img": "assets/vocab/notebook.svg"
           },
           {
             "en": "bottle",
             "zh": "瓶",
             "pos": "noun",
-            "icon": "🍶"
+            "icon": "🍶",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "chart",
             "zh": "表",
             "pos": "noun",
-            "icon": "📊"
+            "icon": "📊",
+            "img": "assets/vocab/chart.svg"
           },
           {
             "en": "press",
             "zh": "按",
             "pos": "verb",
-            "icon": "👇"
+            "icon": "👇",
+            "img": "assets/vocab/press.svg"
           },
           {
             "en": "decorate",
             "zh": "装饰",
             "pos": "verb",
-            "icon": "🎀"
+            "icon": "🎀",
+            "img": "assets/vocab/decorate.svg"
           }
         ]
       },
@@ -12675,55 +13522,64 @@ const SCENE_LIBRARY = {
             "en": "sticker",
             "zh": "贴纸",
             "pos": "noun",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/sticker.svg"
           },
           {
             "en": "stamp",
             "zh": "印章",
             "pos": "noun",
-            "icon": "📛"
+            "icon": "📛",
+            "img": "assets/vocab/stamp.svg"
           },
           {
             "en": "pattern",
             "zh": "图案",
             "pos": "noun",
-            "icon": "🔷"
+            "icon": "🔷",
+            "img": "assets/vocab/pattern.svg"
           },
           {
             "en": "notebook",
             "zh": "本子",
             "pos": "noun",
-            "icon": "📓"
+            "icon": "📓",
+            "img": "assets/vocab/notebook.svg"
           },
           {
             "en": "bottle",
             "zh": "瓶",
             "pos": "noun",
-            "icon": "🍶"
+            "icon": "🍶",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "💖"
+            "icon": "💖",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "chart",
             "zh": "表",
             "pos": "noun",
-            "icon": "📊"
+            "icon": "📊",
+            "img": "assets/vocab/chart.svg"
           },
           {
             "en": "press",
             "zh": "按",
             "pos": "verb",
-            "icon": "👇"
+            "icon": "👇",
+            "img": "assets/vocab/press.svg"
           },
           {
             "en": "decorate",
             "zh": "装饰",
             "pos": "verb",
-            "icon": "🎀"
+            "icon": "🎀",
+            "img": "assets/vocab/decorate.svg"
           }
         ]
       }
@@ -12779,31 +13635,36 @@ const SCENE_LIBRARY = {
             "en": "bead",
             "zh": "珠子",
             "pos": "noun",
-            "icon": "🔮"
+            "icon": "🔮",
+            "img": "assets/vocab/bead.svg"
           },
           {
             "en": "necklace",
             "zh": "项链",
             "pos": "noun",
-            "icon": "📿"
+            "icon": "📿",
+            "img": "assets/vocab/necklace.svg"
           },
           {
             "en": "bracelet",
             "zh": "手链",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/bracelet.svg"
           },
           {
             "en": "thread",
             "zh": "穿",
             "pos": "verb",
-            "icon": "🧵"
+            "icon": "🧵",
+            "img": "assets/vocab/thread.svg"
           },
           {
             "en": "string",
             "zh": "绳子",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/string.svg"
           }
         ]
       },
@@ -12885,55 +13746,64 @@ const SCENE_LIBRARY = {
             "en": "bead",
             "zh": "珠子",
             "pos": "noun",
-            "icon": "🔮"
+            "icon": "🔮",
+            "img": "assets/vocab/bead.svg"
           },
           {
             "en": "necklace",
             "zh": "项链",
             "pos": "noun",
-            "icon": "📿"
+            "icon": "📿",
+            "img": "assets/vocab/necklace.svg"
           },
           {
             "en": "bracelet",
             "zh": "手链",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/bracelet.svg"
           },
           {
             "en": "thread",
             "zh": "穿",
             "pos": "verb",
-            "icon": "🧵"
+            "icon": "🧵",
+            "img": "assets/vocab/thread.svg"
           },
           {
             "en": "string",
             "zh": "绳子",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/string.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "pattern",
             "zh": "图案",
             "pos": "noun",
-            "icon": "🔷"
+            "icon": "🔷",
+            "img": "assets/vocab/pattern.svg"
           },
           {
             "en": "steady",
             "zh": "稳",
             "pos": "adj",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/steady.svg"
           }
         ]
       },
@@ -13005,55 +13875,64 @@ const SCENE_LIBRARY = {
             "en": "bead",
             "zh": "珠子",
             "pos": "noun",
-            "icon": "🔮"
+            "icon": "🔮",
+            "img": "assets/vocab/bead.svg"
           },
           {
             "en": "necklace",
             "zh": "项链",
             "pos": "noun",
-            "icon": "📿"
+            "icon": "📿",
+            "img": "assets/vocab/necklace.svg"
           },
           {
             "en": "bracelet",
             "zh": "手链",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/bracelet.svg"
           },
           {
             "en": "thread",
             "zh": "穿",
             "pos": "verb",
-            "icon": "🧵"
+            "icon": "🧵",
+            "img": "assets/vocab/thread.svg"
           },
           {
             "en": "string",
             "zh": "绳子",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/string.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "pattern",
             "zh": "图案",
             "pos": "noun",
-            "icon": "🔷"
+            "icon": "🔷",
+            "img": "assets/vocab/pattern.svg"
           },
           {
             "en": "steady",
             "zh": "稳",
             "pos": "adj",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/steady.svg"
           }
         ]
       }
@@ -13108,31 +13987,36 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "cat",
             "zh": "猫",
             "pos": "noun",
-            "icon": "🐱"
+            "icon": "🐱",
+            "img": "assets/vocab/cat.svg"
           },
           {
             "en": "picture",
             "zh": "图",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/read.svg"
           }
         ]
       },
@@ -13208,55 +14092,64 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "cat",
             "zh": "猫",
             "pos": "noun",
-            "icon": "🐱"
+            "icon": "🐱",
+            "img": "assets/vocab/cat.svg"
           },
           {
             "en": "letter",
             "zh": "字母",
             "pos": "noun",
-            "icon": "🔤"
+            "icon": "🔤",
+            "img": "assets/vocab/letter.svg"
           },
           {
             "en": "picture",
             "zh": "图",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/read.svg"
           },
           {
             "en": "turn",
             "zh": "翻",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           }
         ]
       },
@@ -13330,55 +14223,64 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "cat",
             "zh": "猫",
             "pos": "noun",
-            "icon": "🐱"
+            "icon": "🐱",
+            "img": "assets/vocab/cat.svg"
           },
           {
             "en": "letter",
             "zh": "字母",
             "pos": "noun",
-            "icon": "🔤"
+            "icon": "🔤",
+            "img": "assets/vocab/letter.svg"
           },
           {
             "en": "picture",
             "zh": "图",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/picture.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/read.svg"
           },
           {
             "en": "turn",
             "zh": "翻",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           }
         ]
       }
@@ -13432,31 +14334,36 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📕"
+            "icon": "📕",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "pencil",
             "zh": "铅笔",
             "pos": "noun",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/pencil.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "write",
             "zh": "写",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/write.svg"
           }
         ]
       },
@@ -13538,55 +14445,64 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📕"
+            "icon": "📕",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "pencil",
             "zh": "铅笔",
             "pos": "noun",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/pencil.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "desk",
             "zh": "书桌",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/desk.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "write",
             "zh": "写",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/write.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/draw.svg"
           }
         ]
       },
@@ -13660,55 +14576,64 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📕"
+            "icon": "📕",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "pencil",
             "zh": "铅笔",
             "pos": "noun",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/pencil.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "desk",
             "zh": "书桌",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/desk.svg"
           },
           {
             "en": "plan",
             "zh": "计划",
             "pos": "noun",
-            "icon": "📋"
+            "icon": "📋",
+            "img": "assets/vocab/plan.svg"
           },
           {
             "en": "write",
             "zh": "写",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/write.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/draw.svg"
           },
           {
             "en": "study",
             "zh": "学习",
             "pos": "verb",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/study.svg"
           }
         ]
       }
@@ -13762,31 +14687,36 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "letter",
             "zh": "字母",
             "pos": "noun",
-            "icon": "🔤"
+            "icon": "🔤",
+            "img": "assets/vocab/letter.svg"
           },
           {
             "en": "word",
             "zh": "单词",
             "pos": "noun",
-            "icon": "🔡"
+            "icon": "🔡",
+            "img": "assets/vocab/word.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📘"
+            "icon": "📘",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/say.svg"
           }
         ]
       },
@@ -13868,55 +14798,64 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "letter",
             "zh": "字母",
             "pos": "noun",
-            "icon": "🔤"
+            "icon": "🔤",
+            "img": "assets/vocab/letter.svg"
           },
           {
             "en": "word",
             "zh": "单词",
             "pos": "noun",
-            "icon": "🔡"
+            "icon": "🔡",
+            "img": "assets/vocab/word.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📘"
+            "icon": "📘",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "cat",
             "zh": "猫",
             "pos": "noun",
-            "icon": "🐱"
+            "icon": "🐱",
+            "img": "assets/vocab/cat.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/say.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📘"
+            "icon": "📘",
+            "img": "assets/vocab/read.svg"
           }
         ]
       },
@@ -13984,55 +14923,64 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "letter",
             "zh": "字母",
             "pos": "noun",
-            "icon": "🔤"
+            "icon": "🔤",
+            "img": "assets/vocab/letter.svg"
           },
           {
             "en": "word",
             "zh": "单词",
             "pos": "noun",
-            "icon": "🔡"
+            "icon": "🔡",
+            "img": "assets/vocab/word.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📘"
+            "icon": "📘",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "culture",
             "zh": "文化",
             "pos": "noun",
-            "icon": "🌍"
+            "icon": "🌍",
+            "img": "assets/vocab/culture.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/say.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📘"
+            "icon": "📘",
+            "img": "assets/vocab/read.svg"
           }
         ]
       }
@@ -14089,31 +15037,36 @@ const SCENE_LIBRARY = {
             "en": "one",
             "zh": "一",
             "pos": "noun",
-            "icon": "1️⃣"
+            "icon": "1️⃣",
+            "img": "assets/vocab/one.svg"
           },
           {
             "en": "two",
             "zh": "二",
             "pos": "noun",
-            "icon": "2️⃣"
+            "icon": "2️⃣",
+            "img": "assets/vocab/two.svg"
           },
           {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "cookie",
             "zh": "饼干",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/cookie.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           }
         ]
       },
@@ -14195,55 +15148,64 @@ const SCENE_LIBRARY = {
             "en": "one",
             "zh": "一",
             "pos": "noun",
-            "icon": "1️⃣"
+            "icon": "1️⃣",
+            "img": "assets/vocab/one.svg"
           },
           {
             "en": "two",
             "zh": "二",
             "pos": "noun",
-            "icon": "2️⃣"
+            "icon": "2️⃣",
+            "img": "assets/vocab/two.svg"
           },
           {
             "en": "three",
             "zh": "三",
             "pos": "noun",
-            "icon": "3️⃣"
+            "icon": "3️⃣",
+            "img": "assets/vocab/three.svg"
           },
           {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "cookie",
             "zh": "饼干",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/cookie.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "add",
             "zh": "加",
             "pos": "verb",
-            "icon": "➕"
+            "icon": "➕",
+            "img": "assets/vocab/add.svg"
           }
         ]
       },
@@ -14311,61 +15273,71 @@ const SCENE_LIBRARY = {
             "en": "one",
             "zh": "一",
             "pos": "noun",
-            "icon": "1️⃣"
+            "icon": "1️⃣",
+            "img": "assets/vocab/one.svg"
           },
           {
             "en": "two",
             "zh": "二",
             "pos": "noun",
-            "icon": "2️⃣"
+            "icon": "2️⃣",
+            "img": "assets/vocab/two.svg"
           },
           {
             "en": "three",
             "zh": "三",
             "pos": "noun",
-            "icon": "3️⃣"
+            "icon": "3️⃣",
+            "img": "assets/vocab/three.svg"
           },
           {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "cookie",
             "zh": "饼干",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/cookie.svg"
           },
           {
             "en": "math",
             "zh": "数学",
             "pos": "noun",
-            "icon": "➕"
+            "icon": "➕",
+            "img": "assets/vocab/math.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "add",
             "zh": "加",
             "pos": "verb",
-            "icon": "➕"
+            "icon": "➕",
+            "img": "assets/vocab/add.svg"
           }
         ]
       }
@@ -14422,31 +15394,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "cup",
             "zh": "杯子",
             "pos": "noun",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/cup.svg"
           },
           {
             "en": "bubble",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubble.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "mix",
             "zh": "混合",
             "pos": "verb",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/mix.svg"
           }
         ]
       },
@@ -14528,55 +15505,64 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "cup",
             "zh": "杯子",
             "pos": "noun",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/cup.svg"
           },
           {
             "en": "bubble",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubble.svg"
           },
           {
             "en": "soda",
             "zh": "小苏打",
             "pos": "noun",
-            "icon": "🧂"
+            "icon": "🧂",
+            "img": "assets/vocab/soda.svg"
           },
           {
             "en": "vinegar",
             "zh": "醋",
             "pos": "noun",
-            "icon": "🧴"
+            "icon": "🧴",
+            "img": "assets/vocab/vinegar.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "mix",
             "zh": "混合",
             "pos": "verb",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/mix.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -14644,61 +15630,71 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "cup",
             "zh": "杯子",
             "pos": "noun",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/cup.svg"
           },
           {
             "en": "bubble",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubble.svg"
           },
           {
             "en": "soda",
             "zh": "小苏打",
             "pos": "noun",
-            "icon": "🧂"
+            "icon": "🧂",
+            "img": "assets/vocab/soda.svg"
           },
           {
             "en": "vinegar",
             "zh": "醋",
             "pos": "noun",
-            "icon": "🧴"
+            "icon": "🧴",
+            "img": "assets/vocab/vinegar.svg"
           },
           {
             "en": "experiment",
             "zh": "实验",
             "pos": "noun",
-            "icon": "🔬"
+            "icon": "🔬",
+            "img": "assets/vocab/experiment.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "mix",
             "zh": "混合",
             "pos": "verb",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/mix.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       }
@@ -14752,31 +15748,36 @@ const SCENE_LIBRARY = {
             "en": "swing",
             "zh": "秋千",
             "pos": "noun",
-            "icon": "🎠"
+            "icon": "🎠",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "bird",
             "zh": "鸟",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/bird.svg"
           },
           {
             "en": "high",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/high.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/push.svg"
           }
         ]
       },
@@ -14858,55 +15859,64 @@ const SCENE_LIBRARY = {
             "en": "swing",
             "zh": "秋千",
             "pos": "noun",
-            "icon": "🎠"
+            "icon": "🎠",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "seesaw",
             "zh": "跷跷板",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/seesaw.svg"
           },
           {
             "en": "bird",
             "zh": "鸟",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/bird.svg"
           },
           {
             "en": "high",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/high.svg"
           },
           {
             "en": "low",
             "zh": "低",
             "pos": "adj",
-            "icon": "🔽"
+            "icon": "🔽",
+            "img": "assets/vocab/low.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "hold",
             "zh": "抓紧",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -14980,61 +15990,71 @@ const SCENE_LIBRARY = {
             "en": "swing",
             "zh": "秋千",
             "pos": "noun",
-            "icon": "🎠"
+            "icon": "🎠",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "seesaw",
             "zh": "跷跷板",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/seesaw.svg"
           },
           {
             "en": "bird",
             "zh": "鸟",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/bird.svg"
           },
           {
             "en": "balance",
             "zh": "平衡",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/balance.svg"
           },
           {
             "en": "high",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/high.svg"
           },
           {
             "en": "low",
             "zh": "低",
             "pos": "adj",
-            "icon": "🔽"
+            "icon": "🔽",
+            "img": "assets/vocab/low.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "hold",
             "zh": "抓紧",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       }
@@ -15088,31 +16108,36 @@ const SCENE_LIBRARY = {
             "en": "sand",
             "zh": "沙",
             "pos": "noun",
-            "icon": "🏖️"
+            "icon": "🏖️",
+            "img": "assets/vocab/sand.svg"
           },
           {
             "en": "castle",
             "zh": "城堡",
             "pos": "noun",
-            "icon": "🏰"
+            "icon": "🏰",
+            "img": "assets/vocab/castle.svg"
           },
           {
             "en": "bucket",
             "zh": "桶",
             "pos": "noun",
-            "icon": "🪣"
+            "icon": "🪣",
+            "img": "assets/vocab/bucket.svg"
           },
           {
             "en": "shovel",
             "zh": "铲子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🪏",
+            "img": "assets/vocab/shovel.svg"
           },
           {
             "en": "dig",
             "zh": "挖",
             "pos": "verb",
-            "icon": "⛏️"
+            "icon": "⛏️",
+            "img": "assets/vocab/dig.svg"
           }
         ]
       },
@@ -15194,55 +16219,64 @@ const SCENE_LIBRARY = {
             "en": "sand",
             "zh": "沙",
             "pos": "noun",
-            "icon": "🏖️"
+            "icon": "🏖️",
+            "img": "assets/vocab/sand.svg"
           },
           {
             "en": "castle",
             "zh": "城堡",
             "pos": "noun",
-            "icon": "🏰"
+            "icon": "🏰",
+            "img": "assets/vocab/castle.svg"
           },
           {
             "en": "bucket",
             "zh": "桶",
             "pos": "noun",
-            "icon": "🪣"
+            "icon": "🪣",
+            "img": "assets/vocab/bucket.svg"
           },
           {
             "en": "shovel",
             "zh": "铲子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🪏",
+            "img": "assets/vocab/shovel.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "dig",
             "zh": "挖",
             "pos": "verb",
-            "icon": "⛏️"
+            "icon": "⛏️",
+            "img": "assets/vocab/dig.svg"
           },
           {
             "en": "fill",
             "zh": "装满",
             "pos": "verb",
-            "icon": "🪣"
+            "icon": "🪣",
+            "img": "assets/vocab/fill.svg"
           }
         ]
       },
@@ -15310,61 +16344,71 @@ const SCENE_LIBRARY = {
             "en": "sand",
             "zh": "沙",
             "pos": "noun",
-            "icon": "🏖️"
+            "icon": "🏖️",
+            "img": "assets/vocab/sand.svg"
           },
           {
             "en": "castle",
             "zh": "城堡",
             "pos": "noun",
-            "icon": "🏰"
+            "icon": "🏰",
+            "img": "assets/vocab/castle.svg"
           },
           {
             "en": "bucket",
             "zh": "桶",
             "pos": "noun",
-            "icon": "🪣"
+            "icon": "🪣",
+            "img": "assets/vocab/bucket.svg"
           },
           {
             "en": "shovel",
             "zh": "铲子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🪏",
+            "img": "assets/vocab/shovel.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "moat",
             "zh": "护城河",
             "pos": "noun",
-            "icon": "🏰"
+            "icon": "🏰",
+            "img": "assets/vocab/moat.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "dig",
             "zh": "挖",
             "pos": "verb",
-            "icon": "⛏️"
+            "icon": "⛏️",
+            "img": "assets/vocab/dig.svg"
           },
           {
             "en": "fill",
             "zh": "装满",
             "pos": "verb",
-            "icon": "🪣"
+            "icon": "🪣",
+            "img": "assets/vocab/fill.svg"
           }
         ]
       }
@@ -15418,31 +16462,36 @@ const SCENE_LIBRARY = {
             "en": "kite",
             "zh": "风筝",
             "pos": "noun",
-            "icon": "🪁"
+            "icon": "🪁",
+            "img": "assets/vocab/kite.svg"
           },
           {
             "en": "bubble",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubble.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/fly.svg"
           }
         ]
       },
@@ -15524,55 +16573,64 @@ const SCENE_LIBRARY = {
             "en": "kite",
             "zh": "风筝",
             "pos": "noun",
-            "icon": "🪁"
+            "icon": "🪁",
+            "img": "assets/vocab/kite.svg"
           },
           {
             "en": "bubble",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubble.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "cloud",
             "zh": "云",
             "pos": "noun",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/cloud.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/fly.svg"
           },
           {
             "en": "blow",
             "zh": "吹",
             "pos": "verb",
-            "icon": "💨"
+            "icon": "💨",
+            "img": "assets/vocab/blow.svg"
           }
         ]
       },
@@ -15640,61 +16698,71 @@ const SCENE_LIBRARY = {
             "en": "kite",
             "zh": "风筝",
             "pos": "noun",
-            "icon": "🪁"
+            "icon": "🪁",
+            "img": "assets/vocab/kite.svg"
           },
           {
             "en": "bubble",
             "zh": "泡泡",
             "pos": "noun",
-            "icon": "🫧"
+            "icon": "🫧",
+            "img": "assets/vocab/bubble.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "cloud",
             "zh": "云",
             "pos": "noun",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/cloud.svg"
           },
           {
             "en": "patience",
             "zh": "耐心",
             "pos": "noun",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/patience.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/fly.svg"
           },
           {
             "en": "blow",
             "zh": "吹",
             "pos": "verb",
-            "icon": "💨"
+            "icon": "💨",
+            "img": "assets/vocab/blow.svg"
           }
         ]
       }
@@ -15748,31 +16816,36 @@ const SCENE_LIBRARY = {
             "en": "blanket",
             "zh": "垫子",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/blanket.svg"
           },
           {
             "en": "sandwich",
             "zh": "三明治",
             "pos": "noun",
-            "icon": "🥪"
+            "icon": "🥪",
+            "img": "assets/vocab/sandwich.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍱"
+            "icon": "🍱",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           }
         ]
       },
@@ -15854,61 +16927,71 @@ const SCENE_LIBRARY = {
             "en": "blanket",
             "zh": "垫子",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/blanket.svg"
           },
           {
             "en": "sandwich",
             "zh": "三明治",
             "pos": "noun",
-            "icon": "🥪"
+            "icon": "🥪",
+            "img": "assets/vocab/sandwich.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍱"
+            "icon": "🍱",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "grass",
             "zh": "草",
             "pos": "noun",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grass.svg"
           },
           {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           }
         ]
       },
@@ -15976,67 +17059,78 @@ const SCENE_LIBRARY = {
             "en": "blanket",
             "zh": "垫子",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/blanket.svg"
           },
           {
             "en": "sandwich",
             "zh": "三明治",
             "pos": "noun",
-            "icon": "🥪"
+            "icon": "🥪",
+            "img": "assets/vocab/sandwich.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "food",
             "zh": "食物",
             "pos": "noun",
-            "icon": "🍱"
+            "icon": "🍱",
+            "img": "assets/vocab/food.svg"
           },
           {
             "en": "grass",
             "zh": "草",
             "pos": "noun",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grass.svg"
           },
           {
             "en": "shade",
             "zh": "阴凉",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/shade.svg"
           },
           {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           }
         ]
       }
@@ -16092,31 +17186,36 @@ const SCENE_LIBRARY = {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "catch",
             "zh": "追",
             "pos": "verb",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/catch.svg"
           }
         ]
       },
@@ -16198,55 +17297,64 @@ const SCENE_LIBRARY = {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "slow",
             "zh": "慢",
             "pos": "adj",
-            "icon": "🐢"
+            "icon": "🐢",
+            "img": "assets/vocab/slow.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "race",
             "zh": "比赛",
             "pos": "noun",
-            "icon": "🏁"
+            "icon": "🏁",
+            "img": "assets/vocab/race.svg"
           },
           {
             "en": "arms",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arms.svg"
           },
           {
             "en": "catch",
             "zh": "追",
             "pos": "verb",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/catch.svg"
           },
           {
             "en": "win",
             "zh": "赢",
             "pos": "verb",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/win.svg"
           }
         ]
       },
@@ -16314,61 +17422,71 @@ const SCENE_LIBRARY = {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "slow",
             "zh": "慢",
             "pos": "adj",
-            "icon": "🐢"
+            "icon": "🐢",
+            "img": "assets/vocab/slow.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "race",
             "zh": "比赛",
             "pos": "noun",
-            "icon": "🏁"
+            "icon": "🏁",
+            "img": "assets/vocab/race.svg"
           },
           {
             "en": "arms",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arms.svg"
           },
           {
             "en": "catch",
             "zh": "追",
             "pos": "verb",
-            "icon": "🤚"
+            "icon": "🤚",
+            "img": "assets/vocab/catch.svg"
           },
           {
             "en": "win",
             "zh": "赢",
             "pos": "verb",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/win.svg"
           },
           {
             "en": "goal",
             "zh": "目标",
             "pos": "noun",
-            "icon": "🎯"
+            "icon": "🎯",
+            "img": "assets/vocab/goal.svg"
           }
         ]
       }
@@ -16421,31 +17539,36 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "goal",
             "zh": "球门",
             "pos": "noun",
-            "icon": "🥅"
+            "icon": "🥅",
+            "img": "assets/vocab/goal.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "kick",
             "zh": "踢",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/kick.svg"
           }
         ]
       },
@@ -16527,55 +17650,64 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "goal",
             "zh": "球门",
             "pos": "noun",
-            "icon": "🥅"
+            "icon": "🥅",
+            "img": "assets/vocab/goal.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "team",
             "zh": "球队",
             "pos": "noun",
-            "icon": "👥"
+            "icon": "👥",
+            "img": "assets/vocab/team.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "white",
             "zh": "白色",
             "pos": "adj",
-            "icon": "⚪"
+            "icon": "⚪",
+            "img": "assets/vocab/white.svg"
           },
           {
             "en": "kick",
             "zh": "踢",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/kick.svg"
           },
           {
             "en": "pass",
             "zh": "传",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/pass.svg"
           }
         ]
       },
@@ -16643,61 +17775,71 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "goal",
             "zh": "球门",
             "pos": "noun",
-            "icon": "🥅"
+            "icon": "🥅",
+            "img": "assets/vocab/goal.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "team",
             "zh": "球队",
             "pos": "noun",
-            "icon": "👥"
+            "icon": "👥",
+            "img": "assets/vocab/team.svg"
           },
           {
             "en": "teamwork",
             "zh": "团队合作",
             "pos": "noun",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/teamwork.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "white",
             "zh": "白色",
             "pos": "adj",
-            "icon": "⚪"
+            "icon": "⚪",
+            "img": "assets/vocab/white.svg"
           },
           {
             "en": "kick",
             "zh": "踢",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/kick.svg"
           },
           {
             "en": "pass",
             "zh": "传",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/pass.svg"
           }
         ]
       }
@@ -16750,31 +17892,36 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "hoop",
             "zh": "篮筐",
             "pos": "noun",
-            "icon": "🪀"
+            "icon": "🪀",
+            "img": "assets/vocab/hoop.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "bounce",
             "zh": "拍",
             "pos": "verb",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/bounce.svg"
           }
         ]
       },
@@ -16856,55 +18003,64 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "hoop",
             "zh": "篮筐",
             "pos": "noun",
-            "icon": "🪀"
+            "icon": "🪀",
+            "img": "assets/vocab/hoop.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "basket",
             "zh": "篮筐",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "bounce",
             "zh": "拍",
             "pos": "verb",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/bounce.svg"
           },
           {
             "en": "shoot",
             "zh": "投",
             "pos": "verb",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/shoot.svg"
           }
         ]
       },
@@ -16972,61 +18128,71 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "hoop",
             "zh": "篮筐",
             "pos": "noun",
-            "icon": "🪀"
+            "icon": "🪀",
+            "img": "assets/vocab/hoop.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "basket",
             "zh": "篮筐",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "height",
             "zh": "身高",
             "pos": "noun",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/height.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "bounce",
             "zh": "拍",
             "pos": "verb",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/bounce.svg"
           },
           {
             "en": "shoot",
             "zh": "投",
             "pos": "verb",
-            "icon": "🏀"
+            "icon": "🏀",
+            "img": "assets/vocab/shoot.svg"
           }
         ]
       }
@@ -17079,31 +18245,36 @@ const SCENE_LIBRARY = {
             "en": "racket",
             "zh": "球拍",
             "pos": "noun",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/racket.svg"
           },
           {
             "en": "birdie",
             "zh": "羽毛球",
             "pos": "noun",
-            "icon": "🪶"
+            "icon": "🪶",
+            "img": "assets/vocab/birdie.svg"
           },
           {
             "en": "air",
             "zh": "空中",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/air.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/hit.svg"
           }
         ]
       },
@@ -17185,55 +18356,64 @@ const SCENE_LIBRARY = {
             "en": "racket",
             "zh": "球拍",
             "pos": "noun",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/racket.svg"
           },
           {
             "en": "birdie",
             "zh": "羽毛球",
             "pos": "noun",
-            "icon": "🪶"
+            "icon": "🪶",
+            "img": "assets/vocab/birdie.svg"
           },
           {
             "en": "air",
             "zh": "空中",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/air.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "court",
             "zh": "场地",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/court.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/hit.svg"
           },
           {
             "en": "serve",
             "zh": "发球",
             "pos": "verb",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/serve.svg"
           }
         ]
       },
@@ -17301,61 +18481,71 @@ const SCENE_LIBRARY = {
             "en": "racket",
             "zh": "球拍",
             "pos": "noun",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/racket.svg"
           },
           {
             "en": "birdie",
             "zh": "羽毛球",
             "pos": "noun",
-            "icon": "🪶"
+            "icon": "🪶",
+            "img": "assets/vocab/birdie.svg"
           },
           {
             "en": "air",
             "zh": "空中",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/air.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "court",
             "zh": "场地",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/court.svg"
           },
           {
             "en": "strategy",
             "zh": "策略",
             "pos": "noun",
-            "icon": "♟️"
+            "icon": "♟️",
+            "img": "assets/vocab/strategy.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/hit.svg"
           },
           {
             "en": "serve",
             "zh": "发球",
             "pos": "verb",
-            "icon": "🏸"
+            "icon": "🏸",
+            "img": "assets/vocab/serve.svg"
           }
         ]
       }
@@ -17412,31 +18602,36 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "paddle",
             "zh": "球拍",
             "pos": "noun",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/paddle.svg"
           },
           {
             "en": "table",
             "zh": "球台",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/hit.svg"
           }
         ]
       },
@@ -17518,55 +18713,64 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "paddle",
             "zh": "球拍",
             "pos": "noun",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/paddle.svg"
           },
           {
             "en": "table",
             "zh": "球台",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/hit.svg"
           },
           {
             "en": "serve",
             "zh": "发球",
             "pos": "verb",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/serve.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -17634,61 +18838,71 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "paddle",
             "zh": "球拍",
             "pos": "noun",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/paddle.svg"
           },
           {
             "en": "table",
             "zh": "球台",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/table.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "strategy",
             "zh": "策略",
             "pos": "noun",
-            "icon": "♟️"
+            "icon": "♟️",
+            "img": "assets/vocab/strategy.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/hit.svg"
           },
           {
             "en": "serve",
             "zh": "发球",
             "pos": "verb",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/serve.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       }
@@ -17743,31 +18957,36 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "hands",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hands.svg"
           },
           {
             "en": "basket",
             "zh": "篮子",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "catch",
             "zh": "接",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/catch.svg"
           }
         ]
       },
@@ -17849,55 +19068,64 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "hands",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hands.svg"
           },
           {
             "en": "basket",
             "zh": "篮子",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "throw",
             "zh": "扔",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/throw.svg"
           },
           {
             "en": "catch",
             "zh": "接",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/catch.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -17965,61 +19193,71 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "hands",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hands.svg"
           },
           {
             "en": "basket",
             "zh": "篮子",
             "pos": "noun",
-            "icon": "🧺"
+            "icon": "🧺",
+            "img": "assets/vocab/basket.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "trust",
             "zh": "信任",
             "pos": "noun",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/trust.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "throw",
             "zh": "扔",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/throw.svg"
           },
           {
             "en": "catch",
             "zh": "接",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/catch.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       }
@@ -18072,31 +19310,36 @@ const SCENE_LIBRARY = {
             "en": "bike",
             "zh": "自行车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/bike.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "path",
             "zh": "小路",
             "pos": "noun",
-            "icon": "🛤️"
+            "icon": "🛤️",
+            "img": "assets/vocab/path.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/ride.svg"
           }
         ]
       },
@@ -18178,55 +19421,64 @@ const SCENE_LIBRARY = {
             "en": "bike",
             "zh": "自行车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/bike.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "path",
             "zh": "小路",
             "pos": "noun",
-            "icon": "🛤️"
+            "icon": "🛤️",
+            "img": "assets/vocab/path.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "pedal",
             "zh": "踩",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/pedal.svg"
           }
         ]
       },
@@ -18294,61 +19546,71 @@ const SCENE_LIBRARY = {
             "en": "bike",
             "zh": "自行车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/bike.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "path",
             "zh": "小路",
             "pos": "noun",
-            "icon": "🛤️"
+            "icon": "🛤️",
+            "img": "assets/vocab/path.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "safety",
             "zh": "安全",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/safety.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "pedal",
             "zh": "踩",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/pedal.svg"
           }
         ]
       }
@@ -18401,31 +19663,36 @@ const SCENE_LIBRARY = {
             "en": "scooter",
             "zh": "滑板车",
             "pos": "noun",
-            "icon": "🛴"
+            "icon": "🛴",
+            "img": "assets/vocab/scooter.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "glide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🛴"
+            "icon": "🛴",
+            "img": "assets/vocab/glide.svg"
           }
         ]
       },
@@ -18507,55 +19774,64 @@ const SCENE_LIBRARY = {
             "en": "scooter",
             "zh": "滑板车",
             "pos": "noun",
-            "icon": "🛴"
+            "icon": "🛴",
+            "img": "assets/vocab/scooter.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "push",
             "zh": "蹬",
             "pos": "verb",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "glide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🛴"
+            "icon": "🛴",
+            "img": "assets/vocab/glide.svg"
           }
         ]
       },
@@ -18623,61 +19899,71 @@ const SCENE_LIBRARY = {
             "en": "scooter",
             "zh": "滑板车",
             "pos": "noun",
-            "icon": "🛴"
+            "icon": "🛴",
+            "img": "assets/vocab/scooter.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "balance",
             "zh": "平衡",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/balance.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "push",
             "zh": "蹬",
             "pos": "verb",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "glide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🛴"
+            "icon": "🛴",
+            "img": "assets/vocab/glide.svg"
           }
         ]
       }
@@ -18730,34 +20016,39 @@ const SCENE_LIBRARY = {
         ],
         "vocab": [
           {
-            "en": "balance_bike",
+            "en": "balance bike",
             "zh": "平衡车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/balance_bike.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "ground",
             "zh": "地面",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/ground.svg"
           },
           {
             "en": "glide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/glide.svg"
           }
         ]
       },
@@ -18836,58 +20127,67 @@ const SCENE_LIBRARY = {
         ],
         "vocab": [
           {
-            "en": "balance_bike",
+            "en": "balance bike",
             "zh": "平衡车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/balance_bike.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "ground",
             "zh": "地面",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/ground.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "glide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/glide.svg"
           },
           {
             "en": "balance",
             "zh": "平衡",
             "pos": "verb",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/balance.svg"
           }
         ]
       },
@@ -18952,64 +20252,74 @@ const SCENE_LIBRARY = {
         ],
         "vocab": [
           {
-            "en": "balance_bike",
+            "en": "balance bike",
             "zh": "平衡车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/balance_bike.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "ground",
             "zh": "地面",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/ground.svg"
           },
           {
             "en": "balance",
             "zh": "平衡",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/balance.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "glide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/glide.svg"
           },
           {
             "en": "steady",
             "zh": "稳",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/steady.svg"
           }
         ]
       }
@@ -19064,31 +20374,36 @@ const SCENE_LIBRARY = {
             "en": "tricycle",
             "zh": "三轮车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/tricycle.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "handle",
             "zh": "车把",
             "pos": "noun",
-            "icon": "🕹️"
+            "icon": "🕹️",
+            "img": "assets/vocab/handle.svg"
           },
           {
             "en": "pedal",
             "zh": "踩",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/pedal.svg"
           }
         ]
       },
@@ -19170,55 +20485,64 @@ const SCENE_LIBRARY = {
             "en": "tricycle",
             "zh": "三轮车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/tricycle.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "handle",
             "zh": "车把",
             "pos": "noun",
-            "icon": "🕹️"
+            "icon": "🕹️",
+            "img": "assets/vocab/handle.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "pedal",
             "zh": "踩",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/pedal.svg"
           },
           {
             "en": "turn",
             "zh": "转",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "steer",
             "zh": "转向",
             "pos": "verb",
-            "icon": "🕹️"
+            "icon": "🕹️",
+            "img": "assets/vocab/steer.svg"
           }
         ]
       },
@@ -19286,61 +20610,71 @@ const SCENE_LIBRARY = {
             "en": "tricycle",
             "zh": "三轮车",
             "pos": "noun",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/tricycle.svg"
           },
           {
             "en": "wheel",
             "zh": "轮子",
             "pos": "noun",
-            "icon": "🛞"
+            "icon": "🛞",
+            "img": "assets/vocab/wheel.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "handle",
             "zh": "车把",
             "pos": "noun",
-            "icon": "🕹️"
+            "icon": "🕹️",
+            "img": "assets/vocab/handle.svg"
           },
           {
             "en": "balance",
             "zh": "平衡",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/balance.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "pedal",
             "zh": "踩",
             "pos": "verb",
-            "icon": "🚲"
+            "icon": "🚲",
+            "img": "assets/vocab/pedal.svg"
           },
           {
             "en": "turn",
             "zh": "转",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "steer",
             "zh": "转向",
             "pos": "verb",
-            "icon": "🕹️"
+            "icon": "🕹️",
+            "img": "assets/vocab/steer.svg"
           }
         ]
       }
@@ -19395,31 +20729,36 @@ const SCENE_LIBRARY = {
             "en": "mat",
             "zh": "垫子",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/mat.svg"
           },
           {
             "en": "hill",
             "zh": "坡",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/hill.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "slide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           }
         ]
       },
@@ -19501,55 +20840,64 @@ const SCENE_LIBRARY = {
             "en": "mat",
             "zh": "垫子",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/mat.svg"
           },
           {
             "en": "hill",
             "zh": "坡",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/hill.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "slide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/climb.svg"
           }
         ]
       },
@@ -19617,61 +20965,71 @@ const SCENE_LIBRARY = {
             "en": "mat",
             "zh": "垫子",
             "pos": "noun",
-            "icon": "🟦"
+            "icon": "🟦",
+            "img": "assets/vocab/mat.svg"
           },
           {
             "en": "hill",
             "zh": "坡",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/hill.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "climb",
             "zh": "攀爬",
             "pos": "noun",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/climb.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "slide",
             "zh": "滑",
             "pos": "verb",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/climb.svg"
           }
         ]
       }
@@ -19725,31 +21083,36 @@ const SCENE_LIBRARY = {
             "en": "pool",
             "zh": "泳池",
             "pos": "noun",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/pool.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "leg",
             "zh": "腿",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/leg.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "swim",
             "zh": "游泳",
             "pos": "verb",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/swim.svg"
           }
         ]
       },
@@ -19831,55 +21194,64 @@ const SCENE_LIBRARY = {
             "en": "pool",
             "zh": "泳池",
             "pos": "noun",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/pool.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "leg",
             "zh": "腿",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/leg.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "swimsuit",
             "zh": "泳衣",
             "pos": "noun",
-            "icon": "🩱"
+            "icon": "🩱",
+            "img": "assets/vocab/swimsuit.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "swim",
             "zh": "游泳",
             "pos": "verb",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/swim.svg"
           },
           {
             "en": "kick",
             "zh": "踢",
             "pos": "verb",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/kick.svg"
           }
         ]
       },
@@ -19947,61 +21319,71 @@ const SCENE_LIBRARY = {
             "en": "pool",
             "zh": "泳池",
             "pos": "noun",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/pool.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "leg",
             "zh": "腿",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/leg.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "swimsuit",
             "zh": "泳衣",
             "pos": "noun",
-            "icon": "🩱"
+            "icon": "🩱",
+            "img": "assets/vocab/swimsuit.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "swim",
             "zh": "游泳",
             "pos": "verb",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/swim.svg"
           },
           {
             "en": "kick",
             "zh": "踢",
             "pos": "verb",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/kick.svg"
           },
           {
             "en": "float",
             "zh": "漂",
             "pos": "verb",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/float.svg"
           }
         ]
       }
@@ -20056,31 +21438,36 @@ const SCENE_LIBRARY = {
             "en": "ocean",
             "zh": "大海",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/ocean.svg"
           },
           {
             "en": "wave",
             "zh": "海浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "shell",
             "zh": "贝壳",
             "pos": "noun",
-            "icon": "🐚"
+            "icon": "🐚",
+            "img": "assets/vocab/shell.svg"
           },
           {
             "en": "sand",
             "zh": "沙",
             "pos": "noun",
-            "icon": "🏖️"
+            "icon": "🏖️",
+            "img": "assets/vocab/sand.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           }
         ]
       },
@@ -20162,55 +21549,64 @@ const SCENE_LIBRARY = {
             "en": "ocean",
             "zh": "大海",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/ocean.svg"
           },
           {
             "en": "wave",
             "zh": "海浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "shell",
             "zh": "贝壳",
             "pos": "noun",
-            "icon": "🐚"
+            "icon": "🐚",
+            "img": "assets/vocab/shell.svg"
           },
           {
             "en": "sand",
             "zh": "沙",
             "pos": "noun",
-            "icon": "🏖️"
+            "icon": "🏖️",
+            "img": "assets/vocab/sand.svg"
           },
           {
             "en": "rock",
             "zh": "石头",
             "pos": "noun",
-            "icon": "🪨"
+            "icon": "🪨",
+            "img": "assets/vocab/rock.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "collect",
             "zh": "捡",
             "pos": "verb",
-            "icon": "🐚"
+            "icon": "🐚",
+            "img": "assets/vocab/collect.svg"
           }
         ]
       },
@@ -20278,61 +21674,71 @@ const SCENE_LIBRARY = {
             "en": "ocean",
             "zh": "大海",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/ocean.svg"
           },
           {
             "en": "wave",
             "zh": "海浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "shell",
             "zh": "贝壳",
             "pos": "noun",
-            "icon": "🐚"
+            "icon": "🐚",
+            "img": "assets/vocab/shell.svg"
           },
           {
             "en": "sand",
             "zh": "沙",
             "pos": "noun",
-            "icon": "🏖️"
+            "icon": "🏖️",
+            "img": "assets/vocab/sand.svg"
           },
           {
             "en": "rock",
             "zh": "石头",
             "pos": "noun",
-            "icon": "🪨"
+            "icon": "🪨",
+            "img": "assets/vocab/rock.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "collect",
             "zh": "捡",
             "pos": "verb",
-            "icon": "🐚"
+            "icon": "🐚",
+            "img": "assets/vocab/collect.svg"
           },
           {
             "en": "wash",
             "zh": "冲",
             "pos": "verb",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       }
@@ -20384,34 +21790,39 @@ const SCENE_LIBRARY = {
         ],
         "vocab": [
           {
-            "en": "water_gun",
+            "en": "water gun",
             "zh": "水枪",
             "pos": "noun",
-            "icon": "🔫"
+            "icon": "🔫",
+            "img": "assets/vocab/water_gun.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "face",
             "zh": "脸",
             "pos": "noun",
-            "icon": "🤣"
+            "icon": "🤣",
+            "img": "assets/vocab/face.svg"
           },
           {
             "en": "wet",
             "zh": "湿",
             "pos": "adj",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/wet.svg"
           },
           {
             "en": "splash",
             "zh": "泼",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/splash.svg"
           }
         ]
       },
@@ -20490,58 +21901,67 @@ const SCENE_LIBRARY = {
         ],
         "vocab": [
           {
-            "en": "water_gun",
+            "en": "water gun",
             "zh": "水枪",
             "pos": "noun",
-            "icon": "🔫"
+            "icon": "🔫",
+            "img": "assets/vocab/water_gun.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "face",
             "zh": "脸",
             "pos": "noun",
-            "icon": "🤣"
+            "icon": "🤣",
+            "img": "assets/vocab/face.svg"
           },
           {
             "en": "wet",
             "zh": "湿",
             "pos": "adj",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/wet.svg"
           },
           {
             "en": "yard",
             "zh": "院子",
             "pos": "noun",
-            "icon": "🏡"
+            "icon": "🏡",
+            "img": "assets/vocab/yard.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "splash",
             "zh": "泼",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/splash.svg"
           },
           {
             "en": "spray",
             "zh": "喷",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/spray.svg"
           }
         ]
       },
@@ -20606,58 +22026,67 @@ const SCENE_LIBRARY = {
         ],
         "vocab": [
           {
-            "en": "water_gun",
+            "en": "water gun",
             "zh": "水枪",
             "pos": "noun",
-            "icon": "🔫"
+            "icon": "🔫",
+            "img": "assets/vocab/water_gun.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "face",
             "zh": "脸",
             "pos": "noun",
-            "icon": "🤣"
+            "icon": "🤣",
+            "img": "assets/vocab/face.svg"
           },
           {
             "en": "wet",
             "zh": "湿",
             "pos": "adj",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/wet.svg"
           },
           {
             "en": "fairness",
             "zh": "公平",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/fairness.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "splash",
             "zh": "泼",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/splash.svg"
           },
           {
             "en": "spray",
             "zh": "喷",
             "pos": "verb",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/spray.svg"
           }
         ]
       }
@@ -20712,31 +22141,36 @@ const SCENE_LIBRARY = {
             "en": "slide",
             "zh": "滑道",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "tube",
             "zh": "游泳圈",
             "pos": "noun",
-            "icon": "🛟"
+            "icon": "🛟",
+            "img": "assets/vocab/tube.svg"
           },
           {
             "en": "wave",
             "zh": "浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "pool",
             "zh": "池",
             "pos": "noun",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/pool.svg"
           },
           {
             "en": "float",
             "zh": "漂",
             "pos": "verb",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/float.svg"
           }
         ]
       },
@@ -20818,55 +22252,64 @@ const SCENE_LIBRARY = {
             "en": "slide",
             "zh": "滑道",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "tube",
             "zh": "游泳圈",
             "pos": "noun",
-            "icon": "🛟"
+            "icon": "🛟",
+            "img": "assets/vocab/tube.svg"
           },
           {
             "en": "wave",
             "zh": "浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "pool",
             "zh": "池",
             "pos": "noun",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/pool.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "float",
             "zh": "漂",
             "pos": "verb",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/float.svg"
           },
           {
             "en": "ride",
             "zh": "乘坐",
             "pos": "verb",
-            "icon": "🎢"
+            "icon": "🎢",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "hold",
             "zh": "抓",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           }
         ]
       },
@@ -20934,61 +22377,71 @@ const SCENE_LIBRARY = {
             "en": "slide",
             "zh": "滑道",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "tube",
             "zh": "游泳圈",
             "pos": "noun",
-            "icon": "🛟"
+            "icon": "🛟",
+            "img": "assets/vocab/tube.svg"
           },
           {
             "en": "wave",
             "zh": "浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "pool",
             "zh": "池",
             "pos": "noun",
-            "icon": "🏊"
+            "icon": "🏊",
+            "img": "assets/vocab/pool.svg"
           },
           {
             "en": "patience",
             "zh": "耐心",
             "pos": "noun",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/patience.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "float",
             "zh": "漂",
             "pos": "verb",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/float.svg"
           },
           {
             "en": "ride",
             "zh": "乘坐",
             "pos": "verb",
-            "icon": "🎢"
+            "icon": "🎢",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "hold",
             "zh": "抓",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           }
         ]
       }
@@ -21045,31 +22498,36 @@ const SCENE_LIBRARY = {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "bobber",
             "zh": "浮标",
             "pos": "noun",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/bobber.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "net",
             "zh": "网",
             "pos": "noun",
-            "icon": "🕸️"
+            "icon": "🕸️",
+            "img": "assets/vocab/net.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -21151,55 +22609,64 @@ const SCENE_LIBRARY = {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "bobber",
             "zh": "浮标",
             "pos": "noun",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/bobber.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "net",
             "zh": "网",
             "pos": "noun",
-            "icon": "🕸️"
+            "icon": "🕸️",
+            "img": "assets/vocab/net.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "catch",
             "zh": "钓",
             "pos": "verb",
-            "icon": "🎣"
+            "icon": "🎣",
+            "img": "assets/vocab/catch.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           },
           {
             "en": "throw",
             "zh": "扔",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/throw.svg"
           }
         ]
       },
@@ -21267,61 +22734,71 @@ const SCENE_LIBRARY = {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "bobber",
             "zh": "浮标",
             "pos": "noun",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/bobber.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "net",
             "zh": "网",
             "pos": "noun",
-            "icon": "🕸️"
+            "icon": "🕸️",
+            "img": "assets/vocab/net.svg"
           },
           {
             "en": "nature",
             "zh": "自然",
             "pos": "noun",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/nature.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "catch",
             "zh": "钓",
             "pos": "verb",
-            "icon": "🎣"
+            "icon": "🎣",
+            "img": "assets/vocab/catch.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           },
           {
             "en": "throw",
             "zh": "扔",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/throw.svg"
           }
         ]
       }
@@ -21379,31 +22856,36 @@ const SCENE_LIBRARY = {
             "en": "butterfly",
             "zh": "蝴蝶",
             "pos": "noun",
-            "icon": "🦋"
+            "icon": "🦋",
+            "img": "assets/vocab/butterfly.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "bug",
             "zh": "虫子",
             "pos": "noun",
-            "icon": "🐛"
+            "icon": "🐛",
+            "img": "assets/vocab/bug.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -21485,55 +22967,64 @@ const SCENE_LIBRARY = {
             "en": "butterfly",
             "zh": "蝴蝶",
             "pos": "noun",
-            "icon": "🦋"
+            "icon": "🦋",
+            "img": "assets/vocab/butterfly.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "bug",
             "zh": "虫子",
             "pos": "noun",
-            "icon": "🐛"
+            "icon": "🐛",
+            "img": "assets/vocab/bug.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "pick",
             "zh": "捡",
             "pos": "verb",
-            "icon": "🍂"
+            "icon": "🍂",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       },
@@ -21601,61 +23092,71 @@ const SCENE_LIBRARY = {
             "en": "butterfly",
             "zh": "蝴蝶",
             "pos": "noun",
-            "icon": "🦋"
+            "icon": "🦋",
+            "img": "assets/vocab/butterfly.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "bug",
             "zh": "虫子",
             "pos": "noun",
-            "icon": "🐛"
+            "icon": "🐛",
+            "img": "assets/vocab/bug.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "journal",
             "zh": "日记",
             "pos": "noun",
-            "icon": "📓"
+            "icon": "📓",
+            "img": "assets/vocab/journal.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "pick",
             "zh": "捡",
             "pos": "verb",
-            "icon": "🍂"
+            "icon": "🍂",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       }
@@ -21710,31 +23211,36 @@ const SCENE_LIBRARY = {
             "en": "seed",
             "zh": "种子",
             "pos": "noun",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/seed.svg"
           },
           {
             "en": "soil",
             "zh": "土",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/soil.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "plant",
             "zh": "种",
             "pos": "verb",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/plant.svg"
           }
         ]
       },
@@ -21816,61 +23322,71 @@ const SCENE_LIBRARY = {
             "en": "seed",
             "zh": "种子",
             "pos": "noun",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/seed.svg"
           },
           {
             "en": "soil",
             "zh": "土",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/soil.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "pot",
             "zh": "花盆",
             "pos": "noun",
-            "icon": "🪴"
+            "icon": "🪴",
+            "img": "assets/vocab/pot.svg"
           },
           {
             "en": "sun",
             "zh": "阳光",
             "pos": "noun",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/sun.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "plant",
             "zh": "种",
             "pos": "verb",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/plant.svg"
           },
           {
             "en": "grow",
             "zh": "长",
             "pos": "verb",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grow.svg"
           }
         ]
       },
@@ -21938,67 +23454,78 @@ const SCENE_LIBRARY = {
             "en": "seed",
             "zh": "种子",
             "pos": "noun",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/seed.svg"
           },
           {
             "en": "soil",
             "zh": "土",
             "pos": "noun",
-            "icon": "🟫"
+            "icon": "🟫",
+            "img": "assets/vocab/soil.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "flower",
             "zh": "花",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/flower.svg"
           },
           {
             "en": "pot",
             "zh": "花盆",
             "pos": "noun",
-            "icon": "🪴"
+            "icon": "🪴",
+            "img": "assets/vocab/pot.svg"
           },
           {
             "en": "sun",
             "zh": "阳光",
             "pos": "noun",
-            "icon": "☀️"
+            "icon": "☀️",
+            "img": "assets/vocab/sun.svg"
           },
           {
             "en": "herb",
             "zh": "香草",
             "pos": "noun",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/herb.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "plant",
             "zh": "种",
             "pos": "verb",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/plant.svg"
           },
           {
             "en": "grow",
             "zh": "长",
             "pos": "verb",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grow.svg"
           }
         ]
       }
@@ -22045,31 +23572,36 @@ const SCENE_LIBRARY = {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "moon",
             "zh": "月亮",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/moon.svg"
           },
           {
             "en": "sky",
             "zh": "夜空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "light",
             "zh": "光",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -22145,55 +23677,64 @@ const SCENE_LIBRARY = {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "moon",
             "zh": "月亮",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/moon.svg"
           },
           {
             "en": "sky",
             "zh": "夜空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "light",
             "zh": "光",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "bright",
             "zh": "亮",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/bright.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "twinkle",
             "zh": "闪",
             "pos": "verb",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/twinkle.svg"
           }
         ]
       },
@@ -22261,61 +23802,71 @@ const SCENE_LIBRARY = {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "moon",
             "zh": "月亮",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/moon.svg"
           },
           {
             "en": "sky",
             "zh": "夜空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "light",
             "zh": "光",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "universe",
             "zh": "宇宙",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/universe.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "bright",
             "zh": "亮",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/bright.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "twinkle",
             "zh": "闪",
             "pos": "verb",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/twinkle.svg"
           }
         ]
       }
@@ -22371,31 +23922,36 @@ const SCENE_LIBRARY = {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "stone",
             "zh": "石头",
             "pos": "noun",
-            "icon": "🪨"
+            "icon": "🪨",
+            "img": "assets/vocab/stone.svg"
           },
           {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "👜"
+            "icon": "👜",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "collect",
             "zh": "捡",
             "pos": "verb",
-            "icon": "🍂"
+            "icon": "🍂",
+            "img": "assets/vocab/collect.svg"
           }
         ]
       },
@@ -22477,55 +24033,64 @@ const SCENE_LIBRARY = {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "stone",
             "zh": "石头",
             "pos": "noun",
-            "icon": "🪨"
+            "icon": "🪨",
+            "img": "assets/vocab/stone.svg"
           },
           {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "👜"
+            "icon": "👜",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "collect",
             "zh": "捡",
             "pos": "verb",
-            "icon": "🍂"
+            "icon": "🍂",
+            "img": "assets/vocab/collect.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           }
         ]
       },
@@ -22593,61 +24158,71 @@ const SCENE_LIBRARY = {
             "en": "leaf",
             "zh": "叶子",
             "pos": "noun",
-            "icon": "🍃"
+            "icon": "🍃",
+            "img": "assets/vocab/leaf.svg"
           },
           {
             "en": "stone",
             "zh": "石头",
             "pos": "noun",
-            "icon": "🪨"
+            "icon": "🪨",
+            "img": "assets/vocab/stone.svg"
           },
           {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "👜"
+            "icon": "👜",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "pattern",
             "zh": "图案",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/pattern.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "yellow",
             "zh": "黄色",
             "pos": "adj",
-            "icon": "🟡"
+            "icon": "🟡",
+            "img": "assets/vocab/yellow.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "collect",
             "zh": "捡",
             "pos": "verb",
-            "icon": "🍂"
+            "icon": "🍂",
+            "img": "assets/vocab/collect.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           }
         ]
       }
@@ -22702,31 +24277,36 @@ const SCENE_LIBRARY = {
             "en": "bird",
             "zh": "鸟",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/bird.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "crumb",
             "zh": "屑",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/crumb.svg"
           },
           {
             "en": "wing",
             "zh": "翅膀",
             "pos": "noun",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/wing.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -22808,55 +24388,64 @@ const SCENE_LIBRARY = {
             "en": "bird",
             "zh": "鸟",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/bird.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "crumb",
             "zh": "屑",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/crumb.svg"
           },
           {
             "en": "wing",
             "zh": "翅膀",
             "pos": "noun",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/wing.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "feed",
             "zh": "喂",
             "pos": "verb",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/feed.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/fly.svg"
           }
         ]
       },
@@ -22924,61 +24513,71 @@ const SCENE_LIBRARY = {
             "en": "bird",
             "zh": "鸟",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/bird.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "crumb",
             "zh": "屑",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/crumb.svg"
           },
           {
             "en": "wing",
             "zh": "翅膀",
             "pos": "noun",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/wing.svg"
           },
           {
             "en": "kindness",
             "zh": "善意",
             "pos": "noun",
-            "icon": "💗"
+            "icon": "💗",
+            "img": "assets/vocab/kindness.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           },
           {
             "en": "feed",
             "zh": "喂",
             "pos": "verb",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/feed.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "🕊️"
+            "icon": "🕊️",
+            "img": "assets/vocab/fly.svg"
           }
         ]
       }
@@ -23031,31 +24630,36 @@ const SCENE_LIBRARY = {
             "en": "hill",
             "zh": "山",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/hill.svg"
           },
           {
             "en": "step",
             "zh": "步",
             "pos": "noun",
-            "icon": "👣"
+            "icon": "👣",
+            "img": "assets/vocab/step.svg"
           },
           {
             "en": "top",
             "zh": "顶",
             "pos": "noun",
-            "icon": "🔝"
+            "icon": "🔝",
+            "img": "assets/vocab/top.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/climb.svg"
           }
         ]
       },
@@ -23137,55 +24741,64 @@ const SCENE_LIBRARY = {
             "en": "hill",
             "zh": "山",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/hill.svg"
           },
           {
             "en": "step",
             "zh": "步",
             "pos": "noun",
-            "icon": "👣"
+            "icon": "👣",
+            "img": "assets/vocab/step.svg"
           },
           {
             "en": "top",
             "zh": "顶",
             "pos": "noun",
-            "icon": "🔝"
+            "icon": "🔝",
+            "img": "assets/vocab/top.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/climb.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       },
@@ -23253,61 +24866,71 @@ const SCENE_LIBRARY = {
             "en": "hill",
             "zh": "山",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/hill.svg"
           },
           {
             "en": "step",
             "zh": "步",
             "pos": "noun",
-            "icon": "👣"
+            "icon": "👣",
+            "img": "assets/vocab/step.svg"
           },
           {
             "en": "top",
             "zh": "顶",
             "pos": "noun",
-            "icon": "🔝"
+            "icon": "🔝",
+            "img": "assets/vocab/top.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "snack",
             "zh": "零食",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/snack.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/climb.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       }
@@ -23358,31 +24981,36 @@ const SCENE_LIBRARY = {
             "en": "rope",
             "zh": "绳子",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/rope.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           }
         ]
       },
@@ -23464,55 +25092,64 @@ const SCENE_LIBRARY = {
             "en": "rope",
             "zh": "绳子",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/rope.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "swing",
             "zh": "甩",
             "pos": "verb",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "skip",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/skip.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "🤞"
+            "icon": "🤞",
+            "img": "assets/vocab/try.svg"
           }
         ]
       },
@@ -23580,61 +25217,71 @@ const SCENE_LIBRARY = {
             "en": "rope",
             "zh": "绳子",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/rope.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "stamina",
             "zh": "耐力",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/stamina.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "swing",
             "zh": "甩",
             "pos": "verb",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "skip",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/skip.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "🤞"
+            "icon": "🤞",
+            "img": "assets/vocab/try.svg"
           }
         ]
       }
@@ -23690,31 +25337,36 @@ const SCENE_LIBRARY = {
             "en": "wall",
             "zh": "攀爬架",
             "pos": "noun",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/wall.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "hold",
             "zh": "抓手",
             "pos": "noun",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/climb.svg"
           }
         ]
       },
@@ -23796,55 +25448,64 @@ const SCENE_LIBRARY = {
             "en": "wall",
             "zh": "攀爬架",
             "pos": "noun",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/wall.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "hold",
             "zh": "抓手",
             "pos": "noun",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           },
           {
             "en": "strength",
             "zh": "力量",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strength.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/climb.svg"
           },
           {
             "en": "plan",
             "zh": "计划",
             "pos": "verb",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/plan.svg"
           }
         ]
       },
@@ -23912,61 +25573,71 @@ const SCENE_LIBRARY = {
             "en": "wall",
             "zh": "攀爬架",
             "pos": "noun",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/wall.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "hold",
             "zh": "抓手",
             "pos": "noun",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           },
           {
             "en": "strength",
             "zh": "力量",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strength.svg"
           },
           {
             "en": "strategy",
             "zh": "策略",
             "pos": "noun",
-            "icon": "♟️"
+            "icon": "♟️",
+            "img": "assets/vocab/strategy.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "climb",
             "zh": "爬",
             "pos": "verb",
-            "icon": "🧗"
+            "icon": "🧗",
+            "img": "assets/vocab/climb.svg"
           },
           {
             "en": "plan",
             "zh": "计划",
             "pos": "verb",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/plan.svg"
           }
         ]
       }
@@ -24021,31 +25692,36 @@ const SCENE_LIBRARY = {
             "en": "trampoline",
             "zh": "蹦床",
             "pos": "noun",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/trampoline.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "bounce",
             "zh": "弹",
             "pos": "noun",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/bounce.svg"
           },
           {
             "en": "center",
             "zh": "中心",
             "pos": "noun",
-            "icon": "🎯"
+            "icon": "🎯",
+            "img": "assets/vocab/center.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/jump.svg"
           }
         ]
       },
@@ -24127,55 +25803,64 @@ const SCENE_LIBRARY = {
             "en": "trampoline",
             "zh": "蹦床",
             "pos": "noun",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/trampoline.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "bounce",
             "zh": "弹",
             "pos": "noun",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/bounce.svg"
           },
           {
             "en": "center",
             "zh": "中心",
             "pos": "noun",
-            "icon": "🎯"
+            "icon": "🎯",
+            "img": "assets/vocab/center.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "bend",
             "zh": "弯",
             "pos": "verb",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/bend.svg"
           },
           {
             "en": "land",
             "zh": "落地",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/land.svg"
           }
         ]
       },
@@ -24243,61 +25928,71 @@ const SCENE_LIBRARY = {
             "en": "trampoline",
             "zh": "蹦床",
             "pos": "noun",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/trampoline.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "bounce",
             "zh": "弹",
             "pos": "noun",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/bounce.svg"
           },
           {
             "en": "center",
             "zh": "中心",
             "pos": "noun",
-            "icon": "🎯"
+            "icon": "🎯",
+            "img": "assets/vocab/center.svg"
           },
           {
             "en": "balance",
             "zh": "平衡",
             "pos": "noun",
-            "icon": "⚖️"
+            "icon": "⚖️",
+            "img": "assets/vocab/balance.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "bend",
             "zh": "弯",
             "pos": "verb",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/bend.svg"
           },
           {
             "en": "land",
             "zh": "落地",
             "pos": "verb",
-            "icon": "🦿"
+            "icon": "🦿",
+            "img": "assets/vocab/land.svg"
           }
         ]
       }
@@ -24352,31 +26047,36 @@ const SCENE_LIBRARY = {
             "en": "bar",
             "zh": "单杠",
             "pos": "noun",
-            "icon": "🟰"
+            "icon": "🟰",
+            "img": "assets/vocab/bar.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "swing",
             "zh": "荡",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "hang",
             "zh": "挂",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/hang.svg"
           }
         ]
       },
@@ -24458,55 +26158,64 @@ const SCENE_LIBRARY = {
             "en": "bar",
             "zh": "单杠",
             "pos": "noun",
-            "icon": "🟰"
+            "icon": "🟰",
+            "img": "assets/vocab/bar.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "swing",
             "zh": "荡",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "hang",
             "zh": "挂",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/hang.svg"
           },
           {
             "en": "reach",
             "zh": "够",
             "pos": "verb",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/reach.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "🤞"
+            "icon": "🤞",
+            "img": "assets/vocab/try.svg"
           }
         ]
       },
@@ -24574,61 +26283,71 @@ const SCENE_LIBRARY = {
             "en": "bar",
             "zh": "单杠",
             "pos": "noun",
-            "icon": "🟰"
+            "icon": "🟰",
+            "img": "assets/vocab/bar.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "swing",
             "zh": "荡",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "strength",
             "zh": "力量",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strength.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "hang",
             "zh": "挂",
             "pos": "verb",
-            "icon": "🤾"
+            "icon": "🤾",
+            "img": "assets/vocab/hang.svg"
           },
           {
             "en": "reach",
             "zh": "够",
             "pos": "verb",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/reach.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "🤞"
+            "icon": "🤞",
+            "img": "assets/vocab/try.svg"
           }
         ]
       }
@@ -24682,31 +26401,36 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "drive",
             "zh": "开",
             "pos": "verb",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/drive.svg"
           }
         ]
       },
@@ -24788,55 +26512,64 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌳"
+            "icon": "🌳",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "drive",
             "zh": "开",
             "pos": "verb",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/drive.svg"
           },
           {
             "en": "buckle",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/buckle.svg"
           }
         ]
       },
@@ -24904,55 +26637,64 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "route",
             "zh": "路线",
             "pos": "noun",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/route.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "drive",
             "zh": "开",
             "pos": "verb",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/drive.svg"
           },
           {
             "en": "buckle",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/buckle.svg"
           }
         ]
       }
@@ -25007,31 +26749,36 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "street",
             "zh": "马路",
             "pos": "noun",
-            "icon": "🛣️"
+            "icon": "🛣️",
+            "img": "assets/vocab/street.svg"
           },
           {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "crosswalk",
             "zh": "斑马线",
             "pos": "noun",
-            "icon": "🦓"
+            "icon": "🦓",
+            "img": "assets/vocab/crosswalk.svg"
           },
           {
             "en": "walk",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/walk.svg"
           }
         ]
       },
@@ -25113,55 +26860,64 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "street",
             "zh": "马路",
             "pos": "noun",
-            "icon": "🛣️"
+            "icon": "🛣️",
+            "img": "assets/vocab/street.svg"
           },
           {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "crosswalk",
             "zh": "斑马线",
             "pos": "noun",
-            "icon": "🦓"
+            "icon": "🦓",
+            "img": "assets/vocab/crosswalk.svg"
           },
           {
             "en": "car",
             "zh": "车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "walk",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/walk.svg"
           },
           {
             "en": "cross",
             "zh": "过",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/cross.svg"
           }
         ]
       },
@@ -25229,61 +26985,71 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "street",
             "zh": "马路",
             "pos": "noun",
-            "icon": "🛣️"
+            "icon": "🛣️",
+            "img": "assets/vocab/street.svg"
           },
           {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "crosswalk",
             "zh": "斑马线",
             "pos": "noun",
-            "icon": "🦓"
+            "icon": "🦓",
+            "img": "assets/vocab/crosswalk.svg"
           },
           {
             "en": "car",
             "zh": "车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "walk",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/walk.svg"
           },
           {
             "en": "cross",
             "zh": "过",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/cross.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           }
         ]
       }
@@ -25339,31 +27105,36 @@ const SCENE_LIBRARY = {
             "en": "taxi",
             "zh": "出租车",
             "pos": "noun",
-            "icon": "🚕"
+            "icon": "🚕",
+            "img": "assets/vocab/taxi.svg"
           },
           {
             "en": "phone",
             "zh": "手机",
             "pos": "noun",
-            "icon": "📱"
+            "icon": "📱",
+            "img": "assets/vocab/phone.svg"
           },
           {
             "en": "car",
             "zh": "车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "ride",
             "zh": "坐车",
             "pos": "verb",
-            "icon": "🚕"
+            "icon": "🚕",
+            "img": "assets/vocab/ride.svg"
           }
         ]
       },
@@ -25445,55 +27216,64 @@ const SCENE_LIBRARY = {
             "en": "taxi",
             "zh": "出租车",
             "pos": "noun",
-            "icon": "🚕"
+            "icon": "🚕",
+            "img": "assets/vocab/taxi.svg"
           },
           {
             "en": "phone",
             "zh": "手机",
             "pos": "noun",
-            "icon": "📱"
+            "icon": "📱",
+            "img": "assets/vocab/phone.svg"
           },
           {
             "en": "car",
             "zh": "车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "plate",
             "zh": "车牌",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/plate.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "ride",
             "zh": "坐车",
             "pos": "verb",
-            "icon": "🚕"
+            "icon": "🚕",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "check",
             "zh": "核对",
             "pos": "verb",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/check.svg"
           }
         ]
       },
@@ -25561,61 +27341,71 @@ const SCENE_LIBRARY = {
             "en": "taxi",
             "zh": "出租车",
             "pos": "noun",
-            "icon": "🚕"
+            "icon": "🚕",
+            "img": "assets/vocab/taxi.svg"
           },
           {
             "en": "phone",
             "zh": "手机",
             "pos": "noun",
-            "icon": "📱"
+            "icon": "📱",
+            "img": "assets/vocab/phone.svg"
           },
           {
             "en": "car",
             "zh": "车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "plate",
             "zh": "车牌",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/plate.svg"
           },
           {
             "en": "safety",
             "zh": "安全",
             "pos": "noun",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safety.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "ride",
             "zh": "坐车",
             "pos": "verb",
-            "icon": "🚕"
+            "icon": "🚕",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "check",
             "zh": "核对",
             "pos": "verb",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/check.svg"
           }
         ]
       }
@@ -25670,31 +27460,36 @@ const SCENE_LIBRARY = {
             "en": "ebike",
             "zh": "电动车",
             "pos": "noun",
-            "icon": "🛵"
+            "icon": "🛵",
+            "img": "assets/vocab/ebike.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "footrest",
             "zh": "脚踏",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/footrest.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🛵"
+            "icon": "🛵",
+            "img": "assets/vocab/ride.svg"
           }
         ]
       },
@@ -25776,55 +27571,64 @@ const SCENE_LIBRARY = {
             "en": "ebike",
             "zh": "电动车",
             "pos": "noun",
-            "icon": "🛵"
+            "icon": "🛵",
+            "img": "assets/vocab/ebike.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "footrest",
             "zh": "脚踏",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/footrest.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🛵"
+            "icon": "🛵",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "wear",
             "zh": "戴",
             "pos": "verb",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/wear.svg"
           },
           {
             "en": "hold",
             "zh": "抓",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           }
         ]
       },
@@ -25892,61 +27696,71 @@ const SCENE_LIBRARY = {
             "en": "ebike",
             "zh": "电动车",
             "pos": "noun",
-            "icon": "🛵"
+            "icon": "🛵",
+            "img": "assets/vocab/ebike.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "footrest",
             "zh": "脚踏",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/footrest.svg"
           },
           {
             "en": "wind",
             "zh": "风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/wind.svg"
           },
           {
             "en": "planet",
             "zh": "地球",
             "pos": "noun",
-            "icon": "🌍"
+            "icon": "🌍",
+            "img": "assets/vocab/planet.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🛵"
+            "icon": "🛵",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "wear",
             "zh": "戴",
             "pos": "verb",
-            "icon": "⛑️"
+            "icon": "⛑️",
+            "img": "assets/vocab/wear.svg"
           },
           {
             "en": "hold",
             "zh": "抓",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hold.svg"
           }
         ]
       }
@@ -25999,31 +27813,36 @@ const SCENE_LIBRARY = {
             "en": "train",
             "zh": "火车",
             "pos": "noun",
-            "icon": "🚄"
+            "icon": "🚄",
+            "img": "assets/vocab/train.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "seat",
             "zh": "座位",
             "pos": "noun",
-            "icon": "💺"
+            "icon": "💺",
+            "img": "assets/vocab/seat.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚄"
+            "icon": "🚄",
+            "img": "assets/vocab/go.svg"
           }
         ]
       },
@@ -26119,55 +27938,64 @@ const SCENE_LIBRARY = {
             "en": "train",
             "zh": "火车",
             "pos": "noun",
-            "icon": "🚄"
+            "icon": "🚄",
+            "img": "assets/vocab/train.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "seat",
             "zh": "座位",
             "pos": "noun",
-            "icon": "💺"
+            "icon": "💺",
+            "img": "assets/vocab/seat.svg"
           },
           {
             "en": "car",
             "zh": "车厢",
             "pos": "noun",
-            "icon": "🚃"
+            "icon": "🚃",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚄"
+            "icon": "🚄",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           }
         ]
       },
@@ -26240,61 +28068,71 @@ const SCENE_LIBRARY = {
             "en": "train",
             "zh": "火车",
             "pos": "noun",
-            "icon": "🚄"
+            "icon": "🚄",
+            "img": "assets/vocab/train.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "seat",
             "zh": "座位",
             "pos": "noun",
-            "icon": "💺"
+            "icon": "💺",
+            "img": "assets/vocab/seat.svg"
           },
           {
             "en": "ticket",
             "zh": "车票",
             "pos": "noun",
-            "icon": "🎫"
+            "icon": "🎫",
+            "img": "assets/vocab/ticket.svg"
           },
           {
             "en": "countryside",
             "zh": "乡间",
             "pos": "noun",
-            "icon": "🌾"
+            "icon": "🌾",
+            "img": "assets/vocab/countryside.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "long",
             "zh": "长",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/long.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚄"
+            "icon": "🚄",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           },
           {
             "en": "see",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/see.svg"
           }
         ]
       }
@@ -26348,31 +28186,36 @@ const SCENE_LIBRARY = {
             "en": "airplane",
             "zh": "飞机",
             "pos": "noun",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/airplane.svg"
           },
           {
             "en": "cloud",
             "zh": "云",
             "pos": "noun",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/cloud.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/fly.svg"
           }
         ]
       },
@@ -26470,55 +28313,64 @@ const SCENE_LIBRARY = {
             "en": "airplane",
             "zh": "飞机",
             "pos": "noun",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/airplane.svg"
           },
           {
             "en": "cloud",
             "zh": "云",
             "pos": "noun",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/cloud.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "airport",
             "zh": "机场",
             "pos": "noun",
-            "icon": "🛫"
+            "icon": "🛫",
+            "img": "assets/vocab/airport.svg"
           },
           {
             "en": "white",
             "zh": "白色",
             "pos": "adj",
-            "icon": "⚪"
+            "icon": "⚪",
+            "img": "assets/vocab/white.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/fly.svg"
           },
           {
             "en": "fasten",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/fasten.svg"
           }
         ]
       },
@@ -26591,67 +28443,78 @@ const SCENE_LIBRARY = {
             "en": "airplane",
             "zh": "飞机",
             "pos": "noun",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/airplane.svg"
           },
           {
             "en": "cloud",
             "zh": "云",
             "pos": "noun",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/cloud.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "airport",
             "zh": "机场",
             "pos": "noun",
-            "icon": "🛫"
+            "icon": "🛫",
+            "img": "assets/vocab/airport.svg"
           },
           {
             "en": "belt",
             "zh": "带",
             "pos": "noun",
-            "icon": "🎞️"
+            "icon": "🎞️",
+            "img": "assets/vocab/belt.svg"
           },
           {
             "en": "ear",
             "zh": "耳朵",
             "pos": "noun",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/ear.svg"
           },
           {
             "en": "fast",
             "zh": "快",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           },
           {
             "en": "fly",
             "zh": "飞",
             "pos": "verb",
-            "icon": "✈️"
+            "icon": "✈️",
+            "img": "assets/vocab/fly.svg"
           },
           {
             "en": "fasten",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/fasten.svg"
           },
           {
             "en": "swallow",
             "zh": "吞咽",
             "pos": "verb",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/swallow.svg"
           }
         ]
       }
@@ -26706,31 +28569,36 @@ const SCENE_LIBRARY = {
             "en": "room",
             "zh": "房间",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/room.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "key",
             "zh": "钥匙",
             "pos": "noun",
-            "icon": "🔑"
+            "icon": "🔑",
+            "img": "assets/vocab/key.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           }
         ]
       },
@@ -26828,55 +28696,64 @@ const SCENE_LIBRARY = {
             "en": "room",
             "zh": "房间",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/room.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "key",
             "zh": "钥匙",
             "pos": "noun",
-            "icon": "🔑"
+            "icon": "🔑",
+            "img": "assets/vocab/key.svg"
           },
           {
             "en": "big",
             "zh": "大",
             "pos": "adj",
-            "icon": "🐘"
+            "icon": "🐘",
+            "img": "assets/vocab/big.svg"
           },
           {
             "en": "small",
             "zh": "小",
             "pos": "adj",
-            "icon": "🐭"
+            "icon": "🐭",
+            "img": "assets/vocab/small.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "sleep",
             "zh": "睡",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           },
           {
             "en": "open",
             "zh": "开",
             "pos": "verb",
-            "icon": "🔓"
+            "icon": "🔓",
+            "img": "assets/vocab/open.svg"
           }
         ]
       },
@@ -26950,61 +28827,71 @@ const SCENE_LIBRARY = {
             "en": "room",
             "zh": "房间",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/room.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "key",
             "zh": "钥匙",
             "pos": "noun",
-            "icon": "🔑"
+            "icon": "🔑",
+            "img": "assets/vocab/key.svg"
           },
           {
             "en": "desk",
             "zh": "前台",
             "pos": "noun",
-            "icon": "🛎️"
+            "icon": "🛎️",
+            "img": "assets/vocab/desk.svg"
           },
           {
             "en": "tidy",
             "zh": "整齐",
             "pos": "adj",
-            "icon": "🧹"
+            "icon": "🧹",
+            "img": "assets/vocab/tidy.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           },
           {
             "en": "unpack",
             "zh": "打开行李",
             "pos": "verb",
-            "icon": "🧳"
+            "icon": "🧳",
+            "img": "assets/vocab/unpack.svg"
           },
           {
             "en": "sleep",
             "zh": "睡",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           },
           {
             "en": "open",
             "zh": "开",
             "pos": "verb",
-            "icon": "🔓"
+            "icon": "🔓",
+            "img": "assets/vocab/open.svg"
           }
         ]
       }
@@ -27060,31 +28947,36 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "mountain",
             "zh": "山",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/mountain.svg"
           },
           {
             "en": "road",
             "zh": "路",
             "pos": "noun",
-            "icon": "🛣️"
+            "icon": "🛣️",
+            "img": "assets/vocab/road.svg"
           },
           {
             "en": "stop",
             "zh": "停",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/stop.svg"
           },
           {
             "en": "drive",
             "zh": "开",
             "pos": "verb",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/drive.svg"
           }
         ]
       },
@@ -27182,49 +29074,57 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "mountain",
             "zh": "山",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/mountain.svg"
           },
           {
             "en": "road",
             "zh": "路",
             "pos": "noun",
-            "icon": "🛣️"
+            "icon": "🛣️",
+            "img": "assets/vocab/road.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "drive",
             "zh": "开",
             "pos": "verb",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/drive.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🎮"
+            "icon": "🎮",
+            "img": "assets/vocab/play.svg"
           }
         ]
       },
@@ -27298,61 +29198,71 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "mountain",
             "zh": "山",
             "pos": "noun",
-            "icon": "⛰️"
+            "icon": "⛰️",
+            "img": "assets/vocab/mountain.svg"
           },
           {
             "en": "road",
             "zh": "路",
             "pos": "noun",
-            "icon": "🛣️"
+            "icon": "🛣️",
+            "img": "assets/vocab/road.svg"
           },
           {
             "en": "journey",
             "zh": "旅程",
             "pos": "noun",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/journey.svg"
           },
           {
             "en": "memory",
             "zh": "回忆",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/memory.svg"
           },
           {
             "en": "long",
             "zh": "长",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/long.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "drive",
             "zh": "开",
             "pos": "verb",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/drive.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "make",
             "zh": "做",
             "pos": "verb",
-            "icon": "🛠️"
+            "icon": "🛠️",
+            "img": "assets/vocab/make.svg"
           }
         ]
       }
@@ -27408,31 +29318,36 @@ const SCENE_LIBRARY = {
             "en": "boat",
             "zh": "船",
             "pos": "noun",
-            "icon": "⛴️"
+            "icon": "⛴️",
+            "img": "assets/vocab/boat.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "seagull",
             "zh": "海鸥",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/seagull.svg"
           },
           {
             "en": "wave",
             "zh": "浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           }
         ]
       },
@@ -27529,55 +29444,64 @@ const SCENE_LIBRARY = {
             "en": "boat",
             "zh": "船",
             "pos": "noun",
-            "icon": "⛴️"
+            "icon": "⛴️",
+            "img": "assets/vocab/boat.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "seagull",
             "zh": "海鸥",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/seagull.svg"
           },
           {
             "en": "wave",
             "zh": "浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "deck",
             "zh": "甲板",
             "pos": "noun",
-            "icon": "🛳️"
+            "icon": "🛳️",
+            "img": "assets/vocab/deck.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "stand",
             "zh": "站",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/stand.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -27651,67 +29575,78 @@ const SCENE_LIBRARY = {
             "en": "boat",
             "zh": "船",
             "pos": "noun",
-            "icon": "⛴️"
+            "icon": "⛴️",
+            "img": "assets/vocab/boat.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "seagull",
             "zh": "海鸥",
             "pos": "noun",
-            "icon": "🐦"
+            "icon": "🐦",
+            "img": "assets/vocab/seagull.svg"
           },
           {
             "en": "wave",
             "zh": "浪",
             "pos": "noun",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "deck",
             "zh": "甲板",
             "pos": "noun",
-            "icon": "🛳️"
+            "icon": "🛳️",
+            "img": "assets/vocab/deck.svg"
           },
           {
             "en": "breeze",
             "zh": "微风",
             "pos": "noun",
-            "icon": "🌬️"
+            "icon": "🌬️",
+            "img": "assets/vocab/breeze.svg"
           },
           {
             "en": "island",
             "zh": "岛",
             "pos": "noun",
-            "icon": "🏝️"
+            "icon": "🏝️",
+            "img": "assets/vocab/island.svg"
           },
           {
             "en": "calm",
             "zh": "平静",
             "pos": "adj",
-            "icon": "🌊"
+            "icon": "🌊",
+            "img": "assets/vocab/calm.svg"
           },
           {
             "en": "blue",
             "zh": "蓝色",
             "pos": "adj",
-            "icon": "🔵"
+            "icon": "🔵",
+            "img": "assets/vocab/blue.svg"
           },
           {
             "en": "stand",
             "zh": "站",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/stand.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       }
@@ -27763,25 +29698,29 @@ const SCENE_LIBRARY = {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "🪖"
+            "icon": "🪖",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "buckle",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/buckle.svg"
           }
         ]
       },
@@ -27878,37 +29817,43 @@ const SCENE_LIBRARY = {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "🪖"
+            "icon": "🪖",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "buckle",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/buckle.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🚴"
+            "icon": "🚴",
+            "img": "assets/vocab/ride.svg"
           }
         ]
       },
@@ -27981,49 +29926,57 @@ const SCENE_LIBRARY = {
             "en": "seatbelt",
             "zh": "安全带",
             "pos": "noun",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/seatbelt.svg"
           },
           {
             "en": "helmet",
             "zh": "头盔",
             "pos": "noun",
-            "icon": "🪖"
+            "icon": "🪖",
+            "img": "assets/vocab/helmet.svg"
           },
           {
             "en": "head",
             "zh": "头",
             "pos": "noun",
-            "icon": "🧠"
+            "icon": "🧠",
+            "img": "assets/vocab/head.svg"
           },
           {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "buckle",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/buckle.svg"
           },
           {
             "en": "ride",
             "zh": "骑",
             "pos": "verb",
-            "icon": "🚴"
+            "icon": "🚴",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "shield",
             "zh": "保护",
             "pos": "verb",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/shield.svg"
           }
         ]
       }
@@ -28079,31 +30032,36 @@ const SCENE_LIBRARY = {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "stop",
             "zh": "停",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/stop.svg"
           }
         ]
       },
@@ -28201,49 +30159,57 @@ const SCENE_LIBRARY = {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "crosswalk",
             "zh": "斑马线",
             "pos": "noun",
-            "icon": "🦓"
+            "icon": "🦓",
+            "img": "assets/vocab/crosswalk.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "cross",
             "zh": "过",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/cross.svg"
           },
           {
             "en": "hold",
             "zh": "牵",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/hold.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -28317,55 +30283,64 @@ const SCENE_LIBRARY = {
             "en": "light",
             "zh": "灯",
             "pos": "noun",
-            "icon": "🚦"
+            "icon": "🚦",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "crosswalk",
             "zh": "斑马线",
             "pos": "noun",
-            "icon": "🦓"
+            "icon": "🦓",
+            "img": "assets/vocab/crosswalk.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "red",
             "zh": "红色",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿色",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "cross",
             "zh": "过",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/cross.svg"
           },
           {
             "en": "hold",
             "zh": "牵",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/hold.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       }
@@ -28420,31 +30395,36 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "seat",
             "zh": "座位",
             "pos": "noun",
-            "icon": "💺"
+            "icon": "💺",
+            "img": "assets/vocab/seat.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/sit.svg"
           },
           {
             "en": "buckle",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/buckle.svg"
           }
         ]
       },
@@ -28542,37 +30522,43 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "seat",
             "zh": "座位",
             "pos": "noun",
-            "icon": "💺"
+            "icon": "💺",
+            "img": "assets/vocab/seat.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           },
           {
             "en": "calm",
             "zh": "冷静",
             "pos": "adj",
-            "icon": "😌"
+            "icon": "😌",
+            "img": "assets/vocab/calm.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/sit.svg"
           },
           {
             "en": "buckle",
             "zh": "系",
             "pos": "verb",
-            "icon": "🔗"
+            "icon": "🔗",
+            "img": "assets/vocab/buckle.svg"
           }
         ]
       },
@@ -28646,43 +30632,50 @@ const SCENE_LIBRARY = {
             "en": "car",
             "zh": "汽车",
             "pos": "noun",
-            "icon": "🚗"
+            "icon": "🚗",
+            "img": "assets/vocab/car.svg"
           },
           {
             "en": "seat",
             "zh": "座位",
             "pos": "noun",
-            "icon": "💺"
+            "icon": "💺",
+            "img": "assets/vocab/seat.svg"
           },
           {
             "en": "driver",
             "zh": "司机",
             "pos": "noun",
-            "icon": "🧑‍✈️"
+            "icon": "🧑‍✈️",
+            "img": "assets/vocab/driver.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           },
           {
             "en": "calm",
             "zh": "冷静",
             "pos": "adj",
-            "icon": "😌"
+            "icon": "😌",
+            "img": "assets/vocab/calm.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/sit.svg"
           },
           {
             "en": "stay",
             "zh": "保持",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/stay.svg"
           }
         ]
       }
@@ -28736,25 +30729,29 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "inside",
             "zh": "里面",
             "pos": "adj",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/inside.svg"
           }
         ]
       },
@@ -28852,43 +30849,50 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "head",
             "zh": "头",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/head.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "inside",
             "zh": "里面",
             "pos": "adj",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/inside.svg"
           },
           {
             "en": "keep",
             "zh": "保持",
             "pos": "verb",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/keep.svg"
           }
         ]
       },
@@ -28962,49 +30966,57 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "window",
             "zh": "窗",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "arm",
             "zh": "手臂",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "head",
             "zh": "头",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/head.svg"
           },
           {
             "en": "body",
             "zh": "身体",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/body.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "inside",
             "zh": "里面",
             "pos": "adj",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/inside.svg"
           },
           {
             "en": "keep",
             "zh": "保持",
             "pos": "verb",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/keep.svg"
           }
         ]
       }
@@ -29060,25 +31072,29 @@ const SCENE_LIBRARY = {
             "en": "number",
             "zh": "号码",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/number.svg"
           },
           {
             "en": "phone",
             "zh": "电话",
             "pos": "noun",
-            "icon": "📱"
+            "icon": "📱",
+            "img": "assets/vocab/phone.svg"
           },
           {
             "en": "call",
             "zh": "打电话",
             "pos": "verb",
-            "icon": "☎️"
+            "icon": "☎️",
+            "img": "assets/vocab/call.svg"
           },
           {
             "en": "memory",
             "zh": "记忆",
             "pos": "noun",
-            "icon": "🧠"
+            "icon": "🧠",
+            "img": "assets/vocab/memory.svg"
           }
         ]
       },
@@ -29176,43 +31192,50 @@ const SCENE_LIBRARY = {
             "en": "number",
             "zh": "号码",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/number.svg"
           },
           {
             "en": "phone",
             "zh": "电话",
             "pos": "noun",
-            "icon": "📱"
+            "icon": "📱",
+            "img": "assets/vocab/phone.svg"
           },
           {
             "en": "policeman",
             "zh": "警察",
             "pos": "noun",
-            "icon": "👮"
+            "icon": "👮",
+            "img": "assets/vocab/policeman.svg"
           },
           {
             "en": "parent",
             "zh": "家长",
             "pos": "noun",
-            "icon": "👨‍👩‍👧"
+            "icon": "👨‍👩‍👧",
+            "img": "assets/vocab/parent.svg"
           },
           {
             "en": "call",
             "zh": "打电话",
             "pos": "verb",
-            "icon": "☎️"
+            "icon": "☎️",
+            "img": "assets/vocab/call.svg"
           },
           {
             "en": "remember",
             "zh": "记住",
             "pos": "verb",
-            "icon": "🧠"
+            "icon": "🧠",
+            "img": "assets/vocab/remember.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/find.svg"
           }
         ]
       },
@@ -29286,55 +31309,64 @@ const SCENE_LIBRARY = {
             "en": "number",
             "zh": "号码",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/number.svg"
           },
           {
             "en": "phone",
             "zh": "电话",
             "pos": "noun",
-            "icon": "📱"
+            "icon": "📱",
+            "img": "assets/vocab/phone.svg"
           },
           {
             "en": "policeman",
             "zh": "警察",
             "pos": "noun",
-            "icon": "👮"
+            "icon": "👮",
+            "img": "assets/vocab/policeman.svg"
           },
           {
             "en": "parent",
             "zh": "家长",
             "pos": "noun",
-            "icon": "👨‍👩‍👧"
+            "icon": "👨‍👩‍👧",
+            "img": "assets/vocab/parent.svg"
           },
           {
             "en": "worker",
             "zh": "店员",
             "pos": "noun",
-            "icon": "🧑‍💼"
+            "icon": "🧑‍💼",
+            "img": "assets/vocab/worker.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "call",
             "zh": "打电话",
             "pos": "verb",
-            "icon": "☎️"
+            "icon": "☎️",
+            "img": "assets/vocab/call.svg"
           },
           {
             "en": "remember",
             "zh": "记住",
             "pos": "verb",
-            "icon": "🧠"
+            "icon": "🧠",
+            "img": "assets/vocab/remember.svg"
           },
           {
             "en": "memorize",
             "zh": "背熟",
             "pos": "verb",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/memorize.svg"
           }
         ]
       }
@@ -29387,31 +31419,36 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "bottle",
             "zh": "水壶",
             "pos": "noun",
-            "icon": "🍼"
+            "icon": "🍼",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "pack",
             "zh": "装",
             "pos": "verb",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/pack.svg"
           }
         ]
       },
@@ -29509,49 +31546,57 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "bottle",
             "zh": "水壶",
             "pos": "noun",
-            "icon": "🍼"
+            "icon": "🍼",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "shoe",
             "zh": "鞋",
             "pos": "noun",
-            "icon": "👟"
+            "icon": "👟",
+            "img": "assets/vocab/shoe.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "pack",
             "zh": "装",
             "pos": "verb",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/pack.svg"
           },
           {
             "en": "check",
             "zh": "查",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/check.svg"
           },
           {
             "en": "put",
             "zh": "放",
             "pos": "verb",
-            "icon": "📥"
+            "icon": "📥",
+            "img": "assets/vocab/put.svg"
           }
         ]
       },
@@ -29625,49 +31670,57 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "timetable",
             "zh": "课表",
             "pos": "noun",
-            "icon": "📅"
+            "icon": "📅",
+            "img": "assets/vocab/timetable.svg"
           },
           {
             "en": "shoe",
             "zh": "鞋",
             "pos": "noun",
-            "icon": "👟"
+            "icon": "👟",
+            "img": "assets/vocab/shoe.svg"
           },
           {
             "en": "ready",
             "zh": "准备好",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "pack",
             "zh": "装",
             "pos": "verb",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/pack.svg"
           },
           {
             "en": "check",
             "zh": "查",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/check.svg"
           },
           {
             "en": "put",
             "zh": "放",
             "pos": "verb",
-            "icon": "📥"
+            "icon": "📥",
+            "img": "assets/vocab/put.svg"
           }
         ]
       }
@@ -29721,31 +31774,36 @@ const SCENE_LIBRARY = {
             "en": "school",
             "zh": "学校",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/school.svg"
           },
           {
             "en": "day",
             "zh": "一天",
             "pos": "noun",
-            "icon": "🌞"
+            "icon": "🌞",
+            "img": "assets/vocab/day.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "noun",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/go.svg"
           }
         ]
       },
@@ -29843,49 +31901,57 @@ const SCENE_LIBRARY = {
             "en": "school",
             "zh": "学校",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/school.svg"
           },
           {
             "en": "day",
             "zh": "一天",
             "pos": "noun",
-            "icon": "🌞"
+            "icon": "🌞",
+            "img": "assets/vocab/day.svg"
           },
           {
             "en": "daddy",
             "zh": "爸爸",
             "pos": "noun",
-            "icon": "👨"
+            "icon": "👨",
+            "img": "assets/vocab/daddy.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "noun",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "wave",
             "zh": "挥手",
             "pos": "verb",
-            "icon": "👋"
+            "icon": "👋",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           }
         ]
       },
@@ -29959,49 +32025,57 @@ const SCENE_LIBRARY = {
             "en": "school",
             "zh": "学校",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/school.svg"
           },
           {
             "en": "day",
             "zh": "一天",
             "pos": "noun",
-            "icon": "🌞"
+            "icon": "🌞",
+            "img": "assets/vocab/day.svg"
           },
           {
             "en": "daddy",
             "zh": "爸爸",
             "pos": "noun",
-            "icon": "👨"
+            "icon": "👨",
+            "img": "assets/vocab/daddy.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "noun",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "wave",
             "zh": "挥手",
             "pos": "verb",
-            "icon": "👋"
+            "icon": "👋",
+            "img": "assets/vocab/wave.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           }
         ]
       }
@@ -30056,31 +32130,36 @@ const SCENE_LIBRARY = {
             "en": "uniform",
             "zh": "校服",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/uniform.svg"
           },
           {
             "en": "button",
             "zh": "扣子",
             "pos": "noun",
-            "icon": "🔘"
+            "icon": "🔘",
+            "img": "assets/vocab/button.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "smart",
             "zh": "精神",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/smart.svg"
           },
           {
             "en": "wear",
             "zh": "穿",
             "pos": "verb",
-            "icon": "👚"
+            "icon": "👚",
+            "img": "assets/vocab/wear.svg"
           }
         ]
       },
@@ -30178,49 +32257,57 @@ const SCENE_LIBRARY = {
             "en": "uniform",
             "zh": "校服",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/uniform.svg"
           },
           {
             "en": "button",
             "zh": "扣子",
             "pos": "noun",
-            "icon": "🔘"
+            "icon": "🔘",
+            "img": "assets/vocab/button.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "collar",
             "zh": "衣领",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/collar.svg"
           },
           {
             "en": "neat",
             "zh": "整齐",
             "pos": "adj",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/neat.svg"
           },
           {
             "en": "smart",
             "zh": "精神",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/smart.svg"
           },
           {
             "en": "wear",
             "zh": "穿",
             "pos": "verb",
-            "icon": "👚"
+            "icon": "👚",
+            "img": "assets/vocab/wear.svg"
           },
           {
             "en": "tuck",
             "zh": "掖",
             "pos": "verb",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/tuck.svg"
           }
         ]
       },
@@ -30294,49 +32381,57 @@ const SCENE_LIBRARY = {
             "en": "uniform",
             "zh": "校服",
             "pos": "noun",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/uniform.svg"
           },
           {
             "en": "button",
             "zh": "扣子",
             "pos": "noun",
-            "icon": "🔘"
+            "icon": "🔘",
+            "img": "assets/vocab/button.svg"
           },
           {
             "en": "shirt",
             "zh": "衬衫",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/shirt.svg"
           },
           {
             "en": "collar",
             "zh": "衣领",
             "pos": "noun",
-            "icon": "👔"
+            "icon": "👔",
+            "img": "assets/vocab/collar.svg"
           },
           {
             "en": "neat",
             "zh": "整齐",
             "pos": "adj",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/neat.svg"
           },
           {
             "en": "proud",
             "zh": "自豪",
             "pos": "adj",
-            "icon": "🏅"
+            "icon": "🏅",
+            "img": "assets/vocab/proud.svg"
           },
           {
             "en": "wear",
             "zh": "穿",
             "pos": "verb",
-            "icon": "👚"
+            "icon": "👚",
+            "img": "assets/vocab/wear.svg"
           },
           {
             "en": "tuck",
             "zh": "掖",
             "pos": "verb",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/tuck.svg"
           }
         ]
       }
@@ -30391,31 +32486,36 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "homework",
             "zh": "作业",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/homework.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "ready",
             "zh": "齐",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "check",
             "zh": "检查",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/check.svg"
           }
         ]
       },
@@ -30513,43 +32613,50 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "homework",
             "zh": "作业",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/homework.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "pencil",
             "zh": "铅笔",
             "pos": "noun",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/pencil.svg"
           },
           {
             "en": "ready",
             "zh": "齐",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "check",
             "zh": "检查",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/check.svg"
           },
           {
             "en": "put",
             "zh": "放",
             "pos": "verb",
-            "icon": "📥"
+            "icon": "📥",
+            "img": "assets/vocab/put.svg"
           }
         ]
       },
@@ -30623,43 +32730,50 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "homework",
             "zh": "作业",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/homework.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "pencil",
             "zh": "铅笔",
             "pos": "noun",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/pencil.svg"
           },
           {
             "en": "ready",
             "zh": "齐",
             "pos": "adj",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/ready.svg"
           },
           {
             "en": "check",
             "zh": "检查",
             "pos": "verb",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/check.svg"
           },
           {
             "en": "put",
             "zh": "放",
             "pos": "verb",
-            "icon": "📥"
+            "icon": "📥",
+            "img": "assets/vocab/put.svg"
           }
         ]
       }
@@ -30714,31 +32828,36 @@ const SCENE_LIBRARY = {
             "en": "lunchbox",
             "zh": "便当",
             "pos": "noun",
-            "icon": "🍱"
+            "icon": "🍱",
+            "img": "assets/vocab/lunchbox.svg"
           },
           {
             "en": "bottle",
             "zh": "水壶",
             "pos": "noun",
-            "icon": "🍼"
+            "icon": "🍼",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "lunch",
             "zh": "午饭",
             "pos": "noun",
-            "icon": "🍲"
+            "icon": "🍲",
+            "img": "assets/vocab/lunch.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           },
           {
             "en": "pack",
             "zh": "装",
             "pos": "verb",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/pack.svg"
           }
         ]
       },
@@ -30836,43 +32955,50 @@ const SCENE_LIBRARY = {
             "en": "lunchbox",
             "zh": "便当",
             "pos": "noun",
-            "icon": "🍱"
+            "icon": "🍱",
+            "img": "assets/vocab/lunchbox.svg"
           },
           {
             "en": "bottle",
             "zh": "水壶",
             "pos": "noun",
-            "icon": "🍼"
+            "icon": "🍼",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "lunch",
             "zh": "午饭",
             "pos": "noun",
-            "icon": "🍲"
+            "icon": "🍲",
+            "img": "assets/vocab/lunch.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           },
           {
             "en": "pack",
             "zh": "装",
             "pos": "verb",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/pack.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       },
@@ -30945,43 +33071,50 @@ const SCENE_LIBRARY = {
             "en": "lunchbox",
             "zh": "便当",
             "pos": "noun",
-            "icon": "🍱"
+            "icon": "🍱",
+            "img": "assets/vocab/lunchbox.svg"
           },
           {
             "en": "bottle",
             "zh": "水壶",
             "pos": "noun",
-            "icon": "🍼"
+            "icon": "🍼",
+            "img": "assets/vocab/bottle.svg"
           },
           {
             "en": "lunch",
             "zh": "午饭",
             "pos": "noun",
-            "icon": "🍲"
+            "icon": "🍲",
+            "img": "assets/vocab/lunch.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           },
           {
             "en": "pack",
             "zh": "装",
             "pos": "verb",
-            "icon": "📦"
+            "icon": "📦",
+            "img": "assets/vocab/pack.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       }
@@ -31034,31 +33167,36 @@ const SCENE_LIBRARY = {
             "en": "teacher",
             "zh": "老师",
             "pos": "noun",
-            "icon": "👩‍🏫"
+            "icon": "👩‍🏫",
+            "img": "assets/vocab/teacher.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "question",
             "zh": "问题",
             "pos": "noun",
-            "icon": "❓"
+            "icon": "❓",
+            "img": "assets/vocab/question.svg"
           },
           {
             "en": "good",
             "zh": "好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           }
         ]
       },
@@ -31156,49 +33294,57 @@ const SCENE_LIBRARY = {
             "en": "teacher",
             "zh": "老师",
             "pos": "noun",
-            "icon": "👩‍🏫"
+            "icon": "👩‍🏫",
+            "img": "assets/vocab/teacher.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "question",
             "zh": "问题",
             "pos": "noun",
-            "icon": "❓"
+            "icon": "❓",
+            "img": "assets/vocab/question.svg"
           },
           {
             "en": "answer",
             "zh": "答案",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/answer.svg"
           },
           {
             "en": "good",
             "zh": "好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           },
           {
             "en": "raise",
             "zh": "举",
             "pos": "verb",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/raise.svg"
           },
           {
             "en": "answer",
             "zh": "回答",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/answer.svg"
           }
         ]
       },
@@ -31272,49 +33418,57 @@ const SCENE_LIBRARY = {
             "en": "teacher",
             "zh": "老师",
             "pos": "noun",
-            "icon": "👩‍🏫"
+            "icon": "👩‍🏫",
+            "img": "assets/vocab/teacher.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "question",
             "zh": "问题",
             "pos": "noun",
-            "icon": "❓"
+            "icon": "❓",
+            "img": "assets/vocab/question.svg"
           },
           {
             "en": "answer",
             "zh": "答案",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/answer.svg"
           },
           {
             "en": "good",
             "zh": "好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           },
           {
             "en": "raise",
             "zh": "举",
             "pos": "verb",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/raise.svg"
           },
           {
             "en": "answer",
             "zh": "回答",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/answer.svg"
           }
         ]
       }
@@ -31367,31 +33521,36 @@ const SCENE_LIBRARY = {
             "en": "playground",
             "zh": "操场",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/playground.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "noun",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "noun",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           }
         ]
       },
@@ -31489,37 +33648,43 @@ const SCENE_LIBRARY = {
             "en": "playground",
             "zh": "操场",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/playground.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           }
         ]
       },
@@ -31591,43 +33756,50 @@ const SCENE_LIBRARY = {
             "en": "playground",
             "zh": "操场",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/playground.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       }
@@ -31683,31 +33855,36 @@ const SCENE_LIBRARY = {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "art",
             "zh": "美术",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/art.svg"
           },
           {
             "en": "colorful",
             "zh": "彩色",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/colorful.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/draw.svg"
           }
         ]
       },
@@ -31805,49 +33982,57 @@ const SCENE_LIBRARY = {
             "en": "crayon",
             "zh": "蜡笔",
             "pos": "noun",
-            "icon": "🖍️"
+            "icon": "🖍️",
+            "img": "assets/vocab/crayon.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "art",
             "zh": "美术",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/art.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/draw.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           },
           {
             "en": "make",
             "zh": "做",
             "pos": "verb",
-            "icon": "🛠️"
+            "icon": "🛠️",
+            "img": "assets/vocab/make.svg"
           }
         ]
       },
@@ -31921,49 +34106,57 @@ const SCENE_LIBRARY = {
             "en": "crayon",
             "zh": "蜡笔",
             "pos": "noun",
-            "icon": "🖍️"
+            "icon": "🖍️",
+            "img": "assets/vocab/crayon.svg"
           },
           {
             "en": "paper",
             "zh": "纸",
             "pos": "noun",
-            "icon": "📄"
+            "icon": "📄",
+            "img": "assets/vocab/paper.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "art",
             "zh": "美术",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/art.svg"
           },
           {
             "en": "draw",
             "zh": "画",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/draw.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           },
           {
             "en": "make",
             "zh": "做",
             "pos": "verb",
-            "icon": "🛠️"
+            "icon": "🛠️",
+            "img": "assets/vocab/make.svg"
           }
         ]
       }
@@ -32019,31 +34212,36 @@ const SCENE_LIBRARY = {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "drum",
             "zh": "鼓",
             "pos": "noun",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/drum.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "music",
             "zh": "音乐",
             "pos": "noun",
-            "icon": "🎶"
+            "icon": "🎶",
+            "img": "assets/vocab/music.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           }
         ]
       },
@@ -32141,49 +34339,57 @@ const SCENE_LIBRARY = {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "drum",
             "zh": "鼓",
             "pos": "noun",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/drum.svg"
           },
           {
             "en": "beat",
             "zh": "节拍",
             "pos": "noun",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/beat.svg"
           },
           {
             "en": "music",
             "zh": "音乐",
             "pos": "noun",
-            "icon": "🎶"
+            "icon": "🎶",
+            "img": "assets/vocab/music.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           },
           {
             "en": "clap",
             "zh": "拍手",
             "pos": "verb",
-            "icon": "👏"
+            "icon": "👏",
+            "img": "assets/vocab/clap.svg"
           },
           {
             "en": "play",
             "zh": "演奏",
             "pos": "verb",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/play.svg"
           }
         ]
       },
@@ -32257,49 +34463,57 @@ const SCENE_LIBRARY = {
             "en": "song",
             "zh": "歌",
             "pos": "noun",
-            "icon": "🎵"
+            "icon": "🎵",
+            "img": "assets/vocab/song.svg"
           },
           {
             "en": "drum",
             "zh": "鼓",
             "pos": "noun",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/drum.svg"
           },
           {
             "en": "beat",
             "zh": "节拍",
             "pos": "noun",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/beat.svg"
           },
           {
             "en": "music",
             "zh": "音乐",
             "pos": "noun",
-            "icon": "🎶"
+            "icon": "🎶",
+            "img": "assets/vocab/music.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           },
           {
             "en": "clap",
             "zh": "拍手",
             "pos": "verb",
-            "icon": "👏"
+            "icon": "👏",
+            "img": "assets/vocab/clap.svg"
           },
           {
             "en": "play",
             "zh": "演奏",
             "pos": "verb",
-            "icon": "🥁"
+            "icon": "🥁",
+            "img": "assets/vocab/play.svg"
           }
         ]
       }
@@ -32355,31 +34569,36 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "arm",
             "zh": "胳膊",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           }
         ]
       },
@@ -32477,49 +34696,57 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "arm",
             "zh": "胳膊",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "stretch",
             "zh": "伸展",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/stretch.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       },
@@ -32593,49 +34820,57 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "arm",
             "zh": "胳膊",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/arm.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "stretch",
             "zh": "伸展",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/stretch.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       }
@@ -32688,31 +34923,36 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "nice",
             "zh": "友好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/nice.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           }
         ]
       },
@@ -32810,37 +35050,43 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "nice",
             "zh": "友好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/nice.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           },
           {
             "en": "meet",
             "zh": "认识",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/meet.svg"
           }
         ]
       },
@@ -32912,37 +35158,43 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "nice",
             "zh": "友好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/nice.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           },
           {
             "en": "meet",
             "zh": "认识",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/meet.svg"
           }
         ]
       }
@@ -32997,31 +35249,36 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "turn",
             "zh": "轮流",
             "pos": "noun",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           }
         ]
       },
@@ -33119,43 +35376,50 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "turn",
             "zh": "轮流",
             "pos": "noun",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           }
         ]
       },
@@ -33229,43 +35493,50 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "turn",
             "zh": "轮流",
             "pos": "noun",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           }
         ]
       }
@@ -33320,31 +35591,36 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "new",
             "zh": "新",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/new.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/play.svg"
           }
         ]
       },
@@ -33442,37 +35718,43 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "new",
             "zh": "新",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/new.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "meet",
             "zh": "认识",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/meet.svg"
           }
         ]
       },
@@ -33546,43 +35828,50 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "noun",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "new",
             "zh": "新",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/new.svg"
           },
           {
             "en": "shy",
             "zh": "害羞",
             "pos": "adj",
-            "icon": "🙈"
+            "icon": "🙈",
+            "img": "assets/vocab/shy.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "meet",
             "zh": "认识",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/meet.svg"
           }
         ]
       }
@@ -33637,31 +35926,36 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "team",
             "zh": "团队",
             "pos": "noun",
-            "icon": "👥"
+            "icon": "👥",
+            "img": "assets/vocab/team.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "help",
             "zh": "帮助",
             "pos": "noun",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -33759,37 +36053,43 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "classmate",
             "zh": "同学",
             "pos": "noun",
-            "icon": "👨‍🎓"
+            "icon": "👨‍🎓",
+            "img": "assets/vocab/classmate.svg"
           },
           {
             "en": "team",
             "zh": "团队",
             "pos": "noun",
-            "icon": "👥"
+            "icon": "👥",
+            "img": "assets/vocab/team.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "give",
             "zh": "给",
             "pos": "verb",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/give.svg"
           }
         ]
       },
@@ -33863,37 +36163,43 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "classmate",
             "zh": "同学",
             "pos": "noun",
-            "icon": "👨‍🎓"
+            "icon": "👨‍🎓",
+            "img": "assets/vocab/classmate.svg"
           },
           {
             "en": "team",
             "zh": "团队",
             "pos": "noun",
-            "icon": "👥"
+            "icon": "👥",
+            "img": "assets/vocab/team.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "give",
             "zh": "给",
             "pos": "verb",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/give.svg"
           }
         ]
       }
@@ -33949,31 +36255,36 @@ const SCENE_LIBRARY = {
             "en": "word",
             "zh": "话",
             "pos": "noun",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/word.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "angry",
             "zh": "生气",
             "pos": "adj",
-            "icon": "😠"
+            "icon": "😠",
+            "img": "assets/vocab/angry.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hit.svg"
           }
         ]
       },
@@ -34071,37 +36382,43 @@ const SCENE_LIBRARY = {
             "en": "word",
             "zh": "话",
             "pos": "noun",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/word.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "angry",
             "zh": "生气",
             "pos": "adj",
-            "icon": "😠"
+            "icon": "😠",
+            "img": "assets/vocab/angry.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hit.svg"
           },
           {
             "en": "talk",
             "zh": "说话",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           }
         ]
       },
@@ -34175,37 +36492,43 @@ const SCENE_LIBRARY = {
             "en": "word",
             "zh": "话",
             "pos": "noun",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/word.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "angry",
             "zh": "生气",
             "pos": "adj",
-            "icon": "😠"
+            "icon": "😠",
+            "img": "assets/vocab/angry.svg"
           },
           {
             "en": "hit",
             "zh": "打",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/hit.svg"
           },
           {
             "en": "talk",
             "zh": "说话",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           }
         ]
       }
@@ -34259,31 +36582,36 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "school",
             "zh": "学校",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/school.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/go.svg"
           }
         ]
       },
@@ -34381,43 +36709,50 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "school",
             "zh": "学校",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/school.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "show",
             "zh": "展示",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/show.svg"
           }
         ]
       },
@@ -34490,43 +36825,50 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "书包",
             "pos": "noun",
-            "icon": "🎒"
+            "icon": "🎒",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "school",
             "zh": "学校",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/school.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "go",
             "zh": "走",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/go.svg"
           },
           {
             "en": "show",
             "zh": "展示",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/show.svg"
           }
         ]
       }
@@ -34582,31 +36924,36 @@ const SCENE_LIBRARY = {
             "en": "class",
             "zh": "课",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/class.svg"
           },
           {
             "en": "piano",
             "zh": "钢琴",
             "pos": "noun",
-            "icon": "🎹"
+            "icon": "🎹",
+            "img": "assets/vocab/piano.svg"
           },
           {
             "en": "dance",
             "zh": "跳舞",
             "pos": "noun",
-            "icon": "💃"
+            "icon": "💃",
+            "img": "assets/vocab/dance.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "learn",
             "zh": "学",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/learn.svg"
           }
         ]
       },
@@ -34704,37 +37051,43 @@ const SCENE_LIBRARY = {
             "en": "class",
             "zh": "课",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/class.svg"
           },
           {
             "en": "piano",
             "zh": "钢琴",
             "pos": "noun",
-            "icon": "🎹"
+            "icon": "🎹",
+            "img": "assets/vocab/piano.svg"
           },
           {
             "en": "dance",
             "zh": "跳舞",
             "pos": "noun",
-            "icon": "💃"
+            "icon": "💃",
+            "img": "assets/vocab/dance.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "learn",
             "zh": "学",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/learn.svg"
           },
           {
             "en": "practice",
             "zh": "练习",
             "pos": "verb",
-            "icon": "🎼"
+            "icon": "🎼",
+            "img": "assets/vocab/practice.svg"
           }
         ]
       },
@@ -34807,37 +37160,43 @@ const SCENE_LIBRARY = {
             "en": "class",
             "zh": "课",
             "pos": "noun",
-            "icon": "🏫"
+            "icon": "🏫",
+            "img": "assets/vocab/class.svg"
           },
           {
             "en": "piano",
             "zh": "钢琴",
             "pos": "noun",
-            "icon": "🎹"
+            "icon": "🎹",
+            "img": "assets/vocab/piano.svg"
           },
           {
             "en": "dance",
             "zh": "跳舞",
             "pos": "noun",
-            "icon": "💃"
+            "icon": "💃",
+            "img": "assets/vocab/dance.svg"
           },
           {
             "en": "fun",
             "zh": "开心",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "learn",
             "zh": "学",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/learn.svg"
           },
           {
             "en": "practice",
             "zh": "练习",
             "pos": "verb",
-            "icon": "🎼"
+            "icon": "🎼",
+            "img": "assets/vocab/practice.svg"
           }
         ]
       }
@@ -34892,31 +37251,36 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "polite",
             "zh": "有礼貌",
             "pos": "adj",
-            "icon": "🙇"
+            "icon": "🙇",
+            "img": "assets/vocab/polite.svg"
           },
           {
             "en": "knock",
             "zh": "敲",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/knock.svg"
           }
         ]
       },
@@ -35014,37 +37378,43 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "polite",
             "zh": "有礼貌",
             "pos": "adj",
-            "icon": "🙇"
+            "icon": "🙇",
+            "img": "assets/vocab/polite.svg"
           },
           {
             "en": "knock",
             "zh": "敲",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/knock.svg"
           },
           {
             "en": "help",
             "zh": "帮忙",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -35118,37 +37488,43 @@ const SCENE_LIBRARY = {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "door",
             "zh": "门",
             "pos": "noun",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/door.svg"
           },
           {
             "en": "polite",
             "zh": "有礼貌",
             "pos": "adj",
-            "icon": "🙇"
+            "icon": "🙇",
+            "img": "assets/vocab/polite.svg"
           },
           {
             "en": "knock",
             "zh": "敲",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/knock.svg"
           },
           {
             "en": "help",
             "zh": "帮忙",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       }
@@ -35203,31 +37579,36 @@ const SCENE_LIBRARY = {
             "en": "teacher",
             "zh": "老师",
             "pos": "noun",
-            "icon": "👩‍🏫"
+            "icon": "👩‍🏫",
+            "img": "assets/vocab/teacher.svg"
           },
           {
             "en": "homework",
             "zh": "作业",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/homework.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "good",
             "zh": "乖",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -35325,37 +37706,43 @@ const SCENE_LIBRARY = {
             "en": "teacher",
             "zh": "老师",
             "pos": "noun",
-            "icon": "👩‍🏫"
+            "icon": "👩‍🏫",
+            "img": "assets/vocab/teacher.svg"
           },
           {
             "en": "homework",
             "zh": "作业",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/homework.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "good",
             "zh": "乖",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           },
           {
             "en": "ask",
             "zh": "问",
             "pos": "verb",
-            "icon": "❓"
+            "icon": "❓",
+            "img": "assets/vocab/ask.svg"
           }
         ]
       },
@@ -35429,37 +37816,43 @@ const SCENE_LIBRARY = {
             "en": "teacher",
             "zh": "老师",
             "pos": "noun",
-            "icon": "👩‍🏫"
+            "icon": "👩‍🏫",
+            "img": "assets/vocab/teacher.svg"
           },
           {
             "en": "homework",
             "zh": "作业",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/homework.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "good",
             "zh": "乖",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           },
           {
             "en": "ask",
             "zh": "问",
             "pos": "verb",
-            "icon": "❓"
+            "icon": "❓",
+            "img": "assets/vocab/ask.svg"
           }
         ]
       }
@@ -35515,31 +37908,36 @@ const SCENE_LIBRARY = {
             "en": "swing",
             "zh": "秋千",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "seek",
             "zh": "躲藏",
             "pos": "noun",
-            "icon": "🙈"
+            "icon": "🙈",
+            "img": "assets/vocab/seek.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           }
         ]
       },
@@ -35637,43 +38035,50 @@ const SCENE_LIBRARY = {
             "en": "swing",
             "zh": "秋千",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "seek",
             "zh": "躲藏",
             "pos": "noun",
-            "icon": "🙈"
+            "icon": "🙈",
+            "img": "assets/vocab/seek.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           }
         ]
       },
@@ -35747,43 +38152,50 @@ const SCENE_LIBRARY = {
             "en": "swing",
             "zh": "秋千",
             "pos": "noun",
-            "icon": "🪢"
+            "icon": "🪢",
+            "img": "assets/vocab/swing.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "seek",
             "zh": "躲藏",
             "pos": "noun",
-            "icon": "🙈"
+            "icon": "🙈",
+            "img": "assets/vocab/seek.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "⚽"
+            "icon": "⚽",
+            "img": "assets/vocab/play.svg"
           }
         ]
       }
@@ -35838,31 +38250,36 @@ const SCENE_LIBRARY = {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "sad",
             "zh": "难过",
             "pos": "adj",
-            "icon": "😢"
+            "icon": "😢",
+            "img": "assets/vocab/sad.svg"
           },
           {
             "en": "smile",
             "zh": "笑容",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "angry",
             "zh": "生气",
             "pos": "adj",
-            "icon": "😠"
+            "icon": "😠",
+            "img": "assets/vocab/angry.svg"
           },
           {
             "en": "cry",
             "zh": "哭",
             "pos": "verb",
-            "icon": "😭"
+            "icon": "😭",
+            "img": "assets/vocab/cry.svg"
           }
         ]
       },
@@ -35960,37 +38377,43 @@ const SCENE_LIBRARY = {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "sad",
             "zh": "难过",
             "pos": "adj",
-            "icon": "😢"
+            "icon": "😢",
+            "img": "assets/vocab/sad.svg"
           },
           {
             "en": "smile",
             "zh": "笑容",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "angry",
             "zh": "生气",
             "pos": "adj",
-            "icon": "😠"
+            "icon": "😠",
+            "img": "assets/vocab/angry.svg"
           },
           {
             "en": "talk",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           },
           {
             "en": "cry",
             "zh": "哭",
             "pos": "verb",
-            "icon": "😭"
+            "icon": "😭",
+            "img": "assets/vocab/cry.svg"
           }
         ]
       },
@@ -36063,37 +38486,43 @@ const SCENE_LIBRARY = {
             "en": "happy",
             "zh": "开心",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           },
           {
             "en": "sad",
             "zh": "难过",
             "pos": "adj",
-            "icon": "😢"
+            "icon": "😢",
+            "img": "assets/vocab/sad.svg"
           },
           {
             "en": "smile",
             "zh": "笑容",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "angry",
             "zh": "生气",
             "pos": "adj",
-            "icon": "😠"
+            "icon": "😠",
+            "img": "assets/vocab/angry.svg"
           },
           {
             "en": "talk",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/talk.svg"
           },
           {
             "en": "cry",
             "zh": "哭",
             "pos": "verb",
-            "icon": "😭"
+            "icon": "😭",
+            "img": "assets/vocab/cry.svg"
           }
         ]
       }
@@ -36146,31 +38575,36 @@ const SCENE_LIBRARY = {
             "en": "thank",
             "zh": "谢谢",
             "pos": "noun",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/thank.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "polite",
             "zh": "有礼貌",
             "pos": "adj",
-            "icon": "🙇"
+            "icon": "🙇",
+            "img": "assets/vocab/polite.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -36268,37 +38702,43 @@ const SCENE_LIBRARY = {
             "en": "thank",
             "zh": "谢谢",
             "pos": "noun",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/thank.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "polite",
             "zh": "有礼貌",
             "pos": "adj",
-            "icon": "🙇"
+            "icon": "🙇",
+            "img": "assets/vocab/polite.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -36371,37 +38811,43 @@ const SCENE_LIBRARY = {
             "en": "thank",
             "zh": "谢谢",
             "pos": "noun",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/thank.svg"
           },
           {
             "en": "sorry",
             "zh": "抱歉",
             "pos": "adj",
-            "icon": "🥺"
+            "icon": "🥺",
+            "img": "assets/vocab/sorry.svg"
           },
           {
             "en": "polite",
             "zh": "有礼貌",
             "pos": "adj",
-            "icon": "🙇"
+            "icon": "🙇",
+            "img": "assets/vocab/polite.svg"
           },
           {
             "en": "kind",
             "zh": "善良",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/kind.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       }
@@ -36457,31 +38903,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "help",
             "zh": "帮忙",
             "pos": "noun",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "thirsty",
             "zh": "渴",
             "pos": "adj",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/thirsty.svg"
           },
           {
             "en": "want",
             "zh": "想要",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/want.svg"
           }
         ]
       },
@@ -36579,37 +39030,43 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "help",
             "zh": "帮忙",
             "pos": "noun",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "thirsty",
             "zh": "渴",
             "pos": "adj",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/thirsty.svg"
           },
           {
             "en": "want",
             "zh": "想要",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/want.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -36682,37 +39139,43 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "help",
             "zh": "帮忙",
             "pos": "noun",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "thirsty",
             "zh": "渴",
             "pos": "adj",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/thirsty.svg"
           },
           {
             "en": "want",
             "zh": "想要",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/want.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       }
@@ -36768,31 +39231,36 @@ const SCENE_LIBRARY = {
             "en": "drawing",
             "zh": "画",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/drawing.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "cool",
             "zh": "酷",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/cool.svg"
           },
           {
             "en": "great",
             "zh": "棒",
             "pos": "adj",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/great.svg"
           },
           {
             "en": "like",
             "zh": "喜欢",
             "pos": "verb",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/like.svg"
           }
         ]
       },
@@ -36890,43 +39358,50 @@ const SCENE_LIBRARY = {
             "en": "drawing",
             "zh": "画",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/drawing.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "cool",
             "zh": "酷",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/cool.svg"
           },
           {
             "en": "great",
             "zh": "棒",
             "pos": "adj",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/great.svg"
           },
           {
             "en": "nice",
             "zh": "友好",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/nice.svg"
           },
           {
             "en": "like",
             "zh": "喜欢",
             "pos": "verb",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/like.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           }
         ]
       },
@@ -37000,43 +39475,50 @@ const SCENE_LIBRARY = {
             "en": "drawing",
             "zh": "画",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/drawing.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "👫"
+            "icon": "👫",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "cool",
             "zh": "酷",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/cool.svg"
           },
           {
             "en": "great",
             "zh": "棒",
             "pos": "adj",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/great.svg"
           },
           {
             "en": "nice",
             "zh": "友好",
             "pos": "adj",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/nice.svg"
           },
           {
             "en": "like",
             "zh": "喜欢",
             "pos": "verb",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/like.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/say.svg"
           }
         ]
       }
@@ -37092,31 +39574,36 @@ const SCENE_LIBRARY = {
             "en": "try",
             "zh": "尝试",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/try.svg"
           },
           {
             "en": "win",
             "zh": "赢",
             "pos": "noun",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/win.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/try.svg"
           }
         ]
       },
@@ -37214,37 +39701,43 @@ const SCENE_LIBRARY = {
             "en": "try",
             "zh": "尝试",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/try.svg"
           },
           {
             "en": "win",
             "zh": "赢",
             "pos": "noun",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/win.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/try.svg"
           },
           {
             "en": "fail",
             "zh": "失败",
             "pos": "verb",
-            "icon": "💥"
+            "icon": "💥",
+            "img": "assets/vocab/fail.svg"
           }
         ]
       },
@@ -37317,37 +39810,43 @@ const SCENE_LIBRARY = {
             "en": "try",
             "zh": "尝试",
             "pos": "noun",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/try.svg"
           },
           {
             "en": "win",
             "zh": "赢",
             "pos": "noun",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/win.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "try",
             "zh": "试",
             "pos": "verb",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/try.svg"
           },
           {
             "en": "fail",
             "zh": "失败",
             "pos": "verb",
-            "icon": "💥"
+            "icon": "💥",
+            "img": "assets/vocab/fail.svg"
           }
         ]
       }
@@ -37402,31 +39901,36 @@ const SCENE_LIBRARY = {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "head",
             "zh": "头",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/head.svg"
           },
           {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁"
+            "icon": "👁",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "touch",
             "zh": "摸",
             "pos": "verb",
-            "icon": "🖐"
+            "icon": "🖐",
+            "img": "assets/vocab/touch.svg"
           }
         ]
       },
@@ -37524,49 +40028,57 @@ const SCENE_LIBRARY = {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "head",
             "zh": "头",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/head.svg"
           },
           {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁"
+            "icon": "👁",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "finger",
             "zh": "手指",
             "pos": "noun",
-            "icon": "🖐"
+            "icon": "🖐",
+            "img": "assets/vocab/finger.svg"
           },
           {
             "en": "touch",
             "zh": "摸",
             "pos": "verb",
-            "icon": "🖐"
+            "icon": "🖐",
+            "img": "assets/vocab/touch.svg"
           },
           {
             "en": "point",
             "zh": "指",
             "pos": "verb",
-            "icon": "👉"
+            "icon": "👉",
+            "img": "assets/vocab/point.svg"
           },
           {
             "en": "feel",
             "zh": "感觉",
             "pos": "verb",
-            "icon": "💗"
+            "icon": "💗",
+            "img": "assets/vocab/feel.svg"
           }
         ]
       },
@@ -37633,49 +40145,57 @@ const SCENE_LIBRARY = {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "head",
             "zh": "头",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/head.svg"
           },
           {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁"
+            "icon": "👁",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "brain",
             "zh": "大脑",
             "pos": "noun",
-            "icon": "🧠"
+            "icon": "🧠",
+            "img": "assets/vocab/brain.svg"
           },
           {
             "en": "touch",
             "zh": "摸",
             "pos": "verb",
-            "icon": "🖐"
+            "icon": "🖐",
+            "img": "assets/vocab/touch.svg"
           },
           {
             "en": "point",
             "zh": "指",
             "pos": "verb",
-            "icon": "👉"
+            "icon": "👉",
+            "img": "assets/vocab/point.svg"
           },
           {
             "en": "feel",
             "zh": "感觉",
             "pos": "verb",
-            "icon": "💗"
+            "icon": "💗",
+            "img": "assets/vocab/feel.svg"
           }
         ]
       }
@@ -37731,31 +40251,36 @@ const SCENE_LIBRARY = {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁"
+            "icon": "👁",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "ear",
             "zh": "耳朵",
             "pos": "noun",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/ear.svg"
           },
           {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "see",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/see.svg"
           }
         ]
       },
@@ -37853,43 +40378,50 @@ const SCENE_LIBRARY = {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁"
+            "icon": "👁",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "ear",
             "zh": "耳朵",
             "pos": "noun",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/ear.svg"
           },
           {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "smell",
             "zh": "气味",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/smell.svg"
           },
           {
             "en": "see",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/see.svg"
           },
           {
             "en": "hear",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/hear.svg"
           },
           {
             "en": "smell",
             "zh": "闻",
             "pos": "verb",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/smell.svg"
           }
         ]
       },
@@ -37962,43 +40494,50 @@ const SCENE_LIBRARY = {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁"
+            "icon": "👁",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "ear",
             "zh": "耳朵",
             "pos": "noun",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/ear.svg"
           },
           {
             "en": "nose",
             "zh": "鼻子",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/nose.svg"
           },
           {
             "en": "smell",
             "zh": "气味",
             "pos": "noun",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/smell.svg"
           },
           {
             "en": "see",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/see.svg"
           },
           {
             "en": "hear",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/hear.svg"
           },
           {
             "en": "smell",
             "zh": "闻",
             "pos": "verb",
-            "icon": "👃"
+            "icon": "👃",
+            "img": "assets/vocab/smell.svg"
           }
         ]
       }
@@ -38054,31 +40593,36 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "left",
             "zh": "左",
             "pos": "adj",
-            "icon": "⬅"
+            "icon": "⬅",
+            "img": "assets/vocab/left.svg"
           },
           {
             "en": "right",
             "zh": "右",
             "pos": "adj",
-            "icon": "➡"
+            "icon": "➡",
+            "img": "assets/vocab/right.svg"
           },
           {
             "en": "turn",
             "zh": "转",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           }
         ]
       },
@@ -38176,37 +40720,43 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "left",
             "zh": "左",
             "pos": "adj",
-            "icon": "⬅"
+            "icon": "⬅",
+            "img": "assets/vocab/left.svg"
           },
           {
             "en": "right",
             "zh": "右",
             "pos": "adj",
-            "icon": "➡"
+            "icon": "➡",
+            "img": "assets/vocab/right.svg"
           },
           {
             "en": "turn",
             "zh": "转",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "raise",
             "zh": "举",
             "pos": "verb",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/raise.svg"
           }
         ]
       },
@@ -38279,37 +40829,43 @@ const SCENE_LIBRARY = {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "left",
             "zh": "左",
             "pos": "adj",
-            "icon": "⬅"
+            "icon": "⬅",
+            "img": "assets/vocab/left.svg"
           },
           {
             "en": "right",
             "zh": "右",
             "pos": "adj",
-            "icon": "➡"
+            "icon": "➡",
+            "img": "assets/vocab/right.svg"
           },
           {
             "en": "turn",
             "zh": "转",
             "pos": "verb",
-            "icon": "🔄"
+            "icon": "🔄",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "raise",
             "zh": "举",
             "pos": "verb",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/raise.svg"
           }
         ]
       }
@@ -38365,31 +40921,36 @@ const SCENE_LIBRARY = {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "toe",
             "zh": "脚趾",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/toe.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "noun",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "noun",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "move",
             "zh": "动",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/move.svg"
           }
         ]
       },
@@ -38487,43 +41048,50 @@ const SCENE_LIBRARY = {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "toe",
             "zh": "脚趾",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/toe.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "noun",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "noun",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "move",
             "zh": "动",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/move.svg"
           },
           {
             "en": "stretch",
             "zh": "伸展",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/stretch.svg"
           }
         ]
       },
@@ -38596,43 +41164,50 @@ const SCENE_LIBRARY = {
             "en": "foot",
             "zh": "脚",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/foot.svg"
           },
           {
             "en": "toe",
             "zh": "脚趾",
             "pos": "noun",
-            "icon": "🦶"
+            "icon": "🦶",
+            "img": "assets/vocab/toe.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "noun",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           },
           {
             "en": "run",
             "zh": "跑",
             "pos": "noun",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/run.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "move",
             "zh": "动",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/move.svg"
           },
           {
             "en": "stretch",
             "zh": "伸展",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/stretch.svg"
           }
         ]
       }
@@ -38688,31 +41263,36 @@ const SCENE_LIBRARY = {
             "en": "tooth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/tooth.svg"
           },
           {
             "en": "height",
             "zh": "身高",
             "pos": "noun",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/height.svg"
           },
           {
             "en": "tall",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/tall.svg"
           },
           {
             "en": "grow",
             "zh": "长",
             "pos": "verb",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/grow.svg"
           },
           {
             "en": "measure",
             "zh": "量",
             "pos": "verb",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/measure.svg"
           }
         ]
       },
@@ -38810,31 +41390,36 @@ const SCENE_LIBRARY = {
             "en": "tooth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/tooth.svg"
           },
           {
             "en": "height",
             "zh": "身高",
             "pos": "noun",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/height.svg"
           },
           {
             "en": "tall",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/tall.svg"
           },
           {
             "en": "grow",
             "zh": "长",
             "pos": "verb",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/grow.svg"
           },
           {
             "en": "measure",
             "zh": "量",
             "pos": "verb",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/measure.svg"
           }
         ]
       },
@@ -38908,31 +41493,36 @@ const SCENE_LIBRARY = {
             "en": "tooth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/tooth.svg"
           },
           {
             "en": "height",
             "zh": "身高",
             "pos": "noun",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/height.svg"
           },
           {
             "en": "tall",
             "zh": "高",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/tall.svg"
           },
           {
             "en": "grow",
             "zh": "长",
             "pos": "verb",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/grow.svg"
           },
           {
             "en": "measure",
             "zh": "量",
             "pos": "verb",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/measure.svg"
           }
         ]
       }
@@ -38986,31 +41576,36 @@ const SCENE_LIBRARY = {
             "en": "doctor",
             "zh": "医生",
             "pos": "noun",
-            "icon": "👩‍⚕️"
+            "icon": "👩‍⚕️",
+            "img": "assets/vocab/doctor.svg"
           },
           {
             "en": "mouth",
             "zh": "嘴",
             "pos": "noun",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/mouth.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "good",
             "zh": "棒",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "open",
             "zh": "张",
             "pos": "verb",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/open.svg"
           }
         ]
       },
@@ -39108,37 +41703,43 @@ const SCENE_LIBRARY = {
             "en": "doctor",
             "zh": "医生",
             "pos": "noun",
-            "icon": "👩‍⚕️"
+            "icon": "👩‍⚕️",
+            "img": "assets/vocab/doctor.svg"
           },
           {
             "en": "mouth",
             "zh": "嘴",
             "pos": "noun",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/mouth.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "good",
             "zh": "棒",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "open",
             "zh": "张",
             "pos": "verb",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/open.svg"
           },
           {
             "en": "tell",
             "zh": "告诉",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/tell.svg"
           }
         ]
       },
@@ -39211,37 +41812,43 @@ const SCENE_LIBRARY = {
             "en": "doctor",
             "zh": "医生",
             "pos": "noun",
-            "icon": "👩‍⚕️"
+            "icon": "👩‍⚕️",
+            "img": "assets/vocab/doctor.svg"
           },
           {
             "en": "mouth",
             "zh": "嘴",
             "pos": "noun",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/mouth.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "good",
             "zh": "棒",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "open",
             "zh": "张",
             "pos": "verb",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/open.svg"
           },
           {
             "en": "tell",
             "zh": "告诉",
             "pos": "verb",
-            "icon": "💬"
+            "icon": "💬",
+            "img": "assets/vocab/tell.svg"
           }
         ]
       }
@@ -39289,31 +41896,36 @@ const SCENE_LIBRARY = {
             "en": "medicine",
             "zh": "药",
             "pos": "noun",
-            "icon": "💊"
+            "icon": "💊",
+            "img": "assets/vocab/medicine.svg"
           },
           {
             "en": "shot",
             "zh": "针",
             "pos": "noun",
-            "icon": "💉"
+            "icon": "💉",
+            "img": "assets/vocab/shot.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "good",
             "zh": "棒",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "take",
             "zh": "吃",
             "pos": "verb",
-            "icon": "💊"
+            "icon": "💊",
+            "img": "assets/vocab/take.svg"
           }
         ]
       },
@@ -39411,37 +42023,43 @@ const SCENE_LIBRARY = {
             "en": "medicine",
             "zh": "药",
             "pos": "noun",
-            "icon": "💊"
+            "icon": "💊",
+            "img": "assets/vocab/medicine.svg"
           },
           {
             "en": "shot",
             "zh": "针",
             "pos": "noun",
-            "icon": "💉"
+            "icon": "💉",
+            "img": "assets/vocab/shot.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "good",
             "zh": "棒",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "take",
             "zh": "吃",
             "pos": "verb",
-            "icon": "💊"
+            "icon": "💊",
+            "img": "assets/vocab/take.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -39514,37 +42132,43 @@ const SCENE_LIBRARY = {
             "en": "medicine",
             "zh": "药",
             "pos": "noun",
-            "icon": "💊"
+            "icon": "💊",
+            "img": "assets/vocab/medicine.svg"
           },
           {
             "en": "shot",
             "zh": "针",
             "pos": "noun",
-            "icon": "💉"
+            "icon": "💉",
+            "img": "assets/vocab/shot.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "good",
             "zh": "棒",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "take",
             "zh": "吃",
             "pos": "verb",
-            "icon": "💊"
+            "icon": "💊",
+            "img": "assets/vocab/take.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       }
@@ -39586,31 +42210,36 @@ const SCENE_LIBRARY = {
             "en": "dentist",
             "zh": "牙医",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/dentist.svg"
           },
           {
             "en": "tooth",
             "zh": "牙",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/tooth.svg"
           },
           {
             "en": "teeth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/teeth.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "open",
             "zh": "张",
             "pos": "verb",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/open.svg"
           }
         ]
       },
@@ -39708,37 +42337,43 @@ const SCENE_LIBRARY = {
             "en": "dentist",
             "zh": "牙医",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/dentist.svg"
           },
           {
             "en": "tooth",
             "zh": "牙",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/tooth.svg"
           },
           {
             "en": "teeth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/teeth.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "open",
             "zh": "张",
             "pos": "verb",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/open.svg"
           },
           {
             "en": "brush",
             "zh": "刷",
             "pos": "verb",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/brush.svg"
           }
         ]
       },
@@ -39805,37 +42440,43 @@ const SCENE_LIBRARY = {
             "en": "dentist",
             "zh": "牙医",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/dentist.svg"
           },
           {
             "en": "tooth",
             "zh": "牙",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/tooth.svg"
           },
           {
             "en": "teeth",
             "zh": "牙齿",
             "pos": "noun",
-            "icon": "🦷"
+            "icon": "🦷",
+            "img": "assets/vocab/teeth.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "open",
             "zh": "张",
             "pos": "verb",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/open.svg"
           },
           {
             "en": "brush",
             "zh": "刷",
             "pos": "verb",
-            "icon": "🪥"
+            "icon": "🪥",
+            "img": "assets/vocab/brush.svg"
           }
         ]
       }
@@ -39884,31 +42525,36 @@ const SCENE_LIBRARY = {
             "en": "temperature",
             "zh": "体温",
             "pos": "noun",
-            "icon": "🌡️"
+            "icon": "🌡️",
+            "img": "assets/vocab/temperature.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "sick",
             "zh": "不舒服",
             "pos": "adj",
-            "icon": "🤒"
+            "icon": "🤒",
+            "img": "assets/vocab/sick.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       },
@@ -40006,43 +42652,50 @@ const SCENE_LIBRARY = {
             "en": "temperature",
             "zh": "体温",
             "pos": "noun",
-            "icon": "🌡️"
+            "icon": "🌡️",
+            "img": "assets/vocab/temperature.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "sick",
             "zh": "不舒服",
             "pos": "adj",
-            "icon": "🤒"
+            "icon": "🤒",
+            "img": "assets/vocab/sick.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       },
@@ -40115,43 +42768,50 @@ const SCENE_LIBRARY = {
             "en": "temperature",
             "zh": "体温",
             "pos": "noun",
-            "icon": "🌡️"
+            "icon": "🌡️",
+            "img": "assets/vocab/temperature.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "sick",
             "zh": "不舒服",
             "pos": "adj",
-            "icon": "🤒"
+            "icon": "🤒",
+            "img": "assets/vocab/sick.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           },
           {
             "en": "drink",
             "zh": "喝",
             "pos": "verb",
-            "icon": "🥤"
+            "icon": "🥤",
+            "img": "assets/vocab/drink.svg"
           }
         ]
       }
@@ -40207,31 +42867,36 @@ const SCENE_LIBRARY = {
             "en": "bandage",
             "zh": "创可贴",
             "pos": "noun",
-            "icon": "🩹"
+            "icon": "🩹",
+            "img": "assets/vocab/bandage.svg"
           },
           {
             "en": "ouch",
             "zh": "伤口",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/ouch.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           }
         ]
       },
@@ -40329,37 +42994,43 @@ const SCENE_LIBRARY = {
             "en": "bandage",
             "zh": "创可贴",
             "pos": "noun",
-            "icon": "🩹"
+            "icon": "🩹",
+            "img": "assets/vocab/bandage.svg"
           },
           {
             "en": "ouch",
             "zh": "伤口",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/ouch.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "clean",
             "zh": "清洗",
             "pos": "verb",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       },
@@ -40432,37 +43103,43 @@ const SCENE_LIBRARY = {
             "en": "bandage",
             "zh": "创可贴",
             "pos": "noun",
-            "icon": "🩹"
+            "icon": "🩹",
+            "img": "assets/vocab/bandage.svg"
           },
           {
             "en": "ouch",
             "zh": "伤口",
             "pos": "noun",
-            "icon": "🤕"
+            "icon": "🤕",
+            "img": "assets/vocab/ouch.svg"
           },
           {
             "en": "knee",
             "zh": "膝盖",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/knee.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "help",
             "zh": "帮",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/help.svg"
           },
           {
             "en": "clean",
             "zh": "清洗",
             "pos": "verb",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/clean.svg"
           }
         ]
       }
@@ -40510,31 +43187,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "healthy",
             "zh": "健康",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       },
@@ -40632,43 +43314,50 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "healthy",
             "zh": "健康",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "exercise",
             "zh": "运动",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/exercise.svg"
           }
         ]
       },
@@ -40735,43 +43424,50 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "hand",
             "zh": "手",
             "pos": "noun",
-            "icon": "✋"
+            "icon": "✋",
+            "img": "assets/vocab/hand.svg"
           },
           {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "healthy",
             "zh": "健康",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🧼"
+            "icon": "🧼",
+            "img": "assets/vocab/wash.svg"
           },
           {
             "en": "exercise",
             "zh": "运动",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/exercise.svg"
           }
         ]
       }
@@ -40826,37 +43522,43 @@ const SCENE_LIBRARY = {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "window",
             "zh": "窗户",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "light",
             "zh": "光",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "far",
             "zh": "远",
             "pos": "adj",
-            "icon": "🔭"
+            "icon": "🔭",
+            "img": "assets/vocab/far.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           },
           {
             "en": "blink",
             "zh": "眨",
             "pos": "verb",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/blink.svg"
           }
         ]
       },
@@ -40954,37 +43656,43 @@ const SCENE_LIBRARY = {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "window",
             "zh": "窗户",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "light",
             "zh": "光",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "far",
             "zh": "远",
             "pos": "adj",
-            "icon": "🔭"
+            "icon": "🔭",
+            "img": "assets/vocab/far.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           },
           {
             "en": "blink",
             "zh": "眨",
             "pos": "verb",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/blink.svg"
           }
         ]
       },
@@ -41051,37 +43759,43 @@ const SCENE_LIBRARY = {
             "en": "eye",
             "zh": "眼睛",
             "pos": "noun",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/eye.svg"
           },
           {
             "en": "window",
             "zh": "窗户",
             "pos": "noun",
-            "icon": "🪟"
+            "icon": "🪟",
+            "img": "assets/vocab/window.svg"
           },
           {
             "en": "light",
             "zh": "光",
             "pos": "noun",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/light.svg"
           },
           {
             "en": "far",
             "zh": "远",
             "pos": "adj",
-            "icon": "🔭"
+            "icon": "🔭",
+            "img": "assets/vocab/far.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           },
           {
             "en": "blink",
             "zh": "眨",
             "pos": "verb",
-            "icon": "👁️"
+            "icon": "👁️",
+            "img": "assets/vocab/blink.svg"
           }
         ]
       }
@@ -41130,31 +43844,36 @@ const SCENE_LIBRARY = {
             "en": "veggie",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥦"
+            "icon": "🥦",
+            "img": "assets/vocab/veggie.svg"
           },
           {
             "en": "fruit",
             "zh": "水果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/fruit.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "healthy",
             "zh": "健康",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -41252,37 +43971,43 @@ const SCENE_LIBRARY = {
             "en": "veggie",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥦"
+            "icon": "🥦",
+            "img": "assets/vocab/veggie.svg"
           },
           {
             "en": "fruit",
             "zh": "水果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/fruit.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "healthy",
             "zh": "健康",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "sweet",
             "zh": "甜",
             "pos": "adj",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/sweet.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -41349,37 +44074,43 @@ const SCENE_LIBRARY = {
             "en": "veggie",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥦"
+            "icon": "🥦",
+            "img": "assets/vocab/veggie.svg"
           },
           {
             "en": "fruit",
             "zh": "水果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/fruit.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "healthy",
             "zh": "健康",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/healthy.svg"
           },
           {
             "en": "sweet",
             "zh": "甜",
             "pos": "adj",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/sweet.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       }
@@ -41428,31 +44159,36 @@ const SCENE_LIBRARY = {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "nap",
             "zh": "午睡",
             "pos": "noun",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/nap.svg"
           },
           {
             "en": "night",
             "zh": "夜晚",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/night.svg"
           },
           {
             "en": "sleepy",
             "zh": "困",
             "pos": "adj",
-            "icon": "😪"
+            "icon": "😪",
+            "img": "assets/vocab/sleepy.svg"
           },
           {
             "en": "sleep",
             "zh": "睡觉",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           }
         ]
       },
@@ -41550,31 +44286,36 @@ const SCENE_LIBRARY = {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "nap",
             "zh": "午睡",
             "pos": "noun",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/nap.svg"
           },
           {
             "en": "night",
             "zh": "夜晚",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/night.svg"
           },
           {
             "en": "sleepy",
             "zh": "困",
             "pos": "adj",
-            "icon": "😪"
+            "icon": "😪",
+            "img": "assets/vocab/sleepy.svg"
           },
           {
             "en": "sleep",
             "zh": "睡觉",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           }
         ]
       },
@@ -41641,31 +44382,36 @@ const SCENE_LIBRARY = {
             "en": "bed",
             "zh": "床",
             "pos": "noun",
-            "icon": "🛏️"
+            "icon": "🛏️",
+            "img": "assets/vocab/bed.svg"
           },
           {
             "en": "nap",
             "zh": "午睡",
             "pos": "noun",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/nap.svg"
           },
           {
             "en": "night",
             "zh": "夜晚",
             "pos": "noun",
-            "icon": "🌙"
+            "icon": "🌙",
+            "img": "assets/vocab/night.svg"
           },
           {
             "en": "sleepy",
             "zh": "困",
             "pos": "adj",
-            "icon": "😪"
+            "icon": "😪",
+            "img": "assets/vocab/sleepy.svg"
           },
           {
             "en": "sleep",
             "zh": "睡觉",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/sleep.svg"
           }
         ]
       }
@@ -41714,31 +44460,36 @@ const SCENE_LIBRARY = {
             "en": "body",
             "zh": "身体",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/body.svg"
           },
           {
             "en": "heart",
             "zh": "心脏",
             "pos": "noun",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/heart.svg"
           },
           {
             "en": "leg",
             "zh": "腿",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/leg.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "move",
             "zh": "动",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/move.svg"
           }
         ]
       },
@@ -41836,37 +44587,43 @@ const SCENE_LIBRARY = {
             "en": "body",
             "zh": "身体",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/body.svg"
           },
           {
             "en": "heart",
             "zh": "心脏",
             "pos": "noun",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/heart.svg"
           },
           {
             "en": "leg",
             "zh": "腿",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/leg.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "move",
             "zh": "动",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/move.svg"
           },
           {
             "en": "exercise",
             "zh": "运动",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/exercise.svg"
           }
         ]
       },
@@ -41933,37 +44690,43 @@ const SCENE_LIBRARY = {
             "en": "body",
             "zh": "身体",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/body.svg"
           },
           {
             "en": "heart",
             "zh": "心脏",
             "pos": "noun",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/heart.svg"
           },
           {
             "en": "leg",
             "zh": "腿",
             "pos": "noun",
-            "icon": "🦵"
+            "icon": "🦵",
+            "img": "assets/vocab/leg.svg"
           },
           {
             "en": "strong",
             "zh": "强壮",
             "pos": "adj",
-            "icon": "💪"
+            "icon": "💪",
+            "img": "assets/vocab/strong.svg"
           },
           {
             "en": "move",
             "zh": "动",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/move.svg"
           },
           {
             "en": "exercise",
             "zh": "运动",
             "pos": "verb",
-            "icon": "🏃"
+            "icon": "🏃",
+            "img": "assets/vocab/exercise.svg"
           }
         ]
       }
@@ -42012,25 +44775,29 @@ const SCENE_LIBRARY = {
             "en": "list",
             "zh": "清单",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/list.svg"
           },
           {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "need",
             "zh": "需要",
             "pos": "verb",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/need.svg"
           }
         ]
       },
@@ -42128,37 +44895,43 @@ const SCENE_LIBRARY = {
             "en": "list",
             "zh": "清单",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/list.svg"
           },
           {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "egg",
             "zh": "鸡蛋",
             "pos": "noun",
-            "icon": "🥚"
+            "icon": "🥚",
+            "img": "assets/vocab/egg.svg"
           },
           {
             "en": "need",
             "zh": "需要",
             "pos": "verb",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/need.svg"
           },
           {
             "en": "write",
             "zh": "写",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/write.svg"
           }
         ]
       },
@@ -42225,37 +44998,43 @@ const SCENE_LIBRARY = {
             "en": "list",
             "zh": "清单",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/list.svg"
           },
           {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "egg",
             "zh": "鸡蛋",
             "pos": "noun",
-            "icon": "🥚"
+            "icon": "🥚",
+            "img": "assets/vocab/egg.svg"
           },
           {
             "en": "need",
             "zh": "需要",
             "pos": "verb",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/need.svg"
           },
           {
             "en": "write",
             "zh": "写",
             "pos": "verb",
-            "icon": "✏️"
+            "icon": "✏️",
+            "img": "assets/vocab/write.svg"
           }
         ]
       }
@@ -42305,31 +45084,36 @@ const SCENE_LIBRARY = {
             "en": "cart",
             "zh": "购物车",
             "pos": "noun",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/cart.svg"
           },
           {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "put",
             "zh": "放",
             "pos": "verb",
-            "icon": "📥"
+            "icon": "📥",
+            "img": "assets/vocab/put.svg"
           }
         ]
       },
@@ -42427,37 +45211,43 @@ const SCENE_LIBRARY = {
             "en": "cart",
             "zh": "购物车",
             "pos": "noun",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/cart.svg"
           },
           {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "put",
             "zh": "放",
             "pos": "verb",
-            "icon": "📥"
+            "icon": "📥",
+            "img": "assets/vocab/put.svg"
           }
         ]
       },
@@ -42524,37 +45314,43 @@ const SCENE_LIBRARY = {
             "en": "cart",
             "zh": "购物车",
             "pos": "noun",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/cart.svg"
           },
           {
             "en": "milk",
             "zh": "牛奶",
             "pos": "noun",
-            "icon": "🥛"
+            "icon": "🥛",
+            "img": "assets/vocab/milk.svg"
           },
           {
             "en": "bread",
             "zh": "面包",
             "pos": "noun",
-            "icon": "🍞"
+            "icon": "🍞",
+            "img": "assets/vocab/bread.svg"
           },
           {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "push",
             "zh": "推",
             "pos": "verb",
-            "icon": "🛒"
+            "icon": "🛒",
+            "img": "assets/vocab/push.svg"
           },
           {
             "en": "put",
             "zh": "放",
             "pos": "verb",
-            "icon": "📥"
+            "icon": "📥",
+            "img": "assets/vocab/put.svg"
           }
         ]
       }
@@ -42604,31 +45400,36 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "banana",
             "zh": "香蕉",
             "pos": "noun",
-            "icon": "🍌"
+            "icon": "🍌",
+            "img": "assets/vocab/banana.svg"
           },
           {
             "en": "red",
             "zh": "红",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "green",
             "zh": "绿",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           },
           {
             "en": "pick",
             "zh": "挑",
             "pos": "verb",
-            "icon": "🤏"
+            "icon": "🤏",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       },
@@ -42726,37 +45527,43 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "banana",
             "zh": "香蕉",
             "pos": "noun",
-            "icon": "🍌"
+            "icon": "🍌",
+            "img": "assets/vocab/banana.svg"
           },
           {
             "en": "veggie",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥦"
+            "icon": "🥦",
+            "img": "assets/vocab/veggie.svg"
           },
           {
             "en": "red",
             "zh": "红",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "fresh",
             "zh": "新鲜",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/fresh.svg"
           },
           {
             "en": "pick",
             "zh": "挑",
             "pos": "verb",
-            "icon": "🤏"
+            "icon": "🤏",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       },
@@ -42823,31 +45630,36 @@ const SCENE_LIBRARY = {
             "en": "apple",
             "zh": "苹果",
             "pos": "noun",
-            "icon": "🍎"
+            "icon": "🍎",
+            "img": "assets/vocab/apple.svg"
           },
           {
             "en": "banana",
             "zh": "香蕉",
             "pos": "noun",
-            "icon": "🍌"
+            "icon": "🍌",
+            "img": "assets/vocab/banana.svg"
           },
           {
             "en": "veggie",
             "zh": "蔬菜",
             "pos": "noun",
-            "icon": "🥦"
+            "icon": "🥦",
+            "img": "assets/vocab/veggie.svg"
           },
           {
             "en": "fresh",
             "zh": "新鲜",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/fresh.svg"
           },
           {
             "en": "pick",
             "zh": "挑",
             "pos": "verb",
-            "icon": "🤏"
+            "icon": "🤏",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       }
@@ -42897,25 +45709,29 @@ const SCENE_LIBRARY = {
             "en": "counter",
             "zh": "收银台",
             "pos": "noun",
-            "icon": "🛎️"
+            "icon": "🛎️",
+            "img": "assets/vocab/counter.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "🛍️"
+            "icon": "🛍️",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "pay",
             "zh": "付",
             "pos": "verb",
-            "icon": "💰"
+            "icon": "💰",
+            "img": "assets/vocab/pay.svg"
           }
         ]
       },
@@ -43013,31 +45829,36 @@ const SCENE_LIBRARY = {
             "en": "counter",
             "zh": "收银台",
             "pos": "noun",
-            "icon": "🛎️"
+            "icon": "🛎️",
+            "img": "assets/vocab/counter.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "🛍️"
+            "icon": "🛍️",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "money",
             "zh": "钱",
             "pos": "noun",
-            "icon": "💵"
+            "icon": "💵",
+            "img": "assets/vocab/money.svg"
           },
           {
             "en": "pay",
             "zh": "付",
             "pos": "verb",
-            "icon": "💰"
+            "icon": "💰",
+            "img": "assets/vocab/pay.svg"
           }
         ]
       },
@@ -43104,31 +45925,36 @@ const SCENE_LIBRARY = {
             "en": "counter",
             "zh": "收银台",
             "pos": "noun",
-            "icon": "🛎️"
+            "icon": "🛎️",
+            "img": "assets/vocab/counter.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "🛍️"
+            "icon": "🛍️",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "money",
             "zh": "钱",
             "pos": "noun",
-            "icon": "💵"
+            "icon": "💵",
+            "img": "assets/vocab/money.svg"
           },
           {
             "en": "pay",
             "zh": "付",
             "pos": "verb",
-            "icon": "💰"
+            "icon": "💰",
+            "img": "assets/vocab/pay.svg"
           }
         ]
       }
@@ -43178,25 +46004,29 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "🛍️"
+            "icon": "🛍️",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "heavy",
             "zh": "重",
             "pos": "adj",
-            "icon": "🏋️"
+            "icon": "🏋️",
+            "img": "assets/vocab/heavy.svg"
           },
           {
             "en": "carry",
             "zh": "提",
             "pos": "verb",
-            "icon": "👜"
+            "icon": "👜",
+            "img": "assets/vocab/carry.svg"
           }
         ]
       },
@@ -43294,31 +46124,36 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "🛍️"
+            "icon": "🛍️",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "heavy",
             "zh": "重",
             "pos": "adj",
-            "icon": "🏋️"
+            "icon": "🏋️",
+            "img": "assets/vocab/heavy.svg"
           },
           {
             "en": "cold",
             "zh": "凉",
             "pos": "adj",
-            "icon": "🧊"
+            "icon": "🧊",
+            "img": "assets/vocab/cold.svg"
           },
           {
             "en": "carry",
             "zh": "提",
             "pos": "verb",
-            "icon": "👜"
+            "icon": "👜",
+            "img": "assets/vocab/carry.svg"
           }
         ]
       },
@@ -43385,31 +46220,36 @@ const SCENE_LIBRARY = {
             "en": "bag",
             "zh": "袋子",
             "pos": "noun",
-            "icon": "🛍️"
+            "icon": "🛍️",
+            "img": "assets/vocab/bag.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "heavy",
             "zh": "重",
             "pos": "adj",
-            "icon": "🏋️"
+            "icon": "🏋️",
+            "img": "assets/vocab/heavy.svg"
           },
           {
             "en": "cold",
             "zh": "凉",
             "pos": "adj",
-            "icon": "🧊"
+            "icon": "🧊",
+            "img": "assets/vocab/cold.svg"
           },
           {
             "en": "carry",
             "zh": "提",
             "pos": "verb",
-            "icon": "👜"
+            "icon": "👜",
+            "img": "assets/vocab/carry.svg"
           }
         ]
       }
@@ -43458,31 +46298,36 @@ const SCENE_LIBRARY = {
             "en": "menu",
             "zh": "菜单",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/menu.svg"
           },
           {
             "en": "rice",
             "zh": "米饭",
             "pos": "noun",
-            "icon": "🍚"
+            "icon": "🍚",
+            "img": "assets/vocab/rice.svg"
           },
           {
             "en": "noodle",
             "zh": "面条",
             "pos": "noun",
-            "icon": "🍜"
+            "icon": "🍜",
+            "img": "assets/vocab/noodle.svg"
           },
           {
             "en": "hungry",
             "zh": "饿",
             "pos": "adj",
-            "icon": "🤤"
+            "icon": "🤤",
+            "img": "assets/vocab/hungry.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -43580,37 +46425,43 @@ const SCENE_LIBRARY = {
             "en": "menu",
             "zh": "菜单",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/menu.svg"
           },
           {
             "en": "rice",
             "zh": "米饭",
             "pos": "noun",
-            "icon": "🍚"
+            "icon": "🍚",
+            "img": "assets/vocab/rice.svg"
           },
           {
             "en": "noodle",
             "zh": "面条",
             "pos": "noun",
-            "icon": "🍜"
+            "icon": "🍜",
+            "img": "assets/vocab/noodle.svg"
           },
           {
             "en": "waiter",
             "zh": "服务员",
             "pos": "noun",
-            "icon": "🧑‍🍳"
+            "icon": "🧑‍🍳",
+            "img": "assets/vocab/waiter.svg"
           },
           {
             "en": "hungry",
             "zh": "饿",
             "pos": "adj",
-            "icon": "🤤"
+            "icon": "🤤",
+            "img": "assets/vocab/hungry.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -43677,37 +46528,43 @@ const SCENE_LIBRARY = {
             "en": "menu",
             "zh": "菜单",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/menu.svg"
           },
           {
             "en": "rice",
             "zh": "米饭",
             "pos": "noun",
-            "icon": "🍚"
+            "icon": "🍚",
+            "img": "assets/vocab/rice.svg"
           },
           {
             "en": "noodle",
             "zh": "面条",
             "pos": "noun",
-            "icon": "🍜"
+            "icon": "🍜",
+            "img": "assets/vocab/noodle.svg"
           },
           {
             "en": "waiter",
             "zh": "服务员",
             "pos": "noun",
-            "icon": "🧑‍🍳"
+            "icon": "🧑‍🍳",
+            "img": "assets/vocab/waiter.svg"
           },
           {
             "en": "hungry",
             "zh": "饿",
             "pos": "adj",
-            "icon": "🤤"
+            "icon": "🤤",
+            "img": "assets/vocab/hungry.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       }
@@ -43756,31 +46613,36 @@ const SCENE_LIBRARY = {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "hot",
             "zh": "烫",
             "pos": "adj",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/hot.svg"
           },
           {
             "en": "tasty",
             "zh": "好吃",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/tasty.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -43878,37 +46740,43 @@ const SCENE_LIBRARY = {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "chopstick",
             "zh": "筷子",
             "pos": "noun",
-            "icon": "🥢"
+            "icon": "🥢",
+            "img": "assets/vocab/chopstick.svg"
           },
           {
             "en": "hot",
             "zh": "烫",
             "pos": "adj",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/hot.svg"
           },
           {
             "en": "tasty",
             "zh": "好吃",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/tasty.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -43975,37 +46843,43 @@ const SCENE_LIBRARY = {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "bowl",
             "zh": "碗",
             "pos": "noun",
-            "icon": "🥣"
+            "icon": "🥣",
+            "img": "assets/vocab/bowl.svg"
           },
           {
             "en": "chopstick",
             "zh": "筷子",
             "pos": "noun",
-            "icon": "🥢"
+            "icon": "🥢",
+            "img": "assets/vocab/chopstick.svg"
           },
           {
             "en": "hot",
             "zh": "烫",
             "pos": "adj",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/hot.svg"
           },
           {
             "en": "tasty",
             "zh": "好吃",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/tasty.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       }
@@ -44054,25 +46928,29 @@ const SCENE_LIBRARY = {
             "en": "bill",
             "zh": "账单",
             "pos": "noun",
-            "icon": "🧾"
+            "icon": "🧾",
+            "img": "assets/vocab/bill.svg"
           },
           {
             "en": "box",
             "zh": "打包盒",
             "pos": "noun",
-            "icon": "🥡"
+            "icon": "🥡",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "pay",
             "zh": "付",
             "pos": "verb",
-            "icon": "💰"
+            "icon": "💰",
+            "img": "assets/vocab/pay.svg"
           }
         ]
       },
@@ -44170,31 +47048,36 @@ const SCENE_LIBRARY = {
             "en": "bill",
             "zh": "账单",
             "pos": "noun",
-            "icon": "🧾"
+            "icon": "🧾",
+            "img": "assets/vocab/bill.svg"
           },
           {
             "en": "box",
             "zh": "打包盒",
             "pos": "noun",
-            "icon": "🥡"
+            "icon": "🥡",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "money",
             "zh": "钱",
             "pos": "noun",
-            "icon": "💵"
+            "icon": "💵",
+            "img": "assets/vocab/money.svg"
           },
           {
             "en": "pay",
             "zh": "付",
             "pos": "verb",
-            "icon": "💰"
+            "icon": "💰",
+            "img": "assets/vocab/pay.svg"
           }
         ]
       },
@@ -44261,31 +47144,36 @@ const SCENE_LIBRARY = {
             "en": "bill",
             "zh": "账单",
             "pos": "noun",
-            "icon": "🧾"
+            "icon": "🧾",
+            "img": "assets/vocab/bill.svg"
           },
           {
             "en": "box",
             "zh": "打包盒",
             "pos": "noun",
-            "icon": "🥡"
+            "icon": "🥡",
+            "img": "assets/vocab/box.svg"
           },
           {
             "en": "home",
             "zh": "家",
             "pos": "noun",
-            "icon": "🏠"
+            "icon": "🏠",
+            "img": "assets/vocab/home.svg"
           },
           {
             "en": "money",
             "zh": "钱",
             "pos": "noun",
-            "icon": "💵"
+            "icon": "💵",
+            "img": "assets/vocab/money.svg"
           },
           {
             "en": "pay",
             "zh": "付",
             "pos": "verb",
-            "icon": "💰"
+            "icon": "💰",
+            "img": "assets/vocab/pay.svg"
           }
         ]
       }
@@ -44334,25 +47222,29 @@ const SCENE_LIBRARY = {
             "en": "burger",
             "zh": "汉堡",
             "pos": "noun",
-            "icon": "🍔"
+            "icon": "🍔",
+            "img": "assets/vocab/burger.svg"
           },
           {
             "en": "fries",
             "zh": "薯条",
             "pos": "noun",
-            "icon": "🍟"
+            "icon": "🍟",
+            "img": "assets/vocab/fries.svg"
           },
           {
             "en": "icecream",
             "zh": "冰淇淋",
             "pos": "noun",
-            "icon": "🍦"
+            "icon": "🍦",
+            "img": "assets/vocab/icecream.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -44450,31 +47342,36 @@ const SCENE_LIBRARY = {
             "en": "burger",
             "zh": "汉堡",
             "pos": "noun",
-            "icon": "🍔"
+            "icon": "🍔",
+            "img": "assets/vocab/burger.svg"
           },
           {
             "en": "fries",
             "zh": "薯条",
             "pos": "noun",
-            "icon": "🍟"
+            "icon": "🍟",
+            "img": "assets/vocab/fries.svg"
           },
           {
             "en": "nugget",
             "zh": "鸡块",
             "pos": "noun",
-            "icon": "🍗"
+            "icon": "🍗",
+            "img": "assets/vocab/nugget.svg"
           },
           {
             "en": "icecream",
             "zh": "冰淇淋",
             "pos": "noun",
-            "icon": "🍦"
+            "icon": "🍦",
+            "img": "assets/vocab/icecream.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -44541,31 +47438,36 @@ const SCENE_LIBRARY = {
             "en": "burger",
             "zh": "汉堡",
             "pos": "noun",
-            "icon": "🍔"
+            "icon": "🍔",
+            "img": "assets/vocab/burger.svg"
           },
           {
             "en": "fries",
             "zh": "薯条",
             "pos": "noun",
-            "icon": "🍟"
+            "icon": "🍟",
+            "img": "assets/vocab/fries.svg"
           },
           {
             "en": "nugget",
             "zh": "鸡块",
             "pos": "noun",
-            "icon": "🍗"
+            "icon": "🍗",
+            "img": "assets/vocab/nugget.svg"
           },
           {
             "en": "icecream",
             "zh": "冰淇淋",
             "pos": "noun",
-            "icon": "🍦"
+            "icon": "🍦",
+            "img": "assets/vocab/icecream.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       }
@@ -44614,25 +47516,29 @@ const SCENE_LIBRARY = {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "napkin",
             "zh": "餐巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/napkin.svg"
           },
           {
             "en": "good",
             "zh": "好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           }
         ]
       },
@@ -44730,31 +47636,36 @@ const SCENE_LIBRARY = {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "napkin",
             "zh": "餐巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/napkin.svg"
           },
           {
             "en": "mouth",
             "zh": "嘴",
             "pos": "noun",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/mouth.svg"
           },
           {
             "en": "good",
             "zh": "好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           }
         ]
       },
@@ -44821,31 +47732,36 @@ const SCENE_LIBRARY = {
             "en": "spoon",
             "zh": "勺子",
             "pos": "noun",
-            "icon": "🥄"
+            "icon": "🥄",
+            "img": "assets/vocab/spoon.svg"
           },
           {
             "en": "napkin",
             "zh": "餐巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/napkin.svg"
           },
           {
             "en": "mouth",
             "zh": "嘴",
             "pos": "noun",
-            "icon": "👄"
+            "icon": "👄",
+            "img": "assets/vocab/mouth.svg"
           },
           {
             "en": "good",
             "zh": "好",
             "pos": "adj",
-            "icon": "👍"
+            "icon": "👍",
+            "img": "assets/vocab/good.svg"
           },
           {
             "en": "sit",
             "zh": "坐",
             "pos": "verb",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/sit.svg"
           }
         ]
       }
@@ -44894,31 +47810,36 @@ const SCENE_LIBRARY = {
             "en": "ticket",
             "zh": "门票",
             "pos": "noun",
-            "icon": "🎟️"
+            "icon": "🎟️",
+            "img": "assets/vocab/ticket.svg"
           },
           {
             "en": "map",
             "zh": "地图",
             "pos": "noun",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/map.svg"
           },
           {
             "en": "zoo",
             "zh": "动物园",
             "pos": "noun",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/zoo.svg"
           },
           {
             "en": "close",
             "zh": "近",
             "pos": "adj",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/close.svg"
           },
           {
             "en": "go",
             "zh": "去",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/go.svg"
           }
         ]
       },
@@ -45016,37 +47937,43 @@ const SCENE_LIBRARY = {
             "en": "ticket",
             "zh": "门票",
             "pos": "noun",
-            "icon": "🎟️"
+            "icon": "🎟️",
+            "img": "assets/vocab/ticket.svg"
           },
           {
             "en": "map",
             "zh": "地图",
             "pos": "noun",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/map.svg"
           },
           {
             "en": "zoo",
             "zh": "动物园",
             "pos": "noun",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/zoo.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "close",
             "zh": "近",
             "pos": "adj",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/close.svg"
           },
           {
             "en": "go",
             "zh": "去",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/go.svg"
           }
         ]
       },
@@ -45113,37 +48040,43 @@ const SCENE_LIBRARY = {
             "en": "ticket",
             "zh": "门票",
             "pos": "noun",
-            "icon": "🎟️"
+            "icon": "🎟️",
+            "img": "assets/vocab/ticket.svg"
           },
           {
             "en": "map",
             "zh": "地图",
             "pos": "noun",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/map.svg"
           },
           {
             "en": "zoo",
             "zh": "动物园",
             "pos": "noun",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/zoo.svg"
           },
           {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "close",
             "zh": "近",
             "pos": "adj",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/close.svg"
           },
           {
             "en": "go",
             "zh": "去",
             "pos": "verb",
-            "icon": "🚶"
+            "icon": "🚶",
+            "img": "assets/vocab/go.svg"
           }
         ]
       }
@@ -45192,31 +48125,36 @@ const SCENE_LIBRARY = {
             "en": "tiger",
             "zh": "老虎",
             "pos": "noun",
-            "icon": "🐯"
+            "icon": "🐯",
+            "img": "assets/vocab/tiger.svg"
           },
           {
             "en": "elephant",
             "zh": "大象",
             "pos": "noun",
-            "icon": "🐘"
+            "icon": "🐘",
+            "img": "assets/vocab/elephant.svg"
           },
           {
             "en": "monkey",
             "zh": "猴子",
             "pos": "noun",
-            "icon": "🐵"
+            "icon": "🐵",
+            "img": "assets/vocab/monkey.svg"
           },
           {
             "en": "big",
             "zh": "大",
             "pos": "adj",
-            "icon": "🐘"
+            "icon": "🐘",
+            "img": "assets/vocab/big.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -45314,37 +48252,43 @@ const SCENE_LIBRARY = {
             "en": "tiger",
             "zh": "老虎",
             "pos": "noun",
-            "icon": "🐯"
+            "icon": "🐯",
+            "img": "assets/vocab/tiger.svg"
           },
           {
             "en": "elephant",
             "zh": "大象",
             "pos": "noun",
-            "icon": "🐘"
+            "icon": "🐘",
+            "img": "assets/vocab/elephant.svg"
           },
           {
             "en": "giraffe",
             "zh": "长颈鹿",
             "pos": "noun",
-            "icon": "🦒"
+            "icon": "🦒",
+            "img": "assets/vocab/giraffe.svg"
           },
           {
             "en": "lion",
             "zh": "狮子",
             "pos": "noun",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/lion.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -45411,37 +48355,43 @@ const SCENE_LIBRARY = {
             "en": "tiger",
             "zh": "老虎",
             "pos": "noun",
-            "icon": "🐯"
+            "icon": "🐯",
+            "img": "assets/vocab/tiger.svg"
           },
           {
             "en": "elephant",
             "zh": "大象",
             "pos": "noun",
-            "icon": "🐘"
+            "icon": "🐘",
+            "img": "assets/vocab/elephant.svg"
           },
           {
             "en": "giraffe",
             "zh": "长颈鹿",
             "pos": "noun",
-            "icon": "🦒"
+            "icon": "🦒",
+            "img": "assets/vocab/giraffe.svg"
           },
           {
             "en": "lion",
             "zh": "狮子",
             "pos": "noun",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/lion.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       }
@@ -45490,31 +48440,36 @@ const SCENE_LIBRARY = {
             "en": "goat",
             "zh": "山羊",
             "pos": "noun",
-            "icon": "🐐"
+            "icon": "🐐",
+            "img": "assets/vocab/goat.svg"
           },
           {
             "en": "rabbit",
             "zh": "兔子",
             "pos": "noun",
-            "icon": "🐰"
+            "icon": "🐰",
+            "img": "assets/vocab/rabbit.svg"
           },
           {
             "en": "soft",
             "zh": "软",
             "pos": "adj",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/soft.svg"
           },
           {
             "en": "gentle",
             "zh": "轻",
             "pos": "adj",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/gentle.svg"
           },
           {
             "en": "feed",
             "zh": "喂",
             "pos": "verb",
-            "icon": "🥕"
+            "icon": "🥕",
+            "img": "assets/vocab/feed.svg"
           }
         ]
       },
@@ -45612,37 +48567,43 @@ const SCENE_LIBRARY = {
             "en": "goat",
             "zh": "山羊",
             "pos": "noun",
-            "icon": "🐐"
+            "icon": "🐐",
+            "img": "assets/vocab/goat.svg"
           },
           {
             "en": "rabbit",
             "zh": "兔子",
             "pos": "noun",
-            "icon": "🐰"
+            "icon": "🐰",
+            "img": "assets/vocab/rabbit.svg"
           },
           {
             "en": "parrot",
             "zh": "鹦鹉",
             "pos": "noun",
-            "icon": "🦜"
+            "icon": "🦜",
+            "img": "assets/vocab/parrot.svg"
           },
           {
             "en": "soft",
             "zh": "软",
             "pos": "adj",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/soft.svg"
           },
           {
             "en": "gentle",
             "zh": "轻",
             "pos": "adj",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/gentle.svg"
           },
           {
             "en": "feed",
             "zh": "喂",
             "pos": "verb",
-            "icon": "🥕"
+            "icon": "🥕",
+            "img": "assets/vocab/feed.svg"
           }
         ]
       },
@@ -45709,37 +48670,43 @@ const SCENE_LIBRARY = {
             "en": "goat",
             "zh": "山羊",
             "pos": "noun",
-            "icon": "🐐"
+            "icon": "🐐",
+            "img": "assets/vocab/goat.svg"
           },
           {
             "en": "rabbit",
             "zh": "兔子",
             "pos": "noun",
-            "icon": "🐰"
+            "icon": "🐰",
+            "img": "assets/vocab/rabbit.svg"
           },
           {
             "en": "parrot",
             "zh": "鹦鹉",
             "pos": "noun",
-            "icon": "🦜"
+            "icon": "🦜",
+            "img": "assets/vocab/parrot.svg"
           },
           {
             "en": "soft",
             "zh": "软",
             "pos": "adj",
-            "icon": "☁️"
+            "icon": "☁️",
+            "img": "assets/vocab/soft.svg"
           },
           {
             "en": "gentle",
             "zh": "轻",
             "pos": "adj",
-            "icon": "🤲"
+            "icon": "🤲",
+            "img": "assets/vocab/gentle.svg"
           },
           {
             "en": "feed",
             "zh": "喂",
             "pos": "verb",
-            "icon": "🥕"
+            "icon": "🥕",
+            "img": "assets/vocab/feed.svg"
           }
         ]
       }
@@ -45788,25 +48755,29 @@ const SCENE_LIBRARY = {
             "en": "juice",
             "zh": "果汁",
             "pos": "noun",
-            "icon": "🧃"
+            "icon": "🧃",
+            "img": "assets/vocab/juice.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       },
@@ -45904,31 +48875,36 @@ const SCENE_LIBRARY = {
             "en": "juice",
             "zh": "果汁",
             "pos": "noun",
-            "icon": "🧃"
+            "icon": "🧃",
+            "img": "assets/vocab/juice.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "snack",
             "zh": "零食",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/snack.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       },
@@ -45995,31 +48971,36 @@ const SCENE_LIBRARY = {
             "en": "juice",
             "zh": "果汁",
             "pos": "noun",
-            "icon": "🧃"
+            "icon": "🧃",
+            "img": "assets/vocab/juice.svg"
           },
           {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "snack",
             "zh": "零食",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/snack.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       }
@@ -46068,25 +49049,29 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "panda",
             "zh": "熊猫",
             "pos": "noun",
-            "icon": "🐼"
+            "icon": "🐼",
+            "img": "assets/vocab/panda.svg"
           },
           {
             "en": "small",
             "zh": "小",
             "pos": "adj",
-            "icon": "🔹"
+            "icon": "🔹",
+            "img": "assets/vocab/small.svg"
           },
           {
             "en": "pick",
             "zh": "挑",
             "pos": "verb",
-            "icon": "🤏"
+            "icon": "🤏",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       },
@@ -46184,37 +49169,43 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "panda",
             "zh": "熊猫",
             "pos": "noun",
-            "icon": "🐼"
+            "icon": "🐼",
+            "img": "assets/vocab/panda.svg"
           },
           {
             "en": "keychain",
             "zh": "钥匙扣",
             "pos": "noun",
-            "icon": "🔑"
+            "icon": "🔑",
+            "img": "assets/vocab/keychain.svg"
           },
           {
             "en": "small",
             "zh": "小",
             "pos": "adj",
-            "icon": "🔹"
+            "icon": "🔹",
+            "img": "assets/vocab/small.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           },
           {
             "en": "pick",
             "zh": "挑",
             "pos": "verb",
-            "icon": "🤏"
+            "icon": "🤏",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       },
@@ -46275,37 +49266,43 @@ const SCENE_LIBRARY = {
             "en": "toy",
             "zh": "玩具",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/toy.svg"
           },
           {
             "en": "panda",
             "zh": "熊猫",
             "pos": "noun",
-            "icon": "🐼"
+            "icon": "🐼",
+            "img": "assets/vocab/panda.svg"
           },
           {
             "en": "keychain",
             "zh": "钥匙扣",
             "pos": "noun",
-            "icon": "🔑"
+            "icon": "🔑",
+            "img": "assets/vocab/keychain.svg"
           },
           {
             "en": "small",
             "zh": "小",
             "pos": "adj",
-            "icon": "🔹"
+            "icon": "🔹",
+            "img": "assets/vocab/small.svg"
           },
           {
             "en": "cute",
             "zh": "可爱",
             "pos": "adj",
-            "icon": "🥰"
+            "icon": "🥰",
+            "img": "assets/vocab/cute.svg"
           },
           {
             "en": "pick",
             "zh": "挑",
             "pos": "verb",
-            "icon": "🤏"
+            "icon": "🤏",
+            "img": "assets/vocab/pick.svg"
           }
         ]
       }
@@ -46354,25 +49351,29 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽️"
+            "icon": "⚽️",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           }
         ]
       },
@@ -46470,31 +49471,36 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽️"
+            "icon": "⚽️",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "careful",
             "zh": "小心",
             "pos": "adj",
-            "icon": "⚠️"
+            "icon": "⚠️",
+            "img": "assets/vocab/careful.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           }
         ]
       },
@@ -46561,31 +49567,36 @@ const SCENE_LIBRARY = {
             "en": "ball",
             "zh": "球",
             "pos": "noun",
-            "icon": "⚽️"
+            "icon": "⚽️",
+            "img": "assets/vocab/ball.svg"
           },
           {
             "en": "slide",
             "zh": "滑梯",
             "pos": "noun",
-            "icon": "🛝"
+            "icon": "🛝",
+            "img": "assets/vocab/slide.svg"
           },
           {
             "en": "fun",
             "zh": "好玩",
             "pos": "adj",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "careful",
             "zh": "小心",
             "pos": "adj",
-            "icon": "⚠️"
+            "icon": "⚠️",
+            "img": "assets/vocab/careful.svg"
           },
           {
             "en": "jump",
             "zh": "跳",
             "pos": "verb",
-            "icon": "🦘"
+            "icon": "🦘",
+            "img": "assets/vocab/jump.svg"
           }
         ]
       }
@@ -46634,31 +49645,36 @@ const SCENE_LIBRARY = {
             "en": "castle",
             "zh": "城堡",
             "pos": "noun",
-            "icon": "🏰"
+            "icon": "🏰",
+            "img": "assets/vocab/castle.svg"
           },
           {
             "en": "firework",
             "zh": "烟花",
             "pos": "noun",
-            "icon": "🎆"
+            "icon": "🎆",
+            "img": "assets/vocab/firework.svg"
           },
           {
             "en": "mouse",
             "zh": "老鼠",
             "pos": "noun",
-            "icon": "🐭"
+            "icon": "🐭",
+            "img": "assets/vocab/mouse.svg"
           },
           {
             "en": "amazing",
             "zh": "棒",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/amazing.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -46756,37 +49772,43 @@ const SCENE_LIBRARY = {
             "en": "castle",
             "zh": "城堡",
             "pos": "noun",
-            "icon": "🏰"
+            "icon": "🏰",
+            "img": "assets/vocab/castle.svg"
           },
           {
             "en": "firework",
             "zh": "烟花",
             "pos": "noun",
-            "icon": "🎆"
+            "icon": "🎆",
+            "img": "assets/vocab/firework.svg"
           },
           {
             "en": "mouse",
             "zh": "老鼠",
             "pos": "noun",
-            "icon": "🐭"
+            "icon": "🐭",
+            "img": "assets/vocab/mouse.svg"
           },
           {
             "en": "ride",
             "zh": "项目",
             "pos": "noun",
-            "icon": "🎢"
+            "icon": "🎢",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "amazing",
             "zh": "棒",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/amazing.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -46853,37 +49875,43 @@ const SCENE_LIBRARY = {
             "en": "castle",
             "zh": "城堡",
             "pos": "noun",
-            "icon": "🏰"
+            "icon": "🏰",
+            "img": "assets/vocab/castle.svg"
           },
           {
             "en": "firework",
             "zh": "烟花",
             "pos": "noun",
-            "icon": "🎆"
+            "icon": "🎆",
+            "img": "assets/vocab/firework.svg"
           },
           {
             "en": "mouse",
             "zh": "老鼠",
             "pos": "noun",
-            "icon": "🐭"
+            "icon": "🐭",
+            "img": "assets/vocab/mouse.svg"
           },
           {
             "en": "ride",
             "zh": "项目",
             "pos": "noun",
-            "icon": "🎢"
+            "icon": "🎢",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "amazing",
             "zh": "棒",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/amazing.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       }
@@ -46932,25 +49960,29 @@ const SCENE_LIBRARY = {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "ride",
             "zh": "项目",
             "pos": "noun",
-            "icon": "🎢"
+            "icon": "🎢",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -47048,31 +50080,36 @@ const SCENE_LIBRARY = {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "ride",
             "zh": "项目",
             "pos": "noun",
-            "icon": "🎢"
+            "icon": "🎢",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "bar",
             "zh": "扶手",
             "pos": "noun",
-            "icon": "🛄"
+            "icon": "🛄",
+            "img": "assets/vocab/bar.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -47139,31 +50176,36 @@ const SCENE_LIBRARY = {
             "en": "line",
             "zh": "队伍",
             "pos": "noun",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/line.svg"
           },
           {
             "en": "ride",
             "zh": "项目",
             "pos": "noun",
-            "icon": "🎢"
+            "icon": "🎢",
+            "img": "assets/vocab/ride.svg"
           },
           {
             "en": "bar",
             "zh": "扶手",
             "pos": "noun",
-            "icon": "🛄"
+            "icon": "🛄",
+            "img": "assets/vocab/bar.svg"
           },
           {
             "en": "safe",
             "zh": "安全",
             "pos": "adj",
-            "icon": "🛡️"
+            "icon": "🛡️",
+            "img": "assets/vocab/safe.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       }
@@ -47212,25 +50254,29 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "snack",
             "zh": "零食",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/snack.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😌"
+            "icon": "😌",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       },
@@ -47328,31 +50374,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "snack",
             "zh": "零食",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/snack.svg"
           },
           {
             "en": "icecream",
             "zh": "冰淇淋",
             "pos": "noun",
-            "icon": "🍦"
+            "icon": "🍦",
+            "img": "assets/vocab/icecream.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😌"
+            "icon": "😌",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       },
@@ -47419,31 +50470,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "snack",
             "zh": "零食",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/snack.svg"
           },
           {
             "en": "icecream",
             "zh": "冰淇淋",
             "pos": "noun",
-            "icon": "🍦"
+            "icon": "🍦",
+            "img": "assets/vocab/icecream.svg"
           },
           {
             "en": "tired",
             "zh": "累",
             "pos": "adj",
-            "icon": "😴"
+            "icon": "😴",
+            "img": "assets/vocab/tired.svg"
           },
           {
             "en": "rest",
             "zh": "休息",
             "pos": "verb",
-            "icon": "😌"
+            "icon": "😌",
+            "img": "assets/vocab/rest.svg"
           }
         ]
       }
@@ -47492,25 +50548,29 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "raft",
             "zh": "筏子",
             "pos": "noun",
-            "icon": "🛶"
+            "icon": "🛶",
+            "img": "assets/vocab/raft.svg"
           },
           {
             "en": "wet",
             "zh": "湿",
             "pos": "adj",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wet.svg"
           },
           {
             "en": "grab",
             "zh": "抓",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/grab.svg"
           }
         ]
       },
@@ -47608,31 +50668,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "raft",
             "zh": "筏子",
             "pos": "noun",
-            "icon": "🛶"
+            "icon": "🛶",
+            "img": "assets/vocab/raft.svg"
           },
           {
             "en": "raincoat",
             "zh": "雨衣",
             "pos": "noun",
-            "icon": "🧥"
+            "icon": "🧥",
+            "img": "assets/vocab/raincoat.svg"
           },
           {
             "en": "wet",
             "zh": "湿",
             "pos": "adj",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wet.svg"
           },
           {
             "en": "grab",
             "zh": "抓",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/grab.svg"
           }
         ]
       },
@@ -47693,31 +50758,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💦"
+            "icon": "💦",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "raft",
             "zh": "筏子",
             "pos": "noun",
-            "icon": "🛶"
+            "icon": "🛶",
+            "img": "assets/vocab/raft.svg"
           },
           {
             "en": "raincoat",
             "zh": "雨衣",
             "pos": "noun",
-            "icon": "🧥"
+            "icon": "🧥",
+            "img": "assets/vocab/raincoat.svg"
           },
           {
             "en": "wet",
             "zh": "湿",
             "pos": "adj",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/wet.svg"
           },
           {
             "en": "grab",
             "zh": "抓",
             "pos": "verb",
-            "icon": "✊"
+            "icon": "✊",
+            "img": "assets/vocab/grab.svg"
           }
         ]
       }
@@ -47766,25 +50836,29 @@ const SCENE_LIBRARY = {
             "en": "chair",
             "zh": "椅子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/chair.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "turn",
             "zh": "轮次",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -47882,31 +50956,36 @@ const SCENE_LIBRARY = {
             "en": "chair",
             "zh": "椅子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/chair.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "turn",
             "zh": "轮次",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       },
@@ -47973,31 +51052,36 @@ const SCENE_LIBRARY = {
             "en": "chair",
             "zh": "椅子",
             "pos": "noun",
-            "icon": "🪑"
+            "icon": "🪑",
+            "img": "assets/vocab/chair.svg"
           },
           {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "turn",
             "zh": "轮次",
             "pos": "noun",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/turn.svg"
           },
           {
             "en": "name",
             "zh": "名字",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/name.svg"
           },
           {
             "en": "wait",
             "zh": "等",
             "pos": "verb",
-            "icon": "⏳"
+            "icon": "⏳",
+            "img": "assets/vocab/wait.svg"
           }
         ]
       }
@@ -48046,31 +51130,36 @@ const SCENE_LIBRARY = {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "short",
             "zh": "短",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/short.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           }
         ]
       },
@@ -48168,31 +51257,36 @@ const SCENE_LIBRARY = {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "short",
             "zh": "短",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/short.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           }
         ]
       },
@@ -48259,31 +51353,36 @@ const SCENE_LIBRARY = {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "scissors",
             "zh": "剪刀",
             "pos": "noun",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/scissors.svg"
           },
           {
             "en": "short",
             "zh": "短",
             "pos": "adj",
-            "icon": "📏"
+            "icon": "📏",
+            "img": "assets/vocab/short.svg"
           },
           {
             "en": "brave",
             "zh": "勇敢",
             "pos": "adj",
-            "icon": "🦁"
+            "icon": "🦁",
+            "img": "assets/vocab/brave.svg"
           },
           {
             "en": "cut",
             "zh": "剪",
             "pos": "verb",
-            "icon": "✂️"
+            "icon": "✂️",
+            "img": "assets/vocab/cut.svg"
           }
         ]
       }
@@ -48332,31 +51431,36 @@ const SCENE_LIBRARY = {
             "en": "mirror",
             "zh": "镜子",
             "pos": "noun",
-            "icon": "🪞"
+            "icon": "🪞",
+            "img": "assets/vocab/mirror.svg"
           },
           {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "handsome",
             "zh": "帅",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/handsome.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -48454,31 +51558,36 @@ const SCENE_LIBRARY = {
             "en": "mirror",
             "zh": "镜子",
             "pos": "noun",
-            "icon": "🪞"
+            "icon": "🪞",
+            "img": "assets/vocab/mirror.svg"
           },
           {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "handsome",
             "zh": "帅",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/handsome.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -48545,31 +51654,36 @@ const SCENE_LIBRARY = {
             "en": "mirror",
             "zh": "镜子",
             "pos": "noun",
-            "icon": "🪞"
+            "icon": "🪞",
+            "img": "assets/vocab/mirror.svg"
           },
           {
             "en": "hair",
             "zh": "头发",
             "pos": "noun",
-            "icon": "💇"
+            "icon": "💇",
+            "img": "assets/vocab/hair.svg"
           },
           {
             "en": "handsome",
             "zh": "帅",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/handsome.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       }
@@ -48618,25 +51732,29 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "shampoo",
             "zh": "洗发水",
             "pos": "noun",
-            "icon": "🧴"
+            "icon": "🧴",
+            "img": "assets/vocab/shampoo.svg"
           },
           {
             "en": "warm",
             "zh": "暖",
             "pos": "adj",
-            "icon": "♨️"
+            "icon": "♨️",
+            "img": "assets/vocab/warm.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       },
@@ -48734,31 +51852,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "shampoo",
             "zh": "洗发水",
             "pos": "noun",
-            "icon": "🧴"
+            "icon": "🧴",
+            "img": "assets/vocab/shampoo.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "warm",
             "zh": "暖",
             "pos": "adj",
-            "icon": "♨️"
+            "icon": "♨️",
+            "img": "assets/vocab/warm.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       },
@@ -48825,31 +51948,36 @@ const SCENE_LIBRARY = {
             "en": "water",
             "zh": "水",
             "pos": "noun",
-            "icon": "💧"
+            "icon": "💧",
+            "img": "assets/vocab/water.svg"
           },
           {
             "en": "shampoo",
             "zh": "洗发水",
             "pos": "noun",
-            "icon": "🧴"
+            "icon": "🧴",
+            "img": "assets/vocab/shampoo.svg"
           },
           {
             "en": "towel",
             "zh": "毛巾",
             "pos": "noun",
-            "icon": "🧻"
+            "icon": "🧻",
+            "img": "assets/vocab/towel.svg"
           },
           {
             "en": "warm",
             "zh": "暖",
             "pos": "adj",
-            "icon": "♨️"
+            "icon": "♨️",
+            "img": "assets/vocab/warm.svg"
           },
           {
             "en": "wash",
             "zh": "洗",
             "pos": "verb",
-            "icon": "🚿"
+            "icon": "🚿",
+            "img": "assets/vocab/wash.svg"
           }
         ]
       }
@@ -48898,25 +52026,29 @@ const SCENE_LIBRARY = {
             "en": "stylist",
             "zh": "理发师",
             "pos": "noun",
-            "icon": "💇‍♂️"
+            "icon": "💇‍♂️",
+            "img": "assets/vocab/stylist.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "friendly",
             "zh": "友好",
             "pos": "adj",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/friendly.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/say.svg"
           }
         ]
       },
@@ -49014,31 +52146,36 @@ const SCENE_LIBRARY = {
             "en": "stylist",
             "zh": "理发师",
             "pos": "noun",
-            "icon": "💇‍♂️"
+            "icon": "💇‍♂️",
+            "img": "assets/vocab/stylist.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "friendly",
             "zh": "友好",
             "pos": "adj",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/friendly.svg"
           },
           {
             "en": "shy",
             "zh": "害羞",
             "pos": "adj",
-            "icon": "🙈"
+            "icon": "🙈",
+            "img": "assets/vocab/shy.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/say.svg"
           }
         ]
       },
@@ -49105,31 +52242,36 @@ const SCENE_LIBRARY = {
             "en": "stylist",
             "zh": "理发师",
             "pos": "noun",
-            "icon": "💇‍♂️"
+            "icon": "💇‍♂️",
+            "img": "assets/vocab/stylist.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "friendly",
             "zh": "友好",
             "pos": "adj",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/friendly.svg"
           },
           {
             "en": "shy",
             "zh": "害羞",
             "pos": "adj",
-            "icon": "🙈"
+            "icon": "🙈",
+            "img": "assets/vocab/shy.svg"
           },
           {
             "en": "say",
             "zh": "说",
             "pos": "verb",
-            "icon": "🗣️"
+            "icon": "🗣️",
+            "img": "assets/vocab/say.svg"
           }
         ]
       }
@@ -49178,31 +52320,36 @@ const SCENE_LIBRARY = {
             "en": "dino",
             "zh": "恐龙",
             "pos": "noun",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/dino.svg"
           },
           {
             "en": "bone",
             "zh": "骨头",
             "pos": "noun",
-            "icon": "🦴"
+            "icon": "🦴",
+            "img": "assets/vocab/bone.svg"
           },
           {
             "en": "show",
             "zh": "展品",
             "pos": "noun",
-            "icon": "🏛️"
+            "icon": "🏛️",
+            "img": "assets/vocab/show.svg"
           },
           {
             "en": "big",
             "zh": "大",
             "pos": "adj",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/big.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -49300,37 +52447,43 @@ const SCENE_LIBRARY = {
             "en": "dino",
             "zh": "恐龙",
             "pos": "noun",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/dino.svg"
           },
           {
             "en": "bone",
             "zh": "骨头",
             "pos": "noun",
-            "icon": "🦴"
+            "icon": "🦴",
+            "img": "assets/vocab/bone.svg"
           },
           {
             "en": "show",
             "zh": "展品",
             "pos": "noun",
-            "icon": "🏛️"
+            "icon": "🏛️",
+            "img": "assets/vocab/show.svg"
           },
           {
             "en": "old",
             "zh": "老",
             "pos": "adj",
-            "icon": "⏳️"
+            "icon": "⏳️",
+            "img": "assets/vocab/old.svg"
           },
           {
             "en": "big",
             "zh": "大",
             "pos": "adj",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/big.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -49397,37 +52550,43 @@ const SCENE_LIBRARY = {
             "en": "dino",
             "zh": "恐龙",
             "pos": "noun",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/dino.svg"
           },
           {
             "en": "bone",
             "zh": "骨头",
             "pos": "noun",
-            "icon": "🦴"
+            "icon": "🦴",
+            "img": "assets/vocab/bone.svg"
           },
           {
             "en": "show",
             "zh": "展品",
             "pos": "noun",
-            "icon": "🏛️"
+            "icon": "🏛️",
+            "img": "assets/vocab/show.svg"
           },
           {
             "en": "old",
             "zh": "老",
             "pos": "adj",
-            "icon": "⏳️"
+            "icon": "⏳️",
+            "img": "assets/vocab/old.svg"
           },
           {
             "en": "big",
             "zh": "大",
             "pos": "adj",
-            "icon": "🦕"
+            "icon": "🦕",
+            "img": "assets/vocab/big.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       }
@@ -49476,31 +52635,36 @@ const SCENE_LIBRARY = {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "shark",
             "zh": "鲨鱼",
             "pos": "noun",
-            "icon": "🦈"
+            "icon": "🦈",
+            "img": "assets/vocab/shark.svg"
           },
           {
             "en": "turtle",
             "zh": "海龟",
             "pos": "noun",
-            "icon": "🐢"
+            "icon": "🐢",
+            "img": "assets/vocab/turtle.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -49598,37 +52762,43 @@ const SCENE_LIBRARY = {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "shark",
             "zh": "鲨鱼",
             "pos": "noun",
-            "icon": "🦈"
+            "icon": "🦈",
+            "img": "assets/vocab/shark.svg"
           },
           {
             "en": "turtle",
             "zh": "海龟",
             "pos": "noun",
-            "icon": "🐢"
+            "icon": "🐢",
+            "img": "assets/vocab/turtle.svg"
           },
           {
             "en": "jelly",
             "zh": "水母",
             "pos": "noun",
-            "icon": "🪼"
+            "icon": "🪼",
+            "img": "assets/vocab/jelly.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -49695,37 +52865,43 @@ const SCENE_LIBRARY = {
             "en": "fish",
             "zh": "鱼",
             "pos": "noun",
-            "icon": "🐟"
+            "icon": "🐟",
+            "img": "assets/vocab/fish.svg"
           },
           {
             "en": "shark",
             "zh": "鲨鱼",
             "pos": "noun",
-            "icon": "🦈"
+            "icon": "🦈",
+            "img": "assets/vocab/shark.svg"
           },
           {
             "en": "turtle",
             "zh": "海龟",
             "pos": "noun",
-            "icon": "🐢"
+            "icon": "🐢",
+            "img": "assets/vocab/turtle.svg"
           },
           {
             "en": "jelly",
             "zh": "水母",
             "pos": "noun",
-            "icon": "🪼"
+            "icon": "🪼",
+            "img": "assets/vocab/jelly.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       }
@@ -49774,25 +52950,29 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "shelf",
             "zh": "书架",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/shelf.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/read.svg"
           }
         ]
       },
@@ -49890,31 +53070,36 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "shelf",
             "zh": "书架",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/shelf.svg"
           },
           {
             "en": "card",
             "zh": "借书卡",
             "pos": "noun",
-            "icon": "💳"
+            "icon": "💳",
+            "img": "assets/vocab/card.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/read.svg"
           }
         ]
       },
@@ -49981,31 +53166,36 @@ const SCENE_LIBRARY = {
             "en": "book",
             "zh": "书",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/book.svg"
           },
           {
             "en": "shelf",
             "zh": "书架",
             "pos": "noun",
-            "icon": "📚"
+            "icon": "📚",
+            "img": "assets/vocab/shelf.svg"
           },
           {
             "en": "card",
             "zh": "借书卡",
             "pos": "noun",
-            "icon": "💳"
+            "icon": "💳",
+            "img": "assets/vocab/card.svg"
           },
           {
             "en": "quiet",
             "zh": "安静",
             "pos": "adj",
-            "icon": "🤫"
+            "icon": "🤫",
+            "img": "assets/vocab/quiet.svg"
           },
           {
             "en": "read",
             "zh": "读",
             "pos": "verb",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/read.svg"
           }
         ]
       }
@@ -50054,25 +53244,29 @@ const SCENE_LIBRARY = {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "dark",
             "zh": "暗",
             "pos": "adj",
-            "icon": "🌑"
+            "icon": "🌑",
+            "img": "assets/vocab/dark.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -50170,31 +53364,36 @@ const SCENE_LIBRARY = {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "planet",
             "zh": "行星",
             "pos": "noun",
-            "icon": "🪐"
+            "icon": "🪐",
+            "img": "assets/vocab/planet.svg"
           },
           {
             "en": "dark",
             "zh": "暗",
             "pos": "adj",
-            "icon": "🌑"
+            "icon": "🌑",
+            "img": "assets/vocab/dark.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -50255,31 +53454,36 @@ const SCENE_LIBRARY = {
             "en": "star",
             "zh": "星星",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/star.svg"
           },
           {
             "en": "sky",
             "zh": "天空",
             "pos": "noun",
-            "icon": "🌌"
+            "icon": "🌌",
+            "img": "assets/vocab/sky.svg"
           },
           {
             "en": "planet",
             "zh": "行星",
             "pos": "noun",
-            "icon": "🪐"
+            "icon": "🪐",
+            "img": "assets/vocab/planet.svg"
           },
           {
             "en": "dark",
             "zh": "暗",
             "pos": "adj",
-            "icon": "🌑"
+            "icon": "🌑",
+            "img": "assets/vocab/dark.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       }
@@ -50328,31 +53532,36 @@ const SCENE_LIBRARY = {
             "en": "painting",
             "zh": "画",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/painting.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "artist",
             "zh": "画家",
             "pos": "noun",
-            "icon": "🧑‍🎨"
+            "icon": "🧑‍🎨",
+            "img": "assets/vocab/artist.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -50450,37 +53659,43 @@ const SCENE_LIBRARY = {
             "en": "painting",
             "zh": "画",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/painting.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "artist",
             "zh": "画家",
             "pos": "noun",
-            "icon": "🧑‍🎨"
+            "icon": "🧑‍🎨",
+            "img": "assets/vocab/artist.svg"
           },
           {
             "en": "brush",
             "zh": "画笔",
             "pos": "noun",
-            "icon": "🖌️"
+            "icon": "🖌️",
+            "img": "assets/vocab/brush.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       },
@@ -50541,37 +53756,43 @@ const SCENE_LIBRARY = {
             "en": "painting",
             "zh": "画",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/painting.svg"
           },
           {
             "en": "color",
             "zh": "颜色",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/color.svg"
           },
           {
             "en": "artist",
             "zh": "画家",
             "pos": "noun",
-            "icon": "🧑‍🎨"
+            "icon": "🧑‍🎨",
+            "img": "assets/vocab/artist.svg"
           },
           {
             "en": "brush",
             "zh": "画笔",
             "pos": "noun",
-            "icon": "🖌️"
+            "icon": "🖌️",
+            "img": "assets/vocab/brush.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "look",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/look.svg"
           }
         ]
       }
@@ -50627,37 +53848,43 @@ const SCENE_LIBRARY = {
             "en": "cake",
             "zh": "蛋糕",
             "pos": "noun",
-            "icon": "🎂"
+            "icon": "🎂",
+            "img": "assets/vocab/cake.svg"
           },
           {
             "en": "candle",
             "zh": "蜡烛",
             "pos": "noun",
-            "icon": "🕯️"
+            "icon": "🕯️",
+            "img": "assets/vocab/candle.svg"
           },
           {
             "en": "balloon",
             "zh": "气球",
             "pos": "noun",
-            "icon": "🎈"
+            "icon": "🎈",
+            "img": "assets/vocab/balloon.svg"
           },
           {
             "en": "gift",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/gift.svg"
           },
           {
             "en": "blow",
             "zh": "吹",
             "pos": "verb",
-            "icon": "💨"
+            "icon": "💨",
+            "img": "assets/vocab/blow.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -50767,37 +53994,43 @@ const SCENE_LIBRARY = {
             "en": "cake",
             "zh": "蛋糕",
             "pos": "noun",
-            "icon": "🎂"
+            "icon": "🎂",
+            "img": "assets/vocab/cake.svg"
           },
           {
             "en": "candle",
             "zh": "蜡烛",
             "pos": "noun",
-            "icon": "🕯️"
+            "icon": "🕯️",
+            "img": "assets/vocab/candle.svg"
           },
           {
             "en": "balloon",
             "zh": "气球",
             "pos": "noun",
-            "icon": "🎈"
+            "icon": "🎈",
+            "img": "assets/vocab/balloon.svg"
           },
           {
             "en": "gift",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/gift.svg"
           },
           {
             "en": "blow",
             "zh": "吹",
             "pos": "verb",
-            "icon": "💨"
+            "icon": "💨",
+            "img": "assets/vocab/blow.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -50863,25 +54096,29 @@ const SCENE_LIBRARY = {
             "en": "wish",
             "zh": "愿望",
             "pos": "noun",
-            "icon": "⭐"
+            "icon": "⭐",
+            "img": "assets/vocab/wish.svg"
           },
           {
             "en": "decorate",
             "zh": "装饰",
             "pos": "verb",
-            "icon": "🎀"
+            "icon": "🎀",
+            "img": "assets/vocab/decorate.svg"
           },
           {
             "en": "guest",
             "zh": "客人",
             "pos": "noun",
-            "icon": "🧑"
+            "icon": "🧑",
+            "img": "assets/vocab/guest.svg"
           },
           {
             "en": "choose",
             "zh": "选择",
             "pos": "verb",
-            "icon": "✅"
+            "icon": "✅",
+            "img": "assets/vocab/choose.svg"
           }
         ]
       }
@@ -50929,31 +54166,36 @@ const SCENE_LIBRARY = {
             "en": "party",
             "zh": "派对",
             "pos": "noun",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/party.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "🧒"
+            "icon": "🧒",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "invite",
             "zh": "邀请",
             "pos": "verb",
-            "icon": "✉️"
+            "icon": "✉️",
+            "img": "assets/vocab/invite.svg"
           },
           {
             "en": "come",
             "zh": "来",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/come.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -51043,31 +54285,36 @@ const SCENE_LIBRARY = {
             "en": "party",
             "zh": "派对",
             "pos": "noun",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/party.svg"
           },
           {
             "en": "friend",
             "zh": "朋友",
             "pos": "noun",
-            "icon": "🧒"
+            "icon": "🧒",
+            "img": "assets/vocab/friend.svg"
           },
           {
             "en": "invite",
             "zh": "邀请",
             "pos": "verb",
-            "icon": "✉️"
+            "icon": "✉️",
+            "img": "assets/vocab/invite.svg"
           },
           {
             "en": "come",
             "zh": "来",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/come.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -51133,25 +54380,29 @@ const SCENE_LIBRARY = {
             "en": "celebration",
             "zh": "庆祝",
             "pos": "noun",
-            "icon": "🎊"
+            "icon": "🎊",
+            "img": "assets/vocab/celebration.svg"
           },
           {
             "en": "list",
             "zh": "清单",
             "pos": "noun",
-            "icon": "📝"
+            "icon": "📝",
+            "img": "assets/vocab/list.svg"
           },
           {
             "en": "excited",
             "zh": "兴奋的",
             "pos": "adj",
-            "icon": "🤩"
+            "icon": "🤩",
+            "img": "assets/vocab/excited.svg"
           },
           {
             "en": "start",
             "zh": "开始",
             "pos": "verb",
-            "icon": "▶️"
+            "icon": "▶️",
+            "img": "assets/vocab/start.svg"
           }
         ]
       }
@@ -51199,25 +54450,29 @@ const SCENE_LIBRARY = {
             "en": "balloon",
             "zh": "气球",
             "pos": "noun",
-            "icon": "🎈"
+            "icon": "🎈",
+            "img": "assets/vocab/balloon.svg"
           },
           {
             "en": "banner",
             "zh": "横幅",
             "pos": "noun",
-            "icon": "🚩"
+            "icon": "🚩",
+            "img": "assets/vocab/banner.svg"
           },
           {
             "en": "colorful",
             "zh": "鲜艳的",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/colorful.svg"
           },
           {
             "en": "hang",
             "zh": "挂",
             "pos": "verb",
-            "icon": "🪝"
+            "icon": "🪝",
+            "img": "assets/vocab/hang.svg"
           }
         ]
       },
@@ -51309,25 +54564,29 @@ const SCENE_LIBRARY = {
             "en": "balloon",
             "zh": "气球",
             "pos": "noun",
-            "icon": "🎈"
+            "icon": "🎈",
+            "img": "assets/vocab/balloon.svg"
           },
           {
             "en": "banner",
             "zh": "横幅",
             "pos": "noun",
-            "icon": "🚩"
+            "icon": "🚩",
+            "img": "assets/vocab/banner.svg"
           },
           {
             "en": "colorful",
             "zh": "鲜艳的",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/colorful.svg"
           },
           {
             "en": "hang",
             "zh": "挂",
             "pos": "verb",
-            "icon": "🪝"
+            "icon": "🪝",
+            "img": "assets/vocab/hang.svg"
           }
         ]
       },
@@ -51393,25 +54652,29 @@ const SCENE_LIBRARY = {
             "en": "tape",
             "zh": "胶带",
             "pos": "noun",
-            "icon": "🩹"
+            "icon": "🩹",
+            "img": "assets/vocab/tape.svg"
           },
           {
             "en": "ribbon",
             "zh": "丝带",
             "pos": "noun",
-            "icon": "🎀"
+            "icon": "🎀",
+            "img": "assets/vocab/ribbon.svg"
           },
           {
             "en": "arrange",
             "zh": "摆放",
             "pos": "verb",
-            "icon": "📐"
+            "icon": "📐",
+            "img": "assets/vocab/arrange.svg"
           },
           {
             "en": "festive",
             "zh": "喜庆的",
             "pos": "adj",
-            "icon": "🎊"
+            "icon": "🎊",
+            "img": "assets/vocab/festive.svg"
           }
         ]
       }
@@ -51453,25 +54716,29 @@ const SCENE_LIBRARY = {
             "en": "game",
             "zh": "游戏",
             "pos": "noun",
-            "icon": "🎲"
+            "icon": "🎲",
+            "img": "assets/vocab/game.svg"
           },
           {
             "en": "spin",
             "zh": "转圈",
             "pos": "verb",
-            "icon": "🌀"
+            "icon": "🌀",
+            "img": "assets/vocab/spin.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           }
         ]
       },
@@ -51557,25 +54824,29 @@ const SCENE_LIBRARY = {
             "en": "game",
             "zh": "游戏",
             "pos": "noun",
-            "icon": "🎲"
+            "icon": "🎲",
+            "img": "assets/vocab/game.svg"
           },
           {
             "en": "spin",
             "zh": "转圈",
             "pos": "verb",
-            "icon": "🌀"
+            "icon": "🌀",
+            "img": "assets/vocab/spin.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           }
         ]
       },
@@ -51641,25 +54912,29 @@ const SCENE_LIBRARY = {
             "en": "prize",
             "zh": "奖品",
             "pos": "noun",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/prize.svg"
           },
           {
             "en": "clue",
             "zh": "线索",
             "pos": "noun",
-            "icon": "🔍"
+            "icon": "🔍",
+            "img": "assets/vocab/clue.svg"
           },
           {
             "en": "win",
             "zh": "赢",
             "pos": "verb",
-            "icon": "🥇"
+            "icon": "🥇",
+            "img": "assets/vocab/win.svg"
           },
           {
             "en": "circle",
             "zh": "圆圈",
             "pos": "noun",
-            "icon": "⭕"
+            "icon": "⭕",
+            "img": "assets/vocab/circle.svg"
           }
         ]
       }
@@ -51707,25 +54982,29 @@ const SCENE_LIBRARY = {
             "en": "thank",
             "zh": "谢谢",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/thank.svg"
           },
           {
             "en": "goodbye",
             "zh": "再见",
             "pos": "noun",
-            "icon": "👋"
+            "icon": "👋",
+            "img": "assets/vocab/goodbye.svg"
           },
           {
             "en": "gift",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/gift.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -51817,25 +55096,29 @@ const SCENE_LIBRARY = {
             "en": "thank",
             "zh": "谢谢",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/thank.svg"
           },
           {
             "en": "goodbye",
             "zh": "再见",
             "pos": "noun",
-            "icon": "👋"
+            "icon": "👋",
+            "img": "assets/vocab/goodbye.svg"
           },
           {
             "en": "gift",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/gift.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -51901,25 +55184,29 @@ const SCENE_LIBRARY = {
             "en": "special",
             "zh": "特别的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/special.svg"
           },
           {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "note",
             "zh": "卡片",
             "pos": "noun",
-            "icon": "💌"
+            "icon": "💌",
+            "img": "assets/vocab/note.svg"
           },
           {
             "en": "visit",
             "zh": "拜访",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/visit.svg"
           }
         ]
       }
@@ -51976,37 +55263,43 @@ const SCENE_LIBRARY = {
             "en": "firework",
             "zh": "烟花",
             "pos": "noun",
-            "icon": "🎆"
+            "icon": "🎆",
+            "img": "assets/vocab/firework.svg"
           },
           {
             "en": "envelope",
             "zh": "红包",
             "pos": "noun",
-            "icon": "🧧"
+            "icon": "🧧",
+            "img": "assets/vocab/envelope.svg"
           },
           {
             "en": "lucky",
             "zh": "幸运的",
             "pos": "adj",
-            "icon": "🍀"
+            "icon": "🍀",
+            "img": "assets/vocab/lucky.svg"
           },
           {
             "en": "visit",
             "zh": "拜访",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/visit.svg"
           },
           {
             "en": "red",
             "zh": "红色的",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -52109,37 +55402,43 @@ const SCENE_LIBRARY = {
             "en": "firework",
             "zh": "烟花",
             "pos": "noun",
-            "icon": "🎆"
+            "icon": "🎆",
+            "img": "assets/vocab/firework.svg"
           },
           {
             "en": "envelope",
             "zh": "红包",
             "pos": "noun",
-            "icon": "🧧"
+            "icon": "🧧",
+            "img": "assets/vocab/envelope.svg"
           },
           {
             "en": "lucky",
             "zh": "幸运的",
             "pos": "adj",
-            "icon": "🍀"
+            "icon": "🍀",
+            "img": "assets/vocab/lucky.svg"
           },
           {
             "en": "visit",
             "zh": "拜访",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/visit.svg"
           },
           {
             "en": "red",
             "zh": "红色的",
             "pos": "adj",
-            "icon": "🔴"
+            "icon": "🔴",
+            "img": "assets/vocab/red.svg"
           },
           {
             "en": "watch",
             "zh": "看",
             "pos": "verb",
-            "icon": "👀"
+            "icon": "👀",
+            "img": "assets/vocab/watch.svg"
           }
         ]
       },
@@ -52205,25 +55504,29 @@ const SCENE_LIBRARY = {
             "en": "couplet",
             "zh": "春联",
             "pos": "noun",
-            "icon": "📜"
+            "icon": "📜",
+            "img": "assets/vocab/couplet.svg"
           },
           {
             "en": "culture",
             "zh": "文化",
             "pos": "noun",
-            "icon": "🏮"
+            "icon": "🏮",
+            "img": "assets/vocab/culture.svg"
           },
           {
             "en": "paste",
             "zh": "贴",
             "pos": "verb",
-            "icon": "🩹"
+            "icon": "🩹",
+            "img": "assets/vocab/paste.svg"
           },
           {
             "en": "dumpling",
             "zh": "饺子",
             "pos": "noun",
-            "icon": "🥟"
+            "icon": "🥟",
+            "img": "assets/vocab/dumpling.svg"
           }
         ]
       }
@@ -52270,25 +55573,29 @@ const SCENE_LIBRARY = {
             "en": "moon",
             "zh": "月亮",
             "pos": "noun",
-            "icon": "🌕"
+            "icon": "🌕",
+            "img": "assets/vocab/moon.svg"
           },
           {
             "en": "mooncake",
             "zh": "月饼",
             "pos": "noun",
-            "icon": "🥮"
+            "icon": "🥮",
+            "img": "assets/vocab/mooncake.svg"
           },
           {
             "en": "round",
             "zh": "圆的",
             "pos": "adj",
-            "icon": "⭕"
+            "icon": "⭕",
+            "img": "assets/vocab/round.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -52378,31 +55685,36 @@ const SCENE_LIBRARY = {
             "en": "moon",
             "zh": "月亮",
             "pos": "noun",
-            "icon": "🌕"
+            "icon": "🌕",
+            "img": "assets/vocab/moon.svg"
           },
           {
             "en": "mooncake",
             "zh": "月饼",
             "pos": "noun",
-            "icon": "🥮"
+            "icon": "🥮",
+            "img": "assets/vocab/mooncake.svg"
           },
           {
             "en": "round",
             "zh": "圆的",
             "pos": "adj",
-            "icon": "⭕"
+            "icon": "⭕",
+            "img": "assets/vocab/round.svg"
           },
           {
             "en": "bright",
             "zh": "明亮的",
             "pos": "adj",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/bright.svg"
           },
           {
             "en": "eat",
             "zh": "吃",
             "pos": "verb",
-            "icon": "🍴"
+            "icon": "🍴",
+            "img": "assets/vocab/eat.svg"
           }
         ]
       },
@@ -52468,25 +55780,29 @@ const SCENE_LIBRARY = {
             "en": "reunion",
             "zh": "团圆",
             "pos": "noun",
-            "icon": "👨‍👩‍👧"
+            "icon": "👨‍👩‍👧",
+            "img": "assets/vocab/reunion.svg"
           },
           {
             "en": "legend",
             "zh": "传说",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/legend.svg"
           },
           {
             "en": "flavor",
             "zh": "口味",
             "pos": "noun",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/flavor.svg"
           },
           {
             "en": "bright",
             "zh": "明亮的",
             "pos": "adj",
-            "icon": "💡"
+            "icon": "💡",
+            "img": "assets/vocab/bright.svg"
           }
         ]
       }
@@ -52527,25 +55843,29 @@ const SCENE_LIBRARY = {
             "en": "zongzi",
             "zh": "粽子",
             "pos": "noun",
-            "icon": "🍙"
+            "icon": "🍙",
+            "img": "assets/vocab/zongzi.svg"
           },
           {
             "en": "boat",
             "zh": "船",
             "pos": "noun",
-            "icon": "🚣"
+            "icon": "🚣",
+            "img": "assets/vocab/boat.svg"
           },
           {
             "en": "paddle",
             "zh": "划桨",
             "pos": "verb",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/paddle.svg"
           },
           {
             "en": "fast",
             "zh": "快的",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           }
         ]
       },
@@ -52629,25 +55949,29 @@ const SCENE_LIBRARY = {
             "en": "zongzi",
             "zh": "粽子",
             "pos": "noun",
-            "icon": "🍙"
+            "icon": "🍙",
+            "img": "assets/vocab/zongzi.svg"
           },
           {
             "en": "boat",
             "zh": "船",
             "pos": "noun",
-            "icon": "🚣"
+            "icon": "🚣",
+            "img": "assets/vocab/boat.svg"
           },
           {
             "en": "paddle",
             "zh": "划桨",
             "pos": "verb",
-            "icon": "🏓"
+            "icon": "🏓",
+            "img": "assets/vocab/paddle.svg"
           },
           {
             "en": "fast",
             "zh": "快的",
             "pos": "adj",
-            "icon": "⚡"
+            "icon": "⚡",
+            "img": "assets/vocab/fast.svg"
           }
         ]
       },
@@ -52713,25 +56037,29 @@ const SCENE_LIBRARY = {
             "en": "poet",
             "zh": "诗人",
             "pos": "noun",
-            "icon": "✒️"
+            "icon": "✒️",
+            "img": "assets/vocab/poet.svg"
           },
           {
             "en": "bamboo",
             "zh": "竹子",
             "pos": "noun",
-            "icon": "🎋"
+            "icon": "🎋",
+            "img": "assets/vocab/bamboo.svg"
           },
           {
             "en": "race",
             "zh": "比赛",
             "pos": "noun",
-            "icon": "🏁"
+            "icon": "🏁",
+            "img": "assets/vocab/race.svg"
           },
           {
             "en": "wrap",
             "zh": "包",
             "pos": "verb",
-            "icon": "🥡"
+            "icon": "🥡",
+            "img": "assets/vocab/wrap.svg"
           }
         ]
       }
@@ -52773,25 +56101,29 @@ const SCENE_LIBRARY = {
             "en": "tangyuan",
             "zh": "汤圆",
             "pos": "noun",
-            "icon": "🍡"
+            "icon": "🍡",
+            "img": "assets/vocab/tangyuan.svg"
           },
           {
             "en": "lantern",
             "zh": "灯笼",
             "pos": "noun",
-            "icon": "🏮"
+            "icon": "🏮",
+            "img": "assets/vocab/lantern.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮的",
             "pos": "adj",
-            "icon": "💮"
+            "icon": "💮",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "colorful",
             "zh": "多彩的",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/colorful.svg"
           }
         ]
       },
@@ -52875,25 +56207,29 @@ const SCENE_LIBRARY = {
             "en": "tangyuan",
             "zh": "汤圆",
             "pos": "noun",
-            "icon": "🍡"
+            "icon": "🍡",
+            "img": "assets/vocab/tangyuan.svg"
           },
           {
             "en": "lantern",
             "zh": "灯笼",
             "pos": "noun",
-            "icon": "🏮"
+            "icon": "🏮",
+            "img": "assets/vocab/lantern.svg"
           },
           {
             "en": "pretty",
             "zh": "漂亮的",
             "pos": "adj",
-            "icon": "💮"
+            "icon": "💮",
+            "img": "assets/vocab/pretty.svg"
           },
           {
             "en": "colorful",
             "zh": "多彩的",
             "pos": "adj",
-            "icon": "🌈"
+            "icon": "🌈",
+            "img": "assets/vocab/colorful.svg"
           }
         ]
       },
@@ -52959,25 +56295,29 @@ const SCENE_LIBRARY = {
             "en": "riddle",
             "zh": "灯谜",
             "pos": "noun",
-            "icon": "🧩"
+            "icon": "🧩",
+            "img": "assets/vocab/riddle.svg"
           },
           {
             "en": "round",
             "zh": "圆的",
             "pos": "adj",
-            "icon": "⭕"
+            "icon": "⭕",
+            "img": "assets/vocab/round.svg"
           },
           {
             "en": "guess",
             "zh": "猜",
             "pos": "verb",
-            "icon": "❓"
+            "icon": "❓",
+            "img": "assets/vocab/guess.svg"
           },
           {
             "en": "show",
             "zh": "展览",
             "pos": "noun",
-            "icon": "🎪"
+            "icon": "🎪",
+            "img": "assets/vocab/show.svg"
           }
         ]
       }
@@ -53024,25 +56364,29 @@ const SCENE_LIBRARY = {
             "en": "kite",
             "zh": "风筝",
             "pos": "noun",
-            "icon": "🪁"
+            "icon": "🪁",
+            "img": "assets/vocab/kite.svg"
           },
           {
             "en": "grass",
             "zh": "草",
             "pos": "noun",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grass.svg"
           },
           {
             "en": "spring",
             "zh": "春天",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/spring.svg"
           },
           {
             "en": "green",
             "zh": "绿色的",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           }
         ]
       },
@@ -53139,25 +56483,29 @@ const SCENE_LIBRARY = {
             "en": "kite",
             "zh": "风筝",
             "pos": "noun",
-            "icon": "🪁"
+            "icon": "🪁",
+            "img": "assets/vocab/kite.svg"
           },
           {
             "en": "grass",
             "zh": "草",
             "pos": "noun",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/grass.svg"
           },
           {
             "en": "spring",
             "zh": "春天",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/spring.svg"
           },
           {
             "en": "green",
             "zh": "绿色的",
             "pos": "adj",
-            "icon": "🟢"
+            "icon": "🟢",
+            "img": "assets/vocab/green.svg"
           }
         ]
       },
@@ -53223,25 +56571,29 @@ const SCENE_LIBRARY = {
             "en": "ancestor",
             "zh": "祖先",
             "pos": "noun",
-            "icon": "🕯️"
+            "icon": "🕯️",
+            "img": "assets/vocab/ancestor.svg"
           },
           {
             "en": "grave",
             "zh": "墓地",
             "pos": "noun",
-            "icon": "🪦"
+            "icon": "🪦",
+            "img": "assets/vocab/grave.svg"
           },
           {
             "en": "outing",
             "zh": "出游",
             "pos": "noun",
-            "icon": "🥾"
+            "icon": "🥾",
+            "img": "assets/vocab/outing.svg"
           },
           {
             "en": "remember",
             "zh": "纪念",
             "pos": "verb",
-            "icon": "🧠"
+            "icon": "🧠",
+            "img": "assets/vocab/remember.svg"
           }
         ]
       }
@@ -53295,37 +56647,43 @@ const SCENE_LIBRARY = {
             "en": "christmas",
             "zh": "圣诞节",
             "pos": "noun",
-            "icon": "🎄"
+            "icon": "🎄",
+            "img": "assets/vocab/christmas.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌲"
+            "icon": "🌲",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "santa",
             "zh": "圣诞老人",
             "pos": "noun",
-            "icon": "🎅"
+            "icon": "🎅",
+            "img": "assets/vocab/santa.svg"
           },
           {
             "en": "present",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/present.svg"
           },
           {
             "en": "hang",
             "zh": "挂",
             "pos": "verb",
-            "icon": "🪝"
+            "icon": "🪝",
+            "img": "assets/vocab/hang.svg"
           },
           {
             "en": "merry",
             "zh": "快乐的",
             "pos": "adj",
-            "icon": "😃"
+            "icon": "😃",
+            "img": "assets/vocab/merry.svg"
           }
         ]
       },
@@ -53421,37 +56779,43 @@ const SCENE_LIBRARY = {
             "en": "christmas",
             "zh": "圣诞节",
             "pos": "noun",
-            "icon": "🎄"
+            "icon": "🎄",
+            "img": "assets/vocab/christmas.svg"
           },
           {
             "en": "tree",
             "zh": "树",
             "pos": "noun",
-            "icon": "🌲"
+            "icon": "🌲",
+            "img": "assets/vocab/tree.svg"
           },
           {
             "en": "santa",
             "zh": "圣诞老人",
             "pos": "noun",
-            "icon": "🎅"
+            "icon": "🎅",
+            "img": "assets/vocab/santa.svg"
           },
           {
             "en": "present",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/present.svg"
           },
           {
             "en": "hang",
             "zh": "挂",
             "pos": "verb",
-            "icon": "🪝"
+            "icon": "🪝",
+            "img": "assets/vocab/hang.svg"
           },
           {
             "en": "merry",
             "zh": "快乐的",
             "pos": "adj",
-            "icon": "😃"
+            "icon": "😃",
+            "img": "assets/vocab/merry.svg"
           }
         ]
       },
@@ -53517,25 +56881,29 @@ const SCENE_LIBRARY = {
             "en": "stocking",
             "zh": "长袜",
             "pos": "noun",
-            "icon": "🧦"
+            "icon": "🧦",
+            "img": "assets/vocab/stocking.svg"
           },
           {
             "en": "fireplace",
             "zh": "壁炉",
             "pos": "noun",
-            "icon": "🔥"
+            "icon": "🔥",
+            "img": "assets/vocab/fireplace.svg"
           },
           {
             "en": "kindness",
             "zh": "善意",
             "pos": "noun",
-            "icon": "💗"
+            "icon": "💗",
+            "img": "assets/vocab/kindness.svg"
           },
           {
             "en": "decorate",
             "zh": "装饰",
             "pos": "verb",
-            "icon": "🎀"
+            "icon": "🎀",
+            "img": "assets/vocab/decorate.svg"
           }
         ]
       }
@@ -53589,37 +56957,43 @@ const SCENE_LIBRARY = {
             "en": "halloween",
             "zh": "万圣节",
             "pos": "noun",
-            "icon": "🎃"
+            "icon": "🎃",
+            "img": "assets/vocab/halloween.svg"
           },
           {
             "en": "pumpkin",
             "zh": "南瓜",
             "pos": "noun",
-            "icon": "🎃"
+            "icon": "🎃",
+            "img": "assets/vocab/pumpkin.svg"
           },
           {
             "en": "costume",
             "zh": "装扮",
             "pos": "noun",
-            "icon": "🦹"
+            "icon": "🦹",
+            "img": "assets/vocab/costume.svg"
           },
           {
             "en": "candy",
             "zh": "糖果",
             "pos": "noun",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/candy.svg"
           },
           {
             "en": "carve",
             "zh": "雕刻",
             "pos": "verb",
-            "icon": "🔪"
+            "icon": "🔪",
+            "img": "assets/vocab/carve.svg"
           },
           {
             "en": "cool",
             "zh": "酷的",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/cool.svg"
           }
         ]
       },
@@ -53716,37 +57090,43 @@ const SCENE_LIBRARY = {
             "en": "halloween",
             "zh": "万圣节",
             "pos": "noun",
-            "icon": "🎃"
+            "icon": "🎃",
+            "img": "assets/vocab/halloween.svg"
           },
           {
             "en": "pumpkin",
             "zh": "南瓜",
             "pos": "noun",
-            "icon": "🎃"
+            "icon": "🎃",
+            "img": "assets/vocab/pumpkin.svg"
           },
           {
             "en": "costume",
             "zh": "装扮",
             "pos": "noun",
-            "icon": "🦹"
+            "icon": "🦹",
+            "img": "assets/vocab/costume.svg"
           },
           {
             "en": "candy",
             "zh": "糖果",
             "pos": "noun",
-            "icon": "🍬"
+            "icon": "🍬",
+            "img": "assets/vocab/candy.svg"
           },
           {
             "en": "carve",
             "zh": "雕刻",
             "pos": "verb",
-            "icon": "🔪"
+            "icon": "🔪",
+            "img": "assets/vocab/carve.svg"
           },
           {
             "en": "cool",
             "zh": "酷的",
             "pos": "adj",
-            "icon": "😎"
+            "icon": "😎",
+            "img": "assets/vocab/cool.svg"
           }
         ]
       },
@@ -53812,25 +57192,29 @@ const SCENE_LIBRARY = {
             "en": "spooky",
             "zh": "吓人的",
             "pos": "adj",
-            "icon": "👻"
+            "icon": "👻",
+            "img": "assets/vocab/spooky.svg"
           },
           {
             "en": "decoration",
             "zh": "装饰",
             "pos": "noun",
-            "icon": "🕸️"
+            "icon": "🕸️",
+            "img": "assets/vocab/decoration.svg"
           },
           {
             "en": "tradition",
             "zh": "传统",
             "pos": "noun",
-            "icon": "📜"
+            "icon": "📜",
+            "img": "assets/vocab/tradition.svg"
           },
           {
             "en": "wear",
             "zh": "穿",
             "pos": "verb",
-            "icon": "👕"
+            "icon": "👕",
+            "img": "assets/vocab/wear.svg"
           }
         ]
       }
@@ -53877,37 +57261,43 @@ const SCENE_LIBRARY = {
             "en": "easter",
             "zh": "复活节",
             "pos": "noun",
-            "icon": "🐰"
+            "icon": "🐰",
+            "img": "assets/vocab/easter.svg"
           },
           {
             "en": "egg",
             "zh": "蛋",
             "pos": "noun",
-            "icon": "🥚"
+            "icon": "🥚",
+            "img": "assets/vocab/egg.svg"
           },
           {
             "en": "bunny",
             "zh": "兔子",
             "pos": "noun",
-            "icon": "🐇"
+            "icon": "🐇",
+            "img": "assets/vocab/bunny.svg"
           },
           {
             "en": "chocolate",
             "zh": "巧克力",
             "pos": "noun",
-            "icon": "🍫"
+            "icon": "🍫",
+            "img": "assets/vocab/chocolate.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔎"
+            "icon": "🔎",
+            "img": "assets/vocab/find.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -53997,37 +57387,43 @@ const SCENE_LIBRARY = {
             "en": "easter",
             "zh": "复活节",
             "pos": "noun",
-            "icon": "🐰"
+            "icon": "🐰",
+            "img": "assets/vocab/easter.svg"
           },
           {
             "en": "egg",
             "zh": "蛋",
             "pos": "noun",
-            "icon": "🥚"
+            "icon": "🥚",
+            "img": "assets/vocab/egg.svg"
           },
           {
             "en": "bunny",
             "zh": "兔子",
             "pos": "noun",
-            "icon": "🐇"
+            "icon": "🐇",
+            "img": "assets/vocab/bunny.svg"
           },
           {
             "en": "chocolate",
             "zh": "巧克力",
             "pos": "noun",
-            "icon": "🍫"
+            "icon": "🍫",
+            "img": "assets/vocab/chocolate.svg"
           },
           {
             "en": "find",
             "zh": "找",
             "pos": "verb",
-            "icon": "🔎"
+            "icon": "🔎",
+            "img": "assets/vocab/find.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -54093,25 +57489,29 @@ const SCENE_LIBRARY = {
             "en": "paint",
             "zh": "涂色",
             "pos": "verb",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/paint.svg"
           },
           {
             "en": "sticker",
             "zh": "贴纸",
             "pos": "noun",
-            "icon": "🏷️"
+            "icon": "🏷️",
+            "img": "assets/vocab/sticker.svg"
           },
           {
             "en": "spring",
             "zh": "春天",
             "pos": "noun",
-            "icon": "🌸"
+            "icon": "🌸",
+            "img": "assets/vocab/spring.svg"
           },
           {
             "en": "life",
             "zh": "生命",
             "pos": "noun",
-            "icon": "🌱"
+            "icon": "🌱",
+            "img": "assets/vocab/life.svg"
           }
         ]
       }
@@ -54158,37 +57558,43 @@ const SCENE_LIBRARY = {
             "en": "turkey",
             "zh": "火鸡",
             "pos": "noun",
-            "icon": "🦃"
+            "icon": "🦃",
+            "img": "assets/vocab/turkey.svg"
           },
           {
             "en": "pie",
             "zh": "派",
             "pos": "noun",
-            "icon": "🥧"
+            "icon": "🥧",
+            "img": "assets/vocab/pie.svg"
           },
           {
             "en": "family",
             "zh": "家人",
             "pos": "noun",
-            "icon": "👨‍👩‍👧"
+            "icon": "👨‍👩‍👧",
+            "img": "assets/vocab/family.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "verb",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "thank",
             "zh": "谢谢",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/thank.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃的",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           }
         ]
       },
@@ -54278,37 +57684,43 @@ const SCENE_LIBRARY = {
             "en": "turkey",
             "zh": "火鸡",
             "pos": "noun",
-            "icon": "🦃"
+            "icon": "🦃",
+            "img": "assets/vocab/turkey.svg"
           },
           {
             "en": "pie",
             "zh": "派",
             "pos": "noun",
-            "icon": "🥧"
+            "icon": "🥧",
+            "img": "assets/vocab/pie.svg"
           },
           {
             "en": "family",
             "zh": "家人",
             "pos": "noun",
-            "icon": "👨‍👩‍👧"
+            "icon": "👨‍👩‍👧",
+            "img": "assets/vocab/family.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "verb",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "thank",
             "zh": "谢谢",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/thank.svg"
           },
           {
             "en": "yummy",
             "zh": "好吃的",
             "pos": "adj",
-            "icon": "😋"
+            "icon": "😋",
+            "img": "assets/vocab/yummy.svg"
           }
         ]
       },
@@ -54374,25 +57786,29 @@ const SCENE_LIBRARY = {
             "en": "grateful",
             "zh": "感恩的",
             "pos": "adj",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/grateful.svg"
           },
           {
             "en": "meal",
             "zh": "餐",
             "pos": "noun",
-            "icon": "🍽️"
+            "icon": "🍽️",
+            "img": "assets/vocab/meal.svg"
           },
           {
             "en": "share",
             "zh": "分享",
             "pos": "verb",
-            "icon": "🤝"
+            "icon": "🤝",
+            "img": "assets/vocab/share.svg"
           },
           {
             "en": "pilgrim",
             "zh": "清教徒",
             "pos": "noun",
-            "icon": "⛵"
+            "icon": "⛵",
+            "img": "assets/vocab/pilgrim.svg"
           }
         ]
       }
@@ -54439,25 +57855,29 @@ const SCENE_LIBRARY = {
             "en": "midnight",
             "zh": "午夜",
             "pos": "noun",
-            "icon": "🕛"
+            "icon": "🕛",
+            "img": "assets/vocab/midnight.svg"
           },
           {
             "en": "firework",
             "zh": "烟花",
             "pos": "noun",
-            "icon": "🎆"
+            "icon": "🎆",
+            "img": "assets/vocab/firework.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "new",
             "zh": "新的",
             "pos": "adj",
-            "icon": "🆕"
+            "icon": "🆕",
+            "img": "assets/vocab/new.svg"
           }
         ]
       },
@@ -54547,25 +57967,29 @@ const SCENE_LIBRARY = {
             "en": "midnight",
             "zh": "午夜",
             "pos": "noun",
-            "icon": "🕛"
+            "icon": "🕛",
+            "img": "assets/vocab/midnight.svg"
           },
           {
             "en": "firework",
             "zh": "烟花",
             "pos": "noun",
-            "icon": "🎆"
+            "icon": "🎆",
+            "img": "assets/vocab/firework.svg"
           },
           {
             "en": "count",
             "zh": "数",
             "pos": "verb",
-            "icon": "🔢"
+            "icon": "🔢",
+            "img": "assets/vocab/count.svg"
           },
           {
             "en": "new",
             "zh": "新的",
             "pos": "adj",
-            "icon": "🆕"
+            "icon": "🆕",
+            "img": "assets/vocab/new.svg"
           }
         ]
       },
@@ -54631,25 +58055,29 @@ const SCENE_LIBRARY = {
             "en": "resolution",
             "zh": "决心",
             "pos": "noun",
-            "icon": "🎯"
+            "icon": "🎯",
+            "img": "assets/vocab/resolution.svg"
           },
           {
             "en": "goal",
             "zh": "目标",
             "pos": "noun",
-            "icon": "🏁"
+            "icon": "🏁",
+            "img": "assets/vocab/goal.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "verb",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "year",
             "zh": "年",
             "pos": "noun",
-            "icon": "📅"
+            "icon": "📅",
+            "img": "assets/vocab/year.svg"
           }
         ]
       }
@@ -54696,37 +58124,43 @@ const SCENE_LIBRARY = {
             "en": "mother",
             "zh": "妈妈",
             "pos": "noun",
-            "icon": "👩"
+            "icon": "👩",
+            "img": "assets/vocab/mother.svg"
           },
           {
             "en": "father",
             "zh": "爸爸",
             "pos": "noun",
-            "icon": "👨"
+            "icon": "👨",
+            "img": "assets/vocab/father.svg"
           },
           {
             "en": "card",
             "zh": "卡片",
             "pos": "noun",
-            "icon": "💌"
+            "icon": "💌",
+            "img": "assets/vocab/card.svg"
           },
           {
             "en": "present",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/present.svg"
           },
           {
             "en": "love",
             "zh": "爱",
             "pos": "verb",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/love.svg"
           },
           {
             "en": "best",
             "zh": "最好的",
             "pos": "adj",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/best.svg"
           }
         ]
       },
@@ -54817,37 +58251,43 @@ const SCENE_LIBRARY = {
             "en": "mother",
             "zh": "妈妈",
             "pos": "noun",
-            "icon": "👩"
+            "icon": "👩",
+            "img": "assets/vocab/mother.svg"
           },
           {
             "en": "father",
             "zh": "爸爸",
             "pos": "noun",
-            "icon": "👨"
+            "icon": "👨",
+            "img": "assets/vocab/father.svg"
           },
           {
             "en": "card",
             "zh": "卡片",
             "pos": "noun",
-            "icon": "💌"
+            "icon": "💌",
+            "img": "assets/vocab/card.svg"
           },
           {
             "en": "present",
             "zh": "礼物",
             "pos": "noun",
-            "icon": "🎁"
+            "icon": "🎁",
+            "img": "assets/vocab/present.svg"
           },
           {
             "en": "love",
             "zh": "爱",
             "pos": "verb",
-            "icon": "❤️"
+            "icon": "❤️",
+            "img": "assets/vocab/love.svg"
           },
           {
             "en": "best",
             "zh": "最好的",
             "pos": "adj",
-            "icon": "🏆"
+            "icon": "🏆",
+            "img": "assets/vocab/best.svg"
           }
         ]
       },
@@ -54913,25 +58353,29 @@ const SCENE_LIBRARY = {
             "en": "appreciate",
             "zh": "感激",
             "pos": "verb",
-            "icon": "🙏"
+            "icon": "🙏",
+            "img": "assets/vocab/appreciate.svg"
           },
           {
             "en": "heart",
             "zh": "心",
             "pos": "noun",
-            "icon": "💗"
+            "icon": "💗",
+            "img": "assets/vocab/heart.svg"
           },
           {
             "en": "breakfast",
             "zh": "早餐",
             "pos": "noun",
-            "icon": "🍳"
+            "icon": "🍳",
+            "img": "assets/vocab/breakfast.svg"
           },
           {
             "en": "surprise",
             "zh": "惊喜",
             "pos": "noun",
-            "icon": "🎉"
+            "icon": "🎉",
+            "img": "assets/vocab/surprise.svg"
           }
         ]
       }
@@ -54987,37 +58431,43 @@ const SCENE_LIBRARY = {
             "en": "grandma",
             "zh": "奶奶",
             "pos": "noun",
-            "icon": "👵"
+            "icon": "👵",
+            "img": "assets/vocab/grandma.svg"
           },
           {
             "en": "grandpa",
             "zh": "爷爷",
             "pos": "noun",
-            "icon": "👴"
+            "icon": "👴",
+            "img": "assets/vocab/grandpa.svg"
           },
           {
             "en": "cookie",
             "zh": "饼干",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/cookie.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "verb",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "visit",
             "zh": "探望",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/visit.svg"
           },
           {
             "en": "old",
             "zh": "年长的",
             "pos": "adj",
-            "icon": "🧓"
+            "icon": "🧓",
+            "img": "assets/vocab/old.svg"
           }
         ]
       },
@@ -55113,37 +58563,43 @@ const SCENE_LIBRARY = {
             "en": "grandma",
             "zh": "奶奶",
             "pos": "noun",
-            "icon": "👵"
+            "icon": "👵",
+            "img": "assets/vocab/grandma.svg"
           },
           {
             "en": "grandpa",
             "zh": "爷爷",
             "pos": "noun",
-            "icon": "👴"
+            "icon": "👴",
+            "img": "assets/vocab/grandpa.svg"
           },
           {
             "en": "cookie",
             "zh": "饼干",
             "pos": "noun",
-            "icon": "🍪"
+            "icon": "🍪",
+            "img": "assets/vocab/cookie.svg"
           },
           {
             "en": "hug",
             "zh": "拥抱",
             "pos": "verb",
-            "icon": "🤗"
+            "icon": "🤗",
+            "img": "assets/vocab/hug.svg"
           },
           {
             "en": "visit",
             "zh": "探望",
             "pos": "verb",
-            "icon": "🚪"
+            "icon": "🚪",
+            "img": "assets/vocab/visit.svg"
           },
           {
             "en": "old",
             "zh": "年长的",
             "pos": "adj",
-            "icon": "🧓"
+            "icon": "🧓",
+            "img": "assets/vocab/old.svg"
           }
         ]
       },
@@ -55209,25 +58665,29 @@ const SCENE_LIBRARY = {
             "en": "cherish",
             "zh": "珍惜",
             "pos": "verb",
-            "icon": "🌟"
+            "icon": "🌟",
+            "img": "assets/vocab/cherish.svg"
           },
           {
             "en": "drawing",
             "zh": "画作",
             "pos": "noun",
-            "icon": "🎨"
+            "icon": "🎨",
+            "img": "assets/vocab/drawing.svg"
           },
           {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "young",
             "zh": "年轻的",
             "pos": "adj",
-            "icon": "🧒"
+            "icon": "🧒",
+            "img": "assets/vocab/young.svg"
           }
         ]
       }
@@ -55266,37 +58726,43 @@ const SCENE_LIBRARY = {
             "en": "children",
             "zh": "小朋友",
             "pos": "noun",
-            "icon": "🧒"
+            "icon": "🧒",
+            "img": "assets/vocab/children.svg"
           },
           {
             "en": "special",
             "zh": "特别的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/special.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -55380,37 +58846,43 @@ const SCENE_LIBRARY = {
             "en": "children",
             "zh": "小朋友",
             "pos": "noun",
-            "icon": "🧒"
+            "icon": "🧒",
+            "img": "assets/vocab/children.svg"
           },
           {
             "en": "special",
             "zh": "特别的",
             "pos": "adj",
-            "icon": "✨"
+            "icon": "✨",
+            "img": "assets/vocab/special.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           },
           {
             "en": "sing",
             "zh": "唱",
             "pos": "verb",
-            "icon": "🎤"
+            "icon": "🎤",
+            "img": "assets/vocab/sing.svg"
           },
           {
             "en": "play",
             "zh": "玩",
             "pos": "verb",
-            "icon": "🤸"
+            "icon": "🤸",
+            "img": "assets/vocab/play.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -55475,25 +58947,29 @@ const SCENE_LIBRARY = {
             "en": "childhood",
             "zh": "童年",
             "pos": "noun",
-            "icon": "🧸"
+            "icon": "🧸",
+            "img": "assets/vocab/childhood.svg"
           },
           {
             "en": "joy",
             "zh": "快乐",
             "pos": "noun",
-            "icon": "😺"
+            "icon": "😺",
+            "img": "assets/vocab/joy.svg"
           },
           {
             "en": "plan",
             "zh": "计划",
             "pos": "verb",
-            "icon": "🗺️"
+            "icon": "🗺️",
+            "img": "assets/vocab/plan.svg"
           },
           {
             "en": "magical",
             "zh": "神奇的",
             "pos": "adj",
-            "icon": "🪄"
+            "icon": "🪄",
+            "img": "assets/vocab/magical.svg"
           }
         ]
       }
@@ -55539,31 +59015,36 @@ const SCENE_LIBRARY = {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😁"
+            "icon": "😁",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "family",
             "zh": "家人",
             "pos": "noun",
-            "icon": "👨‍👩‍👧"
+            "icon": "👨‍👩‍👧",
+            "img": "assets/vocab/family.svg"
           },
           {
             "en": "stand",
             "zh": "站",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/stand.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -55655,31 +59136,36 @@ const SCENE_LIBRARY = {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "smile",
             "zh": "微笑",
             "pos": "noun",
-            "icon": "😁"
+            "icon": "😁",
+            "img": "assets/vocab/smile.svg"
           },
           {
             "en": "family",
             "zh": "家人",
             "pos": "noun",
-            "icon": "👨‍👩‍👧"
+            "icon": "👨‍👩‍👧",
+            "img": "assets/vocab/family.svg"
           },
           {
             "en": "stand",
             "zh": "站",
             "pos": "verb",
-            "icon": "🧍"
+            "icon": "🧍",
+            "img": "assets/vocab/stand.svg"
           },
           {
             "en": "happy",
             "zh": "开心的",
             "pos": "adj",
-            "icon": "😊"
+            "icon": "😊",
+            "img": "assets/vocab/happy.svg"
           }
         ]
       },
@@ -55745,25 +59231,29 @@ const SCENE_LIBRARY = {
             "en": "tripod",
             "zh": "三脚架",
             "pos": "noun",
-            "icon": "📷"
+            "icon": "📷",
+            "img": "assets/vocab/tripod.svg"
           },
           {
             "en": "memory",
             "zh": "回忆",
             "pos": "noun",
-            "icon": "🖼️"
+            "icon": "🖼️",
+            "img": "assets/vocab/memory.svg"
           },
           {
             "en": "serious",
             "zh": "正经的",
             "pos": "adj",
-            "icon": "😐"
+            "icon": "😐",
+            "img": "assets/vocab/serious.svg"
           },
           {
             "en": "print",
             "zh": "冲印",
             "pos": "verb",
-            "icon": "🖨️"
+            "icon": "🖨️",
+            "img": "assets/vocab/print.svg"
           }
         ]
       }
@@ -55810,37 +59300,43 @@ const SCENE_LIBRARY = {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "album",
             "zh": "相册",
             "pos": "noun",
-            "icon": "📔"
+            "icon": "📔",
+            "img": "assets/vocab/album.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           },
           {
             "en": "old",
             "zh": "老的",
             "pos": "adj",
-            "icon": "🕰️"
+            "icon": "🕰️",
+            "img": "assets/vocab/old.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           }
         ]
       },
@@ -55931,37 +59427,43 @@ const SCENE_LIBRARY = {
             "en": "story",
             "zh": "故事",
             "pos": "noun",
-            "icon": "📖"
+            "icon": "📖",
+            "img": "assets/vocab/story.svg"
           },
           {
             "en": "photo",
             "zh": "照片",
             "pos": "noun",
-            "icon": "📸"
+            "icon": "📸",
+            "img": "assets/vocab/photo.svg"
           },
           {
             "en": "album",
             "zh": "相册",
             "pos": "noun",
-            "icon": "📔"
+            "icon": "📔",
+            "img": "assets/vocab/album.svg"
           },
           {
             "en": "listen",
             "zh": "听",
             "pos": "verb",
-            "icon": "👂"
+            "icon": "👂",
+            "img": "assets/vocab/listen.svg"
           },
           {
             "en": "old",
             "zh": "老的",
             "pos": "adj",
-            "icon": "🕰️"
+            "icon": "🕰️",
+            "img": "assets/vocab/old.svg"
           },
           {
             "en": "fun",
             "zh": "好玩的",
             "pos": "adj",
-            "icon": "😄"
+            "icon": "😄",
+            "img": "assets/vocab/fun.svg"
           }
         ]
       },
@@ -56027,25 +59529,29 @@ const SCENE_LIBRARY = {
             "en": "record",
             "zh": "记录",
             "pos": "verb",
-            "icon": "🎙️"
+            "icon": "🎙️",
+            "img": "assets/vocab/record.svg"
           },
           {
             "en": "forget",
             "zh": "忘记",
             "pos": "verb",
-            "icon": "🧠"
+            "icon": "🧠",
+            "img": "assets/vocab/forget.svg"
           },
           {
             "en": "tale",
             "zh": "传说",
             "pos": "noun",
-            "icon": "📜"
+            "icon": "📜",
+            "img": "assets/vocab/tale.svg"
           },
           {
             "en": "life",
             "zh": "生活",
             "pos": "noun",
-            "icon": "🌿"
+            "icon": "🌿",
+            "img": "assets/vocab/life.svg"
           }
         ]
       }
