@@ -1,2198 +1,1019 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <meta name="theme-color" content="#60A5FA">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Speak English Together">
-    <title>Speak English Together - 亲子英语口语</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="icon-192.png">
-    <style>
-        :root {
-            --primary: #60A5FA;
-            --primary-dark: #3B82F6;
-            --primary-deep: #2563EB;
-            --primary-light: #93C5FD;
-            --primary-bg: #EFF6FF;
-            --primary-bg2: #DBEAFE;
-            --success: #10B981;
-            --success-bg: #D1FAE5;
-            --warning: #F59E0B;
-            --warning-bg: #FEF3C7;
-            --danger: #EF4444;
-            --text: #1E293B;
-            --text-secondary: #64748B;
-            --text-light: #93A3BB;
-            --bg: #F5F8FF;
-            --card: #FFFFFF;
-            --border: #DBEAFE;
-            --shadow: 0 1px 3px rgba(59,130,246,0.05), 0 1px 2px rgba(59,130,246,0.03);
-            --shadow-lg: 0 8px 24px rgba(59,130,246,0.07), 0 4px 8px rgba(59,130,246,0.03);
-            --shadow-card: 0 2px 12px rgba(59,130,246,0.05);
-            --radius: 20px;
-            --radius-sm: 14px;
-            --radius-xs: 10px;
-            --safe-bottom: env(safe-area-inset-bottom, 16px);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-            min-height: 100dvh;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -webkit-tap-highlight-color: transparent;
-            user-select: none;
-            overflow-x: hidden;
-        }
-
-        /* ========== App Container ========== */
-        .app {
-            max-width: 480px;
-            margin: 0 auto;
-            min-height: 100vh;
-            min-height: 100dvh;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-
-        /* ========== Header ========== */
-        .header {
-            background: linear-gradient(135deg, #2563EB, #3B82F6);
-            color: white;
-            padding: 14px 20px;
-            padding-top: max(14px, env(safe-area-inset-top, 0px));
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .header-avatar {
-            width: 38px; height: 38px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.2);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 20px; overflow: hidden; flex-shrink: 0;
-        }
-        .header-avatar img { width:100%; height:100%; object-fit:cover; }
-
-        .header-title {
-            font-size: 17px;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-        }
-
-        .header-subtitle {
-            font-size: 11px;
-            opacity: 0.75;
-            font-weight: 400;
-        }
-
-        .header-actions {
-            display: flex;
-            gap: 4px;
-        }
-
-        .btn-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border: none;
-            background: rgba(255,255,255,0.15);
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .btn-icon:active {
-            background: rgba(255,255,255,0.3);
-        }
-
-        /* ========== Views ========== */
-        .view {
-            display: none;
-            flex: 1;
-            flex-direction: column;
-            padding: 16px;
-            padding-bottom: var(--safe-bottom);
-        }
-
-        .view.active {
-            display: flex;
-        }
-
-        /* ========== Onboarding ========== */
-        .onboarding {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 20px;
-        }
-
-        .logo-wrap {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 4px;
-        }
-
-        .logo-svg {
-            width: 100px;
-            height: 100px;
-        }
-
-        .logo-badge {
-            position: absolute;
-            width: 28px;
-            height: 28px;
-            background: #2563EB;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 9px;
-            font-weight: 700;
-            border: 2px solid white;
-            box-shadow: 0 2px 6px rgba(37,99,235,0.3);
-        }
-
-        .logo-badge-hi {
-            top: 2px;
-            right: 2px;
-        }
-
-        .logo-badge-en {
-            bottom: 2px;
-            left: 2px;
-        }
-
-        .avatar-upload {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 2px dashed var(--border);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            background: var(--card);
-            transition: border-color 0.2s;
-            flex-shrink: 0;
-        }
-
-        .avatar-upload:hover {
-            border-color: var(--primary);
-        }
-
-        .avatar-upload img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .avatar-upload .avatar-placeholder {
-            font-size: 36px;
-        }
-
-        .onboarding h1 {
-            font-size: 24px;
-            font-weight: 800;
-            color: var(--text);
-            letter-spacing: -0.5px;
-        }
-
-        .onboarding p {
-            color: var(--text-secondary);
-            font-size: 15px;
-            max-width: 280px;
-            line-height: 1.5;
-        }
-
-        .form-group {
-            width: 100%;
-            max-width: 300px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-bottom: 6px;
-        }
-
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 12px 14px;
-            border: 2px solid var(--border);
-            border-radius: var(--radius-xs);
-            font-size: 15px;
-            font-family: inherit;
-            background: var(--card);
-            color: var(--text);
-            transition: border-color 0.2s;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-
-        .form-group select {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 14px center;
-            padding-right: 36px;
-        }
-
-        .level-cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            margin-top: 4px;
-        }
-
-        .level-card {
-            border: 2px solid var(--border);
-            border-radius: var(--radius-xs);
-            padding: 10px 12px;
-            cursor: pointer;
-            transition: all 0.2s;
-            background: var(--card);
-            text-align: left;
-        }
-
-        .level-card:hover { border-color: var(--primary-light); }
-        .level-card.selected {
-            border-color: var(--primary);
-            background: var(--primary-bg);
-        }
-
-        .level-card .level-emoji { font-size: 20px; }
-        .level-card .level-name { font-size: 13px; font-weight: 700; margin-top: 2px; }
-        .level-card .level-desc { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            padding: 12px 24px;
-            border-radius: 50px;
-            border: none;
-            font-size: 15px;
-            font-weight: 600;
-            font-family: inherit;
-            cursor: pointer;
-            transition: all 0.2s;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-            width: 100%;
-            max-width: 320px;
-        }
-
-        .btn-primary:active {
-            background: #4338CA;
-            transform: scale(0.98);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
-        }
-
-        .btn-sm {
-            padding: 8px 16px;
-            font-size: 13px;
-        }
-
-        .btn-xs {
-            padding: 4px 10px;
-            font-size: 12px;
-            border-radius: 20px;
-        }
-
-        /* ========== Chat View ========== */
-        .chat-container {
-            flex: 1;
-            overflow-y: auto;
-            padding-bottom: 8px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-
-        .chat-bubble {
-            max-width: 88%;
-            padding: 16px 18px;
-            border-radius: 20px;
-            font-size: 15px;
-            line-height: 1.7;
-            animation: fadeInUp 0.3s ease;
-            word-break: break-word;
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .chat-bubble.ai {
-            align-self: flex-start;
-            background: var(--card);
-            border-bottom-left-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            color: var(--text);
-        }
-
-        .chat-bubble.user {
-            align-self: flex-end;
-            background: var(--primary);
-            color: white;
-            border-radius: 24px;
-            padding: 12px 18px;
-            box-shadow: 0 2px 8px rgba(59,130,246,0.25);
-        }
-
-        .chat-bubble .bubble-label {
-            display: none;
-        }
-
-        .quick-replies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            padding: 4px 0;
-            max-width: 90%;
-        }
-
-        .quick-reply {
-            padding: 8px 14px;
-            background: #F0F7FF;
-            border: 1px solid #DBEAFE;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: var(--primary);
-            white-space: nowrap;
-        }
-
-        .quick-reply:active {
-            background: var(--primary-bg);
-            border-color: var(--primary);
-        }
-
-        .chat-input-area {
-            display: flex;
-            gap: 10px;
-            padding: 12px 16px;
-            padding-bottom: var(--safe-bottom);
-            position: sticky;
-            bottom: 0;
-            background: var(--card);
-            border-top: 1px solid #F1F5F9;
-        }
-
-        .chat-input {
-            flex: 1;
-            padding: 12px 16px;
-            border: 2px solid #E8F0FE;
-            border-radius: 24px;
-            font-size: 14px;
-            font-family: inherit;
-            background: #F8FAFE;
-            color: var(--text);
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .chat-input:focus { border-color: var(--primary); }
-
-        .btn-send {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            border: none;
-            background: var(--primary);
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            flex-shrink: 0;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn-send:active { background: #4338CA; transform: scale(0.95); }
-        .btn-send:disabled { opacity: 0.5; }
-
-        /* ========== Result View ========== */
-        .result-header {
-            text-align: center;
-            margin-bottom: 16px;
-        }
-
-        .result-scene {
-            font-size: 18px;
-            font-weight: 800;
-            color: #1E40AF;
-            margin-bottom: 4px;
-        }
-
-        .result-meta {
-            font-size: 13px;
-            color: var(--text-secondary);
-        }
-
-        .mode-switch {
-            display: flex;
-            background: #E8F0FE;
-            border-radius: 28px;
-            padding: 4px;
-            margin-bottom: 18px;
-        }
-
-        .mode-btn {
-            flex: 1;
-            padding: 9px 12px;
-            border-radius: 24px;
-            border: none;
-            background: transparent;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            color: #94A3B8;
-            transition: all 0.2s;
-        }
-
-        .mode-btn.active {
-            background: var(--card);
-            color: var(--primary);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-        }
-
-        /* A Mode - Script List */
-        .script-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .script-item {
-            background: var(--card);
-            border-radius: 16px;
-            padding: 16px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-            border-left: 5px solid var(--primary);
-            position: relative;
-        }
-
-        .script-item.review {
-            border-left-color: var(--warning);
-        }
-
-        .script-english {
-            font-size: 17px;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-
-        .script-chinese {
-            font-size: 13px;
-            color: #94A3B8;
-            margin-bottom: 0;
-        }
-
-        .script-tags {
-            display: flex;
-            gap: 6px;
-            align-items: center;
-            margin-bottom: 6px;
-        }
-
-        .tag {
-            font-size: 11px;
-            padding: 3px 8px;
-            border-radius: 8px;
-            font-weight: 700;
-        }
-
-        .tag-new {
-            background: #D1FAE5;
-            color: #065F46;
-        }
-
-        .tag-review {
-            background: #FEF3C7;
-            color: #92400E;
-        }
-
-        .btn-mastered {
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 50px;
-            border: 1px solid var(--border);
-            background: transparent;
-            color: var(--text-light);
-            cursor: pointer;
-            transition: all 0.2s;
-            margin-left: auto;
-        }
-
-        .btn-mastered.mastered {
-            background: var(--success-bg);
-            color: #065F46;
-            border-color: var(--success);
-        }
-
-        /* C Mode - Cards */
-        .card-stack {
-            position: relative;
-            height: 340px;
-            margin-bottom: 16px;
-        }
-
-        .sentence-card {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: var(--card);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-            cursor: pointer;
-            transition: transform 0.3s, opacity 0.3s;
-            text-align: center;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .sentence-card.flipped .card-front { display: none; }
-        .sentence-card.flipped .card-back { display: flex; }
-        .sentence-card .card-front { display: flex; }
-        .sentence-card .card-back { display: none; }
-
-        .card-front, .card-back {
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-            width: 100%;
-        }
-
-        .card-english {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--text);
-            line-height: 1.3;
-        }
-
-        .card-chinese {
-            font-size: 16px;
-            color: var(--text-secondary);
-        }
-
-        .card-hint {
-            font-size: 12px;
-            color: var(--text-light);
-            margin-top: 8px;
-        }
-
-        .card-nav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-        }
-
-        .card-nav-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 2px solid var(--border);
-            background: var(--card);
-            font-size: 16px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-        }
-
-        .card-nav-btn:active { border-color: var(--primary); background: var(--primary-bg); }
-        .card-nav-btn:disabled { opacity: 0.3; }
-
-        .card-counter {
-            font-size: 13px;
-            color: var(--text-secondary);
-            font-weight: 600;
-            min-width: 40px;
-            text-align: center;
-        }
-
-        /* ========== History View ========== */
-        .history-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .history-group {
-            margin-bottom: 8px;
-        }
-
-        .history-date {
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--text-light);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
-        }
-
-        .history-item {
-            background: var(--card);
-            border-radius: var(--radius-sm);
-            padding: 14px 16px;
-            box-shadow: var(--shadow);
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .history-item:active { background: var(--primary-bg); }
-
-        .history-item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 4px;
-        }
-
-        .history-scene {
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .history-count {
-            font-size: 12px;
-            color: var(--text-light);
-        }
-
-        .history-item-detail {
-            display: none;
-            margin-top: 12px;
-            border-top: 1px solid var(--border);
-            padding-top: 12px;
-        }
-
-        .history-item.expanded .history-item-detail {
-            display: block;
-        }
-
-        /* ========== Settings View ========== */
-        .settings-section {
-            margin-bottom: 24px;
-        }
-
-        .settings-section h3 {
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--text-light);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 10px;
-        }
-
-        .settings-card {
-            background: var(--card);
-            border-radius: var(--radius-sm);
-            box-shadow: var(--shadow);
-            overflow: hidden;
-        }
-
-        .settings-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 14px 16px;
-            border-bottom: 1px solid var(--border);
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .settings-row:last-child { border-bottom: none; }
-        .settings-row:active { background: var(--primary-bg); }
-
-        .settings-row-label {
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .settings-row-value {
-            font-size: 13px;
-            color: var(--text-secondary);
-        }
-
-        .settings-row-arrow {
-            color: var(--text-light);
-            font-size: 14px;
-        }
-
-        .child-switcher {
-            display: flex;
-            gap: 8px;
-            overflow-x: auto;
-            padding: 4px 0;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-        }
-
-        .child-switcher::-webkit-scrollbar { display: none; }
-
-        .child-chip {
-            padding: 6px 14px;
-            border-radius: 50px;
-            border: 2px solid var(--border);
-            background: var(--card);
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            white-space: nowrap;
-            transition: all 0.2s;
-        }
-
-        .child-chip.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-
-        /* ========== Loading ========== */
-        .loading-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(255,255,255,0.9);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 200;
-            gap: 16px;
-        }
-
-        .loading-overlay.hidden { display: none; }
-
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 4px solid var(--border);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        .loading-text {
-            font-size: 14px;
-            color: var(--text-secondary);
-        }
-
-        /* ========== Empty State ========== */
-        .empty-state {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-light);
-        }
-
-        .empty-state-icon {
-            font-size: 48px;
-            margin-bottom: 12px;
-        }
-
-        .empty-state-text {
-            font-size: 14px;
-        }
-
-        /* ========== Toast ========== */
-        .toast {
-            position: fixed;
-            bottom: 80px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--text);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-size: 13px;
-            font-weight: 600;
-            z-index: 300;
-            animation: toastIn 0.3s ease;
-            white-space: nowrap;
-        }
-
-        @keyframes toastIn {
-            from { opacity: 0; transform: translateX(-50%) translateY(10px); }
-            to { opacity: 1; transform: translateX(-50%) translateY(0); }
-        }
-
-        /* ========== Bottom Nav ========== */
-        .bottom-nav {
-            display: flex;
-            background: var(--card);
-            border-top: 1px solid var(--border);
-            padding: 8px 16px;
-            padding-bottom: max(8px, env(safe-area-inset-bottom, 8px));
-            gap: 4px;
-        }
-
-        .nav-item {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2px;
-            padding: 6px;
-            border-radius: var(--radius-xs);
-            border: none;
-            background: transparent;
-            cursor: pointer;
-            color: var(--text-light);
-            font-size: 11px;
-            font-family: inherit;
-            transition: all 0.2s;
-        }
-
-        .nav-item.active {
-            color: var(--primary);
-        }
-
-        .nav-item .nav-icon {
-            font-size: 20px;
-            line-height: 1;
-        }
-
-        /* ========== Responsive ========== */
-        @media (min-width: 481px) {
-            .app {
-                border-left: 1px solid var(--border);
-                border-right: 1px solid var(--border);
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Speak English Together</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<style>
+  :root{
+    --primary:#2563EB; --primary-light:#60A5FA; --primary-bg:#EFF6FF;
+    --bg:#F1F5F9; --card:#FFFFFF; --text:#1E293B; --text-2:#64748B;
+    --line:#E2E8F0; --green:#16A34A; --amber:#D97706; --purple:#7C3AED; --danger:#DC2626;
+    --radius:16px; --shadow:0 2px 10px rgba(15,23,42,.06);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{font-family:"Baloo 2",-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif;
+    background:var(--bg);color:var(--text);max-width:480px;margin:0 auto}
+  .view{display:none;min-height:100vh;padding-bottom:30px}
+  .view.active{display:block}
+  .topbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);
+    display:flex;align-items:center;gap:10px;padding:12px 16px}
+  .topbar .back{background:var(--primary-bg);border:none;color:var(--primary);border-radius:10px;
+    padding:7px 12px;font-size:14px;font-weight:800;cursor:pointer}
+  .topbar .title{font-weight:800;font-size:15px}
+  .topbar .spacer{margin-left:auto}
+  .tb-ava{width:34px;height:34px;border-radius:50%;overflow:hidden;flex:0 0 auto;
+    background:var(--primary-light);color:#fff;font-weight:800;font-size:15px;
+    display:flex;align-items:center;justify-content:center;border:2px solid #fff;
+    box-shadow:0 2px 6px rgba(37,99,235,.3)}
+  .tb-ava:empty{display:none}
+  .tb-ava img{width:100%;height:100%;object-fit:cover}
+  .btn-primary{background:var(--primary);color:#fff;border:none;border-radius:12px;
+    padding:11px 18px;font-size:15px;font-weight:800;cursor:pointer}
+  .btn-ghost{background:var(--primary-bg);color:var(--primary);border:none;border-radius:12px;
+    padding:9px 14px;font-size:13px;font-weight:800;cursor:pointer}
+
+  /* ---------- View1 Onboarding ---------- */
+  .onboard{padding:26px 22px;text-align:center}
+  .logo{width:74px;height:74px;margin:6px auto 12px}
+  .app-name{font-size:22px;font-weight:900;color:var(--primary)}
+  .app-sub{font-size:12px;color:var(--text-2);margin-top:4px}
+  .field{text-align:left;margin-top:18px}
+  .field label{font-size:13px;font-weight:800;color:var(--text-2);display:block;margin-bottom:7px}
+  .ipt{width:100%;border:2px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;
+    outline:none;background:#fff}
+  .ipt:focus{border-color:var(--primary)}
+  .avatar-row{display:flex;align-items:center;gap:14px}
+  .avatar-box{width:62px;height:62px;border-radius:50%;border:2px dashed var(--line);overflow:hidden;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);color:var(--primary);font-size:11px}
+  .avatar-box img{width:100%;height:100%;object-fit:cover}
+  .avatar-hint{font-size:12px;color:var(--text-2)}
+  .bands{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+  .band{background:#fff;border:2px solid var(--line);border-radius:var(--radius);padding:13px 6px;
+    text-align:center;cursor:pointer;transition:.15s}
+  .band .e{font-size:24px;min-height:40px;display:flex;align-items:center;justify-content:center}
+  .band .e img{width:40px;height:40px;object-fit:contain}
+  .band .n{font-size:13px;font-weight:800;margin-top:3px}
+  .band .d{font-size:10px;color:var(--text-2);margin-top:3px;line-height:1.3}
+  .band.sel{border-color:var(--primary);background:var(--primary-bg);box-shadow:var(--shadow)}
+
+  /* ---------- View2 Chat / 聊天确定场景 ---------- */
+  #viewChat{display:none;flex-direction:column;height:100vh;padding-bottom:64px}
+  #viewChat.active{display:flex}
+  .chat{flex:1;overflow-y:auto;padding:16px 14px 8px;background:var(--bg)}
+  .bubble{max-width:84%;padding:11px 14px;font-size:14px;line-height:1.5;box-shadow:var(--shadow);margin-bottom:12px;word-break:break-word}
+  .bubble.bot{background:#fff;border:1px solid var(--line);border-radius:16px 16px 16px 4px}
+  .bubble.me{background:var(--primary);color:#fff;border-radius:16px 16px 4px 16px;margin-left:auto}
+  .greet-avatar{display:inline-block;vertical-align:middle;width:28px;height:28px;border-radius:50%;overflow:hidden;
+    background:var(--primary);color:#fff;font-size:13px;font-weight:800;text-align:center;line-height:28px;margin-right:6px}
+  .greet-avatar img{width:100%;height:100%;object-fit:cover}
+  .bubble b{color:var(--primary)}
+  .quick{display:flex;flex-wrap:wrap;gap:8px;padding:10px 12px 4px;background:#fff;border-top:1px solid var(--line)}
+  .qchip{background:#fff;border:2px solid var(--line);border-radius:999px;padding:8px 14px;
+    font-size:13px;font-weight:700;cursor:pointer}
+  .qchip:hover,.qchip:active{border-color:var(--primary);background:var(--primary-bg);color:var(--primary)}
+  .chat-input{display:flex;gap:8px;padding:8px 12px 12px;background:#fff}
+  .chat-input input{flex:1;border:2px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px;outline:none}
+  .chat-input input:focus{border-color:var(--primary)}
+  .chat-input button{background:var(--primary);color:#fff;border:none;border-radius:12px;padding:0 16px;font-weight:800;cursor:pointer}
+  .mapbox{margin:4px 0 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+  .map-dom{font-size:14px;font-weight:800;margin:10px 2px 4px}
+  .map-cat{font-size:12px;font-weight:800;color:var(--text-2);margin:8px 2px 5px}
+  .subchips{display:flex;flex-wrap:wrap;gap:8px}
+  .subchip{background:var(--bg);border:2px solid var(--line);border-radius:999px;padding:6px 12px;
+    font-size:13px;font-weight:700;cursor:pointer}
+  .subchip:hover{border-color:var(--primary);background:var(--primary-bg);color:var(--primary)}
+
+  /* ---------- View3 Result ---------- */
+  .res{padding:16px}
+  .res-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+  .res-head:empty{display:none;margin:0}
+  .res-meta{font-size:12px;color:var(--text-2);margin:2px 2px 10px}
+  .res-meta .meta-band{background:var(--primary-bg);color:var(--primary);font-weight:800;padding:3px 10px;border-radius:20px;font-size:12px}
+  .cards{display:flex;flex-direction:column;gap:10px}
+  .sc{background:#fff;border-radius:var(--radius);padding:13px 14px;box-shadow:var(--shadow);border-left:5px solid var(--primary)}
+  .sc.pr{border-left-color:var(--purple)}
+  .sc-top{display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap}
+  .kind{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px}
+  .kind.listen{background:#E0F2FE;color:#0369A1}
+  .kind.qa{background:#F3E8FF;color:var(--purple)}
+  .type-tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;background:#FEF3C7;color:var(--amber)}
+  .tts{margin-left:auto;background:var(--primary-bg);border:none;color:var(--primary);border-radius:10px;
+    padding:6px 10px;font-size:13px;cursor:pointer;font-weight:700}
+  .en{font-size:18px;font-weight:800;line-height:1.35}
+  .zh{font-size:13px;color:var(--text-2);margin-top:3px}
+  .ans{margin-top:9px;border-top:1px dashed var(--line);padding-top:9px;display:none}
+  .ans.show{display:block}.ans .en{font-size:16px;color:var(--green)}.ans .zh{color:var(--green)}
+  .reveal{margin-top:9px;background:var(--primary-bg);border:none;color:var(--primary);border-radius:10px;
+    padding:7px 12px;font-size:12px;font-weight:700;cursor:pointer}
+  .tpr{font-size:11px;color:var(--text-2);margin-top:6px;background:#F8FAFC;padding:5px 8px;border-radius:8px}
+  .res-actions{display:flex;gap:10px;margin:16px 0 4px}
+  .placeholder{border:2px dashed var(--line);border-radius:14px;padding:24px 16px;text-align:center;color:var(--text-2);font-size:13px;line-height:1.6}
+
+  /* ---------- View4 Vocab（活泼版·参照 mockup_wordpage_child） ---------- */
+  #viewVocab{background:radial-gradient(120% 70% at 50% -6%,#DBEAFE 0%,var(--primary-bg) 55%,var(--bg) 100%)}
+  /* 顶部吉祥物 + 标题 */
+  .voc-head{display:flex;align-items:center;gap:12px;padding:14px 18px 2px}
+  .voc-head .mascot{width:52px;height:52px;flex:0 0 auto;animation:vocwob 3.2s ease-in-out infinite;
+    filter:drop-shadow(0 6px 12px rgba(37,99,235,.35))}
+  .voc-head h1{font-size:20px;margin:0;font-weight:900;letter-spacing:.3px;color:var(--text)}
+  .voc-head .band-sub{font-size:12px;color:var(--primary);font-weight:800;margin-top:2px}
+  /* 启发式提示条 */
+  .voc-hint{margin:12px 16px 4px;background:linear-gradient(90deg,#EFF6FF,#DBEAFE);border-radius:16px;
+    padding:11px 13px;font-size:13px;line-height:1.5;color:#334155;display:flex;gap:9px;align-items:center;
+    box-shadow:var(--shadow)}
+  .voc-hint b{color:var(--primary)}
+  .voc-hint svg{flex:0 0 auto}
+
+  .vocab-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:14px 16px 8px}
+  .vc{background:#fff;border-radius:22px;padding:12px 12px 14px;text-align:center;
+    box-shadow:0 10px 24px rgba(37,99,235,.13);cursor:pointer;position:relative;border:none;
+    animation:vocpop .5s both}
+  .vc:nth-child(2){animation-delay:.06s}.vc:nth-child(3){animation-delay:.12s}
+  .vc:nth-child(4){animation-delay:.18s}.vc:nth-child(5){animation-delay:.24s}
+  .vc:nth-child(6){animation-delay:.30s}.vc:nth-child(7){animation-delay:.36s}
+  .vc:nth-child(8){animation-delay:.42s}
+  .vc .pic{height:96px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+    overflow:hidden;font-size:46px}
+  .vc .pic img{width:76px;height:76px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.12))}
+  .vc .pic.p1{background:linear-gradient(135deg,#BFDBFE,#FFD9C7)}
+  .vc .pic.p2{background:linear-gradient(135deg,#A5F3FC,#D6F5F4)}
+  .vc .pic.p3{background:linear-gradient(135deg,#C7D2FE,#E0E8FF)}
+  .vc .pic.p4{background:linear-gradient(135deg,#BAE6FD,#FFE9C7)}
+  .vc .pic.p5{background:linear-gradient(135deg,#BBF7D0,#E2F8E7)}
+  .vc .pic.p6{background:linear-gradient(135deg,#DDD6FE,#F3E0FF)}
+  .vc .ve{font-size:20px;font-weight:900;margin-top:10px;letter-spacing:.2px}
+  .vc .vz{font-size:12px;color:var(--text-2);margin-top:1px}
+  .vc .play{margin:10px auto 0;width:40px;height:40px;border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--primary-light));
+    display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px rgba(37,99,235,.38);
+    transition:transform .12s}
+  .vc .play:active{transform:scale(.88)}
+  .vc .play::before{content:"";width:0;height:0;border-left:12px solid #fff;
+    border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+  .vc.review::after{content:"🔄复习";position:absolute;top:-6px;right:-4px;background:var(--amber);color:#fff;
+    font-size:9px;font-weight:800;padding:2px 7px;border-radius:999px;box-shadow:0 3px 8px rgba(217,119,6,.35)}
+  .note{font-size:11.5px;color:var(--text-2);background:rgba(255,255,255,.7);border:1px dashed #C7D7F0;
+    border-radius:12px;padding:10px 12px;margin:8px 16px 4px;line-height:1.5;text-align:center}
+
+  @keyframes vocpop{0%{opacity:0;transform:translateY(14px) scale(.96)}100%{opacity:1;transform:none}}
+  @keyframes vocwob{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+
+  /* ---------- 底部三 Tab 导航 ---------- */
+  .tabview{padding-bottom:78px}
+  .bottom-nav{display:none;position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;
+    background:#fff;border-top:1px solid var(--line);z-index:30;display:none;
+    padding-bottom:env(safe-area-inset-bottom)}
+  .bottom-nav .nav-item{flex:1;background:none;border:none;padding:8px 0 7px;display:flex;flex-direction:column;
+    align-items:center;gap:2px;color:var(--text-2);font-size:11px;font-weight:700;cursor:pointer}
+  .bottom-nav .nav-item .nav-icon{font-size:20px;line-height:1;display:flex;align-items:center;justify-content:center}
+  .bottom-nav .nav-item.active{color:var(--primary)}
+  .bottom-nav .nav-item.active .nav-icon{transform:scale(1.1)}
+
+  /* ---------- View5 历史 ---------- */
+  .history-list{padding:12px 14px}
+  .history-group{margin-bottom:14px}
+  .history-date{font-size:12px;font-weight:800;color:var(--text-2);margin:8px 2px 8px}
+  .history-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:9px;
+    box-shadow:var(--shadow);cursor:pointer}
+  .history-item-head{display:flex;align-items:center;gap:8px}
+  .history-scene{font-size:15px;font-weight:800}
+  .history-badge{font-size:9px;font-weight:800;padding:2px 7px;border-radius:999px;background:#E0F2FE;color:#0369A1}
+  .history-badge.big{background:#F3E8FF;color:var(--purple)}
+  .history-count{font-size:11px;color:var(--text-2);margin-left:auto}
+  .history-detail{display:none;margin-top:9px;border-top:1px dashed var(--line);padding-top:9px}
+  .history-item.expanded .history-detail{display:block}
+  .history-detail .en{font-size:14px;font-weight:700;margin-top:6px}
+  .history-detail .zh{font-size:12px;color:var(--text-2)}
+  .history-empty{text-align:center;color:var(--text-2);padding:64px 20px;font-size:14px;line-height:1.7}
+  .history-empty .ic{font-size:46px;display:block;margin-bottom:8px}
+
+  /* ---------- View6 设置 ---------- */
+  .settings{padding:12px 14px}
+  .settings-section{margin-bottom:18px}
+  .settings-section h3{font-size:14px;font-weight:800;margin:6px 2px 8px}
+  .settings-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+  .settings-row{display:flex;align-items:center;padding:13px 14px;border-bottom:1px solid var(--line);font-size:14px}
+  .settings-row:last-child{border-bottom:none}
+  .settings-row-label{font-weight:700}
+  .settings-row-value{margin-left:auto;color:var(--text-2);font-size:13px;text-align:right;max-width:62%}
+  .settings-row-arrow{margin-left:8px;color:var(--text-2);font-size:18px}
+  .child-card{display:flex;align-items:center;gap:10px;padding:13px 14px;border-bottom:1px solid var(--line)}
+  .child-card:last-child{border-bottom:none}
+  .child-ava{width:42px;height:42px;border-radius:50%;background:var(--primary);color:#fff;display:flex;
+    align-items:center;justify-content:center;font-weight:800;overflow:hidden;font-size:16px;flex-shrink:0}
+  .child-ava img{width:100%;height:100%;object-fit:cover}
+  .child-info .cn{font-size:15px;font-weight:800}
+  .child-info .cm{font-size:12px;color:var(--text-2);margin-top:2px}
+  .set-add{margin-top:10px;width:100%;border:2px dashed var(--line);background:#fff;color:var(--primary);
+    border-radius:12px;padding:11px;font-weight:800;cursor:pointer}
+  .review-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin-bottom:10px}
+  .review-card-top{display:flex;align-items:center;gap:10px}
+  .review-card-icon{font-size:28px;width:36px;text-align:center}
+  .review-card-info{flex:1}
+  .review-card-name{font-size:14px;font-weight:800}
+  .review-card-meta{font-size:11px;color:var(--text-2)}
+  .review-actions{display:flex;gap:8px;margin-top:10px}
+  .rev-btn{flex:1;text-align:center;font-size:12px;padding:7px 0;border-radius:99px;font-weight:800;cursor:pointer;border:none}
+  .rev-btn.sentence{color:var(--primary);background:var(--primary-bg)}
+  .rev-btn.vocab{color:var(--purple);background:#F3E8FF}
+
+  .bands-info{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+  .band-i{background:#fff;border:2px solid var(--line);border-radius:var(--radius);padding:10px 6px;text-align:center;transition:.15s;opacity:.55}
+  .band-i .e{font-size:24px;min-height:36px;display:flex;align-items:center;justify-content:center}
+  .band-i .n{font-size:12px;font-weight:800;margin-top:2px}
+  .band-i .d{font-size:10px;color:var(--text-2);margin-top:2px;line-height:1.3}
+  .band-i.active{border-color:var(--primary);background:var(--primary-bg);opacity:1}
+  .band-i.active .d{color:var(--primary)}
+</style>
 </head>
 <body>
-    <div class="app" id="app">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-left">
-                <div class="header-avatar" id="headerAvatar" onclick="switchView('viewSettings')"><svg viewBox="0 0 120 120" width="28" height="28"><circle cx="60" cy="60" r="58" fill="white"/><circle cx="60" cy="60" r="46" fill="#2563EB"/><text x="60" y="74" text-anchor="middle" font-size="58" font-weight="700" fill="white" font-family="Georgia, 'Times New Roman', serif" font-style="italic">S</text></svg></div>
-                <div>
-                    <div class="header-title">Speak English Together</div>
-                    <div class="header-subtitle" id="currentChildLabel">设置孩子信息</div>
-                </div>
-            </div>
-            <div class="header-actions">
-                <button class="btn-icon" id="btnSettings" title="设置">⚙️</button>
-            </div>
-        </header>
 
-        <!-- Onboarding View -->
-        <div class="view active" id="viewOnboarding">
-            <div class="onboarding">
-                <div class="logo-wrap">
-                    <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="60" cy="60" r="58" fill="#2563EB"/>
-                        <circle cx="60" cy="60" r="46" fill="white"/>
-                        <text x="60" y="74" text-anchor="middle" font-size="58" font-weight="700" fill="#2563EB" font-family="Georgia, 'Times New Roman', serif" font-style="italic">S</text>
-                    </svg>
-                    <span class="logo-badge logo-badge-hi">Hi</span>
-                    <span class="logo-badge logo-badge-en">EN</span>
-                </div>
-                <h1>Speak English Together</h1>
-                <p>在日常生活中和孩子一起说英语，每天 5 句，轻松开口</p>
+<!-- ===== View 1: Onboarding ===== -->
+<section class="view active" id="viewOnboard">
+  <div class="onboard">
+    <svg class="logo" viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" fill="white" stroke="#E2E8F0" stroke-width="2"/><circle cx="60" cy="60" r="46" fill="#2563EB"/><text x="60" y="76" text-anchor="middle" font-size="56" font-weight="800" fill="white" font-family="Georgia,serif" font-style="italic">S</text><rect x="84" y="4" width="34" height="24" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/><path d="M93 26 L96 33 L102 27 Z" fill="white" stroke="#E2E8F0" stroke-width="1.5" stroke-linejoin="round"/><text x="101" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="#2563EB" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Hi</text></svg>
+    <div class="app-name">Speak English Together</div>
+    <div class="app-sub">陪孩子，在生活中练口语</div>
 
-                <div class="avatar-upload" id="avatarUpload" title="点击上传孩子头像">
-                    <span class="avatar-placeholder">🦁</span>
-                </div>
-                <input type="file" id="avatarInput" accept="image/*" style="display:none">
-
-                <div class="form-group">
-                    <label>👶 孩子的小名</label>
-                    <input type="text" id="inputChildName" placeholder="例如：小宝" maxlength="20">
-                </div>
-
-                <div class="form-group">
-                    <label>🎂 孩子年龄</label>
-                    <input type="number" id="inputChildAge" placeholder="例如：6" min="3" max="18" value="6">
-                </div>
-
-                <div class="form-group">
-                    <label>📊 英语水平</label>
-                    <div class="level-cards" id="levelCards">
-                        <div class="level-card" data-level="Pre-A1">
-                            <div class="level-emoji">🌱</div>
-                            <div class="level-name">启蒙 Pre-A1</div>
-                            <div class="level-desc">零基础，4-6岁，单词和短句</div>
-                        </div>
-                        <div class="level-card" data-level="A1">
-                            <div class="level-emoji">🌿</div>
-                            <div class="level-name">入门 A1</div>
-                            <div class="level-desc">能说简单句，6-8岁</div>
-                        </div>
-                        <div class="level-card selected" data-level="A2">
-                            <div class="level-emoji">🌳</div>
-                            <div class="level-name">基础 A2</div>
-                            <div class="level-desc">简单叙述，8-10岁</div>
-                        </div>
-                        <div class="level-card" data-level="B1">
-                            <div class="level-emoji">🌲</div>
-                            <div class="level-name">进阶 B1</div>
-                            <div class="level-desc">表达观点，10-18岁</div>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="btn btn-primary" id="btnStart">🚀 开始使用</button>
-            </div>
-        </div>
-
-        <!-- Chat View -->
-        <div class="view" id="viewChat">
-            <div class="child-switcher" id="childSwitcher" style="margin-bottom: 8px;"></div>
-            <div class="chat-container" id="chatContainer"></div>
-            <div class="chat-input-area">
-                <input type="text" class="chat-input" id="chatInput" placeholder="说说今天要做什么..." autocomplete="off">
-                <button class="btn-send" id="btnSend">➤</button>
-            </div>
-        </div>
-
-        <!-- Result View -->
-        <div class="view" id="viewResult">
-            <div class="result-header">
-                <div class="result-scene" id="resultScene"></div>
-                <div class="result-meta" id="resultMeta"></div>
-            </div>
-            <div class="mode-switch">
-                <button class="mode-btn active" data-mode="A" id="modeBtnA">📋 脚本模式</button>
-                <button class="mode-btn" data-mode="C" id="modeBtnC">🃏 卡片模式</button>
-            </div>
-            <div id="modeAContainer" class="script-list"></div>
-            <div id="modeCContainer" style="display:none;">
-                <div class="card-stack" id="cardStack"></div>
-                <div class="card-nav">
-                    <button class="card-nav-btn" id="cardPrev">◀</button>
-                    <span class="card-counter" id="cardCounter">1/5</span>
-                    <button class="card-nav-btn" id="cardNext">▶</button>
-                </div>
-            </div>
-            <div style="display:flex;gap:10px;margin-top:20px;">
-                <button class="btn btn-primary" id="btnNewScene" style="flex:1;max-width:none;border-radius:24px;box-shadow:0 2px 8px rgba(59,130,246,0.25);">🔄 再来一个</button>
-                <button class="btn btn-outline" id="btnViewHistory" style="flex:1;max-width:none;border-radius:24px;border-color:#DBEAFE;">📚 历史记录</button>
-            </div>
-        </div>
-
-        <!-- History View -->
-        <div class="view" id="viewHistory">
-            <div class="child-switcher" id="childSwitcherHistory" style="margin-bottom: 12px;"></div>
-            <div class="history-list" id="historyList">
-                <div class="empty-state">
-                    <div class="empty-state-icon">📭</div>
-                    <div class="empty-state-text">还没有学习记录<br>去主页开始第一个场景吧！</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Settings View -->
-        <div class="view" id="viewSettings">
-            <div class="settings-section">
-                <h3>👶 孩子档案</h3>
-                <div class="settings-card" id="settingsChildrenList"></div>
-                <button class="btn btn-outline btn-sm" id="btnAddChild" style="margin-top:8px;">＋ 添加孩子</button>
-            </div>
-            <div class="settings-section">
-                <h3>💾 数据管理</h3>
-                <div class="settings-card">
-                    <div class="settings-row" id="btnClearHistory">
-                        <span class="settings-row-label">清除历史记录</span>
-                        <span class="settings-row-arrow">›</span>
-                    </div>
-                    <div class="settings-row" id="btnResetAll">
-                        <span class="settings-row-label" style="color:var(--danger);">重置所有数据</span>
-                        <span class="settings-row-arrow">›</span>
-                    </div>
-                </div>
-            </div>
-            <div class="settings-section">
-                <h3>ℹ️ 关于</h3>
-                <div class="settings-card">
-                    <div class="settings-row" style="cursor:default;">
-                        <span class="settings-row-label">版本</span>
-                        <span class="settings-row-value">1.0.0</span>
-                    </div>
-                    <div class="settings-row" style="cursor:default;">
-                        <span class="settings-row-label">分级标准</span>
-                        <span class="settings-row-value">CEFR (剑桥少儿英语)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Navigation -->
-        <nav class="bottom-nav" id="bottomNav" style="display:none;">
-            <button class="nav-item active" data-view="viewChat">
-                <span class="nav-icon">💬</span>
-                <span>场景</span>
-            </button>
-            <button class="nav-item" data-view="viewHistory">
-                <span class="nav-icon">📚</span>
-                <span>历史</span>
-            </button>
-            <button class="nav-item" data-view="viewSettings">
-                <span class="nav-icon">⚙️</span>
-                <span>设置</span>
-            </button>
-        </nav>
-
-        <!-- Loading Overlay -->
-        <div class="loading-overlay hidden" id="loadingOverlay">
-            <div class="spinner"></div>
-            <div class="loading-text" id="loadingText">正在生成句子...</div>
-        </div>
+    <div class="field">
+      <label>孩子小名</label>
+      <input class="ipt" id="childName" placeholder="例如：乐乐" maxlength="12">
     </div>
+    <div class="field">
+      <label>孩子年龄</label>
+      <input class="ipt" id="childAge" type="number" min="0" max="10" value="6">
+    </div>
+    <div class="field">
+      <label>头像（可选）</label>
+      <div class="avatar-row">
+        <div class="avatar-box" id="avatarBox" onclick="document.getElementById('avatarInput').click()">
+          <span style="font-size:28px;line-height:56px;text-align:center;display:block;color:var(--primary);font-weight:300">+</span>
+        </div>
+        <div class="avatar-hint">点击上传宝贝头像</div>
+        <input type="file" id="avatarInput" accept="image/*" style="display:none">
+      </div>
+    </div>
+    <div class="field">
+      <label>学习阶段</label>
+      <div class="bands-info" id="bandsInfo"></div>
+      <div style="font-size:11px;color:var(--text-2);margin-top:7px">💡 系统根据年龄自动匹配。如不合适，可在「设置」中调整。</div>
+    </div>
+    <button class="btn-primary" style="width:100%;margin-top:26px;display:flex;align-items:center;justify-content:center;gap:8px" onclick="startApp()">开始说英语</button>
+  </div>
+</section>
 
-    <script src="scene-data.js?v=20260724"></script>
-    <script>
-const DOMAINS = [
-  { id: "home", name: "居家日常", icon: "🏠" },
-  { id: "play", name: "游戏与学习", icon: "🎮" },
-  { id: "outdoors", name: "户外活动", icon: "🌳" },
-  { id: "transport", name: "出行交通", icon: "🚗" },
-  { id: "school", name: "学校与社交", icon: "🏫" },
-  { id: "health", name: "健康与就医", icon: "🏥" },
-  { id: "places", name: "外出场所", icon: "🛒" },
-  { id: "festivals", name: "节日与特殊日子", icon: "🎉" },
+<!-- ===== View 2: 聊天确定场景 ===== -->
+<section class="view" id="viewChat">
+  <div class="topbar">
+    <button class="back" onclick="showView('viewOnboard')">‹</button>
+    <div class="title" id="chatTitle">想聊点什么？</div>
+    <div class="spacer"></div>
+    <button class="btn-ghost" onclick="openMap()"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg> 全部场景</button>
+  </div>
+  <div class="chat" id="chatLog"></div>
+  <div class="quick" id="quick"></div>
+  <div class="chat-input">
+    <input id="chatText" placeholder="也可以直接打字，比如「刷牙」「超市」" onkeydown="if(event.key==='Enter')sendText()">
+    <button onclick="sendText()">发送</button>
+  </div>
+</section>
+
+<!-- ===== View 3: Result ===== -->
+<section class="view tabview" id="viewResult">
+  <div class="topbar">
+    <button class="back" onclick="showView('viewChat')">‹</button>
+    <div class="title" id="resTitle">场景语句</div>
+    <div class="spacer"></div>
+    <div class="tb-ava" id="resAva"></div>
+    <button class="btn-ghost" onclick="goVocab()"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> 单词学习</button>
+  </div>
+  <div class="res">
+    <div class="res-head" id="resHead"></div>
+    <div class="res-meta" id="resMeta"></div>
+    <div class="cards" id="resCards"></div>
+    <div class="res-actions">
+      <button class="btn-ghost" style="flex:1" onclick="showView('viewChat')">↺ 换个场景</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== View 4: Vocab（活泼版·参照 mockup_wordpage_child） ===== -->
+<section class="view tabview" id="viewVocab">
+  <div class="topbar">
+    <button class="back" onclick="showView('viewResult')">‹</button>
+    <div class="title" id="vocabTitle">单词乐园</div>
+    <div class="spacer"></div>
+    <div class="tb-ava" id="vocabAva"></div>
+  </div>
+  <div class="voc-head">
+    <svg class="mascot" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="吉祥物">
+      <defs><radialGradient id="vocmg" cx="38%" cy="30%" r="80%">
+        <stop offset="0%" stop-color="#FFE6A0"/><stop offset="100%" stop-color="#FFB23E"/></radialGradient></defs>
+      <path d="M32 14 C32 7 37 5 41 7" fill="none" stroke="#7CB342" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M41 7 q7 -1 7 5 q-6 1 -7 -5 z" fill="#8BC34A"/>
+      <path d="M32 14 C32 8 27 6 23 9" fill="none" stroke="#7CB342" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M23 9 q-7 0 -7 6 q6 1 7 -6 z" fill="#9CCC65"/>
+      <circle cx="32" cy="38" r="24" fill="url(#vocmg)"/>
+      <circle cx="21" cy="44" r="4.6" fill="#FF8FA3" opacity=".5"/>
+      <circle cx="43" cy="44" r="4.6" fill="#FF8FA3" opacity=".5"/>
+      <ellipse cx="25" cy="37" rx="3.8" ry="4.8" fill="#3A2E23"/>
+      <ellipse cx="39" cy="37" rx="3.8" ry="4.8" fill="#3A2E23"/>
+      <circle cx="26.2" cy="35" r="1.4" fill="#fff"/><circle cx="40.2" cy="35" r="1.4" fill="#fff"/>
+      <path d="M27 45 Q32 50 37 45" fill="none" stroke="#3A2E23" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>
+    <div><h1 id="vocabH1">单词乐园</h1><div class="band-sub" id="vocabBandSub"></div></div>
+  </div>
+  <div class="voc-hint">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.1L21 11l-6.6 2.4L12 21l-2.4-7.6L3 11l6.6-1.9z" fill="#3B82F6"/></svg>
+    <div>不考试、不刷题。点开图片<b>听发音</b>，跟着<b>说一说</b>就好啦，多听几次自然就记住～</div>
+  </div>
+  <div class="vocab-grid" id="vocabGrid"></div>
+  <div class="note">💡 点单词卡或喇叭，就能听发音。</div>
+</section>
+
+<!-- ===== View 5: 学习历史 ===== -->
+<section class="view tabview" id="viewHistory">
+  <div class="topbar"><div class="title"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 学习历史</div></div>
+  <div class="history-list" id="historyList"></div>
+</section>
+
+<!-- ===== View 5b: 复习 ===== -->
+<section class="view tabview" id="viewReview">
+  <div class="topbar"><div class="title"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/><circle cx="12" cy="12" r="3"/></svg> 复习</div></div>
+  <div style="padding:12px 14px;font-size:12px;color:var(--text-2)">点选学过的场景或单词，再来一次</div>
+  <div class="review-list" id="reviewList"></div>
+</section>
+
+<!-- ===== View 6: 设置 ===== -->
+<section class="view tabview" id="viewSettings">
+  <div class="topbar"><div class="title"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1.08-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1.08 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001.08 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1.08H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1.08z"/></svg> 设置</div></div>
+  <div class="settings">
+    <div class="settings-section">
+      <h3><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2m-4.8-7.2l1.4-1.4M4.22 19.78l1.42-1.42"/></svg> 孩子档案</h3>
+      <div class="settings-card" id="setChildren"></div>
+      <button class="set-add" id="btnAddChild">＋ 添加孩子</button>
+    </div>
+    <div class="settings-section">
+      <h3><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> 数据管理</h3>
+      <div class="settings-card">
+        <div class="settings-row" id="btnClearHistory"><span class="settings-row-label">清除历史记录</span><span class="settings-row-arrow">›</span></div>
+        <div class="settings-row" id="btnResetAll"><span class="settings-row-label" style="color:var(--danger)">重置所有数据</span><span class="settings-row-arrow">›</span></div>
+      </div>
+    </div>
+    <div class="settings-section">
+      <h3><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> 关于</h3>
+      <div class="settings-card">
+        <div class="settings-row" style="cursor:default"><span class="settings-row-label">分级标准</span><span class="settings-row-value">年龄分段 0-2 / 3-5 / 6-7</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 底部四 Tab 导航 ===== -->
+<nav class="bottom-nav" id="bottomNav" style="display:none">
+  <button class="nav-item" data-tab="viewChat" onclick="showView('viewChat')"><span class="nav-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg></span><span>场景</span></button>
+  <button class="nav-item" data-tab="viewReview" onclick="showView('viewReview')"><span class="nav-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/><circle cx="12" cy="12" r="3"/></svg></span><span>复习</span></button>
+  <button class="nav-item" data-tab="viewHistory" onclick="showView('viewHistory')"><span class="nav-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><span>历史</span></button>
+  <button class="nav-item" data-tab="viewSettings" onclick="showView('viewSettings')"><span class="nav-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1.08-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1.08 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001.08 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1.08H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1.08z"/></svg></span><span>设置</span></button>
+</nav>
+
+<!-- ===== 外部数据源（单一数据源，位于 03-核心知识文档/，内容团队维护） ===== -->
+<!-- scene-data.js：完整三级分类树（8 领域/36 分类/181 子场景）+ 旧版素材 -->
+<script src="../03-核心知识文档/scene-data.js"></script>
+<!-- scene-library.js：v4 内容库（bands 0-2/3-5/6-7 × read_aloud/prompt_reply/vocab） -->
+<script src="../03-核心知识文档/scene-library.js"></script>
+<!-- scene-synonyms.js：聊天页模糊匹配「口语词→场景词」知识映射表 + subFrags() 切分函数 -->
+<script src="../03-核心知识文档/scene-synonyms.js"></script>
+
+<script>
+/* ===== 分类树 TAXONOMY：从外部 SCENE_DATA 自动抽取（对象→数组，只取导航骨架） ===== */
+const DOMAIN_SVG = {
+  home:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>',
+  play:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M10 10l5 3-5 3V10z"/></svg>',
+  out:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 17l1-3m13 3l-1-3M3 17h18v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z"/><path d="M12 3v9m0 0l-2-2m2 2l2-2"/><path d="M9 12h6"/></svg>',
+  health:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>',
+  learn:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M4 4.5A2.5 2.5 0 016.5 2H20v19H6.5A2.5 2.5 0 014 18.5V4.5z"/></svg>',
+  social:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><circle cx="15" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6"/><path d="M21 20c0-3.3-2.7-6-6-6"/><path d="M9 14c0-1.7 1.3-3 3-3s3 1.3 3 3"/></svg>',
+  food:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2a4 4 0 00-4 4v2a1 1 0 001 1h6a1 1 0 001-1V6a4 4 0 00-4-4z"/><path d="M8 11v2a4 4 0 008 0v-2"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>',
+  nature:'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 5 10c0 3 1.5 5.5 3 7l4 5 4-5c1.5-1.5 3-4 3-7 0-4-3-8-7-8z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+};
+const TAXONOMY = (typeof SCENE_DATA !== "undefined" ? SCENE_DATA : []).map(function(dom){
+  return {
+    id: dom.id,
+    name: dom.name,
+    icon: dom.icon,  // emoji, 渲染时用 DOMAIN_SVG 转 SVG
+    categories: Object.keys(dom.categories || {}).map(function(cid){
+      var c = dom.categories[cid];
+      return {
+        id: cid,
+        name: c.name,
+        sub: Object.keys(c.sub_scenes || {}).map(function(sid){
+          return { id: sid, name: c.sub_scenes[sid].name };
+        })
+      };
+    })
+  };
+});
+
+/* ===== v4 内容库 SCENE_LIBRARY：来自外部 scene-library.js（上方 <script src> 已加载） ===== */
+const MIGRATED = new Set(typeof SCENE_LIBRARY !== "undefined" ? Object.keys(SCENE_LIBRARY) : []);
+
+const BANDS = [
+  {id:"0-2",n:"0-2 岁",e:'<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="#FF8FA3" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"/><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"/><path d="M5 21h14"/></svg>',des:"听英语<br>识单词",d:"纯听+动作\n不要求回应"},
+  {id:"3-5",n:"3-5 岁",e:'<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="#6FCF73" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z"/><path d="M12 22v-3"/></svg>',des:"简单对话<br>识单词",d:"听短句+单词\n/简单回答"},
+  {id:"6-7",n:"6-7 岁",e:'<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="#4A90D9" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1"/><circle cx="12" cy="8" r="2"/><path d="M12 10v12"/><path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"/><path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"/></svg>',des:"完整对话<br>识单词",d:"完整短句+\n完整回答"},
 ];
+let state = { band:"3-5", child:{name:"宝贝",age:6,avatar:null}, scene:null, history:[] };
 
-// ==================== BUILT-IN ENGINE LOGIC v2.0 ====================
-
-function matchSceneV2(userInput) {
-    const lower = userInput.toLowerCase();
-    
-    let bestSub = null, bestSubScore = 0;
-    let bestCat = null, bestCatScore = 0;
-    let bestDomain = null, bestDomainScore = 0;
-    
-    for (const domain of SCENE_DATA) {
-        for (const [catId, catData] of Object.entries(domain.categories)) {
-            // Check category keywords
-            let catScore = 0;
-            for (const kw of (catData.keywords || [])) {
-                if (lower.includes(kw)) catScore++;
-            }
-            if (catScore > bestCatScore) {
-                bestCatScore = catScore;
-                bestCat = { domain, catId, catName: catData.name };
-            }
-            
-            // Check sub-scene keywords
-            for (const [subId, subData] of Object.entries(catData.sub_scenes || {})) {
-                let subScore = 0;
-                for (const kw of (subData.keywords || [])) {
-                    if (lower.includes(kw)) subScore++;
-                }
-                if (subScore > bestSubScore) {
-                    bestSubScore = subScore;
-                    bestSub = { domain, catId, catName: catData.name, subId, subName: subData.name };
-                }
-            }
-        }
-        
-        // Domain-level match
-        const domainKws = {
-            home: ["家", "家里", "居家", "房间", "起床", "睡觉", "吃饭", "洗澡"],
-            play: ["玩", "游戏", "画画", "学习", "作业", "积木", "手工"],
-            outdoors: ["户外", "公园", "运动", "踢球", "骑车", "爬山", "游泳"],
-            transport: ["出行", "坐车", "公交", "地铁", "火车", "飞机", "走路"],
-            school: ["学校", "上学", "老师", "同学", "课", "作业", "幼儿园"],
-            health: ["看病", "医生", "医院", "药", "打针", "身体", "健康"],
-            places: ["超市", "商场", "博物馆", "动物园", "游乐场", "餐厅", "图书馆"],
-            festivals: ["节日", "生日", "春节", "圣诞", "中秋", "端午", "新年", "派对"],
-        };
-        let dScore = 0;
-        for (const kw of (domainKws[domain.id] || [])) {
-            if (lower.includes(kw)) dScore++;
-        }
-        if (dScore > bestDomainScore) {
-            bestDomainScore = dScore;
-            bestDomain = domain;
-        }
+/* TTS - 方案A：优化语音选择 + 参数调优 */
+if('speechSynthesis' in window){
+  window._voicesLoaded=false;
+  speechSynthesis.onvoiceschanged=function(){ window._voicesLoaded=true; };
+  // Chrome 需要用户交互后才加载语音，主动触发一次
+  try{ speechSynthesis.getVoices(); }catch(e){}
+}
+function getBestVoice(){
+  var vs=speechSynthesis.getVoices();
+  if(!vs||!vs.length) return null;
+  var en=vs.filter(function(x){ return x.lang && x.lang.startsWith('en'); });
+  if(!en.length) return null;
+  // 优先「本地离线」语音：无网络往返，点击即秒响（关键：消除在线合成的发音延迟）
+  var local=en.filter(function(x){ return x.localService; });
+  var pool=local.length?local:en;
+  // 1. 本地里挑音质好的系统语音：Samantha/Ava(iOS·mac)、Zira/Hazel/Susan/Karen(Win)、Daniel/Moira/Fiona(mac)
+  var v=pool.find(function(x){
+    return /samantha|ava|zira|hazel|susan|karen|daniel|moira|fiona|catherine|veena|heera/i.test(x.name);
+  });
+  if(v) return v;
+  // 2. 本地里避开最机械的 David / Google US English
+  v=pool.find(function(x){ return !/david|google us/i.test(x.name); });
+  if(v) return v;
+  // 3. 本地随便一个英文
+  if(pool.length) return pool[0];
+  // 4. 实在没有本地语音，才退回在线神经语音（音质好但有网络延迟）
+  return en[0];
+}
+function speak(text){
+  if(!('speechSynthesis' in window)) return;
+  try{
+    speechSynthesis.cancel();
+    // 文本预处理：缩约+自然节奏短语，帮助TTS引擎做连读
+    var t=text
+      .replace(/\bdon't\b/gi,"don't")
+      .replace(/\bcan not\b/gi,"can't")
+      .replace(/\bwill not\b/gi,"won't")
+      .replace(/\bis not\b/gi,"isn't")
+      .replace(/\bare not\b/gi,"aren't")
+      .replace(/\bdoes not\b/gi,"doesn't")
+      .replace(/\bdid not\b/gi,"didn't")
+      .replace(/\bdo not\b/gi,"don't")
+      .replace(/\bi will\b/gi,"I'll")
+      .replace(/\byou will\b/gi,"you'll")
+      .replace(/\bwe will\b/gi,"we'll")
+      .replace(/\bit is\b/gi,"it's")
+      .replace(/\bthat is\b/gi,"that's")
+      .replace(/\bhere is\b/gi,"here's")
+      .replace(/\bthere is\b/gi,"there's")
+      .replace(/\blet us\b/gi,"let's")
+      .replace(/\bi am\b/gi,"I'm")
+      .replace(/\byou are\b/gi,"you're")
+      .replace(/\bwe are\b/gi,"we're")
+      .replace(/\bthey are\b/gi,"they're")
+      .replace(/\bGive me\b/gi,"Gimme")
+      .replace(/\bgonna\b/gi,"gonna")
+    // 按标点切分成短句
+    var parts=t.split(/(?<=[.?!,])/).map(function(s){ return s.trim(); }).filter(function(s){ return s.length>0; });
+    if(!parts.length) parts=[t];
+    var idx=0;
+    function speakNext(){
+      if(idx>=parts.length) return;
+      var u=new SpeechSynthesisUtterance(parts[idx]);
+      u.lang='en-US';
+      u.rate=0.72;   // 更慢，给连读留呼吸空间
+      u.pitch=1.05;
+      u.volume=1.0;
+      var voice=getBestVoice();
+      // 优先选择已知连读好的语音
+      if(voice) u.voice=voice;
+      u.onend=function(){ idx++; setTimeout(speakNext,100); };
+      u.onerror=function(){ idx++; speakNext(); };
+      speechSynthesis.speak(u);
     }
-    
-    if (bestSub && bestSubScore > bestCatScore) return { level: 'sub', ...bestSub };
-    if (bestCat && bestCatScore > 0) return { level: 'cat', ...bestCat };
-    if (bestDomain && bestDomainScore > 0) return { level: 'domain', domain: bestDomain };
-    return null;
+    speakNext();
+  }catch(e){ /* 静默 fail */ }
+}
+/* ---- Edge TTS 云端语音（方案B） ---- */
+// 部署你的 Cloudflare Worker 后，把下面 URL 改成你的 Worker 地址
+const TTS_WORKER_URL = 'https://speak-english-tts.wuxian-1991.workers.dev';
+
+function speak(text){
+  // 已关闭云端 TTS（workers.dev 国内访问不稳，白等），一律用浏览器语音，秒响。
+  // 若将来要恢复云端，把下面一行换回 speakCloud 的判断即可。
+  speakLocal(text);
+}
+var cloudTtsDown=false;   // 会话级开关：云端挂过一次后，后续直接走浏览器语音，不再傻等
+function speakCloud(text){
+  var audio = new Audio();
+  // 文本预处理（缩约）
+  var t=text
+    .replace(/\bcan not\b/gi,"can't").replace(/\bwill not\b/gi,"won't")
+    .replace(/\bis not\b/gi,"isn't").replace(/\bare not\b/gi,"aren't")
+    .replace(/\bdoes not\b/gi,"doesn't").replace(/\bdid not\b/gi,"didn't")
+    .replace(/\bdo not\b/gi,"don't").replace(/\bi will\b/gi,"I'll")
+    .replace(/\byou will\b/gi,"you'll").replace(/\bwe will\b/gi,"we'll")
+    .replace(/\bit is\b/gi,"it's").replace(/\bthat is\b/gi,"that's")
+    .replace(/\blet us\b/gi,"let's").replace(/\bi am\b/gi,"I'm")
+    .replace(/\byou are\b/gi,"you're").replace(/\bwe are\b/gi,"we're")
+    .replace(/\bthey are\b/gi,"they're");
+  var fellBack=false;
+  // 云端失败：标记本次会话云端不可用（后续不再等），并立即退回浏览器语音
+  function fallback(){ if(fellBack) return; fellBack=true; cloudTtsDown=true; speakLocal(text); }
+  // 云端 1.5 秒还没开始播（国内连 workers.dev 慢/失败），自动退回浏览器语音
+  var timer=setTimeout(fallback, 1500);
+  audio.onplaying=function(){ clearTimeout(timer); };      // 云端成功播放，取消兜底
+  audio.onerror=function(){ clearTimeout(timer); fallback(); };
+  audio.src = TTS_WORKER_URL + '?text=' + encodeURIComponent(t) + '&voice=en-US-AriaNeural';
+  audio.play().catch(function(){ clearTimeout(timer); fallback(); });  // 播放被拒也兜底
+}
+function speakLocal(text){
+  if(!('speechSynthesis' in window)) return;
+  try{
+    var _t0=performance.now();
+    // 修复Chrome延迟bug：仅在真正播报中才cancel；空cancel会拖慢下一次speak的启动
+    if(speechSynthesis.speaking||speechSynthesis.pending) speechSynthesis.cancel();
+    var t=text
+      .replace(/_/g," ")
+      .replace(/\bdon't\b/gi,"don't").replace(/\bcan not\b/gi,"can't").replace(/\bwill not\b/gi,"won't")
+      .replace(/\bis not\b/gi,"isn't").replace(/\bare not\b/gi,"aren't").replace(/\bdoes not\b/gi,"doesn't")
+      .replace(/\bdid not\b/gi,"didn't").replace(/\bdo not\b/gi,"don't").replace(/\bi will\b/gi,"I'll")
+      .replace(/\byou will\b/gi,"you'll").replace(/\bwe will\b/gi,"we'll").replace(/\bit is\b/gi,"it's")
+      .replace(/\bthat is\b/gi,"that's").replace(/\bhere is\b/gi,"here's").replace(/\bthere is\b/gi,"there's")
+      .replace(/\blet us\b/gi,"let's").replace(/\bi am\b/gi,"I'm").replace(/\byou are\b/gi,"you're")
+      .replace(/\bwe are\b/gi,"we're").replace(/\bthey are\b/gi,"they're").replace(/\bGive me\b/gi,"Gimme");
+    var parts=t.split(/(?<=[.?!,])/).map(function(s){ return s.trim(); }).filter(function(s){ return s.length>0; });
+    if(!parts.length) parts=[t];
+    var idx=0, logged=false;
+    function speakNext(){
+      if(idx>=parts.length) return;
+      var u=new SpeechSynthesisUtterance(parts[idx]);
+      u.lang='en-US'; u.rate=0.82; u.pitch=1.05; u.volume=1.0;
+      var voice=getBestVoice();
+      if(voice) u.voice=voice;
+      u.onstart=function(){ if(!logged){ logged=true;
+        console.log('[TTS] 出声耗时 '+Math.round(performance.now()-_t0)+'ms · 语音='+(voice?voice.name:'默认')+' · 本地='+(voice?voice.localService:'?')); } };
+      u.onend=function(){ idx++; setTimeout(speakNext,100); };
+      u.onerror=function(){ idx++; speakNext(); };
+      speechSynthesis.speak(u);
+    }
+    speakNext();
+  }catch(e){}
+}
+// 首次用户交互时预热TTS引擎（静音utterance），消除首播唤醒延迟
+var _ttsWarmed=false;
+function warmTTS(){
+  if(_ttsWarmed||!('speechSynthesis' in window)) return; _ttsWarmed=true;
+  try{ var u=new SpeechSynthesisUtterance(' '); u.volume=0; speechSynthesis.speak(u); }catch(e){}
+}
+document.addEventListener('pointerdown', warmTTS, {once:true});
+function q(s){return "'"+String(s).replace(/'/g,"\\'")+"'";}
+
+/* ---- View switching ---- */
+const VIEW_TAB = {viewChat:'viewChat',viewResult:'viewChat',viewVocab:'viewChat',
+                   viewReview:'viewReview',viewHistory:'viewHistory',viewSettings:'viewSettings'};
+function showView(id){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.getElementById('bottomNav').style.display = (id==='viewOnboard') ? 'none' : 'flex';
+  const tab = VIEW_TAB[id] || 'viewChat';
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.toggle('active', n.dataset.tab===tab));
+  window.scrollTo(0,0);
+  if(id==='viewChat'){ const c=document.getElementById('chatLog'); c.scrollTop=c.scrollHeight; }
+  if(id==='viewReview') renderReview();
+  if(id==='viewHistory') renderHistory();
+  if(id==='viewSettings') renderSettings();
+}
+function bandForAge(a){ a=parseInt(a)||0; if(a<=2) return '0-2'; if(a<=5) return '3-5'; return '6-7'; }
+
+/* ---- View1 Onboarding ---- */
+function renderBandsInfo(){
+  const age=parseInt(document.getElementById('childAge').value)||3;
+  const cur=bandForAge(age);
+  document.getElementById('bandsInfo').innerHTML = BANDS.map(b=>
+    `<div class="band-i ${b.id===cur?'active':''}">
+      <div class="e">${b.e||''}</div><div class="n">${b.n}</div>
+      <div class="d">${(b.des||b.d).replace('\n','<br>')}</div></div>`).join('');
+}
+document.getElementById('childAge').addEventListener('input',renderBandsInfo);
+document.getElementById('avatarInput').addEventListener('change',e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const r=new FileReader(); r.onload=ev=>{
+    state.child.avatar=ev.target.result;
+    document.getElementById('avatarBox').innerHTML=`<img src="${ev.target.result}">`;
+    try{ localStorage.setItem(CHILD_KEY, JSON.stringify(state.child)); }catch(e){}
+  }; r.readAsDataURL(f);
+});
+function startApp(){
+  const name=document.getElementById('childName').value.trim();
+  const age=parseInt(document.getElementById('childAge').value)||6;
+  if(!name){ alert('请先输入孩子的小名 😊'); return; }
+  state.child={name,age,avatar:state.child.avatar};
+  localStorage.setItem(CHILD_KEY, JSON.stringify(state.child));
+  state.band=bandForAge(age);
+  document.getElementById('chatTitle').textContent=`想和${name}聊点什么？`;
+  startChat(); showView('viewChat');
 }
 
-function getSentencesFromMatch(match, level) {
-    if (!match) return [];
-    const domain = match.domain;
-    if (!domain) return [];
-    
-    const cat = match.catId ? domain.categories[match.catId] : null;
-    const sub = match.subId && cat ? cat.sub_scenes[match.subId] : null;
-    
-    if (sub) {
-        return (sub.sentences && sub.sentences[level]) ? sub.sentences[level] : [];
-    }
-    if (cat) {
-        let all = [];
-        for (const s of Object.values(cat.sub_scenes || {})) {
-            if (s.sentences && s.sentences[level]) all = all.concat(s.sentences[level]);
-        }
-        return all;
-    }
-    // Domain level
-    let all = [];
-    for (const c of Object.values(domain.categories || {})) {
-        for (const s of Object.values(c.sub_scenes || {})) {
-            if (s.sentences && s.sentences[level]) all = all.concat(s.sentences[level]);
-        }
-    }
-    return all;
+/* ---- View2 聊天确定场景（对话式追问：领域→分类→子场景） ---- */
+let chat={domain:null,cat:null};
+function el(tag,cls,html){ const e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e; }
+function botSay(html){ const b=el('div','bubble bot',html); document.getElementById('chatLog').appendChild(b); scrollChat(); }
+function userSay(text){ const b=el('div','bubble me'); b.textContent=text; document.getElementById('chatLog').appendChild(b); scrollChat(); }
+function scrollChat(){ const c=document.getElementById('chatLog'); c.scrollTop=c.scrollHeight; }
+function clearQuick(){ document.getElementById('quick').innerHTML=''; }
+function showQuick(items,handler){
+  const q=document.getElementById('quick'); q.innerHTML='';
+  items.forEach(it=>{
+    const c=el('div','qchip', it.label);
+    c.onclick=()=>handler(it); q.appendChild(c);
+  });
+}
+function childInlineAvatar(){
+  if(state.child.avatar) return `<img src="${state.child.avatar}">`;
+  return (state.child.name||'宝').slice(0,1);
+}
+/* 根据子场景 id 查场景中文名（供单词页标题使用） */
+function getSceneName(subId){
+  for(const d of TAXONOMY){ for(const c of d.categories){ for(const s of c.sub){ if(s.id===subId) return s.name; } } }
+  return '';
+}
+/* 把宝贝头像同步到当前页顶栏（场景页/单词页）：有照片显示照片，否则显示名字首字 */
+function syncTopbarAvatar(){
+  const html=childInlineAvatar();
+  ['resAva','vocabAva'].forEach(id=>{ const box=document.getElementById(id); if(box) box.innerHTML=html; });
+}
+function startChat(){
+  chat={domain:null,cat:null};
+  document.getElementById('chatLog').innerHTML=''; clearQuick();
+  botSay('<span class="greet-avatar">'+childInlineAvatar()+'</span> 今天想和 <b>'+state.child.name+'</b> 用英语聊点什么呀？');
+  setTimeout(askDomain,300);
+}
+function askDomain(){
+  botSay('我们是在家、出门，还是去外面玩呀？');
+  showQuick(TAXONOMY.map(d=>({id:d.id,label:d.icon+' '+d.name,ref:d})), it=>{
+    userSay(it.ref.name); chat.domain=it.ref; clearQuick(); setTimeout(askCat,260);
+  });
+}
+function askCat(){
+  botSay('那是在「'+chat.domain.name+'」里，具体想聊哪一块呢？');
+  showQuick(chat.domain.categories.map(c=>({id:c.id,label:c.name,ref:c})), it=>{
+    userSay(it.label); chat.cat=it.ref; clearQuick(); setTimeout(askSub,260);
+  });
+}
+function askSub(){
+  botSay('好嘞～挑一个具体情境，我们这就开始练：');
+  showQuick(chat.cat.sub.map(s=>({id:s.id,label:s.name})), it=>{
+    userSay(it.label); clearQuick(); setTimeout(()=>selectScene(it.id),220);
+  });
+}
+function sendText(){
+  const inp=document.getElementById('chatText'); const v=inp.value.trim(); if(!v){ return; }
+  userSay(v); inp.value=''; clearQuick();
+
+  /* ---- 三层漏斗模糊匹配（方案A：纯规则，零依赖，离线可用） ---- */
+  const SYN = (typeof window!=="undefined" && window.SCENE_SYNONYMS) ? window.SCENE_SYNONYMS : {};
+  const frag = (typeof window!=="undefined" && window.subFrags) ? window.subFrags
+             : function(n){ return String(n).split(/[\/、，,]/).map(s=>s.trim()).filter(Boolean); };
+
+  /* 展开检索词：原词 + 命中的同义词键（键按切分片段匹配，接住「吃早饭/想吃点东西」这类变体） */
+  let keys=[v];
+  Object.keys(SYN).forEach(k=>{
+    // 键命中判定：整词双向包含，或键作为片段出现在输入中（单字/短词锚点）
+    if(v.includes(k) || k.includes(v)){ keys=keys.concat(SYN[k]); }
+  });
+  keys=[...new Set(keys)].filter(Boolean);
+
+  const scored={};  // subId -> {id,label,score}
+  function push(id,label,score){ if(!scored[id]||scored[id].score<score) scored[id]={id,label,score}; }
+
+  TAXONOMY.forEach(d=>d.categories.forEach(c=>c.sub.forEach(s=>{
+    const subHit = keys.some(k=> frag(s.name).some(f=> f.includes(k)||k.includes(f)) );
+    const catHit = keys.some(k=> c.name.includes(k)||k.includes(c.name) );
+    const domHit = keys.some(k=> d.name.includes(k)||k.includes(d.name) );
+    if(subHit) push(s.id, s.name+' · '+c.name, 100);
+    else if(catHit) push(s.id, s.name+' · '+c.name, 60);
+    else if(domHit) push(s.id, s.name+' · '+c.name, 30);
+  })));
+
+  let hits=Object.values(scored).sort((a,b)=>b.score-a.score);
+
+  /* 级别3：单字重叠兜底（前两级全空才启用，保证「几乎不空手」） */
+  if(!hits.length){
+    const chars=new Set(v.split(''));
+    const tmp=[];
+    TAXONOMY.forEach(d=>d.categories.forEach(c=>c.sub.forEach(s=>{
+      const overlap=[...new Set(s.name.split(''))].filter(ch=>chars.has(ch)).length;
+      if(overlap>=1) tmp.push({id:s.id,label:s.name+' · '+c.name,score:overlap});
+    })));
+    hits=tmp.sort((a,b)=>b.score-a.score).slice(0,12);
+  }
+
+  if(hits.length){
+    botSay('我帮你找到了这些场景，点一个就开始：');
+    showQuick(hits.slice(0,12), it=>{ userSay(it.label); clearQuick(); setTimeout(()=>selectScene(it.id),220); });
+  } else {
+    botSay('嗯…暂时没有匹配的场景，换个说法试试？或点右上角「全部场景」慢慢挑～');
+  }
+}
+function openMap(){
+  chat.domain=null; clearQuick();
+  botSay('📋 这是全部场景，挑一个吧：');
+  const wrap=el('div','mapbox');
+  wrap.innerHTML = TAXONOMY.map(d=>
+    `<div class="map-dom">${d.icon} ${d.name}</div>`+
+    d.categories.map(c=>
+      `<div class="map-cat">${c.name}</div><div class="subchips">`+
+      c.sub.map(s=>`<div class="subchip" data-sub="${s.id}">${s.name}</div>`).join('')+
+      `</div>`).join('')
+  ).join('');
+  document.getElementById('chatLog').appendChild(wrap);
+  wrap.querySelectorAll('.subchip').forEach(x=>x.onclick=()=>{ userSay(x.textContent); selectScene(x.dataset.sub); });
+  scrollChat();
 }
 
-function generateFollowUpV2(userInput) {
-    const match = matchSceneV2(userInput);
-    
-    if (!match) {
-        return {
-            matched: false,
-            question: "这个场景我们暂时还没有覆盖，要不要试试其他场景？",
-            options: ["居家日常", "户外活动", "外出场所", "节日庆祝"]
-        };
-    }
-    
-    if (match.level === 'sub') {
-        return {
-            matched: true,
-            matchLevel: 'sub',
-            matchInfo: match,
-            question: null,
-            options: []
-        };
-    }
-    
-    if (match.level === 'cat') {
-        const cat = match.domain.categories[match.catId];
-        const subs = Object.values(cat.sub_scenes || {}).map(s => s.name).slice(0, 6);
-        return {
-            matched: true,
-            matchLevel: 'cat',
-            matchInfo: match,
-            question: `在「${match.catName}」方面，具体是哪个场景？`,
-            options: subs
-        };
-    }
-    
-    // Domain level
-    const cats = Object.values(match.domain.categories || {}).map(c => c.name).slice(0, 6);
-    return {
-        matched: true,
-        matchLevel: 'domain',
-        matchInfo: match,
-        question: `在「${match.domain.name}」方面，你想聊什么？`,
-        options: cats
-    };
+function selectScene(subId){
+  state.scene=subId;
+  const dom=TAXONOMY.find(d=>d.categories.some(c=>c.sub.some(s=>s.id===subId)));
+  const cat=dom.categories.find(c=>c.sub.some(s=>s.id===subId));
+  const sub=cat.sub.find(s=>s.id===subId);
+  generateResult(dom,cat,sub);
+  showView('viewResult');
 }
 
-function generateSentencesV2(userInput, level, historySentences, maxCount) {
-    maxCount = maxCount || 5;
-    const match = matchSceneV2(userInput);
-    if (!match) return [];
-    
-    let pool = getSentencesFromMatch(match, level);
-    if (!pool || pool.length === 0) {
-        pool = getSentencesFromMatch(match, 'A2');
+/* ---- View3 Result ---- */
+function generateResult(dom,cat,sub){
+  const bandName=BANDS.find(b=>b.id===state.band).n;
+  document.getElementById('resTitle').textContent=sub.name;
+  syncTopbarAvatar();
+  document.getElementById('resHead').innerHTML='';
+  const lib=SCENE_LIBRARY[sub.id];
+  const cards=document.getElementById('resCards');
+  if(!lib){
+    document.getElementById('resMeta').textContent=`${dom.name} / ${cat.name}`;
+    cards.innerHTML=`<div class="placeholder">这个场景还在准备中，先试试别的场景吧～</div>`;
+    return;
+  }
+  const b=lib.bands[state.band];
+  const items=sampleContent(b, state.band);
+  document.getElementById('resMeta').innerHTML=`<span class="meta-band">${bandName}</span> · ${cat.name} · ${items.length} 轮`;
+  cards.innerHTML=items.map(it=>{
+    if(it.type==='ra'){
+      const d=it.d;
+      return `<div class="sc"><div class="sc-top">
+        <span class="kind listen"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg> 听 + 做</span>
+        <button class="tts" onclick="speak(${q(d.en)})"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg></button></div>
+        <div class="en">${d.en}</div><div class="zh">${d.zh}</div>
+        ${d.tpr?'<div class="tpr">🤸 TPR：配合动作/手势，让孩子做出来</div>':''}</div>`;
+    } else {
+      const d=it.d;
+      return `<div class="sc pr"><div class="sc-top">
+        <span class="kind qa"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> 问答</span><span class="type-tag">${d.type}</span>
+        <button class="tts" onclick="speak(${q(d.en_p)})"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg></button></div>
+        <div class="en">${d.en_p}</div><div class="zh">${d.zh_p}</div>
+        <button class="reveal" onclick="this.nextElementSibling.classList.toggle('show');this.style.display='none'">看孩子示范回答</button>
+        <div class="ans"><div class="en">${d.model}</div><div class="zh">${d.zh_m}</div>
+        <button class="tts" style="margin-top:6px" onclick="speak(${q(d.model)})"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg> 朗读示范</button></div></div>`;
     }
-    if (!pool || pool.length === 0) return [];
-    
-    const available = [...pool];
-    // Shuffle
-    for (let i = available.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [available[i], available[j]] = [available[j], available[i]];
-    }
-    
-    const result = [];
-    const usedEnglish = new Set();
-    
-    if (historySentences && historySentences.length > 0) {
-        const historySet = new Set(historySentences);
-        const reviewCandidates = pool.filter(s => historySet.has(s.en));
-        for (let i = reviewCandidates.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [reviewCandidates[i], reviewCandidates[j]] = [reviewCandidates[j], reviewCandidates[i]];
-        }
-        for (const s of reviewCandidates.slice(0, 2)) {
-            if (!usedEnglish.has(s.en)) {
-                result.push({ english: s.en, chinese: s.zh, isReview: true });
-                usedEnglish.add(s.en);
-            }
-        }
-        const newCandidates = available.filter(s => !usedEnglish.has(s.en) && !historySet.has(s.en));
-        for (const s of newCandidates.slice(0, 3)) {
-            if (!usedEnglish.has(s.en)) {
-                result.push({ english: s.en, chinese: s.zh, isReview: false });
-                usedEnglish.add(s.en);
-            }
-        }
-    }
-    
-    for (const s of available) {
-        if (result.length >= maxCount) break;
-        if (!usedEnglish.has(s.en)) {
-            result.push({ english: s.en, chinese: s.zh, isReview: false });
-            usedEnglish.add(s.en);
-        }
-    }
-    
-    const final = result.slice(0, maxCount);
-    for (let i = final.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [final[i], final[j]] = [final[j], final[i]];
-    }
-    return final;
+  }).join('');
+  saveToHistory(sub, items);
+}
+const HISTORY_KEY = 'speak_en_history';
+const CHILD_KEY = 'speak_en_child';
+function saveToHistory(sub, items){
+  const now=new Date();
+  const todayStr=now.getFullYear()+'-'+(now.getMonth()+1)+'-'+now.getDate();
+  const entry={
+    date: todayStr,
+    scene: sub.name,
+    sceneId: state.scene,
+    band: state.band,
+    items: items.map(it=>{
+      if(it.type==='ra') return {en:it.d.en, zh:it.d.zh};
+      return {en:it.d.en_p, zh:it.d.zh_p};
+    })
+  };
+  state.history.unshift(entry);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(state.history));
+}
+function sampleContent(b, band){
+  const ra=(b.read_aloud||[]).slice(), pr=(b.prompt_reply||[]).slice();
+  shuffle(ra); shuffle(pr);
+  const out=[]; const wantRA=Math.min(ra.length, pr.length?3:5);
+  for(let i=0;i<wantRA;i++) out.push({type:'ra',d:ra[i]});
+  const wantPR=Math.min(pr.length, 5-out.length);
+  for(let i=0;i<wantPR;i++) out.push({type:'pr',d:pr[i]});
+  shuffle(out); return out.slice(0,5);
+}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* ---- View4 Vocab ---- */
+function goVocab(){
+  const lib=SCENE_LIBRARY[state.scene];
+  const grid=document.getElementById('vocabGrid');
+  const bandName=BANDS.find(b=>b.id===state.band).n;
+  document.getElementById('vocabBandSub').textContent=bandName;
+  // 顶部大标题带上场景名，消除与顶栏「单词乐园」的重复
+  const sceneName=getSceneName(state.scene);
+  document.getElementById('vocabH1').textContent = sceneName ? (sceneName+' · 单词卡') : '单词乐园';
+  syncTopbarAvatar();
+  if(!lib){ grid.innerHTML='<div class="placeholder">这个场景还在准备中，先试试别的场景吧～</div>'; showView('viewVocab'); return; }
+  const voc=(lib.bands[state.band].vocab||[]).slice();
+  grid.innerHTML=voc.map((v,i)=>{
+    const p='p'+((i%6)+1);
+    const inner=v.img?`<img src="${v.img}" alt="${v.en}">`:(v.icon||'📝');
+    return `<div class="vc ${v.review?'review':''}" onclick="speak(${q(v.en)})">
+      <div class="pic ${p}">${inner}</div>
+      <div class="ve">${v.en}</div><div class="vz">${v.zh}</div>
+      <div class="play" title="听发音" onclick="event.stopPropagation();speak(${q(v.en)})"></div></div>`;
+  }).join('');
+  showView('viewVocab');
 }
 
-// 从已有的句子池中选取句子（不重新匹配）
-function generateSentencesFromPool(pool, level, historySentences, maxCount) {
-    maxCount = maxCount || 5;
-    if (!pool || pool.length === 0) return [];
-    
-    const available = [...pool];
-    for (let i = available.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [available[i], available[j]] = [available[j], available[i]];
-    }
-    
-    const result = [];
-    const usedEnglish = new Set();
-    
-    if (historySentences && historySentences.length > 0) {
-        const historySet = new Set(historySentences);
-        const reviewCandidates = pool.filter(s => historySet.has(s.en));
-        for (let i = reviewCandidates.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [reviewCandidates[i], reviewCandidates[j]] = [reviewCandidates[j], reviewCandidates[i]];
-        }
-        for (const s of reviewCandidates.slice(0, 2)) {
-            if (!usedEnglish.has(s.en)) {
-                result.push({ english: s.en, chinese: s.zh, isReview: true });
-                usedEnglish.add(s.en);
-            }
-        }
-        const newCandidates = available.filter(s => !usedEnglish.has(s.en) && !historySet.has(s.en));
-        for (const s of newCandidates.slice(0, 3)) {
-            if (!usedEnglish.has(s.en)) {
-                result.push({ english: s.en, chinese: s.zh, isReview: false });
-                usedEnglish.add(s.en);
-            }
-        }
-    }
-    
-    for (const s of available) {
-        if (result.length >= maxCount) break;
-        if (!usedEnglish.has(s.en)) {
-            result.push({ english: s.en, chinese: s.zh, isReview: false });
-            usedEnglish.add(s.en);
-        }
-    }
-    
-    const final = result.slice(0, maxCount);
-    for (let i = final.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [final[i], final[j]] = [final[j], final[i]];
-    }
-    return final;
+/* ---- View5 历史 ---- */
+// 预览用示例数据（真实接入后会从 localStorage 读取 state.history）
+const SAMPLE_HISTORY = [
+  {sceneId:'brush_teeth', date:'2026-7-25', scene:'刷牙', band:'6-7', items:[
+    {en:'Brush your teeth, up and down.', zh:'上下来回刷牙。'},
+    {en:'Spit it out, please.', zh:'请吐掉。'},
+    {en:'Rinse your mouth with water.', zh:'用水漱漱口。'} ]},
+  {sceneId:'wake_up', date:'2026-7-25', scene:'起床洗漱', band:'3-5', items:[
+    {en:'Time to wake up!', zh:'该醒啦！'},
+    {en:'Stretch your arms.', zh:'伸伸胳膊。'} ]},
+  {sceneId:'bus', date:'2026-7-24', scene:'坐公交', band:'3-5', items:[
+    {en:'Get on the bus.', zh:'上公交车。'},
+    {en:'Hold the handrail.', zh:'扶好扶手。'} ]},
+];
+function renderHistory(){
+  const list=document.getElementById('historyList');
+  if(!state.history || !state.history.length){
+    list.innerHTML=`<div class="history-empty"><span class="ic">📭</span>还没有学习记录<br>去「场景」开始第一个对话吧！</div>`;
+    return;
+  }
+  const now=new Date();
+  const todayStr=now.getFullYear()+'-'+(now.getMonth()+1)+'-'+now.getDate();
+  const yesterday=new Date(now); yesterday.setDate(yesterday.getDate()-1);
+  const yestStr=yesterday.getFullYear()+'-'+(yesterday.getMonth()+1)+'-'+yesterday.getDate();
+  function fmtDate(d){
+    if(d===todayStr) return '今天';
+    if(d===yestStr) return '昨天';
+    const p=d.split('-');
+    return parseInt(p[1])+'月'+parseInt(p[2])+'日';
+  }
+  const groups={};
+  state.history.forEach(s=>{ (groups[s.date]=groups[s.date]||[]).push(s); });
+  list.innerHTML=Object.keys(groups).map(d=>
+    `<div class="history-group"><div class="history-date">${fmtDate(d)}</div>`+
+    groups[d].map(s=>
+      `<div class="history-item" onclick="this.classList.toggle('expanded')">
+        <div class="history-item-head">
+          <span class="history-scene">${s.scene}</span>
+          <span class="history-badge ${s.band==='6-7'?'big':''}">${s.band}</span>
+          <span class="history-count">${s.items.length} 句 · 点开看</span>
+        </div>
+        <div class="history-detail">
+          ${s.items.map(it=>`<div class="en">${it.en}</div><div class="zh">${it.zh}</div>`).join('')}
+        </div></div>`).join('')+
+    `</div>`).join('');
 }
 
-// Backward compatibility aliases
-const matchScene = (input) => { const m = matchSceneV2(input); return m ? m.subName || m.catName || m.domain?.name || '' : ''; };
-const generateFollowUpLocal = (input) => generateFollowUpV2(input);
-const generateSentencesLocal = (input, level, history, subTag) => generateSentencesV2(input, level, history, 5);
-const extractSubTag = (answer) => null; // No longer needed with new structure
+/* ---- 场景 emoji 映射（共 181 场景） ---- */
+const SCENE_EMOJI = {
+  "wake_up": "🌅", "brush_teeth": "🪥", "wash_face": "🧼", "get_dressed": "👕", "comb_hair": "💇", "look_mirror": "🪞",
+  "breakfast": "🥣", "lunch_dinner": "🍽️", "snacks": "🍎", "set_table": "🍴", "help_cook": "👩‍🍳",
+  "bath": "🛁", "wash_hands": "🧽", "toilet": "🚽", "trim_nails": "💅", "blow_nose": "🤧",
+  "tidy_toys": "🧸", "cleaning": "🧹", "laundry": "👚", "take_out_trash": "🗑️", "water_plants": "🌱",
+  "change_pajamas": "🌙", "story_time": "📖", "say_goodnight": "✨", "brush_teeth_night": "🪥", "reflect_day": "💭",
+  "watch_tv": "📺", "family_chat": "💬", "music_sing": "🎵", "pets": "🐾", "photos": "📸",
+  "blocks": "🧱", "pretend_play": "🎭", "puzzle": "🧩", "hide_seek": "🙈", "toy_cars": "🚗",
+  "drawing": "🎨", "paper_craft": "✂️", "clay": "🎨", "stickers": "⭐", "beading": "📿",
+  "reading": "📚", "homework": "✏️", "learn_english": "🔤", "numbers": "🔢", "science": "🔬",
+  "swing_slide": "🎠", "sandpit": "⛱️", "kite_bubbles": "🪁", "picnic": "🧺", "running": "🏃",
+  "football": "⚽", "basketball": "🏀", "badminton": "🏸", "pingpong": "🏓", "catch_throw": "🤾",
+  "bike": "🚲", "scooter": "🛴", "balance_bike": "🚲", "tricycle": "🚲", "grass_slide": "🏂",
+  "swimming": "🏊", "beach": "🏖️", "water_fight": "💦", "water_park": "🏄", "fishing": "🎣",
+  "explore": "🔍", "planting": "🌱", "stargazing": "⭐", "collect_nature": "🍂", "bird_watch": "🐦", "hiking": "🥾",
+  "jump_rope": "🤸", "climbing": "🧗", "trampoline": "🤸", "monkey_bars": "🤸",
+  "car": "🚗", "bus": "🚌", "walking": "🚶", "taxi": "🚕", "ebike": "🛵", "train": "🚄", "airplane": "✈️",
+  "hotel": "🏨", "road_trip": "🚗", "ferry": "⛴️",
+  "car_safety": "🔒", "traffic_rules": "🚦", "car_behavior": "🚫", "no_reaching_out": "🪟", "remember_phone": "📱",
+  "pack_bag": "🎒", "goodbye": "👋", "uniform": "👔", "check_homework": "📋", "lunchbox": "🍱",
+  "in_class": "🏫", "recess": "⛹️", "art_class": "🎨", "music_class": "🎵", "pe_class": "🏅",
+  "greeting": "👋", "sharing": "🤝", "make_friends": "🤗", "help_others": "🤲", "handle_conflict": "💪",
+  "come_home": "🏠", "extracurricular": "🎯", "playdate": "🧒", "aftercare": "🏫", "playground_games": "🎪",
+  "feelings": "😊", "gratitude": "🙏", "express_needs": "💬", "compliment": "🌟", "face_setbacks": "💪",
+  "learn_body": "🧍", "five_senses": "👀", "left_right": "🧭", "body_movements": "🤸", "growing_up": "📏",
+  "see_doctor": "🩺", "medicine": "💊", "dentist": "🦷", "sick": "🤒", "injury": "🩹",
+  "daily_health": "💪", "eye_care": "👁️", "healthy_eating": "🥗", "sleep_habit": "😴", "exercise_habit": "🏃",
+  "shopping_list": "📝", "browse_cart": "🛒", "pick_items": "🛍️", "checkout": "💳", "pack_leave": "🛍️",
+  "order_food": "📋", "wait_eat": "🍽️", "pay_bill": "💳", "fast_food": "🍔", "behave_well": "🍽️",
+  "buy_tickets": "🎟️", "see_animals": "🦁", "feed_interact": "🐏", "zoo_play": "🎡", "souvenir_shop": "🎁",
+  "indoor_play": "🎠", "theme_park": "🎢", "ride_wait": "⏳", "rest_snack": "🍿", "water_rides": "🌊",
+  "wait_haircut": "💇", "get_haircut": "✂️", "check_result": "🪞", "wash_hair": "💦", "chat_stylist": "💬",
+  "museum": "🏛️", "aquarium": "🐠", "library": "📚", "planetarium": "🔭", "art_gallery": "🖼️",
+  "birthday_party": "🎂", "invite_friends": "💌", "decorate": "🎈", "birthday_game": "🎮", "thank_guests": "🙏",
+  "spring_festival": "🧧", "mid_autumn": "🥮", "dragon_boat": "🐉", "lantern": "🏮", "qingming": "🌿",
+  "christmas": "🎄", "halloween": "🎃", "easter": "🐣", "thanksgiving": "🦃", "new_year": "🎆",
+  "parents_day": "💐", "grandparents": "👴", "childrens_day": "🎈", "family_photo": "📷", "family_story": "📜"
+};
 
+/* ---- View5b 复习 ---- */
+function renderReview(){
+  const list=document.getElementById('reviewList');
+  const seen={};
+  const scens=state.history.filter(s=>{ if(seen[s.scene]) return false; seen[s.scene]=true; return true; });
+  if(!scens.length){
+    list.innerHTML=`<div class="history-empty"><span class="ic">📭</span>还没有学过的场景<br>去「场景」开始第一个对话吧！</div>`;
+    return;
+  }
+  list.innerHTML=scens.map(s=>{
+    const emo=SCENE_EMOJI[s.sceneId||s.scene]||'🗂️';
+    return `<div class="review-card">
+    <div class="review-card-top">
+      <div class="review-card-icon">${emo}</div>
+      <div class="review-card-info">
+        <div class="review-card-name">${s.scene}</div>
+        <div class="review-card-meta">${s.band} · 学过${state.history.filter(h=>h.scene===s.scene).length}次</div>
+      </div>
+    </div>
+    <div class="review-actions">
+      <button class="rev-btn sentence" onclick="selectScene('${s.sceneId||s.scene}')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg> 句子复习</button>
+      <button class="rev-btn vocab" onclick="state.scene='${s.sceneId||s.scene}';goVocab()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> 单词复习</button>
+    </div>
+  </div>`});
+}
 
-// ==================== APP STATE ====================
+/* ---- View6 设置 ---- */
+function renderSettings(){
+  const ch=state.child;
+  document.getElementById('setChildren').innerHTML=
+    `<div class="child-card">
+       <div class="child-ava">${ch.avatar?`<img src="${ch.avatar}">`:(ch.name||'宝').slice(0,1)}</div>
+       <div class="child-info"><div class="cn">${ch.name||'宝贝'}</div>
+         <div class="cm">${ch.age} 岁 · 阶段 ${bandForAge(ch.age)}</div></div>
+     </div>`;
+}
+document.getElementById('btnClearHistory').onclick=()=>{
+  if(!state.history || !state.history.length){ alert('当前没有历史记录'); return; }
+  if(confirm('确定清除所有历史记录吗？')){ state.history=[]; localStorage.removeItem(HISTORY_KEY); renderHistory(); alert('已清除历史记录'); }
+};
+document.getElementById('btnResetAll').onclick=()=>{
+  if(confirm('将清空孩子信息、历史记录等全部数据，确定吗？')){ location.reload(); }
+};
+document.getElementById('btnAddChild').onclick=()=>{ alert('多孩子管理功能即将开放～'); };
 
-    const STATE_KEY = 'speak_english_together_state';
-
-    const defaultState = {
-        children: [],
-        activeChildId: null,
-        history: [],
-        settings: { showMode: 'A' }
-    };
-
-    function loadState() {
-        try {
-            const raw = localStorage.getItem(STATE_KEY);
-            return raw ? JSON.parse(raw) : { ...defaultState, children: [], history: [] };
-        } catch (e) {
-            return { ...defaultState, children: [], history: [] };
+/* init */
+(function(){
+  const _p=new URLSearchParams(location.search);
+  if(_p.get('demo')){                       // 预览/截图用：?demo=1&name=豆豆 直接进第二页聊天
+    const dn=_p.get('name')||'豆豆';
+    state.child={name:dn,age:6,avatar:null};
+    state.history=SAMPLE_HISTORY.slice();    // 演示：预置几条历史
+    document.getElementById('chatTitle').textContent='想和'+dn+'聊点什么？';
+    startChat(); showView('viewChat');
+    const v=_p.get('view');                 // 深链：?demo=1&view=history|settings 直达某 Tab
+    if(v==='review'||v==='history'||v==='settings') showView('view'+v.charAt(0).toUpperCase()+v.slice(1));
+  } else {
+    try{
+      const saved=localStorage.getItem(HISTORY_KEY);
+      if(saved) state.history=JSON.parse(saved);
+    }catch(e){}
+    try{
+      const childSaved=localStorage.getItem(CHILD_KEY);
+      if(childSaved){
+        const c=JSON.parse(childSaved);
+        state.child=c;
+        document.getElementById('childName').value=c.name||'';
+        document.getElementById('childAge').value=c.age||6;
+        if(c.avatar){
+          document.getElementById('avatarBox').innerHTML=`<img src="${c.avatar}">`;
         }
-    }
-
-    function saveState(state) {
-        try {
-            // Limit history size to prevent localStorage quota issues
-            const MAX_HISTORY = 100;
-            if (state.history && state.history.length > MAX_HISTORY) {
-                state.history = state.history.slice(-MAX_HISTORY);
-            }
-            localStorage.setItem(STATE_KEY, JSON.stringify(state));
-        } catch (e) {
-            if (e.name === 'QuotaExceededError' || (e.message && e.message.includes('exceeded the quota'))) {
-                // Progressive cleanup: halve history until it fits
-                while (state.history && state.history.length > 1) {
-                    state.history = state.history.slice(Math.ceil(state.history.length / 2));
-                    try {
-                        localStorage.setItem(STATE_KEY, JSON.stringify(state));
-                        return;
-                    } catch (innerErr) {
-                        // still too big, continue trimming
-                    }
-                }
-                // Last resort: keep children, drop all history
-                state.history = [];
-                try {
-                    localStorage.setItem(STATE_KEY, JSON.stringify(state));
-                } catch (finalErr) {
-                    // Cannot even save with empty history — clear and start over
-                    localStorage.clear();
-                    try {
-                        localStorage.setItem(STATE_KEY, JSON.stringify({ children: state.children || [], activeChildId: state.activeChildId, history: [], settings: state.settings || { showMode: 'A' } }));
-                    } catch (_) {
-                        // truly hopeless, silently fail
-                    }
-                }
-                return; // Never throw — let the caller continue
-            }
-            // Unknown error, silently fail to avoid breaking the flow
-        }
-    }
-
-    let appState = loadState();
-
-    // ==================== HELPERS ====================
-    function $(id) { return document.getElementById(id); }
-    function generateId() { return Date.now().toString(36) + Math.random().toString(36).substr(2, 6); }
-
-    function showToast(msg) {
-        const existing = document.querySelector('.toast');
-        if (existing) existing.remove();
-        const toast = document.createElement('div');
-        toast.className = 'toast';
-        toast.textContent = msg;
-        document.body.appendChild(toast);
-        setTimeout(() => toast.remove(), 2000);
-    }
-
-    function showLoading(text = '正在生成...') {
-        $('loadingText').textContent = text;
-        $('loadingOverlay').classList.remove('hidden');
-    }
-
-    function hideLoading() {
-        $('loadingOverlay').classList.add('hidden');
-    }
-
-    function getActiveChild() {
-        if (!appState.activeChildId || !appState.children.length) return null;
-        return appState.children.find(c => c.id === appState.activeChildId) || null;
-    }
-
-    function getChildHistory(childId) {
-        return appState.history.filter(h => h.childId === childId);
-    }
-
-    // ==================== NAVIGATION ====================
-    let _switchingView = false;
-    function switchView(viewName) {
-        if (_switchingView) return;
-        _switchingView = true;
-        document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-        const targetView = $(viewName);
-        if (targetView) targetView.classList.add('active');
-
-        // Update bottom nav
-        document.querySelectorAll('.nav-item').forEach(n => {
-            n.classList.toggle('active', n.dataset.view === viewName);
-        });
-
-        // Show/hide bottom nav
-        const showNav = ['viewChat', 'viewHistory', 'viewSettings'].includes(viewName);
-        $('bottomNav').style.display = showNav ? 'flex' : 'none';
-
-        // Refresh views
-        if (viewName === 'viewOnboarding') resetAvatarUI();
-        if (viewName === 'viewChat') refreshChatView();
-        if (viewName === 'viewHistory') refreshHistoryView();
-        if (viewName === 'viewSettings') refreshSettingsView();
-
-        updateHeader();
-        _switchingView = false;
-    }
-
-    function updateHeader() {
-        const child = getActiveChild();
-        const avatar = $('headerAvatar');
-        if (child) {
-            if (child.avatar) {
-                avatar.innerHTML = `<img src="${child.avatar}" style="width:100%;height:100%;object-fit:cover;border-radius:50%">`;
-            } else {
-                avatar.innerHTML = `<svg viewBox="0 0 120 120" width="28" height="28"><circle cx="60" cy="60" r="58" fill="white"/><circle cx="60" cy="60" r="46" fill="#2563EB"/><text x="60" y="74" text-anchor="middle" font-size="58" font-weight="700" fill="white" font-family="Georgia, 'Times New Roman', serif" font-style="italic">S</text></svg>`;
-            }
-            $('currentChildLabel').textContent = `${child.name} · ${getLevelLabel(child.level)}`;
-        } else {
-            avatar.innerHTML = `<svg viewBox="0 0 120 120" width="28" height="28"><circle cx="60" cy="60" r="58" fill="white"/><circle cx="60" cy="60" r="46" fill="#2563EB"/><text x="60" y="74" text-anchor="middle" font-size="58" font-weight="700" fill="white" font-family="Georgia, 'Times New Roman', serif" font-style="italic">S</text></svg>`;
-            $('currentChildLabel').textContent = '设置孩子信息';
-        }
-    }
-
-    function getLevelLabel(level) {
-        const labels = { 'Pre-A1': '🌱 启蒙', 'A1': '🌿 入门', 'A2': '🌳 基础', 'B1': '🌲 进阶' };
-        return labels[level] || level;
-    }
-
-    // ==================== ONBOARDING ====================
-    let avatarData = null;
-
-    function resetAvatarUI() {
-        avatarData = null;
-        const upload = $('avatarUpload');
-        const placeholder = upload.querySelector('.avatar-placeholder');
-        const img = upload.querySelector('img');
-        if (img) img.remove();
-        if (placeholder) placeholder.style.display = '';
-    }
-
-    function initOnboarding() {
-        // Avatar upload
-        const avatarUpload = $('avatarUpload');
-        const avatarInput = $('avatarInput');
-
-        avatarUpload.addEventListener('click', () => avatarInput.click());
-
-        avatarInput.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if (!file) return;
-            const reader = new FileReader();
-            reader.onload = () => {
-                avatarData = reader.result;
-                const placeholder = avatarUpload.querySelector('.avatar-placeholder');
-                if (placeholder) placeholder.style.display = 'none';
-                const oldImg = avatarUpload.querySelector('img');
-                if (oldImg) oldImg.remove();
-                const img = document.createElement('img');
-                img.src = avatarData;
-                avatarUpload.appendChild(img);
-            };
-            reader.readAsDataURL(file);
-        });
-
-        // Level card selection
-        $('levelCards').addEventListener('click', (e) => {
-            const card = e.target.closest('.level-card');
-            if (!card) return;
-            document.querySelectorAll('.level-card').forEach(c => c.classList.remove('selected'));
-            card.classList.add('selected');
-        });
-
-        $('btnStart').addEventListener('click', () => {
-            const name = $('inputChildName').value.trim();
-            const age = parseInt($('inputChildAge').value) || 6;
-            const selectedLevel = document.querySelector('.level-card.selected');
-            const level = selectedLevel ? selectedLevel.dataset.level : 'A2';
-
-            if (!name) {
-                showToast('请先输入孩子的小名 😊');
-                return;
-            }
-
-            const child = {
-                id: generateId(),
-                name,
-                age,
-                level,
-                avatar: avatarData || null,
-                createdAt: new Date().toISOString()
-            };
-
-            appState.children.push(child);
-            appState.activeChildId = child.id;
-            try { saveState(appState); } catch (_) { /* save failed but don't block navigation */ }
-            resetAvatarUI();
-            $('inputChildName').value = '';
-            $('inputChildAge').value = '6';
-            updateHeader();
-            switchView('viewChat');
-            showToast(`欢迎，${name}！开始说英语吧 🎉`);
-        });
-    }
-
-    // ==================== CHILD SWITCHER ====================
-    function renderChildSwitcher(containerId) {
-        const container = $(containerId);
-        if (!container) return;
-        container.innerHTML = appState.children.map(c => {
-            const active = c.id === appState.activeChildId;
-            const avatarHtml = c.avatar
-                ? `<img src="${c.avatar}" style="width:20px;height:20px;border-radius:50%;object-fit:cover;vertical-align:middle">`
-                : getLevelEmoji(c.level);
-            return `<span class="child-chip${active ? ' active' : ''}" data-child-id="${c.id}">${avatarHtml} ${c.name}</span>`;
-        }).join('');
-
-        container.querySelectorAll('.child-chip').forEach(chip => {
-            chip.addEventListener('click', () => {
-                appState.activeChildId = chip.dataset.childId;
-                saveState(appState);
-                updateHeader();
-                switchView('viewChat');
-            });
-        });
-    }
-
-    function getLevelEmoji(level) {
-        const map = { 'Pre-A1': '🌱', 'A1': '🌿', 'A2': '🌳', 'B1': '🌲' };
-        return map[level] || '📖';
-    }
-
-    // ==================== CHAT VIEW ====================
-    let chatState = {
-        stage: 'init', // init | asking | confirming | done
-        scene: '',
-        followUpQuestion: '',
-        followUpOptions: [],
-        answers: [],
-        matchInfo: null  // 保存匹配信息，用于精确定位子场景
-    };
-
-    function refreshChatView() {
-        renderChildSwitcher('childSwitcher');
-        const child = getActiveChild();
-        if (!child) {
-            // Don't redirect — user may have just cleared data, stay on onboarding
-            return;
-        }
-
-        const container = $('chatContainer');
-        if (chatState.stage === 'init') {
-            container.innerHTML = `
-                <div class="chat-bubble ai">
-                    嗨！今天想和 <b>${child.name}</b> 在什么场景下说英语呢？
-                </div>
-                <div class="quick-replies">
-                    <span class="quick-reply" onclick="handleQuickReply('🛒 超市')">🛒 超市</span>
-                    <span class="quick-reply" onclick="handleQuickReply('🌳 公园')">🌳 公园</span>
-                    <span class="quick-reply" onclick="handleQuickReply('🍽️ 吃饭')">🍽️ 吃饭</span>
-                    <span class="quick-reply" onclick="handleQuickReply('🛁 洗漱')">🛁 洗漱</span>
-                </div>
-            `;
-        }
-        container.scrollTop = container.scrollHeight;
-    }
-
-    function addChatBubble(type, text) {
-        const container = $('chatContainer');
-        const div = document.createElement('div');
-        div.className = `chat-bubble ${type}`;
-        if (type === 'ai') {
-            div.textContent = text;
-        } else {
-            div.textContent = text;
-        }
-        container.appendChild(div);
-        container.scrollTop = container.scrollHeight;
-    }
-
-    function addQuickReplies(options) {
-        const container = $('chatContainer');
-        const div = document.createElement('div');
-        div.className = 'quick-replies';
-        options.forEach(opt => {
-            const btn = document.createElement('span');
-            btn.className = 'quick-reply';
-            btn.textContent = opt;
-            btn.addEventListener('click', () => handleQuickReply(opt));
-            div.appendChild(btn);
-        });
-        container.appendChild(div);
-        container.scrollTop = container.scrollHeight;
-    }
-
-    function handleQuickReply(answer) {
-        addChatBubble('user', answer);
-        chatState.answers.push(answer);
-        processChatFlow();
-    }
-
-    function processChatFlow() {
-        const child = getActiveChild();
-        if (!child) return;
-
-        if (chatState.stage === 'init') {
-            // User just input initial scene
-            chatState.stage = 'asking';
-            const scene = chatState.answers[0];
-            chatState.scene = scene;
-            // Generate follow-up questions
-            generateFollowUp(scene, child);
-        } else if (chatState.stage === 'asking') {
-            // User answered follow-up, now generate sentences
-            chatState.stage = 'done';
-            generateSentences();
-        }
-    }
-
-    function generateFollowUp(scene, child) {
-        try {
-            const data = generateFollowUpLocal(scene);
-            
-            // 保存匹配信息，后续 generateSentences 需要用到
-            if (data.matchInfo) {
-                chatState.matchInfo = data.matchInfo;
-            }
-            
-            if (!data.matched) {
-                addChatBubble('ai', data.question);
-                addQuickReplies(data.options);
-                return;
-            }
-            
-            if (data.matchLevel === 'sub') {
-                // Exact match to sub-scene, skip follow-up, go straight to generation
-                chatState.stage = 'done';
-                generateSentences();
-                return;
-            }
-            
-            // Category or domain match — ask follow-up
-            chatState.followUpQuestion = data.question;
-            chatState.followUpOptions = data.options;
-            addChatBubble('ai', data.question);
-            addQuickReplies(data.options);
-        } catch (e) {
-            chatState.stage = 'done';
-            generateSentences();
-        }
-    }
-
-    function generateSentences() {
-        const child = getActiveChild();
-        if (!child) return;
-
-        const sceneDescription = chatState.answers.join(' → ');
-        showLoading('正在为你生成口语...');
-
-        try {
-            const childHistory = getChildHistory(child.id);
-            const masteredSentences = new Set();
-            const allLearnedSentences = [];
-
-            childHistory.forEach(h => {
-                h.sentences.forEach(s => {
-                    allLearnedSentences.push(s.english);
-                    if (s.mastered) masteredSentences.add(s.english);
-                });
-            });
-
-            const notMastered = allLearnedSentences.filter(s => !masteredSentences.has(s));
-
-            // 核心修复：如果用户通过追问选择了子场景，直接精确定位
-            let sentences;
-            const matchInfo = chatState.matchInfo;
-            
-            if (matchInfo && matchInfo.level === 'cat' && chatState.answers.length >= 2) {
-                // 用户第一轮选了 category，第二轮选了子场景名称
-                // 通过名称反查 subId，构造精确的 sub 级别 match
-                const cat = matchInfo.domain.categories[matchInfo.catId];
-                const chosenSubName = chatState.answers[chatState.answers.length - 1];
-                
-                let foundSubId = null;
-                for (const [sid, sdata] of Object.entries(cat.sub_scenes || {})) {
-                    if (sdata.name === chosenSubName) {
-                        foundSubId = sid;
-                        break;
-                    }
-                }
-                
-                if (foundSubId) {
-                    const preciseMatch = {
-                        level: 'sub',
-                        domain: matchInfo.domain,
-                        catId: matchInfo.catId,
-                        catName: matchInfo.catName,
-                        subId: foundSubId,
-                        subName: chosenSubName
-                    };
-                    const pool = getSentencesFromMatch(preciseMatch, child.level || 'A2');
-                    sentences = generateSentencesFromPool(pool, child.level || 'A2', notMastered || [], 5);
-                } else {
-                    // 子场景名没找到，回退到字符串匹配
-                    const searchQuery = chatState.answers.join(' ');
-                    sentences = generateSentencesLocal(searchQuery, child.level || 'A2', notMastered || []);
-                }
-            } else if (matchInfo && matchInfo.level === 'sub') {
-                // 第一次就精确匹配了子场景
-                const pool = getSentencesFromMatch(matchInfo, child.level || 'A2');
-                sentences = generateSentencesFromPool(pool, child.level || 'A2', notMastered || [], 5);
-            } else {
-                // 兜底：用原来的字符串匹配
-                const searchQuery = chatState.answers.join(' ');
-                sentences = generateSentencesLocal(searchQuery, child.level || 'A2', notMastered || []);
-            }
-
-            // Save to history
-            const historyEntry = {
-                id: generateId(),
-                childId: child.id,
-                scene: sceneDescription,
-                date: new Date().toISOString(),
-                sentences: sentences.map(s => ({ ...s, mastered: false }))
-            };
-
-            if (historyEntry.sentences.length === 0) {
-                historyEntry.sentences = [{
-                    english: 'No sentences found for this scene.',
-                    chinese: '这个场景暂时没有该等级的句子，请换个等级或场景试试。',
-                    mastered: false,
-                    isReview: false
-                }];
-            }
-
-            appState.history.push(historyEntry);
-            saveState(appState);
-
-            showResultView(sceneDescription, historyEntry);
-            hideLoading();
-        } catch (e) {
-            hideLoading();
-            console.error('Generation error:', e);
-            showToast('生成失败：' + (e.message || '未知错误') + ' 😢');
-            chatState = { stage: 'init', scene: '', followUpQuestion: '', followUpOptions: [], answers: [], matchInfo: null };
-            refreshChatView();
-        }
-    }
-
-    // ==================== RESULT VIEW ====================
-    let currentResultEntry = null;
-    let currentCardIndex = 0;
-    let currentShowMode = 'A';
-
-    function showResultView(scene, historyEntry) {
-        currentResultEntry = historyEntry;
-        currentCardIndex = 0;
-        currentShowMode = appState.settings.showMode || 'A';
-
-        $('resultScene').textContent = `📍 ${scene}`;
-        $('resultMeta').textContent = `${historyEntry.sentences.length} 句 · ${getLevelLabel(getActiveChild()?.level || 'A2')}`;
-
-        updateModeButtons();
-        renderScriptList(historyEntry);
-        renderCards(historyEntry);
-        updateModeDisplay();
-
-        switchView('viewResult');
-        chatState = { stage: 'init', scene: '', followUpQuestion: '', followUpOptions: [], answers: [], matchInfo: null };
-        $('chatInput').value = '';
-        $('chatContainer').innerHTML = '';
-    }
-
-    function updateModeButtons() {
-        $('modeBtnA').classList.toggle('active', currentShowMode === 'A');
-        $('modeBtnC').classList.toggle('active', currentShowMode === 'C');
-    }
-
-    function updateModeDisplay() {
-        $('modeAContainer').style.display = currentShowMode === 'A' ? 'flex' : 'none';
-        $('modeCContainer').style.display = currentShowMode === 'C' ? 'block' : 'none';
-    }
-
-    function renderScriptList(entry) {
-        const container = $('modeAContainer');
-        container.innerHTML = entry.sentences.map((s, i) => `
-            <div class="script-item ${s.isReview ? 'review' : ''}">
-                <div class="script-tags">
-                    ${s.isReview ? '<span class="tag tag-review">🔄 复习</span>' : '<span class="tag tag-new">🌱 新</span>'}
-                </div>
-                <div class="script-english">${s.english}</div>
-                <div class="script-chinese">${s.chinese}</div>
-            </div>
-        `).join('');
-    }
-
-    function renderCards(entry) {
-        const stack = $('cardStack');
-        stack.innerHTML = entry.sentences.map((s, i) => `
-            <div class="sentence-card" style="z-index:${entry.sentences.length - i}; ${i !== 0 ? 'display:none;' : ''}" data-index="${i}">
-                <div class="card-front">
-                    <div class="card-english">${s.english}</div>
-                    <div class="card-hint">👆 点击翻看中文</div>
-                </div>
-                <div class="card-back">
-                    <div class="card-chinese">${s.chinese}</div>
-                    <div style="margin-top:8px;">${s.isReview ? '🔄 复习' : '🟢 新句'}</div>
-                    <div class="card-hint">👆 点击翻回英文</div>
-                </div>
-            </div>
-        `).join('');
-
-        // Card click to flip
-        stack.querySelectorAll('.sentence-card').forEach(card => {
-            card.addEventListener('click', () => {
-                card.classList.toggle('flipped');
-            });
-        });
-
-        updateCardDisplay();
-    }
-
-    function updateCardDisplay() {
-        const cards = $('cardStack').querySelectorAll('.sentence-card');
-        cards.forEach((card, i) => {
-            card.style.display = i === currentCardIndex ? 'flex' : 'none';
-            card.classList.remove('flipped');
-        });
-        $('cardCounter').textContent = `${currentCardIndex + 1}/${cards.length}`;
-        $('cardPrev').disabled = currentCardIndex === 0;
-        $('cardNext').disabled = currentCardIndex === cards.length - 1;
-    }
-
-    function toggleMastered(entryId, sentenceIndex) {
-        const entry = appState.history.find(h => h.id === entryId);
-        if (!entry) return;
-        entry.sentences[sentenceIndex].mastered = !entry.sentences[sentenceIndex].mastered;
-        saveState(appState);
-
-        if (currentResultEntry && currentResultEntry.id === entryId) {
-            currentResultEntry = entry;
-            renderScriptList(entry);
-        }
-
-        showToast(entry.sentences[sentenceIndex].mastered ? '已标记为掌握 ✅' : '已取消掌握标记');
-    }
-
-    // ==================== HISTORY VIEW ====================
-    function refreshHistoryView() {
-        renderChildSwitcher('childSwitcherHistory');
-        const child = getActiveChild();
-        if (!child) {
-            $('historyList').innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">请先设置孩子信息</div></div>';
-            return;
-        }
-
-        const childHistory = getChildHistory(child.id);
-        if (childHistory.length === 0) {
-            $('historyList').innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">还没有学习记录<br>去主页开始第一个场景吧！</div></div>';
-            return;
-        }
-
-        // Group by date
-        const groups = {};
-        childHistory.sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(h => {
-            const dateKey = new Date(h.date).toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short' });
-            if (!groups[dateKey]) groups[dateKey] = [];
-            groups[dateKey].push(h);
-        });
-
-        $('historyList').innerHTML = Object.entries(groups).map(([date, items]) => `
-            <div class="history-group">
-                <div class="history-date">${date}</div>
-                ${items.map(h => `
-                    <div class="history-item" data-id="${h.id}">
-                        <div class="history-item-header">
-                            <span class="history-scene">📍 ${h.scene}</span>
-                            <span class="history-count">${h.sentences.length} 句</span>
-                        </div>
-                        <div class="history-item-detail">
-                            ${h.sentences.map((s, i) => `
-                                <div class="script-item ${s.isReview ? 'review' : ''}" style="margin-bottom:8px;">
-                                    <div class="script-english" style="font-size:15px;">${s.english}</div>
-                                    <div class="script-chinese">${s.chinese}</div>
-                                    <div class="script-tags">
-                                        ${s.isReview ? '<span class="tag tag-review">🔄 复习</span>' : '<span class="tag tag-new">🟢 新句</span>'}
-                                        <button class="btn-mastered ${s.mastered ? 'mastered' : ''}" onclick="event.stopPropagation(); toggleMastered('${h.id}', ${i})">
-                                            ${s.mastered ? '✅ 已掌握' : '✓ 标记掌握'}
-                                        </button>
-                                    </div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `).join('')}
-            </div>
-        `).join('');
-
-        // Toggle expand
-        $('historyList').querySelectorAll('.history-item').forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('expanded');
-            });
-        });
-    }
-
-    // ==================== SETTINGS VIEW ====================
-    function refreshSettingsView() {
-        const container = $('settingsChildrenList');
-        container.innerHTML = appState.children.map(c => `
-            <div class="settings-row" data-child-id="${c.id}" style="display:flex;align-items:center;gap:10px;">
-                <span style="font-size:24px;">${getLevelEmoji(c.level)}</span>
-                <div style="flex:1;">
-                    <div style="font-weight:600;">${c.name}</div>
-                    <div style="font-size:12px;color:var(--text-secondary);">${c.age}岁 · ${getLevelLabel(c.level)}</div>
-                </div>
-                <button class="btn-icon" style="background:var(--danger);color:white;width:28px;height:28px;font-size:14px;" data-action="delete" data-child-id="${c.id}">✕</button>
-            </div>
-        `).join('');
-
-        // Child selection
-        container.querySelectorAll('.settings-row').forEach(row => {
-            row.addEventListener('click', (e) => {
-                if (e.target.closest('[data-action="delete"]')) {
-                    e.stopPropagation();
-                    const childId = e.target.closest('[data-child-id]').dataset.childId;
-                    deleteChild(childId);
-                    return;
-                }
-                const childId = row.dataset.childId;
-                if (childId) {
-                    appState.activeChildId = childId;
-                    saveState(appState);
-                    updateHeader();
-                    refreshSettingsView();
-                    showToast(`已切换到 ${appState.children.find(c => c.id === childId)?.name}`);
-                }
-            });
-        });
-    }
-
-    function deleteChild(childId) {
-        if (!confirm('确定要删除这个孩子的所有数据吗？此操作不可恢复。')) return;
-        appState.children = appState.children.filter(c => c.id !== childId);
-        appState.history = appState.history.filter(h => h.childId !== childId);
-        if (appState.activeChildId === childId) {
-            appState.activeChildId = appState.children[0]?.id || null;
-        }
-        saveState(appState);
-        updateHeader();
-        refreshSettingsView();
-        if (!appState.children.length) switchView('viewOnboarding');
-    }
-
-    // ==================== EVENT LISTENERS ====================
-    function initEventListeners() {
-        // Bottom nav
-        $('bottomNav').addEventListener('click', (e) => {
-            const navItem = e.target.closest('.nav-item');
-            if (!navItem) return;
-            switchView(navItem.dataset.view);
-        });
-
-        // Header settings
-        $('btnSettings').addEventListener('click', () => switchView('viewSettings'));
-
-        // Chat send
-        $('btnSend').addEventListener('click', sendChatMessage);
-        $('chatInput').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                sendChatMessage();
-            }
-        });
-
-        // Mode switch
-        $('modeBtnA').addEventListener('click', () => {
-            currentShowMode = 'A';
-            appState.settings.showMode = 'A';
-            saveState(appState);
-            updateModeButtons();
-            updateModeDisplay();
-        });
-
-        $('modeBtnC').addEventListener('click', () => {
-            currentShowMode = 'C';
-            appState.settings.showMode = 'C';
-            saveState(appState);
-            updateModeButtons();
-            updateModeDisplay();
-        });
-
-        // Card navigation
-        $('cardPrev').addEventListener('click', () => {
-            if (currentCardIndex > 0) {
-                currentCardIndex--;
-                updateCardDisplay();
-            }
-        });
-
-        $('cardNext').addEventListener('click', () => {
-            const cards = $('cardStack').querySelectorAll('.sentence-card');
-            if (currentCardIndex < cards.length - 1) {
-                currentCardIndex++;
-                updateCardDisplay();
-            }
-        });
-
-        // Result actions
-        $('btnNewScene').addEventListener('click', () => {
-            chatState = { stage: 'init', scene: '', followUpQuestion: '', followUpOptions: [], answers: [], matchInfo: null };
-        });
-
-        $('btnViewHistory').addEventListener('click', () => switchView('viewHistory'));
-
-        // Settings
-        $('btnAddChild').addEventListener('click', () => {
-            switchView('viewOnboarding');
-        });
-
-        $('btnClearHistory').addEventListener('click', () => {
-            const child = getActiveChild();
-            if (!child) return;
-            if (!confirm(`确定要清除 ${child.name} 的所有历史记录吗？`)) return;
-            appState.history = appState.history.filter(h => h.childId !== child.id);
-            saveState(appState);
-            refreshSettingsView();
-            showToast('历史记录已清除');
-        });
-
-        $('btnResetAll').addEventListener('click', () => {
-            if (!confirm('确定要重置所有数据吗？此操作不可恢复！')) return;
-            localStorage.clear();
-            location.href = location.origin + location.pathname;
-            showToast('所有数据已重置');
-        });
-
-        // Swipe for cards
-        let touchStartX = 0;
-        $('cardStack').addEventListener('touchstart', (e) => {
-            touchStartX = e.touches[0].clientX;
-        });
-
-        $('cardStack').addEventListener('touchend', (e) => {
-            const diff = touchStartX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 50) {
-                if (diff > 0) {
-                    // Swipe left = next
-                    const cards = $('cardStack').querySelectorAll('.sentence-card');
-                    if (currentCardIndex < cards.length - 1) {
-                        currentCardIndex++;
-                        updateCardDisplay();
-                    }
-                } else {
-                    // Swipe right = prev
-                    if (currentCardIndex > 0) {
-                        currentCardIndex--;
-                        updateCardDisplay();
-                    }
-                }
-            }
-        });
-    }
-
-    function sendChatMessage() {
-        const input = $('chatInput');
-        const text = input.value.trim();
-        if (!text) return;
-
-        addChatBubble('user', text);
-        chatState.answers.push(text);
-        input.value = '';
-
-        if (chatState.stage === 'init') {
-            chatState.scene = text;
-            chatState.stage = 'asking';
-            const child = getActiveChild();
-            generateFollowUp(text, child);
-        } else if (chatState.stage === 'asking') {
-            chatState.stage = 'done';
-            generateSentences();
-        }
-    }
-
-    // ==================== INIT ====================
-    function init() {
-        initEventListeners();
-        initOnboarding();
-
-        // Check if we have children
-        if (appState.children.length > 0 && appState.activeChildId) {
-            updateHeader();
-            switchView('viewChat');
-        } else {
-            switchView('viewOnboarding');
-        }
-
-        // Register Service Worker — force refresh on every page load
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.getRegistrations().then(registrations => {
-                for (const reg of registrations) reg.unregister();
-            }).then(() => {
-                navigator.serviceWorker.register('sw.js?v=20260724').then(reg => {
-                    reg.update();
-                }).catch(() => {});
-            }).catch(() => {});
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', init);
-    </script>
+      }
+    }catch(e){}
+    renderBandsInfo();
+  }
+})();
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('../sw.js').catch(function (err) {
+        console.warn('[SW] 注册失败:', err);
+      });
+    });
+  }
+</script>
 </body>
 </html>
