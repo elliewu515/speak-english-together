@@ -381,13 +381,13 @@
   <button class="nav-item" data-tab="viewSettings" onclick="showView('viewSettings')"><span class="nav-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1.08-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1.08 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001.08 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1.08H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1.08z"/></svg></span><span>设置</span></button>
 </nav>
 
-<!-- ===== 外部数据源（单一数据源，位于 03-核心知识文档/，内容团队维护） ===== -->
+<!-- ===== 外部数据源（单一数据源，与 index.html 同级目录，内容团队维护） ===== -->
 <!-- scene-data.js：完整三级分类树（8 领域/36 分类/181 子场景）+ 旧版素材 -->
-<script src="../03-核心知识文档/scene-data.js"></script>
+<script src="scene-data.js"></script>
 <!-- scene-library.js：v4 内容库（bands 0-2/3-5/6-7 × read_aloud/prompt_reply/vocab） -->
-<script src="../03-核心知识文档/scene-library.js"></script>
+<script src="scene-library.js"></script>
 <!-- scene-synonyms.js：聊天页模糊匹配「口语词→场景词」知识映射表 + subFrags() 切分函数 -->
-<script src="../03-核心知识文档/scene-synonyms.js"></script>
+<script src="scene-synonyms.js"></script>
 
 <script>
 /* ===== 分类树 TAXONOMY：从外部 SCENE_DATA 自动抽取（对象→数组，只取导航骨架） ===== */
@@ -1027,7 +1027,7 @@ document.getElementById('btnAddChild').onclick=()=>{ alert('多孩子管理功�
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('../sw.js').catch(function (err) {
+      navigator.serviceWorker.register('sw.js').catch(function (err) {
         console.warn('[SW] 注册失败:', err);
       });
     });
